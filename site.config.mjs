@@ -12,6 +12,9 @@ export default {
   tagline: "Things to do, from North Myrtle to Murrells Inlet",
   description:
     "Things to do in Myrtle Beach and along the Grand Strand, from North Myrtle Beach to Murrells Inlet. Every listing checked before it goes up.",
+  // Google AdSense publisher ID, like "pub-1234567890123456" (also accepts "ca-pub-...").
+  // Adds the AdSense script to every page and creates /ads.txt. Leave empty to turn ads off.
+  adsensePublisherId: "",
   // Shown in the footer for corrections. Leave empty to hide.
   contactEmail: "",
 

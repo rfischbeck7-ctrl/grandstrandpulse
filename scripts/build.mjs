@@ -7,6 +7,12 @@ const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..")
 const dist = path.join(root, "dist");
 const origin = `https://${config.domain}`;
 const buildDate = new Date().toISOString().slice(0, 10);
+// AdSense: accept "pub-..." or "ca-pub-..."; anything else turns ads off rather than breaking the build.
+const adsensePub = (() => {
+  const m = String(config.adsensePublisherId || "").trim().match(/^(?:ca-)?(pub-\d{10,20})$/);
+  if (config.adsensePublisherId && !m) console.warn(`AdSense ID "${config.adsensePublisherId}" doesn't look like pub-1234567890123456; ads are off.`);
+  return m ? m[1] : "";
+})();
 
 // ---------- helpers ----------
 const esc = (s = "") =>
@@ -101,6 +107,7 @@ function layout({ title, description, canonical, body, jsonLd, active }) {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fonts}">
 <link rel="stylesheet" href="/assets/styles.css">
+${adsensePub ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-${adsensePub}" crossorigin="anonymous"></script>` : ""}
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>` : ""}
 </head>
 <body>
@@ -386,6 +393,7 @@ async function buildExtras() {
   await write("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${origin}/sitemap.xml\n`);
   await write("CNAME", `${config.domain}\n`);
   await write(".nojekyll", "");
+  if (adsensePub) await write("ads.txt", `google.com, ${adsensePub}, DIRECT, f08c47fec0942fa0\n`);
   const first = categories[0];
   await write(
     "404.html",
