@@ -16,7 +16,7 @@ export default {
   // Adds the AdSense script to every page and creates /ads.txt. Leave empty to turn ads off.
   adsensePublisherId: "ca-pub-6449115884515319",
   // Shown in the footer for corrections. Leave empty to hide.
-  contactEmail: "",
+  contactEmail: "contact@myrtlebeachcompass.com",
 
   // Areas, listed north to south. "x"/"y" place each area on the coastline map (percent).
   areas: [
