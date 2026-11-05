@@ -19,6 +19,26 @@
    }
   },
   {
+   "id": "rec0lklyOijGzCkom",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Ice Cream On-Site": true,
+    "Area": "Central Myrtle",
+    "Address": "1220 Moser St, Myrtle Beach, SC 29577",
+    "Theme": "Haunted / 3D Glow",
+    "Short Description": "Grab 3D glasses and putt through a spooky, glow-in-the-dark haunted course inside this air-conditioned entertainment spot at The Market Common. Bowling, billiards and a milkshake bar make it a solid rainy-day or date-night pick.",
+    "Name": "810 Billiards & Bowling 3D Haunted Mini Golf",
+    "Phone": "(843) 839-2695",
+    "Amenities": [
+     "Ice Cream"
+    ],
+    "Indoor / Outdoor": "Indoor/AC",
+    "Call Link": "tel:8438392695",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=810+Billiards+%26+Bowling+3D+Haunted+Mini+Golf%2C+1220+Moser+St%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
    "id": "rec0nmZn0k8y9U3sr",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
@@ -150,6 +170,27 @@
    }
   },
   {
+   "id": "recDgd0MkOFujSQu9",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "1820 21st Ave N, Myrtle Beach, SC 29577",
+    "Theme": "Racing / Family Fun Park",
+    "Website": "https://broadwaygrandprix.com/",
+    "Short Description": "Pair a round on two 18-hole mini-golf courses with go-karts, kiddie rides and a big arcade at one of Myrtle Beach's best-known family fun parks. Great for groups who want to do a little of everything in one stop.",
+    "Name": "Broadway Grand Prix Challenge Mini Golf",
+    "Phone": "(843) 839-4080",
+    "Amenities": [
+     "Arcade"
+    ],
+    "Arcade On-Site": true,
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8438394080",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Broadway+Grand+Prix+Challenge+Mini+Golf%2C+1820+21st+Ave+N%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
    "id": "recF6Zr0RCGrq6R8j",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
@@ -202,6 +243,22 @@
    }
   },
   {
+   "id": "recIsz8ph18BG16rj",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "2601 N Ocean Blvd, Myrtle Beach, SC 29577",
+    "Theme": "Gold Rush / Mining",
+    "Short Description": "Strike it rich on this gold-rush-themed putt-putt course just off the oceanfront near Anderson Ocean Club. It's an easy walk from many beachfront hotels when the kids need a break from the sand.",
+    "Name": "Lost Mine Miniature Golf",
+    "Phone": "(843) 213-5365",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8432135365",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Lost+Mine+Miniature+Golf%2C+2601+N+Ocean+Blvd%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
    "id": "recLXOV18DX1oPHfu",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
@@ -224,6 +281,19 @@
    }
   },
   {
+   "id": "recMHnTT32BKwuMZ1",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "3607 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Theme": "Duckpin Bowling & Games",
+    "Short Description": "This new family entertainment center pairs a mini-golf course with duckpin bowling, a golf simulator and a full restaurant. Check that it's open before you go, since it was set to debut in 2026.",
+    "Name": "AlleyOops North Myrtle Beach",
+    "Indoor / Outdoor": "Indoor/AC",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=AlleyOops+North+Myrtle+Beach%2C+3607+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
    "id": "recO1Bdx02ech39ft",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
@@ -239,6 +309,22 @@
    }
   },
   {
+   "id": "recOfd0Ip5JwzAQQB",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "9850 N Kings Hwy, Myrtle Beach, SC 29572",
+    "Theme": "Tropical Island / Waterfalls",
+    "Short Description": "Formerly Rainbow Falls, this north-end putt-putt spot now carries the Aloha island look across two 18-hole courses. It's a handy round if you're staying near the Restaurant Row end of Kings Highway.",
+    "Name": "Aloha Falls Mini Golf",
+    "Phone": "(843) 497-2557",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8434972557",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Aloha+Falls+Mini+Golf%2C+9850+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29572"
+   }
+  },
+  {
    "id": "recOjllj7ZLqw0q8I",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
@@ -247,13 +333,58 @@
     "Theme": "Hawaiian / Tropical",
     "Website": "https://www.prominigolf.com/",
     "Short Description": "Two island-themed courses wind through tropical greenery with music playing across the complex. It's a laid-back, aloha-style round that's perfect for an easygoing evening.",
-    "Name": "Hawaiian Village Mini Golf",
+    "Name": "Aloha Village Mini Golf",
     "Phone": "(843) 361-9629",
     "Photo Status": "Needed",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8433619629",
     "Published": true,
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Hawaiian+Village+Mini+Golf%2C+4205+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "recPTdv4wRqL04cAu",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "901 Hwy 17 N, Little River, SC 29566",
+    "Theme": "Tiki / Tropical Volcano",
+    "Short Description": "Two 18-hole putt-putt courses, Tiki Bay and Volcano Valley, wind past volcanoes, caverns, lakes and waterfalls at the Harbour View Golf Complex. It's the northernmost mini-golf stop on the Strand and an easy pick if you're staying in Little River or Cherry Grove.",
+    "Name": "Tribal Island Tiki Adventure Golf",
+    "Phone": "(843) 249-9117",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8432499117",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Tribal+Island+Tiki+Adventure+Golf%2C+901+Hwy+17+N%2C+Little+River%2C+SC+29566"
+   }
+  },
+  {
+   "id": "recPbcBiQQDj3kAiQ",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "301 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Theme": "Pirates",
+    "Short Description": "Pirate ships sit anchored in the lagoons of this swashbuckling mini-golf course, with pirate audio piping in as you putt. A fun, classic round for little buccaneers right on Highway 17 in North Myrtle Beach.",
+    "Name": "Mutiny Bay Miniature Golf",
+    "Indoor / Outdoor": "Outdoor",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mutiny+Bay+Miniature+Golf%2C+301+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "recS9W0dlVDm9DS4m",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Area": "Surfside",
+    "Address": "4827 S Kings Hwy, Myrtle Beach, SC 29575",
+    "Theme": "River Adventure / Gem Mining",
+    "Website": "https://snakerivergolf.com/",
+    "Short Description": "Play a round of putt-putt, then sift for gems and arrowheads at the mining sluice, a two-for-one outing kids love. It sits on the south end of Kings Highway between Myrtle Beach and Surfside.",
+    "Name": "Snake River Golf and Gem Mining",
+    "Indoor / Outdoor": "Outdoor",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Snake+River+Golf+and+Gem+Mining%2C+4827+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29575"
    }
   },
   {
@@ -370,6 +501,22 @@
     "Call Link": "tel:8432727812",
     "Published": true,
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Hawaiian+Rumble+Golf%2C+3210+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "reckXOFFLlalwNcpt",
+   "createdTime": "2026-11-05T22:23:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "704 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Nautical / Sea Captain",
+    "Short Description": "Look for the giant roadside sea captain and the ship-shaped clubhouse at this old-school mini-golf landmark, formerly known as Cap'n Cain. It's an affordable, no-frills 18 holes that has been part of the Kings Highway scene for decades.",
+    "Name": "Captain Myrtle Mini Golf",
+    "Phone": "(843) 945-9548",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8439459548",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Captain+Myrtle+Mini+Golf%2C+704+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
    }
   },
   {
