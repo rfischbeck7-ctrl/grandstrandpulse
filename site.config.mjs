@@ -1,16 +1,17 @@
-// Grand Strand Pulse — site settings.
+// Myrtle Beach Compass — site settings.
 // To add a new category (breweries, bars, restaurants...):
-//   1. Create a table for it in the "Grand Strand Pulse" Airtable base.
+//   1. Create a table for it in the Airtable base (still named "Grand Strand Pulse"; renaming it is fine).
 //      Give it at least: Name, Area, Short Description, Published (checkbox).
 //      Optional: Address, Phone, Website, Google Maps Link, Photo, Photo Credit.
 //   2. Copy the mini-golf block below, change slug/title/table and the field names.
 //   3. Push the change; the site rebuilds on its own.
 
 export default {
-  siteName: "Grand Strand Pulse",
-  domain: "grandstrandpulse.com",
+  siteName: "Myrtle Beach Compass",
+  domain: "myrtlebeachcompass.com",
+  tagline: "Things to do, from North Myrtle to Murrells Inlet",
   description:
-    "A local's guide to things to do on the Grand Strand, from North Myrtle Beach to Murrells Inlet.",
+    "Things to do in Myrtle Beach and along the Grand Strand, from North Myrtle Beach to Murrells Inlet. Every listing checked before it goes up.",
   // Shown in the footer for corrections. Leave empty to hide.
   contactEmail: "",
 

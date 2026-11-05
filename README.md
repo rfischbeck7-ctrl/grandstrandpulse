@@ -1,11 +1,11 @@
-# Grand Strand Pulse
+# Myrtle Beach Compass
 
-A local guide to things to do on the Grand Strand. Listings live in Airtable; this project
-turns them into a fast, free website at **grandstrandpulse.com**, hosted on GitHub Pages.
+Things to do in Myrtle Beach and along the Grand Strand. Listings live in Airtable; this project
+turns them into a fast, free website at **myrtlebeachcompass.com**, hosted on GitHub Pages.
 
 ## How it works
 
-1. You edit listings in the **Grand Strand Pulse** Airtable base.
+1. You edit listings in the Airtable base (named **Grand Strand Pulse** in Airtable).
 2. Every night (about 4 AM Eastern), GitHub pulls the latest listings and rebuilds the site.
 3. Want a change live right away? On GitHub, open **Actions → Refresh and publish site → Run workflow**.
 
@@ -36,11 +36,11 @@ into the site, so they keep working.
 
 - **GitHub repository settings → Secrets and variables → Actions**
   - Secret `AIRTABLE_TOKEN`: an Airtable personal access token with the
-    `data.records:read` scope and access to the Grand Strand Pulse base.
+    `data.records:read` scope and access to the base.
   - Variable `AIRTABLE_BASE_ID`: `appS1KIy1m8mqqHRS`
-- **Settings → Pages**: Source = GitHub Actions. Custom domain = `grandstrandpulse.com`,
+- **Settings → Pages**: Source = GitHub Actions. Custom domain = `myrtlebeachcompass.com`,
   then tick **Enforce HTTPS** once it's offered.
-- **DNS at Porkbun** for grandstrandpulse.com:
+- **DNS at Porkbun** for myrtlebeachcompass.com:
   - `A` records for the bare domain: `185.199.108.153`, `185.199.109.153`,
     `185.199.110.153`, `185.199.111.153`
   - `CNAME` for `www` pointing to `<your-github-username>.github.io`

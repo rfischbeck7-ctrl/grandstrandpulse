@@ -107,7 +107,7 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
   <a class="brand" href="/" aria-label="${esc(config.siteName)} home">
-    <svg class="brand-mark" viewBox="0 0 40 24" aria-hidden="true"><path d="M1 14h8l3-9 5 17 4-12 3 4h15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="currentColor" stroke-width="2.5"/><g transform="rotate(40 14 14)"><path d="M14 4.5 17.4 14H10.6Z" fill="#ffc93c" stroke="#0f3346" stroke-width="1.2" stroke-linejoin="round"/><path d="M10.6 14H17.4L14 23.5Z" fill="#0f3346"/></g></svg>
     <span>${esc(config.siteName)}</span>
   </a>
   <nav class="site-nav" aria-label="Categories">${nav}</nav>
@@ -118,7 +118,7 @@ ${body}
 <footer class="site-foot">
   <p>Every listing is checked against the business or an official visitor guide, but hours and details change. Call ahead before you drive over.</p>
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
-  <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. Listings last refreshed ${buildDate}.</p>
+  <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
 <script src="/assets/app.js" defer></script>
 </body>
@@ -214,7 +214,7 @@ ${soon}`;
   await write(
     "index.html",
     layout({
-      title: `${config.siteName}: things to do on the Grand Strand`,
+      title: `${config.siteName}: things to do in Myrtle Beach and the Grand Strand`,
       description: config.description,
       canonical: "/",
       body,

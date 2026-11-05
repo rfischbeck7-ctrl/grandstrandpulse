@@ -1,8 +1,8 @@
 {
-  "name": "grandstrandpulse",
+  "name": "myrtlebeachcompass",
   "private": true,
   "type": "module",
-  "description": "Grand Strand Pulse: a local guide to things to do on the Grand Strand.",
+  "description": "Myrtle Beach Compass: things to do in Myrtle Beach and along the Grand Strand.",
   "engines": { "node": ">=20" },
   "scripts": {
     "fetch": "node scripts/fetch-airtable.mjs",
