@@ -1,0 +1,65 @@
+name: Refresh and publish site
+
+on:
+  # Any change pushed to the code
+  push:
+    branches: [main]
+  # Every night at about 4:15 AM Eastern (09:15 UTC), pull the latest from Airtable
+  schedule:
+    - cron: "15 9 * * *"
+  # A "Run workflow" button on GitHub's Actions tab, for publishing Airtable edits right away
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      AIRTABLE_TOKEN: ${{ secrets.AIRTABLE_TOKEN }}
+      AIRTABLE_BASE_ID: ${{ vars.AIRTABLE_BASE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Pull latest listings from Airtable
+        if: ${{ env.AIRTABLE_TOKEN != '' && env.AIRTABLE_BASE_ID != '' }}
+        run: npm run fetch
+
+      # Keep a copy of the latest data in the repo, so the site can still build if Airtable is down.
+      - name: Save data snapshot
+        if: ${{ env.AIRTABLE_TOKEN != '' && env.AIRTABLE_BASE_ID != '' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git add data public/photos
+          git diff --cached --quiet || (git commit -m "Refresh listings from Airtable" && git push)
+
+      - name: Build site
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

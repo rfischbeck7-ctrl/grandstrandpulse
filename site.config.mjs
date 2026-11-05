@@ -1,0 +1,64 @@
+// Grand Strand Pulse — site settings.
+// To add a new category (breweries, bars, restaurants...):
+//   1. Create a table for it in the "Grand Strand Pulse" Airtable base.
+//      Give it at least: Name, Area, Short Description, Published (checkbox).
+//      Optional: Address, Phone, Website, Google Maps Link, Photo, Photo Credit.
+//   2. Copy the mini-golf block below, change slug/title/table and the field names.
+//   3. Push the change; the site rebuilds on its own.
+
+export default {
+  siteName: "Grand Strand Pulse",
+  domain: "grandstrandpulse.com",
+  description:
+    "A local's guide to things to do on the Grand Strand, from North Myrtle Beach to Murrells Inlet.",
+  // Shown in the footer for corrections. Leave empty to hide.
+  contactEmail: "",
+
+  // Areas, listed north to south. "x"/"y" place each area on the coastline map (percent).
+  areas: [
+    { name: "North Myrtle Beach", x: 84, y: 24 },
+    { name: "Central Myrtle", x: 61, y: 46 },
+    { name: "Surfside", x: 38, y: 66 },
+    { name: "Murrells Inlet", x: 19, y: 81 },
+  ],
+
+  // Categories that aren't live yet. Shown on the home page as "Next up".
+  comingSoon: ["Breweries", "Restaurants", "Bars & nightlife"],
+
+  categories: [
+    {
+      slug: "mini-golf",
+      title: "Mini golf",
+      noun: { one: "course", many: "courses" },
+      table: "Mini Golf",
+      intro:
+        "Pirate ships, volcanoes, dinosaurs and a crashed cargo plane. They don't call Myrtle Beach the mini golf capital of the world for nothing. Here's every course on the Strand, sorted by where you're staying.",
+      fields: {
+        name: "Name",
+        area: "Area",
+        description: "Short Description",
+        subtitle: "Theme",
+        address: "Address",
+        phone: "Phone",
+        website: "Website",
+        maps: "Google Maps Link",
+        photo: "Photo",
+        photoCredit: "Photo Credit",
+        published: "Published",
+      },
+      // Small labels on each listing.
+      tags: ["Indoor / Outdoor", "Amenities"],
+      // Filter buttons above the list (besides area and search).
+      filters: [
+        { field: "Indoor / Outdoor", label: "Setting" },
+        { field: "Amenities", label: "Extras" },
+      ],
+      // Facts on each listing's own page.
+      details: [
+        { label: "Theme", field: "Theme" },
+        { label: "Setting", field: "Indoor / Outdoor" },
+        { label: "Extras", field: "Amenities", empty: "None listed" },
+      ],
+    },
+  ],
+};

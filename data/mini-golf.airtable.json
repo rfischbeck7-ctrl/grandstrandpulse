@@ -1,0 +1,469 @@
+{
+ "records": [
+  {
+   "id": "rec0ax9haM0qSrwsY",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "1187 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Theme": "Modern Putting Course (Tiger Woods-designed)",
+    "Website": "https://popstroke.com/venues/myrtle-beach/",
+    "Short Description": "Tiger Woods' TGR Design built these real-turf putting courses complete with bunkers and challenging greens. Order food and cocktails delivered right to your group between holes at Broadway at the Beach.",
+    "Name": "PopStroke Myrtle Beach",
+    "Phone": "(843) 932-9520",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8439329520",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=PopStroke+Myrtle+Beach%2C+1187+Celebrity+Cir%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "rec0nmZn0k8y9U3sr",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "2900 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Dinosaurs",
+    "Website": "https://myrtlebeachfamilygolf.com/",
+    "Short Description": "Pick between the Ice Age and Predator courses and putt beneath towering dinosaurs. It's a roaring good time right on the main drag in south Myrtle Beach.",
+    "Name": "Jurassic Golf",
+    "Phone": "(843) 913-5333",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8439135333",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Jurassic+Golf%2C+2900+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "rec1e0VMDkxoiwt3B",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Ice Cream On-Site": true,
+    "Area": "North Myrtle Beach",
+    "Address": "614 Sea Mountain Hwy, Unit A, North Myrtle Beach, SC 29582",
+    "Theme": "Pirates",
+    "Website": "https://www.blackpearlminigolf.com",
+    "Short Description": "Set sail on a swashbuckling 18-hole pirate adventure just steps from Cherry Grove. Afterward, hit the arcade and cool off with a scoop from the on-site ice cream shop.",
+    "Name": "Black Pearl Mini Golf",
+    "Phone": "(843) 249-8473",
+    "Amenities": [
+     "Arcade",
+     "Ice Cream"
+    ],
+    "Arcade On-Site": true,
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8432498473",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Black+Pearl+Mini+Golf%2C+614+Sea+Mountain+Hwy%2C+Unit+A%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "rec4QdrfB09jRLXuU",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "701 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Theme": "Dinosaurs",
+    "Website": "https://dinosauradventuregolf.com/",
+    "Short Description": "Life-size dinosaurs lurk around every corner of these two 18-hole prehistoric courses. Little paleontologists will love spotting T. rex between putts.",
+    "Name": "Professor Hacker's Dinosaur Adventure Golf",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Professor+Hacker%27s+Dinosaur+Adventure+Golf%2C+701+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "rec7xLBeDAyYjIAkr",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "1010 Vereen Rd, North Myrtle Beach, SC 29582",
+    "Theme": "Volcano / Tropical",
+    "Website": "https://paradiseadventuregolf.com/molten-mountain/",
+    "Short Description": "Play Pele's Revenge outdoors around a towering volcano, then head inside to the air-conditioned Lava Louie's Challenge. It's a smart pick for hot afternoons or rainy days.",
+    "Name": "Molten Mountain Miniature Golf",
+    "Phone": "(843) 280-5095",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Hybrid",
+    "Call Link": "tel:8432805095",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Molten+Mountain+Miniature+Golf%2C+1010+Vereen+Rd%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "rec8xHcTuu0CWSgyC",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "2001 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Asian Legends / Dragons",
+    "Website": "https://reddragoncove.com/",
+    "Short Description": "Putt past a fierce red dragon and pagoda-style scenery inspired by Asian legends and pirate lore. It's a colorful change of pace from the usual tropical courses.",
+    "Name": "Red Dragon Cove Adventure Golf",
+    "Phone": "(843) 282-9477",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8432829477",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Red+Dragon+Cove+Adventure+Golf%2C+2001+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recC8kmKeKumpSmYi",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "2101 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Mayan Jungle",
+    "Website": "http://paradiseadventuregolf.com/cancun-lagoon-miniature-golf/",
+    "Short Description": "Climb a 50-foot Mayan pyramid and explore jungle ruins across 27 holes, with some played indoors. It's one of the most dramatic-looking courses in town.",
+    "Name": "Cancun Lagoon Adventure Golf",
+    "Phone": "(843) 444-1098",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Hybrid",
+    "Call Link": "tel:8434441098",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Cancun+Lagoon+Adventure+Golf%2C+2101+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recDWeUvrlYO7aT9t",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Ice Cream On-Site": true,
+    "Area": "Murrells Inlet",
+    "Address": "3215 Hwy 17 Business, Murrells Inlet, SC 29576",
+    "Theme": "Adventure Voyage / Waterfalls",
+    "Short Description": "Follow cascading waterfalls and mysterious caves on an adventure voyage near the Marsh Walk. Treat yourself afterward at the Sweet Adventures ice cream shop.",
+    "Name": "Inlet Adventure Mini Golf",
+    "Amenities": [
+     "Ice Cream"
+    ],
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Inlet+Adventure+Mini+Golf%2C+3215+Hwy+17+Business%2C+Murrells+Inlet%2C+SC+29576"
+   }
+  },
+  {
+   "id": "recF6Zr0RCGrq6R8j",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Surfside",
+    "Address": "3009 Hwy 17 Business, Garden City, SC 29576",
+    "Theme": "Deserted Island / Classic TV",
+    "Website": "https://gilligansminigolf.com/",
+    "Short Description": "Play past Gilligan's hut, the Skipper's helm and Mary Ann's coconut grove on this tribute to the classic TV show. A snack bar and easy parking make it a stress-free family stop.",
+    "Name": "Gilligan's Island Funland",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Gilligan%27s+Island+Funland%2C+3009+Hwy+17+Business%2C+Garden+City%2C+SC+29576"
+   }
+  },
+  {
+   "id": "recFNb669qyoqnTN1",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "1705 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Theme": "Treasure Hunt / Gold Mine",
+    "Website": "https://losttreasuregolfnmb.com/",
+    "Short Description": "Ride a mining train up the mountain to the first tee, then hunt for treasure past caves, waterfalls and volcanoes. Two 18-hole courses make it an easy spot to spend a whole evening.",
+    "Name": "Professor Hacker's Lost Treasure Golf",
+    "Phone": "(843) 272-5467",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8432725467",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Professor+Hacker%27s+Lost+Treasure+Golf%2C+1705+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "recH4qyd4tWMUVohW",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "915 N Ocean Blvd, Myrtle Beach, SC 29577",
+    "Theme": "Neon Glow / Crazy",
+    "Website": "https://www.ripleys.com/attractions/ripleys-crazy-golf-myrtle-beach",
+    "Short Description": "Three stories of glow-in-the-dark, neon-lit mini golf right on the Boardwalk. Fully air-conditioned, it's the perfect escape from summer heat or a rainy day.",
+    "Name": "Ripley's Crazy Golf",
+    "Phone": "(843) 916-0888",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Indoor/AC",
+    "Call Link": "tel:8439160888",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Ripley%27s+Crazy+Golf%2C+915+N+Ocean+Blvd%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recLXOV18DX1oPHfu",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Ice Cream On-Site": true,
+    "Area": "Murrells Inlet",
+    "Address": "1800 Hwy 17 Business, Murrells Inlet, SC 29576",
+    "Theme": "Jamaica / Island",
+    "Website": "https://www.tupelobay.com/mini-golf/",
+    "Short Description": "Two Jamaica-inspired courses, Cockpit Country and Dunn's River Falls, feature caves, lighthouses and a big waterfall. Finish with hand-dipped Hershey's ice cream on site at Tupelo Bay.",
+    "Name": "Runaway Bay Miniature Golf",
+    "Phone": "(843) 215-7888",
+    "Amenities": [
+     "Ice Cream"
+    ],
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8432157888",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Runaway+Bay+Miniature+Golf%2C+1800+Hwy+17+Business%2C+Murrells+Inlet%2C+SC+29576"
+   }
+  },
+  {
+   "id": "recO1Bdx02ech39ft",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "1500 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Pirates",
+    "Short Description": "A giant pirate ship anchored in the lagoon sets the stage for a classic buccaneer round. It's a great pick for crews looking for that iconic Myrtle Beach pirate experience.",
+    "Name": "Pirate's Watch Adventure Golf",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Pirate%27s+Watch+Adventure+Golf%2C+1500+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recOjllj7ZLqw0q8I",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "4205 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Theme": "Hawaiian / Tropical",
+    "Website": "https://www.prominigolf.com/",
+    "Short Description": "Two island-themed courses wind through tropical greenery with music playing across the complex. It's a laid-back, aloha-style round that's perfect for an easygoing evening.",
+    "Name": "Hawaiian Village Mini Golf",
+    "Phone": "(843) 361-9629",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8433619629",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Hawaiian+Village+Mini+Golf%2C+4205+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "recTTlv20NiNSDbvH",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "7101 N Kings Hwy, Myrtle Beach, SC 29572",
+    "Theme": "Safari Animals",
+    "Website": "https://myrtlebeachfamilygolf.com/",
+    "Short Description": "Life-size elephants, giraffes and big cats line the fairways of this safari-themed course. Kids get a wildlife adventure with every hole.",
+    "Name": "Jungle Safari Mini Golf",
+    "Phone": "(843) 315-0311",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8433150311",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Jungle+Safari+Mini+Golf%2C+7101+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29572"
+   }
+  },
+  {
+   "id": "recTtdvzchnQDj67O",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "2205 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Pirates / Peter Pan",
+    "Website": "https://myrtlebeachfamilygolf.com/",
+    "Short Description": "Sail into Neverland with animatronic pirates, cascading waterfalls and Captain Hook's famous ship. It's a fan favorite for families with young adventurers.",
+    "Name": "Captain Hook's Adventure Golf",
+    "Phone": "(843) 913-7851",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8439137851",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Captain+Hook%27s+Adventure+Golf%2C+2205+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recUh3oAGmUwHcnKV",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "900 Lake Arrowhead Rd, Myrtle Beach, SC 29572",
+    "Theme": "Hawaiian / Tiki",
+    "Website": "https://www.alohaminigolfmb.com/",
+    "Short Description": "Choose from two lush outdoor courses or the indoor course upstairs, complete with tiki decor and talking tropical birds. An arcade and batting cages round out a full night of fun.",
+    "Name": "Aloha Mini Golf",
+    "Phone": "(843) 712-1728",
+    "Amenities": [
+     "Arcade"
+    ],
+    "Arcade On-Site": true,
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Hybrid",
+    "Call Link": "tel:8437121728",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Aloha+Mini+Golf%2C+900+Lake+Arrowhead+Rd%2C+Myrtle+Beach%2C+SC+29572"
+   }
+  },
+  {
+   "id": "recXCgs3mIezE5nlw",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "715 Hwy 17 N, North Myrtle Beach, SC 29582",
+    "Theme": "Plane Crash / Jungle Rescue",
+    "Website": "https://www.maydaygolf.com/",
+    "Short Description": "Putt your way past a crashed cargo plane and a rescue helicopter on two jungle-themed 18-hole courses. The over-the-top scenery makes it one of the most photographed courses on the Strand.",
+    "Name": "Mayday Miniature Golf",
+    "Phone": "(843) 280-3535",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8432803535",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mayday+Miniature+Golf%2C+715+Hwy+17+N%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "recZSjtirxy5g0gu8",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "3801 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Pirates",
+    "Website": "https://www.myrtlebeachminigolf.net/spyglass-mini-golf-myrtle-beach",
+    "Short Description": "A pirate-themed course with an arcade, snack bar and gift shop all in one stop. Summer nights bring lit-up golf for an after-dinner round.",
+    "Name": "Spy Glass Adventure Golf",
+    "Phone": "(843) 626-9309",
+    "Amenities": [
+     "Arcade"
+    ],
+    "Arcade On-Site": true,
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8436269309",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Spy+Glass+Adventure+Golf%2C+3801+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recddLOihZMiwh7tl",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Address": "3210 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Theme": "Hawaiian Volcano",
+    "Website": "https://www.prominigolf.com/",
+    "Short Description": "Home of the U.S. Pro Mini Golf Association's Masters, this 36-hole course is built around a rumbling, fire-belching volcano. It's a true test for serious putters and a blast for the whole family.",
+    "Name": "Hawaiian Rumble Golf",
+    "Phone": "(843) 272-7812",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8432727812",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Hawaiian+Rumble+Golf%2C+3210+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+   }
+  },
+  {
+   "id": "recms7mRrkQ9VLpv4",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "404 5th Ave S, Myrtle Beach, SC 29577",
+    "Theme": "Jungle / South Pacific",
+    "Short Description": "A classic tropical course tucked just off the oceanfront, shaded by palms and full of jungle charm. It's a convenient, easy stroll from many beachfront hotels.",
+    "Name": "Jungle Lagoon Miniature Golf",
+    "Phone": "(843) 626-7894",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8436267894",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Jungle+Lagoon+Miniature+Golf%2C+404+5th+Ave+S%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recnEryUADEAtocEs",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "707 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Lost City of Atlantis / Minotaur",
+    "Website": "https://www.mtatlanticusminotaurgoff.com/",
+    "Short Description": "Explore the mythical lost city of Atlantis on a multi-level course with sweeping ocean views from the top. Its quirky storytelling and signage make it a cult favorite.",
+    "Name": "Mt. Atlanticus Minotaur Goff",
+    "Phone": "(843) 444-1008",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8434441008",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mt.+Atlanticus+Minotaur+Goff%2C+707+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recnaPLoFL3Z1durb",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Surfside",
+    "Address": "735 Hwy 17 S, Surfside Beach, SC 29575",
+    "Theme": "Tropical / Surf",
+    "Website": "https://mulliganslagoonsb.com/",
+    "Short Description": "One of the Strand's newest spots offers 36 tropical, surf-themed holes with tiki torches and seashell-studded obstacles. Head inside afterward for the arcade and a slice from the pizza pub.",
+    "Name": "Mulligan's Lagoon Golf and Arcade",
+    "Phone": "(843) 839-9983",
+    "Amenities": [
+     "Arcade"
+    ],
+    "Arcade On-Site": true,
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8438399983",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mulligan%27s+Lagoon+Golf+and+Arcade%2C+735+Hwy+17+S%2C+Surfside+Beach%2C+SC+29575"
+   }
+  },
+  {
+   "id": "recplvMmRv4FaDugr",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "4801 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Theme": "Pirates",
+    "Website": "https://www.myrtlebeachminigolf.net/treasure-island-mini-golf-myrtle-beach",
+    "Short Description": "A Myrtle Beach classic since 1981, this pirate course is all about old-school mini golf charm. Great for families who want a relaxed, nostalgic round.",
+    "Name": "Treasure Island Golf",
+    "Phone": "(843) 449-4754",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8434494754",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Treasure+Island+Golf%2C+4801+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  },
+  {
+   "id": "recrVL20Vi2H2gdqG",
+   "createdTime": "2026-11-05T17:49:51.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Address": "3301 S Ocean Blvd, Myrtle Beach, SC 29577",
+    "Theme": "Pirate Shipwreck",
+    "Website": "https://myrtlebeachfamilygolf.com/",
+    "Short Description": "Navigate the wreckage of a pirate ship on this ocean-side adventure course. Caves, bridges and waterfalls keep every hole interesting.",
+    "Name": "Shipwreck Island Adventure Golf",
+    "Phone": "(843) 913-5330",
+    "Photo Status": "Needed",
+    "Indoor / Outdoor": "Outdoor",
+    "Call Link": "tel:8439135330",
+    "Published": true,
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Shipwreck+Island+Adventure+Golf%2C+3301+S+Ocean+Blvd%2C+Myrtle+Beach%2C+SC+29577"
+   }
+  }
+ ]
+}

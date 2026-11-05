@@ -1,0 +1,12 @@
+{
+  "name": "grandstrandpulse",
+  "private": true,
+  "type": "module",
+  "description": "Grand Strand Pulse: a local guide to things to do on the Grand Strand.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "fetch": "node scripts/fetch-airtable.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/build.mjs && node scripts/serve.mjs"
+  }
+}
