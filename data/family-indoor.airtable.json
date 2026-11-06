@@ -14,6 +14,20 @@
    }
   },
   {
+   "id": "rec8j23N6aiqZ4TpS",
+   "createdTime": "2026-11-06T20:31:10.000Z",
+   "fields": {
+    "Phone": "(843) 272-6598",
+    "Area": "North Myrtle Beach",
+    "Published": true,
+    "Address": "10177 N Kings Hwy, North Myrtle Beach, SC 29572",
+    "Website": "https://www.amctheatres.com/movie-theatres/myrtle-beach-sc/amc-classic-myrtle-beach-12",
+    "Name": "AMC Classic Myrtle Beach 12",
+    "Type": "Movie theater",
+    "Short Description": "A 12-screen first-run theater near Barefoot Landing with recliners and reserved seating. Crowds tend to be smaller than at the bigger venues."
+   }
+  },
+  {
    "id": "rec91D3JIJa2TKfOH",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
@@ -356,6 +370,33 @@
     "Price Level": "$$",
     "Type": "Escape room",
     "Short Description": "Themed escape rooms on N Kings Hwy; its website now lists games as private bookings only. Call or book ahead."
+   }
+  },
+  {
+   "id": "recrqyPTkb5yXbez5",
+   "createdTime": "2026-11-06T20:31:10.000Z",
+   "fields": {
+    "Phone": "(843) 282-0550",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "4002 Deville St, Myrtle Beach, SC 29577",
+    "Name": "Grand 14 Cinemas at Market Common",
+    "Type": "Movie theater",
+    "Short Description": "A 14-screen first-run theater in The Market Common with roomy club-style seats, a gourmet concession stand and beer and wine. It also shows older films now and then."
+   }
+  },
+  {
+   "id": "recvMkfd6o8ZJuY0t",
+   "createdTime": "2026-11-06T20:31:10.000Z",
+   "fields": {
+    "Phone": "(843) 839-3225",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "2100 Coastal Grand Circle, Myrtle Beach, SC 29577",
+    "Website": "https://www.cinemark.com/theatres/sc-myrtle-beach/cinemark-myrtle-beach",
+    "Name": "Cinemark Myrtle Beach",
+    "Type": "Movie theater",
+    "Short Description": "A 14-screen theater at Coastal Grand Mall showing first-run, family and independent films, with recliner seating and a full snack and drink menu. A reliable rainy-day pick."
    }
   },
   {
