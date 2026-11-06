@@ -21,6 +21,15 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Ryan wants it professional but fun and friendly: avoid gimmicky labels, overpromises ("checked in person") or text that doesn't fit where it sits.
 - Preview: `node scripts/build.mjs`, `PORT=8080 node scripts/serve.mjs`, then Playwright screenshots at 1280 and 390 wide.
 
+## Visitor details (added Nov 6, 2026)
+- Every table has: **Hours** (one line per day group, 24h: `Daily 09:00-23:00`, `Mon-Thu 16:00-22:00`, `Sun Closed`, `Sun Call` = not posted, past midnight OK), **Hours Note**, **Price**, **Price Level** (Free/$/$$/$$$), **Good to Know** (multi-select), **Details Source** (URL), **Details Checked** (date). New tables need the same fields.
+- `scripts/hours.mjs` parses Hours (build warns and skips a line it can't read). The site shows a weekly hours table (today highlighted), an Open now / Closed badge worked out in Eastern time in the browser, an "Open now" filter on category pages, price, Good-to-know chips, and Google + Yelp review buttons (links only; never copy ratings: against their terms and goes stale).
+- Rule: hours and prices only from the business's own site (or SC Parks for state parks); leave blank if not stated. Many off-season hours aren't posted, so Hours Note says "call ahead".
+- Nov 6 pass: 72 of the original 134 listings filled. Not yet done: all nightlife spots, most live shows, small mini golf courses with no official site, and every listing added on Nov 6 (Fishing & piers etc.). Sites that block automated reading: Carolina Vineyards, Crooked Hammock, Snake River, Black Pearl, Capt. Dick's, Children's Museum of SC.
+- Runaway Bay Miniature Golf closed permanently (unpublished Nov 6). Snake River Golf: conflicting reports (defunct vs revived); verify.
+- A duplicate "Myrtle Beach Art Museum" record (rec9rfmDaz0mcWIDp) was created by mistake and unpublished; safe to delete.
+- Still missing vs visitmyrtlebeach.com: **Golf courses**, **Beaches**, and **Concerts & venues** (House of Blues sits in Nightlife; Myrtle Beach Convention Center etc.).
+
 ## Placeholder art (added Nov 2026)
 - Every listing **without a photo** gets a generated flat retro-poster illustration (400x240 SVG, sunset gradients, no faces, no outlines, beachy). It is written to `dist/art/<category>/<slug>.svg` and shown on list and detail pages.
 - **A real photo uploaded to the Photo field in Airtable always wins**; the art disappears for that listing automatically.
