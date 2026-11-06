@@ -87,7 +87,7 @@ for (const cat of config.categories) {
 const fonts =
   "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Bowlby+One&display=swap";
 
-function layout({ title, description, canonical, body, jsonLd, active, hero = "" }) {
+function layout({ title, description, canonical, body, jsonLd, active, hero = "", theme = null, heroClass = "" }) {
   const nav = categories
     .map(
       (c) =>
@@ -116,14 +116,14 @@ function layout({ title, description, canonical, body, jsonLd, active, hero = ""
 ${adsensePub ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-${adsensePub}" crossorigin="anonymous"></script>` : ""}
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>` : ""}
 </head>
-<body>
+<body${theme ? ` class="themed" style="--band-a:${theme.a};--band-b:${theme.b};--tint:${theme.tint}"` : ""}>
 <a class="skip" href="#main">Skip to content</a>
-${hero ? '<div class="hero-wrap">' : ""}<header class="site-head">
+${hero ? `<div class="hero-wrap${heroClass ? " " + heroClass : ""}">` : ""}<header class="site-head">
   <a class="brand" href="/" aria-label="${esc(config.siteName)} home">
     <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="currentColor" stroke-width="2.5"/><g transform="rotate(40 14 14)"><path d="M14 4.5 17.4 14H10.6Z" fill="#ffc93c" stroke="#0f3346" stroke-width="1.2" stroke-linejoin="round"/><path d="M10.6 14H17.4L14 23.5Z" fill="#0f3346"/></g></svg>
     <span>${esc(config.siteName)}</span>
   </a>
-  <nav class="site-nav" aria-label="Categories">${nav}</nav>
+  <nav class="site-nav" aria-label="Categories"><div class="site-nav-inner">${nav}</div></nav>
 </header>
 ${hero ? hero + "</div>" : ""}
 <main id="main">
@@ -194,41 +194,48 @@ function actionButtons(item, { compact = false } = {}) {
 
 // ---------- pages ----------
 async function buildHome() {
-  const tiles = categories
-    .map((c) => {
-      const counts = Object.fromEntries(areaNames.map((a) => [a, c.items.filter((i) => i.area === a).length]));
-      const areaLinks = areaNames
-        .filter((a) => counts[a])
-        .map((a) => `<li><a href="/${c.slug}/?area=${slugify(a)}">${esc(a)}<span>${counts[a]}</span></a></li>`)
-        .join("");
-      return `<section class="cat-feature">
-  <div class="cat-feature-text">
-    <h2><a href="/${c.slug}/">${esc(c.title)}</a></h2>
-    <p>${esc(c.intro)}</p>
-    <a class="btn btn-go" href="/${c.slug}/">See all ${plural(c.items.length, c.noun)}</a>
-  </div>
-  <div class="cat-feature-areas">
-    <h3>By area</h3>
-    <ul class="area-links">${areaLinks}</ul>
-  </div>
-</section>`;
-    })
+  const coverArt = (c) => {
+    const item = c.items.find((i) => i.name === c.cover) || c.items[0];
+    if (!item) return "";
+    return item.photo
+      ? `<img src="${esc(item.photo.src)}" alt="" loading="lazy">`
+      : `<img src="/art/${c.slug}/${item.slug}.svg" alt="" width="400" height="240" loading="lazy">`;
+  };
+  const cards = categories
+    .map(
+      (c) => `<li class="cat-card" style="--band-a:${c.theme.a};--band-b:${c.theme.b}">
+  <a href="/${c.slug}/">
+    <span class="cat-card-media" aria-hidden="true">${coverArt(c)}</span>
+    <span class="cat-card-body">
+      <span class="cat-card-title">${esc(c.title)}</span>
+      <span class="cat-card-blurb">${esc(c.blurb || "")}</span>
+      <span class="cat-card-count">${plural(c.items.length, c.noun)} <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
+</li>`
+    )
     .join("");
+  const total = categories.reduce((n, c) => n + c.items.length, 0);
+  const areaTotals = Object.fromEntries(
+    areaNames.map((a) => [a, categories.reduce((n, c) => n + c.items.filter((i) => i.area === a).length, 0)])
+  );
   const soon = config.comingSoon?.length
-    ? `<section class="soon"><h2>Next up</h2><p>${config.comingSoon.map(esc).join(", ").replace(/, ([^,]*)$/, " and $1")}. We're checking every listing in person and against official sources before it goes up.</p></section>`
+    ? `<section class="soon"><h2>Coming soon</h2><p>${config.comingSoon.map(esc).join(", ").replace(/, ([^,]*)$/, " and $1")}. Each one gets checked against the business or an official visitor guide before it goes up.</p></section>`
     : "";
-  const first = categories[0];
   const hero = `
 <section class="hero">
   <div class="hero-text">
-    <p class="eyebrow">Mini golf capital of the world</p>
     <h1>Sixty miles of beach. <em>Here's what to do</em> between swims.</h1>
     <p>Local, checked listings for the Grand Strand, from North Myrtle Beach down to Georgetown.</p>
+    <a class="btn btn-go" href="#categories">Browse ${total} places</a>
   </div>
-  ${coastline({ linkBase: first ? `/${first.slug}/` : null, id: "coast-home" })}
+  ${coastline({ counts: areaTotals, id: "coast-home" })}
 </section>`;
   const body = `
-${tiles}
+<section class="cat-grid-wrap" id="categories" aria-labelledby="cat-grid-title">
+  <h2 id="cat-grid-title">Pick your kind of fun</h2>
+  <ul class="cat-grid">${cards}</ul>
+</section>
 ${soon}`;
   await write(
     "index.html",
@@ -277,7 +284,7 @@ async function buildCategory(cat) {
     })
     .join("\n");
 
-  const body = `
+  const hero = `
 <section class="cat-head">
   <div class="cat-head-text">
     <h1>${esc(cat.title)} on the Grand Strand</h1>
@@ -287,7 +294,8 @@ async function buildCategory(cat) {
     <p class="map-hint" id="map-hint">Tap an area to narrow the list.</p>
     ${coastline({ counts, interactive: true, id: "coast-filter" })}
   </div>
-</section>
+</section>`;
+  const body = `
 <section class="finder" data-noun-one="${esc(cat.noun.one)}" data-noun-many="${esc(cat.noun.many)}">
   <div class="finder-controls">
     <label class="search">
@@ -312,6 +320,9 @@ ${list}
       description: `${plural(cat.items.length, cat.noun)} from North Myrtle Beach to Georgetown, with directions, phone numbers and what makes each one different.`,
       canonical: `/${cat.slug}/`,
       body,
+      hero,
+      heroClass: "hero-cat",
+      theme: cat.theme,
       active: cat.slug,
       jsonLd: {
         "@context": "https://schema.org",
@@ -340,19 +351,22 @@ async function buildDetail(cat, item) {
   const nearby = cat.items.filter((i) => i.area === item.area && i.id !== item.id).slice(0, 4);
   const nearbyHtml = nearby.length
     ? `<section class="nearby">
-  <h2>More ${esc(cat.noun.many)} in ${esc(item.area)}</h2>
+  <h2>More ${esc(cat.title.toLowerCase())} in ${esc(item.area)}</h2>
   <ul>${nearby.map((n) => `<li><a href="/${cat.slug}/${n.slug}/">${esc(n.name)}</a>${n.subtitle ? `<span>${esc(n.subtitle)}</span>` : ""}</li>`).join("")}</ul>
 </section>`
     : "";
 
-  const body = `
-<article class="detail">
-  <p class="crumbs"><a href="/${cat.slug}/">All ${esc(cat.noun.many)}</a></p>
+  const hero = `
+<section class="detail-band">
+  <p class="crumbs"><a href="/${cat.slug}/"><span aria-hidden="true">←</span> ${esc(cat.title)}</a></p>
   <header class="detail-head">
     <h1>${esc(item.name)}</h1>
     <p class="detail-where">${esc(item.subtitle)}${item.subtitle && item.area ? " in " : ""}${esc(item.area)}</p>
     ${actionButtons(item)}
   </header>
+</section>`;
+  const body = `
+<article class="detail">
   <figure class="detail-media" data-area="${esc(item.area)}">
     ${photoOrPlate(item, "hero", cat)}
     ${item.photo && item.photoCredit ? `<figcaption>${esc(item.photoCredit)}</figcaption>` : ""}
@@ -390,6 +404,9 @@ async function buildDetail(cat, item) {
       description: item.description.slice(0, 155),
       canonical: `/${cat.slug}/${item.slug}/`,
       body,
+      hero,
+      heroClass: "hero-detail",
+      theme: cat.theme,
       active: cat.slug,
       jsonLd: ld,
     })

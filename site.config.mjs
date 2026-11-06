@@ -1,6 +1,8 @@
 // Myrtle Beach Compass — site settings.
+// Each category has a theme (a = dark band color, b = light band color, tint = page background),
+// a short blurb for its home-page card, and a cover listing whose art or photo shows on that card.
 // To add a new category (breweries, bars, restaurants...):
-//   1. Create a table for it in the Airtable base (still named "Grand Strand Pulse"; renaming it is fine).
+//   1. Create a table for it in the Airtable base .
 //      Give it at least: Name, Area, Short Description, Published (checkbox).
 //      Optional: Address, Phone, Website, Google Maps Link, Photo, Photo Credit.
 //   2. Copy the mini-golf block below, change slug/title/table and the field names.
@@ -33,6 +35,9 @@ export default {
   categories: [
     {
       slug: "mini-golf",
+      theme: { a: "#0d5c3c", b: "#2f9a5a", tint: "#edf7ef" },
+      blurb: "Pirate ships, volcanoes, dinosaurs and a crashed cargo plane.",
+      cover: "Mutiny Bay Miniature Golf",
       title: "Mini golf",
       noun: { one: "course", many: "courses" },
       table: "Mini Golf",
@@ -67,6 +72,9 @@ export default {
     },
     {
       slug: "breweries-wineries",
+      theme: { a: "#5e2233", b: "#b06a28", tint: "#fbf3ea" },
+      blurb: "Taprooms, backyard brewpubs and sweet Southern wine.",
+      cover: "New South Brewing",
       title: "Breweries & wineries",
       noun: { one: "spot", many: "spots" },
       table: "Breweries & Wineries",
@@ -98,7 +106,10 @@ export default {
       ],
     },
     {
-      slug: "nightlife", title: "Nightlife & clubs",
+      slug: "nightlife",
+      theme: { a: "#24124a", b: "#7a2a74", tint: "#f5effa" },
+      blurb: "Shag dancing, beach bars, honky tonks and comedy.",
+      cover: "Fat Harold's Beach Club", title: "Nightlife & clubs",
       noun: { one: "spot", many: "spots" }, table: "Nightlife & Clubs",
       searchHint: "Search name or type",
       intro:
@@ -109,7 +120,10 @@ export default {
       details: [{ label: "Type", field: "Type" }],
     },
     {
-      slug: "thrill-action", title: "Thrill & action",
+      slug: "thrill-action",
+      theme: { a: "#8f2414", b: "#e05a34", tint: "#fff1eb" },
+      blurb: "Go-karts, ziplines, water parks and jet skis.",
+      cover: "Myrtle Beach SkyWheel", title: "Thrill & action",
       noun: { one: "spot", many: "spots" }, table: "Thrill & Action",
       searchHint: "Search name or type",
       intro:
@@ -120,7 +134,10 @@ export default {
       details: [{ label: "Type", field: "Type" }],
     },
     {
-      slug: "family-indoor", title: "Family & indoor fun",
+      slug: "family-indoor",
+      theme: { a: "#2b2f8f", b: "#5560d8", tint: "#eff0fd" },
+      blurb: "Escape rooms, bowling and rainy-day fun for the whole crew.",
+      cover: "WonderWorks", title: "Family & indoor fun",
       noun: { one: "spot", many: "spots" }, table: "Family & Indoor",
       searchHint: "Search name or type",
       intro:
@@ -131,7 +148,10 @@ export default {
       details: [{ label: "Type", field: "Type" }],
     },
     {
-      slug: "nature-eco", title: "Nature & eco",
+      slug: "nature-eco",
+      theme: { a: "#1f4a40", b: "#5f844a", tint: "#f0f5ec" },
+      blurb: "State parks, gardens, marsh boardwalks and dolphin cruises.",
+      cover: "Brookgreen Gardens", title: "Nature & eco",
       noun: { one: "spot", many: "spots" }, table: "Nature & Eco",
       searchHint: "Search name or type",
       intro:
@@ -142,7 +162,10 @@ export default {
       details: [{ label: "Type", field: "Type" }],
     },
     {
-      slug: "live-shows", title: "Live shows & sports",
+      slug: "live-shows",
+      theme: { a: "#5c0b22", b: "#b0213f", tint: "#fbeff2" },
+      blurb: "Dinner shows, variety theaters and Pelicans baseball.",
+      cover: "Medieval Times", title: "Live shows & sports",
       noun: { one: "spot", many: "spots" }, table: "Live Shows & Sports",
       searchHint: "Search name or type",
       intro:
@@ -153,7 +176,10 @@ export default {
       details: [{ label: "Type", field: "Type" }],
     },
     {
-      slug: "historic-cultural", title: "Historic & cultural",
+      slug: "historic-cultural",
+      theme: { a: "#57301c", b: "#a96a37", tint: "#f8f0e8" },
+      blurb: "Plantations, a seaside castle and Lowcountry museums.",
+      cover: "Atalaya Castle", title: "Historic & cultural",
       noun: { one: "spot", many: "spots" }, table: "Historic & Cultural",
       searchHint: "Search name or type",
       intro:

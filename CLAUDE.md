@@ -12,6 +12,15 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
   Check with `gh run list --repo rfischbeck7-ctrl/grandstrandpulse`. A deploy takes ~6-8 minutes. The bot commits snapshots, so always `git pull --rebase origin main` before pushing.
 - Directions links fall back to a Google Maps search from name + address when the Google Maps Link field is empty.
 
+## Design (cleaned up Nov 6, 2026)
+- Header: brand on one row, all 8 categories on one row below (scrolls sideways on phones).
+- Home: ocean-colored hero (headline, "Browse N places" button, static coastline map with total listings per area), then a "Pick your kind of fun" grid of 8 category cards, then "Coming soon". No badges, no eyebrow labels.
+- **Each category has its own colors** in `site.config.mjs` (`theme: { a, b, tint }`): a/b color the header band on that category's page and on every listing page in it; tint is the page background. Also `blurb` (home card text) and `cover` (listing whose art or photo shows on the home card).
+  Mini golf green, breweries amber/wine, nightlife plum, thrill coral, family indigo, nature sage, live shows velvet red, historic brick.
+- Listing pages: name, type/area and buttons sit in the colored band with a "← Category" link; "More <category> in <area>" at the bottom.
+- Ryan wants it professional but fun and friendly: avoid gimmicky labels, overpromises ("checked in person") or text that doesn't fit where it sits.
+- Preview: `node scripts/build.mjs`, `PORT=8080 node scripts/serve.mjs`, then Playwright screenshots at 1280 and 390 wide.
+
 ## Placeholder art (added Nov 2026)
 - Every listing **without a photo** gets a generated flat retro-poster illustration (400x240 SVG, sunset gradients, no faces, no outlines, beachy). It is written to `dist/art/<category>/<slug>.svg` and shown on list and detail pages.
 - **A real photo uploaded to the Photo field in Airtable always wins**; the art disappears for that listing automatically.
@@ -31,7 +40,6 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 ## Open follow-ups (not yet requested)
 - Photo-request emails to breweries, wineries and newer venues (drafts only; never send without asking).
 - Fill phone/website gaps.
-- Home-page Georgetown map pin quirk; README and config comments still say "Grand Strand Pulse".
 - Unconfirmed Broadway Grand Prix contact email.
 
 ## Working rules
