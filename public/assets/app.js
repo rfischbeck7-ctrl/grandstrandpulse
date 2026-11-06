@@ -169,3 +169,51 @@
 
   apply();
 })();
+
+
+// Site-wide search page.
+(function () {
+  const box = document.getElementById("gq");
+  if (!box) return;
+  const out = document.getElementById("gresults");
+  const count = document.getElementById("gcount");
+  let index = [];
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  function run() {
+    const words = box.value.toLowerCase().split(/\s+/).filter(Boolean);
+    const rows = index
+      .map((r) => {
+        const hay = (r.n + " " + r.c + " " + r.a + " " + r.t + " " + r.d).toLowerCase();
+        if (!words.every((w) => hay.includes(w))) return null;
+        const nm = r.n.toLowerCase();
+        const score = words.reduce((s, w) => s + (nm.includes(w) ? 3 : 0) + (r.t.toLowerCase().includes(w) ? 2 : 0), 0);
+        return { r, score };
+      })
+      .filter(Boolean)
+      .sort((x, y) => y.score - x.score || x.r.n.localeCompare(y.r.n));
+    count.textContent = words.length ? rows.length + (rows.length === 1 ? " place" : " places") : index.length + " places";
+    out.innerHTML = (words.length ? rows : []).slice(0, 60)
+      .map(({ r }) => '<li><a href="' + r.u + '"><strong>' + esc(r.n) + '</strong><span>' + esc(r.c) + (r.t ? " · " + esc(r.t) : "") + " · " + esc(r.a) + "</span></a><p>" + esc(r.d) + "</p></li>")
+      .join("");
+    if (words.length && !rows.length) out.innerHTML = "<li>No matches. Try a shorter word, like <em>golf</em> or <em>beer</em>.</li>";
+    try { history.replaceState(null, "", box.value ? "?q=" + encodeURIComponent(box.value) : location.pathname); } catch (e) {}
+  }
+  const q0 = new URLSearchParams(location.search).get("q");
+  if (q0) box.value = q0;
+  fetch("/search-index.json").then((r) => r.json()).then((d) => { index = d; run(); });
+  box.addEventListener("input", run);
+})();
+
+// Share button on detail pages.
+(function () {
+  document.querySelectorAll("[data-share]").forEach((b) =>
+    b.addEventListener("click", async () => {
+      const data = { title: b.dataset.title, url: location.href };
+      try {
+        if (navigator.share) return await navigator.share(data);
+        await navigator.clipboard.writeText(location.href);
+        const t = b.textContent; b.textContent = "Link copied"; setTimeout(() => (b.textContent = t), 1800);
+      } catch (e) {}
+    })
+  );
+})();

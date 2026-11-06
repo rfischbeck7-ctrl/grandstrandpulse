@@ -436,3 +436,33 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
   .finder-controls .search { flex: 1 1 18rem; }
   .finder-controls .chips { flex: 0 1 auto; }
 }
+
+/* ---- search, hubs, guides, info pages ---- */
+.site-nav .nav-search { margin-left: auto; }
+.foot-links { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; margin: .5rem 0; }
+.home-search { padding-top: 1.5rem; }
+.home-search form { display: flex; gap: .75rem; flex-wrap: wrap; }
+.home-search .search { flex: 1 1 18rem; }
+.home-hubs { display: grid; gap: 2rem; padding-top: 1.5rem; }
+@media (min-width: 880px) { .home-hubs { grid-template-columns: 1fr 1fr; } }
+.hub-list { list-style: none; padding: 0; margin: .75rem 0 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); }
+.hub-list a { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; padding: .8rem 1rem; background: var(--white); border: 1px solid var(--line); border-radius: 14px; text-decoration: none; box-shadow: var(--shadow); }
+.hub-list a:hover { border-color: var(--neon-pink); }
+.hub-list span { color: var(--ink-soft); font-size: .9rem; white-space: nowrap; }
+.page-text { display: grid; gap: 1rem; max-width: 46rem; padding-top: 2rem; padding-bottom: 2rem; }
+.page-text.wide { max-width: var(--max); }
+.page-text.wide .listings { margin-bottom: 1.5rem; }
+.page-text h2 small { color: var(--ink-soft); font-size: .6em; font-weight: 400; }
+.page-text ul:not(.hub-list):not(.listings):not(.search-results) { padding-left: 1.2rem; }
+.page-text .btn { margin-right: .5rem; }
+.search-results { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem; }
+.search-results li { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: .8rem 1rem; box-shadow: var(--shadow); }
+.search-results a { display: grid; gap: .15rem; text-decoration: none; }
+.search-results a strong { font-size: 1.1rem; }
+.search-results a span { color: var(--ink-soft); font-size: .9rem; font-style: italic; }
+.search-results p { margin: .35rem 0 0; color: var(--ink-soft); }
+.btn-share { cursor: pointer; }
+.detail-head { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem; }
+.detail-head h1, .detail-head .detail-where { flex-basis: 100%; }
+.detail-head .actions { flex: 0 1 auto; }
+.listing-desc { overflow-wrap: anywhere; }
