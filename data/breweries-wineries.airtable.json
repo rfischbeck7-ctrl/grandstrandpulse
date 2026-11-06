@@ -173,13 +173,13 @@
     "Name": "Winyah Bay Brewing Company",
     "Vibe": "Waterfront brewpub in Georgetown",
     "Short Description": "Brews like the Blueberry Wheat and White Boots Pineapple Ale come with views of Winyah Bay from the Georgetown waterfront. Southern seafood dishes and indoor and outdoor seating make it worth the drive south.",
+    "Area": "Georgetown",
     "Features": [
      "Food",
      "Outdoor Space"
     ],
-    "Photo Status": "Needed",
-    "Area": "Georgetown",
-    "Published": true
+    "Published": true,
+    "Photo Status": "Needed"
    }
   },
   {
