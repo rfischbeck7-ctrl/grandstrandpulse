@@ -8,6 +8,7 @@ import { parseHours, weekRows, openingSpec } from "./hours.mjs";
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dist = path.join(root, "dist");
 const origin = `https://${config.domain}`;
+const artStamp = Date.now().toString(36);
 const buildDate = new Date().toISOString().slice(0, 10);
 // AdSense: accept "pub-..." or "ca-pub-..."; anything else turns ads off rather than breaking the build.
 const adsensePub = (() => {
@@ -208,7 +209,7 @@ function photoOrPlate(item, size = "card", cat) {
   }
   // No photo yet: themed illustration generated from the listing, replaced automatically once a photo is added in Airtable.
   if (cat) {
-    return `<img class="art" src="/art/${cat.slug}/${item.slug}.svg" alt="" width="400" height="240" loading="${size === "card" ? "lazy" : "eager"}" aria-hidden="true">`;
+    return `<img class="art" src="/art/${cat.slug}/${item.slug}.svg?v=${artStamp}" alt="" width="400" height="240" loading="${size === "card" ? "lazy" : "eager"}" aria-hidden="true">`;
   }
   const word = item.subtitle || item.area || item.name;
   return `<div class="plate" aria-hidden="true"><span>${esc(word)}</span></div>`;
@@ -472,7 +473,7 @@ async function buildHome() {
     if (!item) return "";
     return item.photo
       ? `<img src="${esc(item.photo.src)}" alt="" loading="lazy">`
-      : `<img src="/art/${c.slug}/${item.slug}.svg" alt="" width="400" height="240" loading="lazy">`;
+      : `<img src="/art/${c.slug}/${item.slug}.svg?v=${artStamp}" alt="" width="400" height="240" loading="lazy">`;
   };
   const cards = categories
     .map(
