@@ -1,0 +1,202 @@
+{
+ "records": [
+  {
+   "id": "rec1w34kTjm2w51YX",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "A beach park since 1935 with a fishing pier, trails and camping.",
+    "Name": "Myrtle Beach State Park",
+    "Area": "Surfside",
+    "Type": "State park",
+    "Address": "4401 S Kings Hwy, Myrtle Beach, SC 29575",
+    "Published": true
+   }
+  },
+  {
+   "id": "rec4JoTvw1Uw3AA6M",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "Speedboat dolphin tours departing Harbourgate Marina and Little River.",
+    "Name": "Sea Thunder and Sea Screamer",
+    "Area": "North Myrtle Beach",
+    "Website": "https://www.myrtlebeachdolphincruises.com/",
+    "Type": "Dolphin tour",
+    "Address": "2111 Little River Neck Rd, North Myrtle Beach, SC 29582",
+    "Published": true
+   }
+  },
+  {
+   "id": "rec59ULbOruwUpUFw",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "Dolphin watch cruises, plus kayak and paddleboard rentals.",
+    "Name": "Express Watersports Dolphin Watch",
+    "Area": "Murrells Inlet",
+    "Website": "https://expresswatersports.com/myrtle-beach-dolphin-watch-cruise/",
+    "Type": "Dolphin tour",
+    "Address": "4042 Hwy 17 Business, Murrells Inlet, SC 29576",
+    "Published": true
+   }
+  },
+  {
+   "id": "rec8CzndqtLxhmqDm",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "A riverfront walk along Front Street with boat tours, museums and a marina.",
+    "Name": "Georgetown Harborwalk",
+    "Area": "Georgetown",
+    "Website": "http://www.historicgeorgetown.com",
+    "Type": "Boardwalk",
+    "Address": "Front St, Georgetown, SC 29440",
+    "Published": true
+   }
+  },
+  {
+   "id": "rec9fGS2LdgSi4hA1",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "A beach, marsh boardwalk, birding and nature center, home to Atalaya Castle.",
+    "Name": "Huntington Beach State Park",
+    "Area": "Murrells Inlet",
+    "Website": "http://southcarolinaparks.com/huntingtonbeach",
+    "Type": "State park",
+    "Address": "16148 Ocean Hwy, Murrells Inlet, SC 29576",
+    "Published": true
+   }
+  },
+  {
+   "id": "recISUCXXadYMtu44",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "Sightseeing and dolphin cruises from Little River.",
+    "Name": "Getaway Adventures Dolphin Tour",
+    "Area": "North Myrtle Beach",
+    "Website": "http://www.myrtlebeachboatcruises.com/cruises/",
+    "Type": "Dolphin tour",
+    "Address": "714 Hwy 17, Little River, SC 29566",
+    "Published": true
+   }
+  },
+  {
+   "id": "recLpiMloct7TxhWL",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "Dolphin-watch and sunset cruises from the MarshWalk.",
+    "Name": "Crazy Sister Dolphin Cruises",
+    "Area": "Murrells Inlet",
+    "Website": "https://crazysistermarina.com/",
+    "Type": "Dolphin tour",
+    "Phone": "(843) 651-3676",
+    "Address": "4123 US-17 Business, Murrells Inlet, SC 29576",
+    "Published": true
+   }
+  },
+  {
+   "id": "recNvWW04LaSSIGdo",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "A coastal research reserve with guided tours and trails.",
+    "Name": "Hobcaw Barony",
+    "Area": "Georgetown",
+    "Website": "http://www.hobcawbarony.org/",
+    "Type": "Nature reserve",
+    "Address": "22 Hobcaw Rd, Georgetown, SC 29440",
+    "Published": true
+   }
+  },
+  {
+   "id": "recOuiwZSw9ZZMsCb",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "A waterfront boardwalk along the marsh, lined with live-music venues.",
+    "Name": "Murrells Inlet MarshWalk",
+    "Area": "Murrells Inlet",
+    "Type": "Boardwalk",
+    "Address": "4025 Hwy 17 Business, Murrells Inlet, SC 29576",
+    "Published": true
+   }
+  },
+  {
+   "id": "recPSWNPRI8QIlHve",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "A reptile park at Barefoot Landing with gators, snakes and more.",
+    "Name": "Alligator Adventure",
+    "Area": "North Myrtle Beach",
+    "Type": "Wildlife",
+    "Address": "4604 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Published": true
+   }
+  },
+  {
+   "id": "recRzF300xwSl2AIi",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "A sculpture garden since 1932, with live oaks, a wildlife trail and a lowcountry farm and zoo.",
+    "Name": "Brookgreen Gardens",
+    "Area": "Murrells Inlet",
+    "Website": "http://www.brookgreen.org/",
+    "Type": "Gardens",
+    "Address": "1931 Brookgreen Dr, Murrells Inlet, SC 29576",
+    "Published": true
+   }
+  },
+  {
+   "id": "recTC4JJI4vAWKTL8",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "Kayak and paddleboard rentals and tours in the Pawleys Island area. Address needs confirming.",
+    "Name": "Surf the Earth",
+    "Area": "Murrells Inlet",
+    "Website": "http://www.surf-the-earth.com/",
+    "Type": "Kayak / paddleboard"
+   }
+  },
+  {
+   "id": "recTrPtOiJR1ET3zn",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "An oceanfront promenade with piers, rides and summer live music.",
+    "Name": "Myrtle Beach Boardwalk",
+    "Area": "Central Myrtle",
+    "Type": "Boardwalk",
+    "Address": "Ocean Blvd, Myrtle Beach, SC",
+    "Published": true
+   }
+  },
+  {
+   "id": "recXSNnqephqVl6IQ",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "Dolphin trips from North Myrtle Beach.",
+    "Name": "Voyager Dolphin Cruises",
+    "Area": "North Myrtle Beach",
+    "Website": "https://www.supervoyagerdeepseafishing.com/dolphin-trips/",
+    "Type": "Dolphin tour",
+    "Address": "1525 13th Ave N, North Myrtle Beach, SC 29582",
+    "Published": true
+   }
+  },
+  {
+   "id": "recmK2s0IxQnQhvAL",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "Kayak tours and rentals around Georgetown. Address needs confirming.",
+    "Name": "Black River Outdoors Center",
+    "Area": "Georgetown",
+    "Website": "http://www.blackriveroutdoors.com/",
+    "Type": "Kayak / paddleboard"
+   }
+  },
+  {
+   "id": "recp7Gtgy7uv4xvVk",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Short Description": "A big-cat preserve. Address and hours need confirming.",
+    "Name": "T.I.G.E.R.S. Preserve",
+    "Area": "Central Myrtle",
+    "Type": "Wildlife"
+   }
+  }
+ ]
+}

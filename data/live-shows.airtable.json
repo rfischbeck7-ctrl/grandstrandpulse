@@ -1,0 +1,196 @@
+{
+ "records": [
+  {
+   "id": "rec4Sth71mGPGtRPP",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "1320 Celebrity Cir #191, Myrtle Beach, SC 29577",
+    "Name": "Charles Bach Wonders Theatre",
+    "Short Description": "An intimate magic and comedy theater of about 200 seats.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Theater"
+   }
+  },
+  {
+   "id": "rec5KFcNsnwKwRCyz",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "1195 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Name": "Broadway Theatre: Le Grand Cirque Adrenaline",
+    "Short Description": "An acrobatic spectacle at Broadway at the Beach, about two hours with intermission.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Theater"
+   }
+  },
+  {
+   "id": "rec6k6OJPaJPlUu1z",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Website": "https://gregrowleslegacytheatre.com/",
+    "Address": "701 Main St, North Myrtle Beach, SC 29582",
+    "Name": "Greg Rowles Legacy Theatre",
+    "Short Description": "A local favorite for music, comedy and storytelling.",
+    "Area": "North Myrtle Beach",
+    "Published": true,
+    "Type": "Theater"
+   }
+  },
+  {
+   "id": "rec8oSWYup3q8kvdb",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "6803 N Ocean Blvd, Myrtle Beach, SC 29572",
+    "Name": "Polynesian Fire Luau",
+    "Short Description": "Hula, fire dancing, live music and an island buffet.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Dinner show"
+   }
+  },
+  {
+   "id": "recAHqR0LfRBG9i5j",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Website": "https://murderinthewildwest.com/",
+    "Address": "10429 N Kings Hwy, Myrtle Beach, SC 29572",
+    "Name": "Murder in the Wild West",
+    "Short Description": "Cowboy stunts, trick riding and gunfights over dinner.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Dinner show"
+   }
+  },
+  {
+   "id": "recCIqjsbVB1cXuNJ",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Name": "Topgolf Myrtle Beach",
+    "Short Description": "Open since 2019. Address needs confirming.",
+    "Area": "Central Myrtle",
+    "Type": "Sports"
+   }
+  },
+  {
+   "id": "recGOkjQcKobhCeVr",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "4750 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Name": "Alabama Theatre",
+    "Short Description": "Open since 1993 at Barefoot Landing. Home of the ICONIC show, with guest artists all year.",
+    "Area": "North Myrtle Beach",
+    "Published": true,
+    "Type": "Theater"
+   }
+  },
+  {
+   "id": "recLMtlwHNmsoba0b",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "1251 21st Ave N, Myrtle Beach, SC 29577",
+    "Name": "Myrtle Beach Pelicans",
+    "Short Description": "Minor-league baseball at TicketReturn.com Field, home of the Pelicans since 1999.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Sports"
+   }
+  },
+  {
+   "id": "recP2TNEscNehANrO",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "1329 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Name": "Riga Tony's Murder Mystery Dinner",
+    "Short Description": "An interactive comedy murder mystery with an Italian dinner.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Dinner show"
+   }
+  },
+  {
+   "id": "recXO2PIWBxoZUNJ9",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "2925 Hollywood Dr, Myrtle Beach, SC 29577",
+    "Name": "Legends in Concert",
+    "Short Description": "Tribute artists performing stars like Elvis, Adele and Michael Jackson. The lineup rotates.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Theater"
+   }
+  },
+  {
+   "id": "reccpHHm0da5uIg7D",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "1220 Port Dr, Myrtle Beach, SC 29577",
+    "Name": "GTS Theatre",
+    "Short Description": "An intimate theater with Motown, Rock N' Soul, Elvis and Kenny Rogers tribute shows.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Theater"
+   }
+  },
+  {
+   "id": "recf1IY8sD1wmCMC6",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "8907 N Kings Hwy, Myrtle Beach, SC 29572",
+    "Name": "Pirates Voyage",
+    "Short Description": "Pirate ship battles, acrobatics, sea lions and a four-course dinner.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Dinner show"
+   }
+  },
+  {
+   "id": "recjno83z7Ur27xaF",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "2904 Fantasy Way, Myrtle Beach, SC 29579",
+    "Name": "Medieval Times",
+    "Short Description": "A jousting tournament with horses, a falcon and a feast eaten by hand.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Dinner show"
+   }
+  },
+  {
+   "id": "recnI56sJrqtDbD3m",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Website": "https://www.thecarolinaopry.com",
+    "Address": "8901 N Kings Hwy, Myrtle Beach, SC 29572",
+    "Name": "Carolina Opry",
+    "Short Description": "Music, dance and comedy, including Time Warp and a long-running Christmas show.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Theater"
+   }
+  },
+  {
+   "id": "recwBG9wlUrCtFcpN",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Website": "https://www.swampfoxplayers.com/",
+    "Name": "Strand Theater",
+    "Short Description": "Community theater across from the Harborwalk. Address needs confirming.",
+    "Area": "Georgetown",
+    "Type": "Theater"
+   }
+  },
+  {
+   "id": "recxnexUqELy4hydS",
+   "createdTime": "2026-11-06T15:11:20.000Z",
+   "fields": {
+    "Address": "3237 Waccamaw Blvd, Myrtle Beach, SC 29579",
+    "Name": "The Asher Theatre",
+    "Short Description": "Family-friendly magic, comedy and impressions.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Theater"
+   }
+  }
+ ]
+}

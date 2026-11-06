@@ -1,0 +1,216 @@
+{
+ "records": [
+  {
+   "id": "rec42VT2B4HGVRQqA",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Address": "3000 Hwy 17 Bypass S, Myrtle Beach, SC 29577",
+    "Short Description": "One of the area's largest water parks, open since 1985. Seasonal.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Name": "Myrtle Waves Water Park",
+    "Type": "Water park"
+   }
+  },
+  {
+   "id": "rec4VqPkXsHGlWbb2",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Address": "300 4th Ave S, Myrtle Beach, SC 29577",
+    "Short Description": "Oceanfront rides since 1966, with the Splashes Oceanfront Water Park on the same grounds.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Name": "Family Kingdom Amusement Park",
+    "Type": "Amusement park"
+   }
+  },
+  {
+   "id": "rec4X7zG7PamNNp8M",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Phone": "(843) 236-7245",
+    "Address": "410 S Ocean Blvd, Myrtle Beach, SC 29577",
+    "Short Description": "Parasailing from the Myrtle Beach oceanfront. A second location is at 2985 S Ocean Blvd.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Name": "Downwind Sails Parasailing",
+    "Type": "Parasailing"
+   }
+  },
+  {
+   "id": "rec5g7gbv5I2NTZGR",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "http://www.radicalropes.com",
+    "Short Description": "Ziplines, aerial challenges and ropes courses at the south end of Myrtle Beach. Address and status need confirming.",
+    "Area": "Central Myrtle",
+    "Name": "Radical Ropes Adventure Park",
+    "Type": "Zipline / ropes"
+   }
+  },
+  {
+   "id": "recF23ImiexIotN0a",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://broadwaygrandprix.com/",
+    "Phone": "(843) 839-4080",
+    "Address": "1820 21st Ave N, Myrtle Beach, SC 29577",
+    "Short Description": "Seven go-kart tracks including a pro track and a kids' track, plus bumper cars, kiddie rides and an arcade.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Name": "Broadway Grand Prix",
+    "Type": "Go-karts"
+   }
+  },
+  {
+   "id": "recKdfzqcBxmC7xKN",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Short Description": "Retro rides rescued from the old Myrtle Beach Pavilion. Address needs confirming.",
+    "Area": "Central Myrtle",
+    "Name": "Pavilion Nostalgia Park",
+    "Type": "Amusement park"
+   }
+  },
+  {
+   "id": "recTAfqOU3c4Fkakh",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://www.wonderworksonline.com/myrtle-beach/the-experience/soar-explore/",
+    "Address": "Broadway at the Beach, Myrtle Beach, SC 29577",
+    "Short Description": "A 1,000-foot zipline over Lake Broadway and a ropes obstacle course.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Name": "Soar & Explore (WonderWorks)",
+    "Type": "Zipline / ropes"
+   }
+  },
+  {
+   "id": "recTBrlw24LawCfE3",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://expresswatersports.com/",
+    "Address": "4042 Hwy 17 Business, Murrells Inlet, SC 29576",
+    "Short Description": "Parasailing, jet skis, kayak and paddleboard rentals and dolphin cruises from Murrells Inlet.",
+    "Published": true,
+    "Area": "Murrells Inlet",
+    "Name": "Express Watersports",
+    "Type": "Parasailing / jet ski"
+   }
+  },
+  {
+   "id": "recX47FJQ0tQmOmcU",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://myrtlebeachjetskirental.com/",
+    "Address": "4495 Baker St, Little River, SC 29566",
+    "Short Description": "Jet ski rentals from Cricket Cove Marina in Little River.",
+    "Published": true,
+    "Area": "North Myrtle Beach",
+    "Name": "Myrtle Beach Jet Ski Rental",
+    "Type": "Jet ski"
+   }
+  },
+  {
+   "id": "recaVOlRozqZp2eDm",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "http://www.goape.com",
+    "Address": "North Myrtle Beach Sports and Recreation Park, North Myrtle Beach, SC",
+    "Short Description": "A treetop obstacle course with 600 and 900-foot ziplines over a lake. Status needs confirming.",
+    "Area": "North Myrtle Beach",
+    "Name": "Go Ape Treetop Adventure",
+    "Type": "Zipline / ropes"
+   }
+  },
+  {
+   "id": "recb07Aw1IGAwLh3g",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Address": "1110 N Ocean Blvd, Myrtle Beach, SC 29577",
+    "Short Description": "A Ferris wheel above the oceanfront with views of the whole Strand.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Name": "Myrtle Beach SkyWheel",
+    "Type": "Observation wheel"
+   }
+  },
+  {
+   "id": "receCMgagKjBkWrZD",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://crazysistermarina.com/",
+    "Phone": "(843) 651-3676",
+    "Address": "4123 US-17 Business, Murrells Inlet, SC 29576",
+    "Short Description": "MarshWalk marina with jet skis, banana boat rides, dolphin cruises and sunset sails.",
+    "Published": true,
+    "Area": "Murrells Inlet",
+    "Name": "Crazy Sister Marina",
+    "Type": "Jet ski / boat rides"
+   }
+  },
+  {
+   "id": "reclXj1mYyGe4depi",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://funwarehousemb.com/",
+    "Address": "2349 Dick Pond Rd, Myrtle Beach, SC 29575",
+    "Short Description": "Indoor and outdoor speed-kart racing with roller skating, bowling, laser tag, inflatables and an arcade of 50+ games.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Name": "Fun Warehouse",
+    "Type": "Go-karts"
+   }
+  },
+  {
+   "id": "reclsvN1qeBXururp",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://funatthetrack.com/",
+    "Address": "9589 N Kings Hwy, Myrtle Beach, SC 29572",
+    "Short Description": "Two elevated tracks, the Mighty Myrtle and the Wild Woody, plus a rookie track, carousel, blaster boats and arcade.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Name": "The Track Family Fun Park",
+    "Type": "Go-karts"
+   }
+  },
+  {
+   "id": "recvfc63z0hGBo6KQ",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://www.myrtlebeachwatersports.com/north-myrtle-beach/jet-ski-dolphin-watch-tour/",
+    "Address": "Harbourgate Marina, 2100 Sea Mountain Hwy, North Myrtle Beach, SC 29582",
+    "Short Description": "Guided jet ski dolphin tours from Harbourgate Marina.",
+    "Published": true,
+    "Area": "North Myrtle Beach",
+    "Name": "Myrtle Beach Watersports",
+    "Type": "Jet ski"
+   }
+  },
+  {
+   "id": "recwLIa9A4xh0UH25",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "http://www.mbziplines.com",
+    "Short Description": "Twin five-story towers joined by a 600-foot racing zipline, with a ropes course and 50-foot freefall. Address and current status need confirming.",
+    "Area": "Central Myrtle",
+    "Name": "Adrenaline Adventure Zipline",
+    "Type": "Zipline / ropes"
+   }
+  },
+  {
+   "id": "recxzvixqnu8v48ns",
+   "createdTime": "2026-11-06T15:11:18.000Z",
+   "fields": {
+    "Website": "https://www.k1speed.com/myrtle-beach-location.html",
+    "Address": "720 Main St, North Myrtle Beach, SC 29582",
+    "Short Description": "A fully enclosed indoor track with fast electric karts, plus an arcade and pool tables.",
+    "Published": true,
+    "Area": "North Myrtle Beach",
+    "Name": "K1 Speed",
+    "Type": "Go-karts"
+   }
+  }
+ ]
+}

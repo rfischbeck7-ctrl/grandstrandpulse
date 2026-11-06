@@ -1,0 +1,123 @@
+{
+ "records": [
+  {
+   "id": "rec0Vp5ztBTZE03ZX",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "Boat tours of Winyah Bay, plantations and Shell Island. Address needs confirming.",
+    "Area": "Georgetown",
+    "Type": "Boat tour",
+    "Name": "Cap'n Rod's Lowcountry Tours",
+    "Website": "http://lowcountrytours.com/"
+   }
+  },
+  {
+   "id": "rec2ZF5aa6OWtbrLd",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "Boat tours from the Georgetown harbor. Address needs confirming.",
+    "Area": "Georgetown",
+    "Type": "Boat tour",
+    "Name": "Rover Boat Tours",
+    "Website": "http://www.roverboattours.com/"
+   }
+  },
+  {
+   "id": "rec7C1i24DX35Agrt",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "A historic lowcountry rice plantation house open for tours.",
+    "Published": true,
+    "Area": "Georgetown",
+    "Type": "Plantation",
+    "Address": "494 Hopsewee Rd, Georgetown, SC 29440",
+    "Name": "Hopsewee Plantation",
+    "Website": "http://hopsewee.com/"
+   }
+  },
+  {
+   "id": "recBl8ddch4Ua6Qkm",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "Maritime history on the Georgetown waterfront. Address needs confirming.",
+    "Area": "Georgetown",
+    "Type": "Museum",
+    "Name": "South Carolina Maritime Museum",
+    "Website": "https://scmaritimemuseum.org/"
+   }
+  },
+  {
+   "id": "recJLJdezJLieBlMj",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "Local county history. Address needs confirming.",
+    "Area": "Georgetown",
+    "Type": "Museum",
+    "Name": "Georgetown County Museum",
+    "Website": "http://www.georgetowncountymuseum.com/"
+   }
+  },
+  {
+   "id": "recKJX9dutL6qZCLl",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "Local history museum in Conway, a short drive inland.",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Type": "Museum",
+    "Address": "805 Main St, Conway, SC 29526",
+    "Name": "Horry County Museum"
+   }
+  },
+  {
+   "id": "recNijbnjK25ADBPM",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "The Moorish-style winter home of the Huntingtons, inside the state park.",
+    "Published": true,
+    "Area": "Murrells Inlet",
+    "Type": "Historic site",
+    "Address": "Huntington Beach State Park, 16148 Ocean Hwy, Murrells Inlet, SC 29576",
+    "Name": "Atalaya Castle",
+    "Website": "http://southcarolinaparks.com/huntingtonbeach"
+   }
+  },
+  {
+   "id": "reccg19f8yAncq9Ij",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "A historic house museum on the Sampit River.",
+    "Published": true,
+    "Area": "Georgetown",
+    "Type": "Museum",
+    "Address": "1003 Front St, Georgetown, SC 29440",
+    "Name": "Kaminski House Museum",
+    "Website": "http://www.kaminskimuseum.org/"
+   }
+  },
+  {
+   "id": "recsErV4HvPKVY7kY",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "The story of Georgetown's rice culture in the old Market Building.",
+    "Published": true,
+    "Area": "Georgetown",
+    "Type": "Museum",
+    "Address": "633 Front St, Georgetown, SC 29440",
+    "Name": "Rice Museum",
+    "Website": "http://www.ricemuseum.org/"
+   }
+  },
+  {
+   "id": "recy2bwSDowBo81Be",
+   "createdTime": "2026-11-06T15:11:21.000Z",
+   "fields": {
+    "Short Description": "Evening ghost tours through the historic district. Address needs confirming.",
+    "Area": "Georgetown",
+    "Type": "Walking tour",
+    "Name": "Ghosts of Georgetown Lantern Tours",
+    "Website": "http://www.ghostsofgeorgetown.com"
+   }
+  }
+ ]
+}

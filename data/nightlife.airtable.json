@@ -1,0 +1,236 @@
+{
+ "records": [
+  {
+   "id": "rec0SAkB2cyz1mNjS",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Comedy Cabana",
+    "Short Description": "A club-style comedy room that has hosted touring national comedians since 1996, with a full bar.",
+    "Area": "Central Myrtle",
+    "Type": "Comedy",
+    "Address": "9588 N Kings Hwy, Myrtle Beach, SC 29572"
+   }
+  },
+  {
+   "id": "rec1ksW9kzEaKvbvc",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Tin Roof",
+    "Short Description": "An oceanfront rooftop with live bands and DJs on two stages. Country bands on weekends, acoustic sets on weeknights.",
+    "Area": "Central Myrtle",
+    "Type": "Live music",
+    "Address": "1410 N Ocean Blvd, Myrtle Beach, SC 29577"
+   }
+  },
+  {
+   "id": "rec3wfKUeXpSeK6wp",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "The Pier at Garden City Beach",
+    "Short Description": "A no-frills pier party with karaoke and dancing to classic rock and more.",
+    "Area": "Surfside",
+    "Type": "Live music",
+    "Address": "110 S Waccamaw Dr, Garden City Beach, SC 29576"
+   }
+  },
+  {
+   "id": "rec4E1PRKZqmB8AH0",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Name": "Club Vybe",
+    "Short Description": "Named by Ryan; not found in sources yet. Needs verification.",
+    "Area": "Central Myrtle",
+    "Type": "Dance club"
+   }
+  },
+  {
+   "id": "recCBwx6I9C9UMG05",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Apache Pier",
+    "Short Description": "An oceanfront pier with summer bands playing hits from every decade. Family friendly.",
+    "Area": "Central Myrtle",
+    "Type": "Live music",
+    "Address": "9700 Kings Rd, Myrtle Beach, SC 29572"
+   }
+  },
+  {
+   "id": "recIzSNUUdtDezcUM",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Pirate's Cove Lounge",
+    "Short Description": "A seasonal oceanfront rooftop club above a country dance hall. Open late spring and summer.",
+    "Area": "North Myrtle Beach",
+    "Type": "Dance club",
+    "Address": "205 Main St, North Myrtle Beach, SC 29582"
+   }
+  },
+  {
+   "id": "recNeDGbbO27vNBPK",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Duck's Beach Club",
+    "Short Description": "A historic beach club built around shag dancing and beach music.",
+    "Area": "North Myrtle Beach",
+    "Type": "Beach club",
+    "Address": "229 Main St, North Myrtle Beach, SC 29582"
+   }
+  },
+  {
+   "id": "recYAfpjL6BvoFFqL",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "OD Arcade & Lounge",
+    "Short Description": "A low-key lounge with live music, karaoke, dancing, pool tables and an arcade.",
+    "Area": "North Myrtle Beach",
+    "Type": "Live music",
+    "Address": "100 S Ocean Blvd, North Myrtle Beach, SC 29582"
+   }
+  },
+  {
+   "id": "recYNeIiwBg0Q7SLL",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Ocean Annie's Beach Bar",
+    "Short Description": "An oceanfront beach bar with live music on the pool deck most nights, plus dancing.",
+    "Area": "Central Myrtle",
+    "Type": "Live music",
+    "Address": "9550 Shore Dr, Myrtle Beach, SC 29572"
+   }
+  },
+  {
+   "id": "recZOTJWZRcm8GGfe",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Spanish Galleon Night Club",
+    "Short Description": "A dance club of more than 50 years with a big dance floor and live local bands playing classic and modern hits.",
+    "Area": "North Myrtle Beach",
+    "Type": "Dance club",
+    "Address": "100 N Ocean Blvd, North Myrtle Beach, SC 29582"
+   }
+  },
+  {
+   "id": "reccW5KMGrFHqa0ZV",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Name": "Master's Club",
+    "Short Description": "Named by Ryan; not found in sources yet. Needs verification.",
+    "Area": "Central Myrtle",
+    "Type": "Dance club"
+   }
+  },
+  {
+   "id": "recinzU1cgms6KvFS",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "3001 Nightlife",
+    "Short Description": "Three clubs under one roof: Club Rewind for shag and beach music, Bourbon Cowboy for country and line dancing, and Club Envy for hip-hop and house DJs.",
+    "Area": "Central Myrtle",
+    "Type": "Dance club",
+    "Address": "920 Lake Arrowhead Rd, Myrtle Beach, SC 29572"
+   }
+  },
+  {
+   "id": "reckNjhkVNpmkHGgE",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Name": "Crocodile Rocks Dueling Pianos",
+    "Short Description": "Dueling pianos, live music and comedy. Needs address and open/closed check.",
+    "Area": "Central Myrtle",
+    "Type": "Live music"
+   }
+  },
+  {
+   "id": "recknhVapumUA9cJi",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Señor Frog's",
+    "Short Description": "A themed party club at Broadway at the Beach with DJs, plus a quieter back patio with a live band and waterfront views.",
+    "Area": "Central Myrtle",
+    "Type": "Dance club",
+    "Address": "1304 Celebrity Cir, Myrtle Beach, SC 29577"
+   }
+  },
+  {
+   "id": "recnhfEr60gi6YNVE",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "The Bowery",
+    "Short Description": "A country honky tonk with live music every night and room to dance.",
+    "Area": "Central Myrtle",
+    "Type": "Live music",
+    "Address": "110 9th Ave N, Myrtle Beach, SC 29577"
+   }
+  },
+  {
+   "id": "recnoLRRNW9RcUuk7",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "House of Blues",
+    "Short Description": "A concert hall at Barefoot Landing with national touring acts, local bands on The Deck and a Sunday Gospel Brunch.",
+    "Area": "North Myrtle Beach",
+    "Type": "Live music",
+    "Address": "4640 Hwy 17 S, North Myrtle Beach, SC 29582"
+   }
+  },
+  {
+   "id": "reco9pN1z1thUsqqn",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Name": "Hot Fish Club",
+    "Short Description": "Live music on a salt-marsh patio with a lawn for dancing and bonfires. Mainly a restaurant, so held back from the site.",
+    "Area": "Murrells Inlet",
+    "Type": "Live music",
+    "Address": "4911 Hwy 17 Business, Murrells Inlet, SC 29526"
+   }
+  },
+  {
+   "id": "recsvAH8Khp4lvK4i",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Dead Dog Saloon",
+    "Short Description": "A MarshWalk landmark with live country, classic rock and blues at night, overlooking the marsh.",
+    "Area": "Murrells Inlet",
+    "Type": "Live music",
+    "Address": "4079 US-17 Business, Murrells Inlet, SC 29576"
+   }
+  },
+  {
+   "id": "recv0baQqH1BQbnAP",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Published": true,
+    "Name": "Fat Harold's Beach Club",
+    "Short Description": "A mid-century-style beach club with a large dance floor, live music and shag lessons.",
+    "Area": "North Myrtle Beach",
+    "Type": "Beach club",
+    "Address": "212 Main St, North Myrtle Beach, SC 29582"
+   }
+  },
+  {
+   "id": "recxS8O2hDWQhYrKk",
+   "createdTime": "2026-11-06T15:11:17.000Z",
+   "fields": {
+    "Name": "Carolina Improv Company",
+    "Short Description": "Fully improvised comedy shows. Reportedly moved to Long Bay Theatre; address needs confirming before publishing.",
+    "Area": "Central Myrtle",
+    "Website": "https://carolinaimprov.com/",
+    "Type": "Comedy"
+   }
+  }
+ ]
+}

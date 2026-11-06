@@ -1,0 +1,211 @@
+{
+ "records": [
+  {
+   "id": "rec4p9WzemUuoG5jb",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 839-2695",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "1220 Moser St, Myrtle Beach, SC 29577",
+    "Name": "810 Billiards & Bowling",
+    "Type": "Bowling",
+    "Short Description": "Bowling, billiards and a milkshake bar at The Market Common, with a 3D haunted mini golf course."
+   }
+  },
+  {
+   "id": "rec91D3JIJa2TKfOH",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "Broadway at the Beach, Myrtle Beach, SC 29577",
+    "Name": "Hollywood Wax Museum",
+    "Type": "Interactive museum",
+    "Short Description": "Wax figures and photo-op sets at Broadway at the Beach."
+   }
+  },
+  {
+   "id": "recBrglKMU1L5lSnV",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 945-2830",
+    "Area": "Central Myrtle",
+    "Address": "400 N Kings Hwy, Suite D, Myrtle Beach, SC 29577",
+    "Name": "Escapology Myrtle Beach",
+    "Type": "Escape room",
+    "Short Description": "Four 60-minute games. Listed in a 2019 source, so confirm it is still open."
+   }
+  },
+  {
+   "id": "recHNFVdwbmAVg7cK",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 990-1677",
+    "Area": "Central Myrtle",
+    "Address": "316 9th Ave N, Myrtle Beach, SC 29577",
+    "Name": "Myrtle Beach Room Escape",
+    "Type": "Escape room",
+    "Short Description": "Four 60-minute games. Listed in a 2019 source, so confirm it is still open."
+   }
+  },
+  {
+   "id": "recJGRsMTfnMZrdDQ",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 994-2637",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "1138 Celebrity Cir, Suite 323, Myrtle Beach, SC 29577",
+    "Website": "https://theescapegame.com/myrtle-beach/",
+    "Name": "The Escape Game Myrtle Beach",
+    "Type": "Escape room",
+    "Short Description": "Themed 60-minute escape games including Cosmic Crisis, Gold Rush and The Depths, at Broadway at the Beach."
+   }
+  },
+  {
+   "id": "recLxpELOT5IdPIce",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Name": "Stars and Strikes",
+    "Type": "Bowling",
+    "Short Description": "Bowling lanes, laser tag, axe throwing and arcade games with a bar and restaurant. Address needs confirming."
+   }
+  },
+  {
+   "id": "recMyLH4QIoPEqUXf",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "1110 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Name": "Ripley's Aquarium",
+    "Type": "Interactive museum",
+    "Short Description": "A large aquarium with a walk-through tunnel and touch tanks."
+   }
+  },
+  {
+   "id": "recNSCHz91MRIQsPz",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Name": "Funplex Myrtle Beach",
+    "Type": "Arcade",
+    "Short Description": "An amusement and arcade center. Address needs confirming."
+   }
+  },
+  {
+   "id": "recPrJ6VMRqchrSXL",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 491-1444",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "3820 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Website": "https://www.bigairusa.com/myrtle-beach",
+    "Name": "Big Air Trampoline Park",
+    "Type": "Trampoline park",
+    "Short Description": "Trampolines for all ages, 40+ attractions, a Cosmic Nights session and a cafe."
+   }
+  },
+  {
+   "id": "recQPEFj8Xy3odxE5",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "1313 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Website": "https://www.wonderworksonline.com/myrtle-beach/",
+    "Name": "WonderWorks",
+    "Type": "Interactive museum",
+    "Short Description": "An upside-down building packed with hands-on science exhibits at Broadway at the Beach."
+   }
+  },
+  {
+   "id": "recRG6ume3aTdJWHD",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 213-1586",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "9713 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Website": "http://riddlesescaperoom.com/",
+    "Name": "Riddles Escape Room",
+    "Type": "Escape room",
+    "Short Description": "Several themed games with live actors and VR options, open daily in the afternoon and evening."
+   }
+  },
+  {
+   "id": "reckYyO652vdAnSYm",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 713-1237",
+    "Area": "Central Myrtle",
+    "Address": "1314 Celebrity Cir #165, Myrtle Beach, SC 29577",
+    "Name": "Backstage Escape Games",
+    "Type": "Escape room",
+    "Short Description": "Three games at Broadway at the Beach. Listed in a 2019 source, so confirm it is still open."
+   }
+  },
+  {
+   "id": "recm2rnwhbIix0Xrc",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Area": "North Myrtle Beach",
+    "Published": true,
+    "Address": "3607 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Name": "AlleyOops North Myrtle Beach",
+    "Type": "Bowling",
+    "Short Description": "Duckpin bowling, a golf simulator, games and a full restaurant."
+   }
+  },
+  {
+   "id": "recnjBClquABoxcH8",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 273-4123",
+    "Area": "North Myrtle Beach",
+    "Published": true,
+    "Address": "3606 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Name": "Jack Axe Throwing",
+    "Type": "Axe throwing",
+    "Short Description": "Axe throwing with a coach, plus golf simulators and a beer and wine bar. Reservations recommended; under 18 with an adult."
+   }
+  },
+  {
+   "id": "reco335rXlKGo53wW",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Area": "Central Myrtle",
+    "Name": "Ripley's Believe It or Not!",
+    "Type": "Interactive museum",
+    "Short Description": "A museum of oddities. Address needs confirming."
+   }
+  },
+  {
+   "id": "recoW2XCoIyrtBPk7",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 231-5644",
+    "Area": "North Myrtle Beach",
+    "Address": "314 Main St, North Myrtle Beach, SC 29582",
+    "Name": "Break Out Myrtle Beach",
+    "Type": "Escape room",
+    "Short Description": "Six escape games. Listed in a 2019 source, so confirm it is still open."
+   }
+  },
+  {
+   "id": "recqrbKOmPnj4F1WX",
+   "createdTime": "2026-11-06T15:12:09.000Z",
+   "fields": {
+    "Phone": "(843) 444-8224",
+    "Area": "Central Myrtle",
+    "Address": "1120 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Name": "Captive Escape Rooms",
+    "Type": "Escape room",
+    "Short Description": "Five themed rooms. Listed in a 2019 source, so confirm it is still open."
+   }
+  }
+ ]
+}
