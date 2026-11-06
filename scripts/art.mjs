@@ -32,15 +32,15 @@ const sky = (k) => {
 };
 const sun = (k, x = 300, y = 80, r = 40) => {
   const s = SKIES[k];
-  return `<circle cx="${x}" cy="${y}" r="${r}" fill="${s.sun}" opacity=".92"/>`;
+  return `<circle class="sn" cx="${x}" cy="${y}" r="${r}" fill="${s.sun}" opacity=".92"/>`;
 };
 const stars = (r, n = 14) =>
-  `<g fill="#fff" opacity=".85">${Array.from({ length: n }, () => `<circle cx="${(r() * 390 + 5) | 0}" cy="${(r() * 110 + 6) | 0}" r="${(r() * 1.4 + 0.6).toFixed(1)}"/>`).join("")}</g>`;
+  `<g class="st" fill="#fff" opacity=".85">${Array.from({ length: n }, () => `<circle cx="${(r() * 390 + 5) | 0}" cy="${(r() * 110 + 6) | 0}" r="${(r() * 1.4 + 0.6).toFixed(1)}"/>`).join("")}</g>`;
 const cloud = (x, y, s = 1, c = "#fff", o = 0.9) =>
-  `<g transform="translate(${x} ${y}) scale(${s})" fill="${c}" opacity="${o}"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-7" rx="14" ry="9"/><ellipse cx="8" cy="-10" rx="16" ry="11"/></g>`;
-const bird = (x, y, s = 1) => `<path d="M${x} ${y} q${5 * s} ${-6 * s} ${10 * s} 0 q${5 * s} ${-6 * s} ${10 * s} 0 q${-5 * s} ${4 * s} ${-10 * s} ${1 * s} q${-5 * s} ${3 * s} ${-10 * s} ${-1 * s}z" fill="#fff"/>`;
+  `<g transform="translate(${x} ${y}) scale(${s})" fill="${c}" opacity="${o}"><g class="cl"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-7" rx="14" ry="9"/><ellipse cx="8" cy="-10" rx="16" ry="11"/></g></g>`;
+const bird = (x, y, s = 1) => `<path class="bd" d="M${x} ${y} q${5 * s} ${-6 * s} ${10 * s} 0 q${5 * s} ${-6 * s} ${10 * s} 0 q${-5 * s} ${4 * s} ${-10 * s} ${1 * s} q${-5 * s} ${3 * s} ${-10 * s} ${-1 * s}z" fill="#fff"/>`;
 const sea = (y = 168, a = "#12a6a0", b = "#0e8c87", c = "#2b86a8") =>
-  `<rect y="${y}" width="400" height="${240 - y}" fill="${c}"/><path d="M0 ${y + 8} Q60 ${y - 6} 120 ${y + 8} T240 ${y + 8} T400 ${y + 6} V240 H0Z" fill="${a}"/><path d="M0 ${y + 34} Q60 ${y + 20} 120 ${y + 34} T240 ${y + 34} T400 ${y + 30} V240 H0Z" fill="${b}"/><g stroke="#fff" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"><path d="M36 ${y + 20} q9 -5 18 0"/><path d="M290 ${y + 26} q9 -5 18 0"/><path d="M190 ${y + 14} q9 -5 18 0"/></g>`;
+  `<rect y="${y}" width="400" height="${240 - y}" fill="${c}"/><path d="M0 ${y + 8} Q60 ${y - 6} 120 ${y + 8} T240 ${y + 8} T400 ${y + 6} V240 H0Z" fill="${a}"/><path d="M0 ${y + 34} Q60 ${y + 20} 120 ${y + 34} T240 ${y + 34} T400 ${y + 30} V240 H0Z" fill="${b}"/><g class="wv" stroke="#fff" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"><path d="M36 ${y + 20} q9 -5 18 0"/><path d="M290 ${y + 26} q9 -5 18 0"/><path d="M190 ${y + 14} q9 -5 18 0"/></g>`;
 const sand = (y = 196, c = "#f2dfb4", d = "#e7c98f") =>
   `<path d="M0 ${y} Q100 ${y - 14} 200 ${y} T400 ${y - 4} V240 H0Z" fill="${c}"/><path d="M0 ${y + 24} Q100 ${y + 12} 200 ${y + 24} T400 ${y + 20} V240 H0Z" fill="${d}"/>`;
 const grass = (y = 184, a = "#2f9e6b", b = "#1f7a52") =>
@@ -943,6 +943,6 @@ export function artSvg(item, catSlug) {
     body = S.putting(r, {});
   }
   // ids inside each svg are namespaced by being inlined as an <img>, so no clashes.
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${(item.name || "").replace(/[<>&"]/g, "")}">${body}</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${(item.name || "").replace(/[<>&"]/g, "")}"><style>.cl{animation:dr 16s ease-in-out infinite alternate}.sn{transform-box:fill-box;transform-origin:center;animation:pu 7s ease-in-out infinite alternate}.bd{animation:fl 10s ease-in-out infinite alternate}.st{animation:tw 3.5s ease-in-out infinite alternate}.wv{animation:sw 6s ease-in-out infinite alternate}@keyframes dr{to{transform:translateX(26px)}}@keyframes pu{to{transform:scale(1.07)}}@keyframes fl{to{transform:translate(22px,-5px)}}@keyframes tw{to{opacity:.35}}@keyframes sw{to{transform:translateX(14px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>${body}</svg>`;
 }
 export const themeFor = detect;
