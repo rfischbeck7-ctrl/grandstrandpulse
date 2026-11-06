@@ -31,10 +31,11 @@
    "fields": {
     "Phone": "(843) 945-2830",
     "Area": "Central Myrtle",
+    "Published": true,
     "Address": "400 N Kings Hwy, Suite D, Myrtle Beach, SC 29577",
     "Name": "Escapology Myrtle Beach",
     "Type": "Escape room",
-    "Short Description": "Four 60-minute games. Listed in a 2019 source, so confirm it is still open."
+    "Short Description": "Four 60-minute escape games for up to six players, including Antidote, Arizona Shootout and the family-friendly Saving Santa. Book ahead."
    }
   },
   {
@@ -43,10 +44,11 @@
    "fields": {
     "Phone": "(843) 990-1677",
     "Area": "Central Myrtle",
+    "Published": true,
     "Address": "316 9th Ave N, Myrtle Beach, SC 29577",
     "Name": "Myrtle Beach Room Escape",
     "Type": "Escape room",
-    "Short Description": "Four 60-minute games. Listed in a 2019 source, so confirm it is still open."
+    "Short Description": "Four 60-minute escape games near Ripley's, including The Witch's Castle and Jailbreak. Daily time slots; book ahead."
    }
   },
   {
