@@ -29,8 +29,8 @@ export default {
     { name: "Georgetown", x: 11, y: 89 },
   ],
 
-  // Categories that aren't live yet. Shown on the home page as "Next up".
-  comingSoon: ["Restaurants"],
+  // Categories that aren't live yet, shown on the home page as "Coming soon". This is a things-to-do guide only: no restaurants, bars or shopping.
+  comingSoon: [],
 
   categories: [
     {

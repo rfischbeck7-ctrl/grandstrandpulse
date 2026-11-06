@@ -35,7 +35,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - 134 listings published across 8 categories (mini golf 34, breweries 14, nightlife 15, thrill 15, family-indoor 15, nature 16, live shows 16, historic 9).
 - Unpublished and **set aside by Ryan (Nov 6): ignore these, don't raise them as follow-ups:** Go Ape, Adrenaline Adventure Zipline, Rover Boat Tours, Crocodile Rocks, Master's Club, Club Vybe, Carolina Improv, Hot Fish Club. (Funplex and Ripley's Believe It or Not! are also unpublished in Airtable.)
 - Rules we follow: don't invent businesses or addresses; use the business's own website for phones and addresses; leave a listing unpublished if it can't be verified.
-- No restaurants yet (shown as "coming soon").
+- **Things to do only (Ryan, Nov 6): no restaurants, bars or shopping categories.** The existing Nightlife and Breweries categories stay.
 
 ## Open follow-ups (not yet requested)
 - Photo-request emails to breweries, wineries and newer venues (drafts only; never send without asking).
