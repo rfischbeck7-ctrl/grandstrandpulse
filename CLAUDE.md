@@ -18,20 +18,22 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - `scripts/art.mjs` picks a scene from the listing's name, type and description using the `RULES` keyword list (first match on name/type, then on the full text). Category fallbacks apply if nothing matches. Variants within a theme are chosen by a hash of the name, so similar listings differ.
 - To fix a wrong picture: add or reorder a rule in `RULES` (order matters; specific rules go first), or add a new scene function in the `S` object. Preview with a Playwright contact sheet of `dist/art` before pushing.
 - Gotchas: always quote SVG attributes; keep gradient ids unique per file (each SVG is loaded as an `<img>`, so ids don't clash on the page).
-- Known weak spots to revisit with Ryan: the theater/tribute shows and escape rooms share a look; some themes (cirque, magic) are generic. He said he will tell us which ones he dislikes.
+- **Ryan's rule: every business gets its own distinct artwork, nothing may look close to another listing.** Tone: warm Myrtle Beach vacation colors (sunset, golden-hour, dawn, coral, pastel, aqua skies by day; warm dusk/plum/neon at night), teal water, sand, palms, coral-pink accents. No hue-rotation tricks (they turned skies green and oceans pink).
+- `CUSTOM` in `scripts/art.mjs` holds one-off scenes keyed by listing name (or `category/name` when a name exists in two categories, e.g. AlleyOops). Theaters have their own curtain color + prop (`THEATER_PROPS`/`THEATER_CURTAIN`). Anything left on the generic themes gets a different sky and mirrored layout per listing (`varyWithinTheme`).
+- Before pushing art changes, run a duplicate check: render every `dist/art` SVG to 80x48 with `rsvg-convert` and compare mean pixel difference pairwise (numpy). Nov 6 baseline: no pair below 0.045. Then eyeball an 8-wide `montage` contact sheet. A new listing on a generic theme should get its own `CUSTOM` scene if it lands close to another.
 
 ## Content status
 - 134 listings published across 8 categories (mini golf 34, breweries 14, nightlife 15, thrill 15, family-indoor 15, nature 16, live shows 16, historic 9).
-- **Still unpublished (unconfirmed, don't publish without checking):** Go Ape, Adrenaline Adventure Zipline, Rover Boat Tours (site redirects to a cleaning company), Crocodile Rocks, Master's Club, Club Vybe, Carolina Improv, Hot Fish Club.
+- Unpublished and **set aside by Ryan (Nov 6): ignore these, don't raise them as follow-ups:** Go Ape, Adrenaline Adventure Zipline, Rover Boat Tours, Crocodile Rocks, Master's Club, Club Vybe, Carolina Improv, Hot Fish Club. (Funplex and Ripley's Believe It or Not! are also unpublished in Airtable.)
 - Rules we follow: don't invent businesses or addresses; use the business's own website for phones and addresses; leave a listing unpublished if it can't be verified.
 - No restaurants yet (shown as "coming soon").
 
 ## Open follow-ups (not yet requested)
 - Photo-request emails to breweries, wineries and newer venues (drafts only; never send without asking).
-- Verify the unpublished listings above; fill phone/website gaps.
+- Fill phone/website gaps.
 - Home-page Georgetown map pin quirk; README and config comments still say "Grand Strand Pulse".
 - Unconfirmed Broadway Grand Prix contact email.
 
 ## Working rules
-- Sending email, publishing public content, or deleting data needs the user's go-ahead in chat. Ryan has pre-approved publishing the site art; anything else, ask.
+- Sending email, publishing public content, or deleting data needs the user's go-ahead in chat. Ryan has pre-approved publishing the site art and (Nov 6) gave authority to update the website; anything else, ask.
 - The sandbox shell has no general internet access (use WebFetch/WebSearch for research), package installs are blocked, and WebFetch caches ~15 minutes, so verify deploys through the git data snapshots or `gh run`.
