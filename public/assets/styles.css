@@ -236,6 +236,7 @@ button.pin:disabled { opacity: .45; cursor: default; }
 }
 .cat-feature-text { display: grid; gap: 1rem; justify-items: start; }
 .cat-feature-text h2 { font-size: clamp(2rem, 4vw, 3rem); }
+.cat-feature:not(:first-of-type) .cat-feature-text h2::before { content: "New"; }
 .cat-feature-text h2::before { content: "★ Featured"; display: block; width: max-content; margin-bottom: .6rem; font: 400 .72rem/1 var(--sign); letter-spacing: .08em; text-transform: uppercase; background: var(--neon-pink); color: var(--ink); padding: .4rem .7rem; border-radius: 999px; }
 .cat-feature-text h2 a { text-decoration: none; }
 .cat-feature-text p { max-width: 52ch; color: var(--ink-soft); }

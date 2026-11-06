@@ -1,0 +1,232 @@
+{
+ "records": [
+  {
+   "id": "snap0",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "Crooked Hammock Brewery",
+    "Area": "North Myrtle Beach",
+    "Type": "Brewery",
+    "Vibe": "Backyard brewpub with hammocks",
+    "Address": "4924 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Short Description": "A big backyard with hammocks, yard games and a waterside Tortuga Island bar makes this Barefoot Landing-area brewpub an easy place to linger. Pair house craft beer with pub-style food, and bring the dog.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Crooked+Hammock+Brewery%2C+4924+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Food",
+     "Outdoor Space",
+     "Dog Friendly",
+     "Tastings & Tours"
+    ],
+    "Website": "https://www.crookedhammockbrewery.com/location/crooked-hammock-brewery-north-myrtle-beach/",
+    "Phone": "(843) 962-7238"
+   }
+  },
+  {
+   "id": "snap1",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "Duplin Winery",
+    "Area": "North Myrtle Beach",
+    "Type": "Winery",
+    "Vibe": "Sweet Southern wines",
+    "Address": "4650 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Short Description": "Taste your way through a family-owned North Carolina winery's lineup of sweet, fruit-forward Southern wines near Barefoot Landing. Tastings and food-pairing lessons make it a fun stop on a beach-day detour.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Duplin+Winery%2C+4650+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Tastings & Tours",
+     "Live Music"
+    ],
+    "Website": "https://www.duplinwinery.com/",
+    "Phone": "(843) 663-1710"
+   }
+  },
+  {
+   "id": "snap2",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "Carolina Vineyards Winery",
+    "Area": "North Myrtle Beach",
+    "Type": "Winery",
+    "Vibe": "Wine tasting near Barefoot Landing",
+    "Address": "4922 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Short Description": "A wine-tasting stop along Highway 17 in North Myrtle Beach. Call or check the website for current tasting hours before you go.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Carolina+Vineyards+Winery%2C+4922+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Photo Status": "Needed",
+    "Published": false,
+    "Website": "http://www.carolinavineyards.com",
+    "Phone": "(843) 361-9181"
+   }
+  },
+  {
+   "id": "snap3",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "Grand Strand Brewing Company",
+    "Area": "Central Myrtle",
+    "Type": "Brewery",
+    "Vibe": "Downtown taproom in a 1952 five-and-dime",
+    "Address": "819 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Short Description": "Pours a rotating lineup of about a dozen beers inside a renovated downtown building with exposed brick, a patio and a big outdoor plaza. It's a short walk from the Boardwalk and SkyWheel, with a small menu of burgers and pretzels.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Grand+Strand+Brewing+Company%2C+819+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Food",
+     "Outdoor Space",
+     "Live Music"
+    ],
+    "Website": "https://grandstrandbrewing.com/",
+    "Phone": "(843) 839-2801"
+   }
+  },
+  {
+   "id": "snap4",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "New South Brewing",
+    "Area": "Central Myrtle",
+    "Type": "Brewery",
+    "Vibe": "Veteran South Carolina brewery",
+    "Address": "1109 Campbell St, Myrtle Beach, SC 29577",
+    "Short Description": "One of South Carolina's longest-running breweries, known for its White Ale and Star Wars-themed beers and decor. Settle in at the taproom, and call or check the website for current hours.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=New+South+Brewing%2C+1109+Campbell+St%2C+Myrtle+Beach%2C+SC+29577",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Outdoor Space"
+    ],
+    "Website": "http://www.newsouthbrewing.com/"
+   }
+  },
+  {
+   "id": "snap5",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "Tidal Creek Brewhouse",
+    "Area": "Central Myrtle",
+    "Type": "Brewery",
+    "Vibe": "Brewery, coffee shop and backyard hangout",
+    "Address": "3421 Knoles St, Myrtle Beach, SC 29577",
+    "Short Description": "Sip more than a dozen house-brewed beers, or grab a coffee, at this Market Common taproom with a big backyard, firepits and a dog park. Live music and events keep the patio busy.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Tidal+Creek+Brewhouse%2C+3421+Knoles+St%2C+Myrtle+Beach%2C+SC+29577",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Food",
+     "Outdoor Space",
+     "Dog Friendly",
+     "Live Music"
+    ]
+   }
+  },
+  {
+   "id": "snap6",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "South Coast Beer Project",
+    "Area": "Central Myrtle",
+    "Type": "Brewery",
+    "Vibe": "Family-friendly brewery in Carolina Forest",
+    "Address": "5020 Carolina Forest Blvd, Myrtle Beach, SC 29579",
+    "Short Description": "Rotating local craft beers, Detroit-style pizza and wings come with pond views at this family-friendly Carolina Forest brewery. The outdoor beer garden has lawn games and a big screen for game day.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=South+Coast+Beer+Project%2C+5020+Carolina+Forest+Blvd%2C+Myrtle+Beach%2C+SC+29579",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Food",
+     "Outdoor Space",
+     "Live Music"
+    ],
+    "Website": "https://southcoastbeer.com/",
+    "Phone": "(843) 236-0277"
+   }
+  },
+  {
+   "id": "snap7",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "Yee-Haw Brewing at Ole Smoky Distillery",
+    "Area": "Central Myrtle",
+    "Type": "Brewery",
+    "Vibe": "Moonshine, beer and live music at Broadway at the Beach",
+    "Address": "1214 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Short Description": "Combine craft beer, moonshine tastings and live entertainment in one waterfront stop at Broadway at the Beach. There's a beer garden and a full-service restaurant.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Yee-Haw+Brewing+at+Ole+Smoky+Distillery%2C+1214+Celebrity+Cir%2C+Myrtle+Beach%2C+SC+29577",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Food",
+     "Outdoor Space",
+     "Live Music"
+    ],
+    "Website": "https://myrtlebeach.olesmoky.com/",
+    "Phone": "(843) 286-5693"
+   }
+  },
+  {
+   "id": "snap8",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "Black Drum Brewing",
+    "Area": "Central Myrtle",
+    "Type": "Brewery",
+    "Vibe": "Ocean views and about 40 Carolina taps",
+    "Address": "9800 Queensway Blvd, Myrtle Beach, SC 29572",
+    "Short Description": "Pick from about 40 South and North Carolina beers on tap, with ocean views from the building. Smoked meats and fresh seafood pair with an outdoor beer garden and yard games.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Black+Drum+Brewing%2C+9800+Queensway+Blvd%2C+Myrtle+Beach%2C+SC+29572",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Food",
+     "Outdoor Space"
+    ],
+    "Website": "https://www.blackdrumbrewing.com/",
+    "Phone": "(843) 449-0006"
+   }
+  },
+  {
+   "id": "snap9",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "The Tasting Room on 9th",
+    "Area": "Central Myrtle",
+    "Type": "Wine Bar",
+    "Vibe": "Neighborhood wine bar",
+    "Address": "505 9th Ave N, Unit A, Myrtle Beach, SC 29577",
+    "Short Description": "A relaxed wine bar serving curated wines, craft cocktails and international beers. It's a good spot for catching up with friends or trying something new.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=The+Tasting+Room+on+9th%2C+505+9th+Ave+N%2C+Unit+A%2C+Myrtle+Beach%2C+SC+29577",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Website": "https://ttron9th.com/",
+    "Phone": "(843) 839-0927"
+   }
+  },
+  {
+   "id": "snap10",
+   "createdTime": "2026-11-06T14:17:52.000Z",
+   "fields": {
+    "Name": "Southern Hops Brewing Company",
+    "Area": "Murrells Inlet",
+    "Type": "Brewery",
+    "Vibe": "Brewpub with Southern comfort food",
+    "Address": "5148 Hwy 17 Business, Murrells Inlet, SC 29576",
+    "Short Description": "House beers like Pop's Pilsner and Blackwater Porter are paired with Southern-inspired dishes in a full-service restaurant and bar. Outdoor dining, family-friendly games and live music make it an easy stop in Murrells Inlet.",
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Southern+Hops+Brewing+Company%2C+5148+Hwy+17+Business%2C+Murrells+Inlet%2C+SC+29576",
+    "Photo Status": "Needed",
+    "Published": true,
+    "Features": [
+     "Food",
+     "Outdoor Space",
+     "Dog Friendly",
+     "Live Music"
+    ],
+    "Website": "https://southernhops.com/",
+    "Phone": "(843) 299-1254"
+   }
+  }
+ ]
+}

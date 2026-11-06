@@ -283,7 +283,7 @@ async function buildCategory(cat) {
   <div class="finder-controls">
     <label class="search">
       <span class="visually-hidden">Search ${esc(cat.noun.many)}</span>
-      <input type="search" id="q" placeholder="Search a name or theme, like pirates" autocomplete="off">
+      <input type="search" id="q" placeholder="${esc(cat.searchHint || "Search a name or theme, like pirates")}" autocomplete="off">
     </label>
     ${filterGroups}
   </div>

@@ -27,7 +27,7 @@ export default {
   ],
 
   // Categories that aren't live yet. Shown on the home page as "Next up".
-  comingSoon: ["Breweries", "Restaurants", "Bars & nightlife"],
+  comingSoon: ["Restaurants", "Bars & nightlife"],
 
   categories: [
     {
@@ -62,6 +62,38 @@ export default {
         { label: "Theme", field: "Theme" },
         { label: "Setting", field: "Indoor / Outdoor" },
         { label: "Extras", field: "Amenities", empty: "None listed" },
+      ],
+    },
+    {
+      slug: "breweries-wineries",
+      title: "Breweries & wineries",
+      noun: { one: "spot", many: "spots" },
+      table: "Breweries & Wineries",
+      searchHint: "Search a name or vibe, like patio",
+      intro:
+        "Backyards with hammocks, taprooms in old five-and-dimes and sweet Southern wine. Here are the breweries, wineries and wine bars along the Strand, sorted by where you're staying.",
+      fields: {
+        name: "Name",
+        area: "Area",
+        description: "Short Description",
+        subtitle: "Vibe",
+        address: "Address",
+        phone: "Phone",
+        website: "Website",
+        maps: "Google Maps Link",
+        photo: "Photo",
+        photoCredit: "Photo Credit",
+        published: "Published",
+      },
+      tags: ["Type", "Features"],
+      filters: [
+        { field: "Type", label: "Type" },
+        { field: "Features", label: "Extras" },
+      ],
+      details: [
+        { label: "Type", field: "Type" },
+        { label: "Vibe", field: "Vibe" },
+        { label: "Extras", field: "Features", empty: "None listed" },
       ],
     },
   ],
