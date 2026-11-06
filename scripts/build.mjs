@@ -148,10 +148,10 @@ ${body}
 // The coastline: land up-left, Atlantic down-right, areas as pins along the shore.
 function coastline({ counts = {}, interactive = false, highlight = null, linkBase = null, id = "coast" }) {
   const pins = config.areas
-    .map((a) => {
+    .map((a, i) => {
       const n = counts[a.name];
       const label = `${esc(a.name)}${n !== undefined ? `<span class="pin-count">${n}</span>` : ""}`;
-      const style = `style="--x:${a.x}%;--y:${a.y}%"`;
+      const style = `style="--x:${a.x}%;--y:${a.y}%;--i:${i}"`;
       const cls = `pin${highlight === a.name ? " is-here" : ""}${highlight && highlight !== a.name ? " is-dim" : ""}`;
       if (interactive) {
         return `<button type="button" class="${cls}" ${style} data-area="${esc(a.name)}" aria-pressed="false"${n === 0 ? " disabled" : ""}><span class="pin-dot" aria-hidden="true"></span><span class="pin-label">${label}</span></button>`;
