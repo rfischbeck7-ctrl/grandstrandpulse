@@ -32,6 +32,7 @@
     "Amenities": [
      "Ice Cream"
     ],
+    "Photo Status": "Needed",
     "Indoor / Outdoor": "Indoor/AC",
     "Call Link": "tel:8438392695",
     "Published": true,
@@ -90,7 +91,7 @@
     "Website": "https://dinosauradventuregolf.com/",
     "Short Description": "Life-size dinosaurs lurk around every corner of these two 18-hole prehistoric courses. Little paleontologists will love spotting T. rex between putts.",
     "Name": "Professor Hacker's Dinosaur Adventure Golf",
-    "Photo Status": "Needed",
+    "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
     "Published": true,
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Professor+Hacker%27s+Dinosaur+Adventure+Golf%2C+701+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
@@ -125,7 +126,7 @@
     "Short Description": "Putt past a fierce red dragon and pagoda-style scenery inspired by Asian legends and pirate lore. It's a colorful change of pace from the usual tropical courses.",
     "Name": "Red Dragon Cove Adventure Golf",
     "Phone": "(843) 282-9477",
-    "Photo Status": "Needed",
+    "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8432829477",
     "Published": true,
@@ -184,6 +185,7 @@
      "Arcade"
     ],
     "Arcade On-Site": true,
+    "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8438394080",
     "Published": true,
@@ -217,7 +219,7 @@
     "Short Description": "Ride a mining train up the mountain to the first tee, then hunt for treasure past caves, waterfalls and volcanoes. Two 18-hole courses make it an easy spot to spend a whole evening.",
     "Name": "Professor Hacker's Lost Treasure Golf",
     "Phone": "(843) 272-5467",
-    "Photo Status": "Needed",
+    "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8432725467",
     "Published": true,
@@ -252,6 +254,7 @@
     "Short Description": "Strike it rich on this gold-rush-themed putt-putt course just off the oceanfront near Anderson Ocean Club. It's an easy walk from many beachfront hotels when the kids need a break from the sand.",
     "Name": "Lost Mine Miniature Golf",
     "Phone": "(843) 213-5365",
+    "Photo Status": "Needed",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8432135365",
     "Published": true,
@@ -286,10 +289,15 @@
    "fields": {
     "Area": "North Myrtle Beach",
     "Address": "3607 Hwy 17 S, North Myrtle Beach, SC 29582",
-    "Theme": "Duckpin Bowling & Games",
-    "Short Description": "This new family entertainment center pairs a mini-golf course with duckpin bowling, a golf simulator and a full restaurant. Check that it's open before you go, since it was set to debut in 2026.",
+    "Theme": "Beach / Arcade",
+    "Short Description": "Putt around an outdoor 18-hole mini-golf course with sloped greens at this beach-themed family spot that opened in September 2026. Afterward, head inside for duckpin bowling, a big arcade, a shark aquarium and a full seafood menu.",
     "Name": "AlleyOops North Myrtle Beach",
-    "Indoor / Outdoor": "Indoor/AC",
+    "Amenities": [
+     "Arcade"
+    ],
+    "Arcade On-Site": true,
+    "Indoor / Outdoor": "Outdoor",
+    "Published": true,
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=AlleyOops+North+Myrtle+Beach%2C+3607+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
    }
   },
@@ -318,6 +326,7 @@
     "Short Description": "Formerly Rainbow Falls, this north-end putt-putt spot now carries the Aloha island look across two 18-hole courses. It's a handy round if you're staying near the Restaurant Row end of Kings Highway.",
     "Name": "Aloha Falls Mini Golf",
     "Phone": "(843) 497-2557",
+    "Photo Status": "Needed",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8434972557",
     "Published": true,
@@ -352,6 +361,7 @@
     "Short Description": "Two 18-hole putt-putt courses, Tiki Bay and Volcano Valley, wind past volcanoes, caverns, lakes and waterfalls at the Harbour View Golf Complex. It's the northernmost mini-golf stop on the Strand and an easy pick if you're staying in Little River or Cherry Grove.",
     "Name": "Tribal Island Tiki Adventure Golf",
     "Phone": "(843) 249-9117",
+    "Photo Status": "Needed",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8432499117",
     "Published": true,
@@ -367,6 +377,7 @@
     "Theme": "Pirates",
     "Short Description": "Pirate ships sit anchored in the lagoons of this swashbuckling mini-golf course, with pirate audio piping in as you putt. A fun, classic round for little buccaneers right on Highway 17 in North Myrtle Beach.",
     "Name": "Mutiny Bay Miniature Golf",
+    "Photo Status": "Needed",
     "Indoor / Outdoor": "Outdoor",
     "Published": true,
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mutiny+Bay+Miniature+Golf%2C+301+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
@@ -382,6 +393,7 @@
     "Website": "https://snakerivergolf.com/",
     "Short Description": "Play a round of putt-putt, then sift for gems and arrowheads at the mining sluice, a two-for-one outing kids love. It sits on the south end of Kings Highway between Myrtle Beach and Surfside.",
     "Name": "Snake River Golf and Gem Mining",
+    "Photo Status": "Needed",
     "Indoor / Outdoor": "Outdoor",
     "Published": true,
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Snake+River+Golf+and+Gem+Mining%2C+4827+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29575"
@@ -456,7 +468,7 @@
     "Short Description": "Putt your way past a crashed cargo plane and a rescue helicopter on two jungle-themed 18-hole courses. The over-the-top scenery makes it one of the most photographed courses on the Strand.",
     "Name": "Mayday Miniature Golf",
     "Phone": "(843) 280-3535",
-    "Photo Status": "Needed",
+    "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8432803535",
     "Published": true,
@@ -513,6 +525,7 @@
     "Short Description": "Look for the giant roadside sea captain and the ship-shaped clubhouse at this old-school mini-golf landmark, formerly known as Cap'n Cain. It's an affordable, no-frills 18 holes that has been part of the Kings Highway scene for decades.",
     "Name": "Captain Myrtle Mini Golf",
     "Phone": "(843) 945-9548",
+    "Photo Status": "Needed",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8439459548",
     "Published": true,
@@ -547,7 +560,7 @@
     "Short Description": "Explore the mythical lost city of Atlantis on a multi-level course with sweeping ocean views from the top. Its quirky storytelling and signage make it a cult favorite.",
     "Name": "Mt. Atlanticus Minotaur Goff",
     "Phone": "(843) 444-1008",
-    "Photo Status": "Needed",
+    "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8434441008",
     "Published": true,
