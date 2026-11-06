@@ -370,7 +370,7 @@ function detect(item, cat) {
   for (const [re, theme] of RULES) if (re.test(all)) return theme;
   // category fallbacks
   return (
-    { "mini-golf": "putting", "breweries-wineries": "brew", nightlife: "concert", "thrill-action": "wheel", "family-indoor": "escape", "nature-eco": "statepark", "live-shows": "tribute", "historic-cultural": "museum", fishing: "pier" }[cat] || "putting"
+    { "mini-golf": "putting", "breweries-wineries": "brew", nightlife: "concert", "thrill-action": "wheel", "family-indoor": "escape", "nature-eco": "statepark", "live-shows": "tribute", "historic-cultural": "museum", fishing: "pier", golf: "golf", beaches: "beachtown" }[cat] || "putting"
   );
 }
 
@@ -862,6 +862,72 @@ function varyWithinTheme(body, theme) {
   }
   return k % 2 ? `<g transform="matrix(-1 0 0 1 400 0)">${out}</g>` : out;
 }
+
+// ---------- Added Nov 6: golf courses and beaches ----------
+const pine = (x, y, s = 1, c = "#1f5e46") =>
+  `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-3" y="-20" width="6" height="20" fill="#7a4e2a"/><path d="M0 -92 L18 -52 H8 L24 -24 H-24 L-8 -52 H-18Z" fill="${c}"/></g>`;
+const bunker = (x, y, rx = 30, ry = 8, c = "#f4e2b8") => `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${c}"/>`;
+const pond = (x, y, rx = 60, ry = 12, c = "#3fb8d6") => `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${c}"/><ellipse cx="${x - rx * 0.3}" cy="${y - 2}" rx="${rx * 0.35}" ry="2" fill="#fff" opacity=".5"/>`;
+const puttGreen = (x, y, rx = 60, ry = 14, c = "#4cc77f") => `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${c}"/><ellipse cx="${x + rx * 0.35}" cy="${y + 1}" rx="7" ry="3" fill="#0b3a53"/>`;
+const cart = (x, y, s = 1, c = "#fff8e6") => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-22" y="-26" width="44" height="4" fill="${c}"/><rect x="-18" y="-24" width="3" height="16" fill="#c9d3e6"/><rect x="15" y="-24" width="3" height="16" fill="#c9d3e6"/><rect x="-22" y="-10" width="44" height="10" rx="3" fill="${c}"/><circle cx="-12" cy="2" r="5" fill="#161b2a"/><circle cx="12" cy="2" r="5" fill="#161b2a"/></g>`;
+const seaOats = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})" stroke="#c9a05a" stroke-width="2" fill="none"><path d="M0 0 q-4 -20 -10 -34"/><path d="M4 0 q2 -22 8 -36"/><path d="M-4 0 q-10 -14 -22 -22"/></g><g transform="translate(${x} ${y}) scale(${s})" fill="#e0b862"><ellipse cx="-10" cy="-36" rx="3" ry="6"/><ellipse cx="12" cy="-38" rx="3" ry="6"/><ellipse cx="-22" cy="-24" rx="3" ry="6"/></g>`;
+const lifeguard = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})" stroke="#fff8e6" stroke-width="5"><line x1="-16" y1="0" x2="-8" y2="-50"/><line x1="16" y1="0" x2="8" y2="-50"/><line x1="-12" y1="-24" x2="12" y2="-24"/></g><g transform="translate(${x} ${y}) scale(${s})"><rect x="-16" y="-62" width="32" height="12" fill="#ff3d8b"/><path d="M-22 -62 L0 -80 L22 -62Z" fill="#ff7a59"/></g>`;
+const shell = (x, y, s = 1, c = "#ffd2c2") => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-10 0 Q0 -18 10 0Z" fill="${c}"/><path d="M-6 0 L0 -12 L6 0" stroke="#e8a48e" stroke-width="1.5" fill="none"/></g>`;
+
+S.golf = (r, o = {}) => {
+  const k = o.sky || pick(r, ["day", "golden", "dawn", "aqua"]);
+  const parts = [sky(k), sun(k, o.sunX ?? 320, o.sunY ?? 64, 30), cloud(o.cloudX ?? 90, 46)];
+  if (o.ocean) parts.push(sea(150));
+  if (o.waterway) parts.push(`<rect y="150" width="400" height="22" fill="#3fa7c4"/>`);
+  parts.push(hills(o.hillY ?? 158, o.hill || "#2e8f6b", 0.55), grass(176, o.g1 || "#35b36f", o.g2 || "#2a9a5c"));
+  if (o.marsh) parts.push(`<path d="M0 190 Q100 178 200 192 T400 186 V202 H0Z" fill="#c9b36a"/>`, pond(330, 206, 70, 9, "#4aa8c0"));
+  if (o.pond) parts.push(pond(o.pondX ?? 120, 212, o.pondR ?? 64));
+  parts.push(puttGreen(o.greenX ?? 250, o.greenY ?? 202, o.greenR ?? 64));
+  (o.bunkers || [[170, 214]]).forEach(([x, y, rx]) => parts.push(bunker(x, y, rx || 26)));
+  parts.push(flag((o.greenX ?? 250) + (o.greenR ?? 64) * 0.35, (o.greenY ?? 202) + 1, o.flag || "#ff3d8b"));
+  (o.trees || []).forEach(([t, x, y, s2]) => parts.push(t === "palm" ? palm(x, y, s2) : t === "oak" ? oak(x, y, s2) : pine(x, y, s2)));
+  if (o.extra) parts.push(o.extra);
+  if (o.ball !== false) parts.push(ball(o.ballX ?? 150, 222, 6, "#fff"));
+  const svg = parts.join("");
+  return o.flip ? flipSvg(svg) : svg;
+};
+
+S.beachtown = (r, o = {}) => {
+  const k = o.sky || pick(r, ["day", "sunset", "aqua"]);
+  const parts = [sky(k), sun(k, o.sunX ?? 300, o.sunY ?? 70, 34), cloud(o.cloudX ?? 80, 50), sea(o.seaY ?? 150), sand(o.sandY ?? 192)];
+  if (o.extra) parts.push(o.extra);
+  const svg = parts.join("");
+  return o.flip ? flipSvg(svg) : svg;
+};
+
+const golfScenes = {
+  "TPC Myrtle Beach": { sky: "golden", trees: [["pine", 50, 186, 1], ["pine", 84, 190, 0.8], ["oak", 360, 190, 1]], pond: true, pondX: 110, extra: `<g transform="translate(330 120)"><path d="M-14 -30 H14 V-14 Q14 4 0 6 Q-14 4 -14 -14Z" fill="#ffd24a"/><rect x="-4" y="6" width="8" height="12" fill="#d4a017"/><rect x="-14" y="18" width="28" height="6" fill="#a0642f"/></g>`, flag: "#0b3a53" },
+  "Barefoot Resort – Dye Course": { sky: "dawn", trees: [["pine", 360, 188, 1.1], ["pine", 330, 192, 0.8]], bunkers: [[120, 212, 50], [200, 222, 20]], extra: `<g fill="#6b4a2f">${[0, 1, 2, 3, 4, 5].map((i) => `<rect x="${196 + i * 18}" y="208" width="14" height="6"/>`).join("")}</g>`, greenX: 260, flag: "#ff7a59" },
+  "Barefoot Resort – Love Course": { sky: "pastel", trees: [["oak", 60, 190, 1], ["palm", 350, 188, 0.9]], extra: `<g transform="translate(150 120)"><rect x="-30" y="-30" width="60" height="40" fill="#e7d4b5"/><path d="M-34 -30 L0 -52 L34 -30Z" fill="#a0642f"/><rect x="-20" y="-20" width="8" height="30" fill="#bfa58a"/><rect x="12" y="-20" width="8" height="30" fill="#bfa58a"/></g>`, flag: "#ff3d8b" },
+  "Barefoot Resort – Fazio Course": { sky: "aqua", hill: "#3f9e74", hillY: 130, trees: [["pine", 40, 184, 1], ["pine", 70, 188, 0.7]], bunkers: [[150, 214, 30], [320, 216, 22]], greenX: 230, flag: "#ffb627", flip: true },
+  "Barefoot Resort – Norman Course": { sky: "sunset", waterway: true, trees: [["palm", 60, 186, 1]], extra: boat(320, 166, 0.7), greenX: 220, flag: "#0b3a53" },
+  "Myrtle Beach National – King's North": { sky: "day", pond: true, pondX: 220, pondR: 120, greenX: 220, greenY: 206, greenR: 40, bunkers: [[300, 222, 18]], trees: [["pine", 50, 188, 1], ["pine", 360, 186, 0.9]], extra: `<g transform="translate(90 120)"><rect x="-14" y="-18" width="28" height="36" rx="4" fill="#fff"/><circle cx="-6" cy="-8" r="3" fill="#0b3a53"/><circle cx="6" cy="8" r="3" fill="#0b3a53"/><circle cx="0" cy="0" r="3" fill="#0b3a53"/></g>`, flag: "#ff3d8b" },
+  "Pine Lakes Country Club": { sky: "golden", trees: [["pine", 40, 186, 1.1], ["pine", 360, 188, 1]], extra: `<g transform="translate(110 150)"><rect x="-40" y="-36" width="80" height="40" fill="#fff8e6"/><rect x="-46" y="-40" width="92" height="6" fill="#8e1b3a"/>${[-30, -12, 6, 24].map((x) => `<rect x="${x}" y="-30" width="8" height="34" fill="#f0e2c8"/>`).join("")}<rect x="-6" y="-60" width="12" height="20" fill="#fff8e6"/><path d="M-9 -60 L0 -72 L9 -60Z" fill="#8e1b3a"/></g>`, greenX: 270, flag: "#8e1b3a" },
+  "Dunes Golf & Beach Club": { sky: "aqua", ocean: true, trees: [["palm", 360, 186, 1]], extra: seaOats(60, 196, 1.2), bunkers: [[150, 218, 40]], greenX: 250, flag: "#ffb627" },
+  "Grande Dunes Golf Club": { sky: "dusk", waterway: true, extra: `<path d="M0 168 Q200 110 400 168" stroke="#fff8e6" stroke-width="6" fill="none"/>${[60, 120, 180, 240, 300, 340].map((x) => `<line x1="${x}" y1="${168 - Math.sin((x / 400) * Math.PI) * 52}" x2="${x}" y2="168" stroke="#fff8e6" stroke-width="2"/>`).join("")}`, trees: [["palm", 50, 188, 0.8]], greenX: 240, flag: "#00e5cc" },
+  "Arcadian Shores Golf Club": { sky: "coral", ocean: true, extra: seaOats(330, 194, 1) + seaOats(360, 196, 0.8), trees: [["oak", 60, 190, 0.9]], bunkers: [[170, 216, 34], [220, 226, 16]], greenX: 220, flag: "#0b3a53", flip: true },
+  "Prestwick Country Club": { sky: "day", pond: true, pondX: 300, pondR: 80, greenX: 170, extra: `<rect x="96" y="200" width="148" height="10" fill="#6b4a2f"/>`, bunkers: [[90, 222, 18], [250, 224, 18]], trees: [["pine", 370, 186, 0.9]], flag: "#ff7a59" },
+  "Legends Resort – Moorland Course": { sky: "plum", hill: "#5a3f6e", g1: "#4a9e5f", g2: "#3a8550", bunkers: [[100, 212, 18], [140, 222, 14], [180, 214, 16], [320, 220, 22]], extra: `<ellipse cx="320" cy="220" rx="12" ry="5" fill="#d6c08f"/>`, greenX: 240, flag: "#ffd24a" },
+  "Long Bay Golf Club": { sky: "pastel", trees: [["pine", 60, 186, 0.9], ["oak", 340, 190, 1.1]], pond: true, pondX: 140, pondR: 70, extra: `<text x="200" y="70" font-family="Georgia,serif" font-size="22" fill="#fff" opacity=".85" text-anchor="middle" font-weight="bold">18</text>`, greenX: 270, flag: "#ff3d8b", flip: true },
+  "True Blue Golf Club": { sky: "dawn", marsh: true, trees: [["oak", 70, 188, 1.3], ["pine", 360, 184, 1]], bunkers: [[200, 222, 60]], greenX: 220, greenY: 198, flag: "#3f7fd6" },
+  "Pawleys Plantation Golf Club": { sky: "sunset", marsh: true, trees: [["oak", 330, 188, 1.2]], extra: `<g fill="#6b4a2f">${[0, 1, 2, 3, 4, 5, 6].map((i) => `<rect x="${40 + i * 22}" y="186" width="18" height="4"/>`).join("")}</g>`, greenX: 200, flag: "#ffb627", flip: true },
+  "Wachesaw East Golf Club": { sky: "golden", trees: [["oak", 50, 188, 1.1], ["oak", 110, 190, 0.8], ["pine", 360, 186, 1]], extra: house(250, 168, 0.55, "#fff8e6", "#4a6e8a"), greenX: 200, greenY: 210, flag: "#ff3d8b", ball: false },
+};
+const beachScenes = {
+  "Myrtle Beach": { sky: "day", extra: ferris(320, 150, 0.5) + `<rect y="176" width="400" height="8" fill="#a0642f"/>` + sunbrella(110, 214, 1) + sunbrella(190, 218, 0.8, "#ffb627"), sunX: 80, cloudX: 220 },
+  "North Myrtle Beach & Cherry Grove": { sky: "sunset", extra: pier(176) + `<text x="300" y="110" font-family="Georgia,serif" font-size="22" fill="#fff" font-style="italic" opacity=".9">shag</text>` + sunbrella(90, 220, 0.9, "#00e5cc") },
+  "Surfside Beach": { sky: "aqua", extra: lifeguard(120, 214, 1) + sunbrella(250, 220, 0.9, "#ff7a59") + ball(310, 226, 9, "#ffd24a") + shell(60, 228), flip: true },
+  "Garden City Beach": { sky: "dawn", extra: pier(172) + `<g transform="translate(110 222)"><path d="M0 0 q20 -30 46 -40" stroke="#5a3a1f" stroke-width="3" fill="none"/><line x1="46" y1="-40" x2="60" y2="0" stroke="#fff" stroke-width="1"/></g>` + fish(300, 120, 0.7), sunX: 90, cloudX: 260 },
+  "Litchfield Beach": { sky: "pastel", extra: seaOats(60, 196, 1.3) + seaOats(110, 200, 1) + seaOats(340, 198, 1.2) + shell(220, 226, 1.2) + bird(260, 90) + bird(290, 76, 0.8) },
+  "Pawleys Island": { sky: "golden", extra: hammock(200, 200, 1) + oak(60, 196, 1) + oak(350, 196, 0.9) + `<rect x="140" y="140" width="40" height="22" fill="#fff8e6" opacity=".9"/><path d="M136 140 L160 126 L184 140Z" fill="#8a5a2b"/>`, flip: true },
+};
+for (const [n, o] of Object.entries(golfScenes)) CUSTOM[`golf/${n}`] = () => S.golf(rng(hash(n)), o);
+for (const [n, o] of Object.entries(beachScenes)) CUSTOM[`beaches/${n}`] = () => S.beachtown(rng(hash(n)), o);
 
 export function artSvg(item, catSlug) {
   const theme = detect(item, catSlug);
