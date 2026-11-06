@@ -28,7 +28,7 @@ export default {
   ],
 
   // Categories that aren't live yet. Shown on the home page as "Next up".
-  comingSoon: ["Restaurants", "Bars & nightlife"],
+  comingSoon: ["Restaurants"],
 
   categories: [
     {
@@ -96,6 +96,72 @@ export default {
         { label: "Vibe", field: "Vibe" },
         { label: "Extras", field: "Features", empty: "None listed" },
       ],
+    },
+    {
+      slug: "nightlife", title: "Nightlife & clubs",
+      noun: { one: "spot", many: "spots" }, table: "Nightlife & Clubs",
+      searchHint: "Search name or type",
+      intro:
+        "Dance floors, beach clubs, honky tonks and comedy stages. Here is where the Strand stays up late, sorted by where you're staying.",
+      fields: { name: "Name", area: "Area", description: "Short Description", subtitle: "Type", address: "Address", phone: "Phone", website: "Website", maps: "Google Maps Link", photo: "Photo", photoCredit: "Photo Credit", published: "Published" },
+      tags: ["Type"],
+      filters: [{ field: "Type", label: "Type" }],
+      details: [{ label: "Type", field: "Type" }],
+    },
+    {
+      slug: "thrill-action", title: "Thrill & action",
+      noun: { one: "spot", many: "spots" }, table: "Thrill & Action",
+      searchHint: "Search name or type",
+      intro:
+        "Go-karts, ziplines, water parks, parasailing and jet skis. Pick your adrenaline.",
+      fields: { name: "Name", area: "Area", description: "Short Description", subtitle: "Type", address: "Address", phone: "Phone", website: "Website", maps: "Google Maps Link", photo: "Photo", photoCredit: "Photo Credit", published: "Published" },
+      tags: ["Type"],
+      filters: [{ field: "Type", label: "Type" }],
+      details: [{ label: "Type", field: "Type" }],
+    },
+    {
+      slug: "family-indoor", title: "Family & indoor fun",
+      noun: { one: "spot", many: "spots" }, table: "Family & Indoor",
+      searchHint: "Search name or type",
+      intro:
+        "Escape rooms, bowling, axe throwing, trampolines and hands-on museums for rainy days and restless kids.",
+      fields: { name: "Name", area: "Area", description: "Short Description", subtitle: "Type", address: "Address", phone: "Phone", website: "Website", maps: "Google Maps Link", photo: "Photo", photoCredit: "Photo Credit", published: "Published" },
+      tags: ["Type"],
+      filters: [{ field: "Type", label: "Type" }],
+      details: [{ label: "Type", field: "Type" }],
+    },
+    {
+      slug: "nature-eco", title: "Nature & eco",
+      noun: { one: "spot", many: "spots" }, table: "Nature & Eco",
+      searchHint: "Search name or type",
+      intro:
+        "State parks, sculpture gardens, gators, dolphin cruises, boardwalks and harborwalks.",
+      fields: { name: "Name", area: "Area", description: "Short Description", subtitle: "Type", address: "Address", phone: "Phone", website: "Website", maps: "Google Maps Link", photo: "Photo", photoCredit: "Photo Credit", published: "Published" },
+      tags: ["Type"],
+      filters: [{ field: "Type", label: "Type" }],
+      details: [{ label: "Type", field: "Type" }],
+    },
+    {
+      slug: "live-shows", title: "Live shows & sports",
+      noun: { one: "spot", many: "spots" }, table: "Live Shows & Sports",
+      searchHint: "Search name or type",
+      intro:
+        "Variety theaters, dinner shows and minor-league baseball.",
+      fields: { name: "Name", area: "Area", description: "Short Description", subtitle: "Type", address: "Address", phone: "Phone", website: "Website", maps: "Google Maps Link", photo: "Photo", photoCredit: "Photo Credit", published: "Published" },
+      tags: ["Type"],
+      filters: [{ field: "Type", label: "Type" }],
+      details: [{ label: "Type", field: "Type" }],
+    },
+    {
+      slug: "historic-cultural", title: "Historic & cultural",
+      noun: { one: "spot", many: "spots" }, table: "Historic & Cultural",
+      searchHint: "Search name or type",
+      intro:
+        "Plantations, castles, museums and boat tours from Georgetown to the Grand Strand.",
+      fields: { name: "Name", area: "Area", description: "Short Description", subtitle: "Type", address: "Address", phone: "Phone", website: "Website", maps: "Google Maps Link", photo: "Photo", photoCredit: "Photo Credit", published: "Published" },
+      tags: ["Type"],
+      filters: [{ field: "Type", label: "Type" }],
+      details: [{ label: "Type", field: "Type" }],
     },
   ],
 };

@@ -67,7 +67,12 @@ for (const cat of config.categories) {
         address: x[f.address] || "",
         phone: x[f.phone] || "",
         website: safeUrl(x[f.website]),
-        maps: safeUrl(x[f.maps]),
+        maps:
+          safeUrl(x[f.maps]) ||
+          (x[f.address]
+            ? "https://www.google.com/maps/search/?api=1&query=" +
+              encodeURIComponent(`${x[f.name]}, ${x[f.address]}`)
+            : ""),
         photo: photo?.localPath ? { src: photo.localPath, w: photo.width, h: photo.height } : null,
         photoCredit: x[f.photoCredit] || "",
         raw: x,
