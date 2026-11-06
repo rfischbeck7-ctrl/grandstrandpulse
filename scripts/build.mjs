@@ -214,7 +214,7 @@ async function buildHome() {
   <div class="hero-text">
     <p class="eyebrow">Mini golf capital of the world</p>
     <h1>Sixty miles of beach. <em>Here's what to do</em> between swims.</h1>
-    <p>Local, checked listings for the Grand Strand, from North Myrtle Beach down to Murrells Inlet.</p>
+    <p>Local, checked listings for the Grand Strand, from North Myrtle Beach down to Georgetown.</p>
   </div>
   ${coastline({ linkBase: first ? `/${first.slug}/` : null, id: "coast-home" })}
 </section>`;
@@ -300,7 +300,7 @@ ${list}
     `${cat.slug}/index.html`,
     layout({
       title: `${cat.title} in Myrtle Beach and the Grand Strand | ${config.siteName}`,
-      description: `${plural(cat.items.length, cat.noun)} from North Myrtle Beach to Murrells Inlet, with directions, phone numbers and what makes each one different.`,
+      description: `${plural(cat.items.length, cat.noun)} from North Myrtle Beach to Georgetown, with directions, phone numbers and what makes each one different.`,
       canonical: `/${cat.slug}/`,
       body,
       active: cat.slug,

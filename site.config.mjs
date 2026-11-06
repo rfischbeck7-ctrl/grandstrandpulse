@@ -9,9 +9,9 @@
 export default {
   siteName: "Myrtle Beach Compass",
   domain: "myrtlebeachcompass.com",
-  tagline: "Things to do, from North Myrtle to Murrells Inlet",
+  tagline: "Things to do, from North Myrtle to Georgetown",
   description:
-    "Things to do in Myrtle Beach and along the Grand Strand, from North Myrtle Beach to Murrells Inlet. Every listing checked before it goes up.",
+    "Things to do in Myrtle Beach and along the Grand Strand, from North Myrtle Beach to Georgetown. Every listing checked before it goes up.",
   // Google AdSense publisher ID, like "pub-1234567890123456" (also accepts "ca-pub-...").
   // Adds the AdSense script to every page and creates /ads.txt. Leave empty to turn ads off.
   adsensePublisherId: "ca-pub-6449115884515319",
@@ -20,10 +20,11 @@ export default {
 
   // Areas, listed north to south. "x"/"y" place each area on the coastline map (percent).
   areas: [
-    { name: "North Myrtle Beach", x: 84, y: 24 },
-    { name: "Central Myrtle", x: 61, y: 46 },
-    { name: "Surfside", x: 38, y: 66 },
-    { name: "Murrells Inlet", x: 19, y: 81 },
+    { name: "North Myrtle Beach", x: 87, y: 21 },
+    { name: "Central Myrtle", x: 66, y: 42 },
+    { name: "Surfside", x: 46, y: 59 },
+    { name: "Murrells Inlet", x: 28, y: 72 },
+    { name: "Georgetown", x: 11, y: 89 },
   ],
 
   // Categories that aren't live yet. Shown on the home page as "Next up".
@@ -69,7 +70,7 @@ export default {
       title: "Breweries & wineries",
       noun: { one: "spot", many: "spots" },
       table: "Breweries & Wineries",
-      searchHint: "Search a name or vibe, like patio",
+      searchHint: "Search name or vibe",
       intro:
         "Backyards with hammocks, taprooms in old five-and-dimes and sweet Southern wine. Here are the breweries, wineries and wine bars along the Strand, sorted by where you're staying.",
       fields: {
