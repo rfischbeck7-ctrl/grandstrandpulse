@@ -226,7 +226,7 @@ async function buildHome() {
 <section class="hero">
   <div class="hero-text">
     <h1>Sixty miles of beach. <em>Here's what to do</em> between swims.</h1>
-    <p>Local, checked listings for the Grand Strand, from North Myrtle Beach down to Georgetown.</p>
+    <p>Local, checked listings for the Grand Strand, from Little River down to Georgetown.</p>
     <a class="btn btn-go" href="#categories">Browse ${total} places</a>
   </div>
   ${coastline({ counts: areaTotals, id: "coast-home" })}
@@ -317,7 +317,7 @@ ${list}
     `${cat.slug}/index.html`,
     layout({
       title: `${cat.title} in Myrtle Beach and the Grand Strand | ${config.siteName}`,
-      description: `${plural(cat.items.length, cat.noun)} from North Myrtle Beach to Georgetown, with directions, phone numbers and what makes each one different.`,
+      description: `${plural(cat.items.length, cat.noun)} from Little River to Georgetown, with directions, phone numbers and what makes each one different.`,
       canonical: `/${cat.slug}/`,
       body,
       hero,
