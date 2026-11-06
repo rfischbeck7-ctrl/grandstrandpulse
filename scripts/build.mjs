@@ -79,9 +79,9 @@ for (const cat of config.categories) {
 
 // ---------- shared pieces ----------
 const fonts =
-  "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap";
+  "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Bowlby+One&display=swap";
 
-function layout({ title, description, canonical, body, jsonLd, active }) {
+function layout({ title, description, canonical, body, jsonLd, active, hero = "" }) {
   const nav = categories
     .map(
       (c) =>
@@ -112,13 +112,14 @@ ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head">
+${hero ? '<div class="hero-wrap">' : ""}<header class="site-head">
   <a class="brand" href="/" aria-label="${esc(config.siteName)} home">
     <svg class="brand-mark" viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12" fill="none" stroke="currentColor" stroke-width="2.5"/><g transform="rotate(40 14 14)"><path d="M14 4.5 17.4 14H10.6Z" fill="#ffc93c" stroke="#0f3346" stroke-width="1.2" stroke-linejoin="round"/><path d="M10.6 14H17.4L14 23.5Z" fill="#0f3346"/></g></svg>
     <span>${esc(config.siteName)}</span>
   </a>
   <nav class="site-nav" aria-label="Categories">${nav}</nav>
 </header>
+${hero ? hero + "</div>" : ""}
 <main id="main">
 ${body}
 </main>
@@ -208,14 +209,16 @@ async function buildHome() {
     ? `<section class="soon"><h2>Next up</h2><p>${config.comingSoon.map(esc).join(", ").replace(/, ([^,]*)$/, " and $1")}. We're checking every listing in person and against official sources before it goes up.</p></section>`
     : "";
   const first = categories[0];
-  const body = `
+  const hero = `
 <section class="hero">
   <div class="hero-text">
-    <h1>Sixty miles of beach. Here's what to do between swims.</h1>
+    <p class="eyebrow">Mini golf capital of the world</p>
+    <h1>Sixty miles of beach. <em>Here's what to do</em> between swims.</h1>
     <p>Local, checked listings for the Grand Strand, from North Myrtle Beach down to Murrells Inlet.</p>
   </div>
   ${coastline({ linkBase: first ? `/${first.slug}/` : null, id: "coast-home" })}
-</section>
+</section>`;
+  const body = `
 ${tiles}
 ${soon}`;
   await write(
@@ -224,6 +227,7 @@ ${soon}`;
       title: `${config.siteName}: things to do in Myrtle Beach and the Grand Strand`,
       description: config.description,
       canonical: "/",
+      hero,
       body,
       jsonLd: { "@context": "https://schema.org", "@type": "WebSite", name: config.siteName, url: origin },
     })
