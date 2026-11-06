@@ -1,0 +1,130 @@
+{
+ "records": [
+  {
+   "id": "recKYy2MbVvaJL6rJ",
+   "createdTime": "2026-11-06T20:18:17.000Z",
+   "fields": {
+    "Details Checked": "2026-11-06",
+    "Name": "Litchfield Beach",
+    "Address": "Litchfield Beach, Pawleys Island, SC 29585",
+    "Published": true,
+    "Details Source": "https://www.visitmyrtlebeach.com/beaches-communities/litchfield-beach",
+    "Price Level": "Free",
+    "Price": "Free",
+    "Type": "Quiet beach",
+    "Area": "Murrells Inlet",
+    "Website": "https://www.visitmyrtlebeach.com/beaches-communities/litchfield-beach",
+    "Short Description": "Quiet, uncrowded and less commercial than the central Strand. Pair the beach with kayaking or a ride on the 26-mile Waccamaw Neck Bikeway."
+   }
+  },
+  {
+   "id": "recWUrsVFXxbV7nfl",
+   "createdTime": "2026-11-06T20:18:17.000Z",
+   "fields": {
+    "Details Checked": "2026-11-06",
+    "Name": "Myrtle Beach",
+    "Address": "Ocean Blvd, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids",
+     "Paid parking"
+    ],
+    "Published": true,
+    "Details Source": "https://www.visitmyrtlebeach.com/beaches-communities/myrtle-beach",
+    "Price Level": "Free",
+    "Price": "Free",
+    "Hours Note": "Beach tents are banned Memorial Day to Labor Day (umbrellas and small toddler tents are fine). No personal fireworks. Dogs only at marked pet-friendly accesses; check seasonal rules.",
+    "Type": "Lively beach",
+    "Area": "Central Myrtle",
+    "Website": "https://www.visitmyrtlebeach.com/beaches-communities/myrtle-beach",
+    "Short Description": "The heart of the 60-mile Grand Strand, with wide sand, the oceanfront Boardwalk and Promenade, and the SkyWheel steps away."
+   }
+  },
+  {
+   "id": "recZFEeCeFteShDW9",
+   "createdTime": "2026-11-06T20:18:17.000Z",
+   "fields": {
+    "Details Checked": "2026-11-06",
+    "Name": "Garden City Beach",
+    "Address": "Garden City Beach, SC 29576",
+    "Good to Know": [
+     "Great for kids",
+     "Fishing pier"
+    ],
+    "Published": true,
+    "Details Source": "https://www.visitmyrtlebeach.com/beaches-communities/garden-city-beach",
+    "Price Level": "Free",
+    "Price": "Free",
+    "Type": "Family beach",
+    "Area": "Surfside",
+    "Website": "https://www.visitmyrtlebeach.com/beaches-communities/garden-city-beach",
+    "Short Description": "A laid-back family beach where the inlet meets the ocean, great for fishing, crabbing and watersports. Walking The Pier at Garden City is free."
+   }
+  },
+  {
+   "id": "recjryfaEBQJihS1y",
+   "createdTime": "2026-11-06T20:18:17.000Z",
+   "fields": {
+    "Details Checked": "2026-11-06",
+    "Name": "Surfside Beach",
+    "Address": "Surfside Beach, SC 29575",
+    "Good to Know": [
+     "Great for kids",
+     "Lifeguards in season",
+     "Restrooms and showers",
+     "Wheelchair accessible",
+     "Free beach wheelchairs",
+     "Fishing pier"
+    ],
+    "Published": true,
+    "Details Source": "https://www.visitmyrtlebeach.com/beaches-communities/surfside-beach",
+    "Price Level": "Free",
+    "Price": "Free",
+    "Hours Note": "Several beach accesses have showers, restrooms and ramps. Free beach wheelchairs are available.",
+    "Type": "Family beach",
+    "Area": "Surfside",
+    "Website": "https://www.visitmyrtlebeach.com/beaches-communities/surfside-beach",
+    "Short Description": "\"The Family Beach\" since 1964. Beaches are cleaned daily, and the Pier Village has shops, food and a fishing pier."
+   }
+  },
+  {
+   "id": "recnPDmBFxUFeHhxo",
+   "createdTime": "2026-11-06T20:18:17.000Z",
+   "fields": {
+    "Details Checked": "2026-11-06",
+    "Name": "North Myrtle Beach & Cherry Grove",
+    "Address": "Ocean Blvd S, North Myrtle Beach, SC 29582",
+    "Good to Know": [
+     "Great for kids",
+     "Free beach wheelchairs",
+     "Fishing pier"
+    ],
+    "Published": true,
+    "Details Source": "https://www.visitmyrtlebeach.com/beaches-communities/north-myrtle-beach",
+    "Price Level": "Free",
+    "Price": "Free",
+    "Hours Note": "Tents are not allowed May 15 to Sept. 15; umbrellas up to 7'6\" tall and 9 feet wide are fine. Free beach wheelchairs are available.",
+    "Type": "Lively beach",
+    "Area": "North Myrtle Beach",
+    "Website": "https://www.visitmyrtlebeach.com/beaches-communities/north-myrtle-beach",
+    "Short Description": "Cast a line off Cherry Grove Pier, catch beach music at Ocean Drive, and watch the shag on Main Street, in the town known as the birthplace of shag dancing."
+   }
+  },
+  {
+   "id": "recyV6PIvYgkAFrjx",
+   "createdTime": "2026-11-06T20:18:17.000Z",
+   "fields": {
+    "Details Checked": "2026-11-06",
+    "Name": "Pawleys Island",
+    "Address": "Pawleys Island, SC 29585",
+    "Published": true,
+    "Details Source": "https://www.visitmyrtlebeach.com/beaches-communities/pawleys-island",
+    "Price Level": "Free",
+    "Price": "Free",
+    "Type": "Quiet beach",
+    "Area": "Murrells Inlet",
+    "Website": "https://www.visitmyrtlebeach.com/beaches-communities/pawleys-island",
+    "Short Description": "One of the oldest resort towns on the East Coast, proudly \"arrogantly shabby,\" with a long white beach for walking and the home of the original rope hammock."
+   }
+  }
+ ]
+}

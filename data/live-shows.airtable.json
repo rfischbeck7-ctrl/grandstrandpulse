@@ -145,6 +145,26 @@
    }
   },
   {
+   "id": "recdjRhBknuEHCXGR",
+   "createdTime": "2026-11-06T20:18:45.000Z",
+   "fields": {
+    "Phone": "(843) 272-3000",
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/house-of-blues",
+    "Hours Note": "Concert times vary; see the show calendar on the House of Blues site.",
+    "Good to Know": [
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
+    "Website": "https://www.houseofblues.com/myrtlebeach/",
+    "Address": "4640 Highway 17 South, North Myrtle Beach, SC 29582",
+    "Name": "House of Blues Myrtle Beach",
+    "Short Description": "The Strand's big-name concert hall, next to Barefoot Landing, with a Southern-inspired restaurant and the Gator Bar for dinner before the show.",
+    "Area": "North Myrtle Beach",
+    "Published": true,
+    "Type": "Concert hall"
+   }
+  },
+  {
    "id": "recf1IY8sD1wmCMC6",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
@@ -206,6 +226,27 @@
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Theater"
+   }
+  },
+  {
+   "id": "recuOJcyXUhP5HPvX",
+   "createdTime": "2026-11-06T20:18:45.000Z",
+   "fields": {
+    "Details Source": "https://www.cinemark.com/theatres/sc-myrtle-beach/cinemark-myrtle-beach",
+    "Hours Note": "Showtimes change daily; check Cinemark's site.",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online",
+     "Rain or shine"
+    ],
+    "Details Checked": "2026-11-06",
+    "Website": "https://www.cinemark.com/theatres/sc-myrtle-beach/cinemark-myrtle-beach",
+    "Address": "Coastal Grand Mall, Myrtle Beach, SC 29577",
+    "Name": "Cinemark Myrtle Beach",
+    "Short Description": "The latest movies in recliner seats, with popcorn and drinks for the grown-ups. A good rainy-day escape at Coastal Grand Mall.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Movie theater"
    }
   },
   {

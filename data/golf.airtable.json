@@ -1,0 +1,302 @@
+{
+ "records": [
+  {
+   "id": "rec1K1jSigjUXlSjs",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/dunes-golf-beach-club",
+    "Short Description": "A Robert Trent Jones Sr. classic from 1949 that has hosted the U.S. Women's Open, the Senior PGA Tour Championship and the PGA Tour's Myrtle Beach Classic.",
+    "Published": true,
+    "Address": "9000 N Ocean Blvd, Myrtle Beach, SC 29572",
+    "Name": "Dunes Golf & Beach Club",
+    "Website": "https://www.thedunesclub.com/golf",
+    "Area": "Central Myrtle",
+    "Hours Note": "Book a tee time ahead; call the club to confirm visitor play.",
+    "Details Checked": "2026-11-06",
+    "Type": "Semi-private club",
+    "Phone": "(843) 449-5236"
+   }
+  },
+  {
+   "id": "rec1N9ofal0WsxgJ7",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/myrtle-beach-national-kings-north",
+    "Short Description": "An Arnold Palmer signature course, named one of America's Best New Courses when it opened in 1996 and later one of Golf Digest's 100 Greatest Public Courses.",
+    "Published": true,
+    "Address": "4900 National Drive, Myrtle Beach, SC 29579",
+    "Name": "Myrtle Beach National – King's North",
+    "Website": "https://www.mbn.com/courses/myrtle-beach-national-kings-north",
+    "Area": "Central Myrtle",
+    "Details Checked": "2026-11-06",
+    "Type": "Resort course",
+    "Phone": "(843) 448-2308"
+   }
+  },
+  {
+   "id": "rec1mZOo4cbASuVJU",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/long-bay-golf-club",
+    "Short Description": "One of only two Jack Nicklaus designs in the Myrtle Beach market, rated 4.5 stars in Golf Digest's Best Places to Play.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "350 Foxtail Drive, Longs, SC 29568",
+    "Name": "Long Bay Golf Club",
+    "Website": "https://www.longbaygolfclub.com/",
+    "Area": "North Myrtle Beach",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Public course",
+    "Phone": "(843) 399-2222"
+   }
+  },
+  {
+   "id": "rec23gAtXfCEpIWLJ",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/barefoot-resort-golf-dye-course",
+    "Short Description": "Pete Dye's course at Barefoot Resort, ranked among Golf Digest's 100 Greatest Public Courses and a past state Golf Course of the Year.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "2600 Pete Dye Drive, North Myrtle Beach, SC 29582",
+    "Name": "Barefoot Resort – Dye Course",
+    "Website": "https://barefootgolf.com/barefoot-golf-courses/dye-course/",
+    "Area": "North Myrtle Beach",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Resort course",
+    "Phone": "(843) 399-7238"
+   }
+  },
+  {
+   "id": "rec5RMLugSxqdEaCH",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/true-blue-golf-course",
+    "Short Description": "Mike Strantz's Lowcountry masterpiece of live oaks, pines, tidal creeks and salt marsh, ranked by Golf Digest as the No. 1 public course in the Myrtle Beach area.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "900 Blue Stem Drive, Pawleys Island, SC 29585",
+    "Name": "True Blue Golf Club",
+    "Website": "https://www.truebluegolf.com/",
+    "Area": "Murrells Inlet",
+    "Hours Note": "Kids 16 and under play free with a paying adult on summer afternoons.",
+    "Details Checked": "2026-11-06",
+    "Type": "Public course",
+    "Phone": "(843) 235-0900"
+   }
+  },
+  {
+   "id": "rec742MYdRZE5ofoN",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/grande-dunes-golf-club",
+    "Short Description": "A relaxed, links-style resort course with smooth ultradwarf greens and views over the Intracoastal Waterway.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "8700 Golf Village Lane, Myrtle Beach, SC 29579",
+    "Name": "Grande Dunes Golf Club",
+    "Website": "https://www.grandedunesgolf.com/",
+    "Area": "Central Myrtle",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Resort course",
+    "Phone": "(843) 449-7070"
+   }
+  },
+  {
+   "id": "recGTPUNrlPGw4Eq9",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/tpc-of-myrtle-beach",
+    "Short Description": "Play a real PGA Tour layout. TPC Myrtle Beach hosted the 2000 Senior PGA Tour Championship, won by Tom Watson, and welcomes golfers of every skill level.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "Murrells Inlet, SC 29576",
+    "Name": "TPC Myrtle Beach",
+    "Area": "Murrells Inlet",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Public course"
+   }
+  },
+  {
+   "id": "recKK46wNGwVt3WV6",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/prestwick-country-club",
+    "Short Description": "A Pete Dye design with deep bulkhead greens, natural water hazards and staggered bunkers. Golf Digest called it one of America's best-kept secrets.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "1001 Links Road, Myrtle Beach, SC 29575",
+    "Name": "Prestwick Country Club",
+    "Website": "https://prestwickcountryclub.com/",
+    "Area": "Surfside",
+    "Hours Note": "Kids 16 and under play free with a paying adult on summer afternoons.",
+    "Details Checked": "2026-11-06",
+    "Type": "Public course",
+    "Phone": "(843) 293-1521"
+   }
+  },
+  {
+   "id": "recbxlWUVHMMNHB2b",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/pine-lakes-country-club",
+    "Short Description": "\"The Granddaddy.\" Opened in 1927 and designed by Robert White of St. Andrews, it's the course that started Myrtle Beach golf.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "5603 Granddaddy Drive, Myrtle Beach, SC 29577",
+    "Name": "Pine Lakes Country Club",
+    "Website": "https://pinelakes.com/",
+    "Area": "Central Myrtle",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Public course",
+    "Phone": "(866) 694-2448"
+   }
+  },
+  {
+   "id": "receup9tzLbHpgikS",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/pawleys-plantation-golf-club",
+    "Short Description": "A blend of natural beauty and creative design, named one of America's Top Courses by Zagat and among South Carolina's top 30 by Golf World.",
+    "Published": true,
+    "Address": "70 Tanglewood Drive, Pawleys Island, SC 29585",
+    "Name": "Pawleys Plantation Golf Club",
+    "Website": "https://www.pawleysplantation.com/",
+    "Area": "Murrells Inlet",
+    "Details Checked": "2026-11-06",
+    "Type": "Resort course",
+    "Phone": "(866) 694-2448"
+   }
+  },
+  {
+   "id": "recg54LEKcINRQEiI",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/arcadian-shores-golf-club",
+    "Short Description": "A classic Rees Jones design from 1974, once ranked among America's 100 Greatest Public Courses and still a local favorite.",
+    "Published": true,
+    "Address": "701 Hilton Road, Myrtle Beach, SC 29572",
+    "Name": "Arcadian Shores Golf Club",
+    "Website": "https://arcadianshoresgolf.com/",
+    "Area": "Central Myrtle",
+    "Details Checked": "2026-11-06",
+    "Type": "Public course",
+    "Phone": "(843) 449-5217"
+   }
+  },
+  {
+   "id": "recmQDWrtnjYCZa8P",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/barefoot-resort-golf-norman-course",
+    "Short Description": "The only public Greg Norman course on the Grand Strand, with seven holes along the Intracoastal Waterway.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "4980 Barefoot Resort Bridge Road, North Myrtle Beach, SC 29582",
+    "Name": "Barefoot Resort – Norman Course",
+    "Website": "https://barefootgolf.com/barefoot-golf-courses/norman-course/",
+    "Area": "North Myrtle Beach",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Resort course",
+    "Phone": "(843) 390-3200"
+   }
+  },
+  {
+   "id": "recpNmlFOk1Lz4j23",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/wachesaw-plantation-east-golf-club",
+    "Short Description": "Built on a former rice plantation, with gently rolling hills, old-growth forest and wetlands, about 15 miles south of Myrtle Beach.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "911 Riverwood Drive, Murrells Inlet, SC 29576",
+    "Name": "Wachesaw East Golf Club",
+    "Website": "https://wachesaweast.com/",
+    "Area": "Murrells Inlet",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Public course",
+    "Phone": "(843) 357-5252"
+   }
+  },
+  {
+   "id": "recqDKmjnbRL9bTRp",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/barefoot-resort-golf-love-course",
+    "Short Description": "Davis Love III's design, which Golf Digest has ranked as Myrtle Beach's best and one of America's 100 Greatest Public Courses.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "4980 Barefoot Resort Bridge Road, North Myrtle Beach, SC 29582",
+    "Name": "Barefoot Resort – Love Course",
+    "Website": "https://barefootgolf.com/barefoot-golf-courses/love-course/",
+    "Area": "North Myrtle Beach",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Resort course",
+    "Phone": "(843) 390-3200"
+   }
+  },
+  {
+   "id": "recsO2dSTgORjpAm3",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/legends-golf-resort-moorland-course",
+    "Short Description": "One of the boldest layouts on the Strand, with deep pot bunkers, waste areas and big elevation changes.",
+    "Published": true,
+    "Address": "1500 Legends Rd, Myrtle Beach, SC 29579",
+    "Name": "Legends Resort – Moorland Course",
+    "Website": "https://legendsgolf.com/",
+    "Area": "Central Myrtle",
+    "Details Checked": "2026-11-06",
+    "Type": "Resort course"
+   }
+  },
+  {
+   "id": "recu718aoM2HgyGbI",
+   "createdTime": "2026-11-06T20:17:45.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/barefoot-resort-golf-fazio-course",
+    "Short Description": "Natural elevation changes give this Barefoot layout its drama, and five sets of tees make it work for every level. Praised by Golf Digest, GOLF and Golfweek.",
+    "Published": true,
+    "Good to Know": [
+     "Kids play free in summer"
+    ],
+    "Address": "4980 Barefoot Resort Bridge Road, North Myrtle Beach, SC 29582",
+    "Name": "Barefoot Resort – Fazio Course",
+    "Website": "https://barefootgolf.com/barefoot-golf-courses/fazio-course/",
+    "Area": "North Myrtle Beach",
+    "Hours Note": "Kids 16 and under play free with a paying adult in June, July and August.",
+    "Details Checked": "2026-11-06",
+    "Type": "Resort course",
+    "Phone": "(843) 390-3200"
+   }
+  }
+ ]
+}
