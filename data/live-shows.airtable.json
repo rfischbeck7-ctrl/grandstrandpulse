@@ -66,9 +66,13 @@
    "id": "recCIqjsbVB1cXuNJ",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
+    "Phone": "(843) 945-3318",
+    "Website": "https://topgolf.com/us/myrtle-beach/",
+    "Address": "2850 Robert Grissom Pkwy, Myrtle Beach, SC 29577",
     "Name": "Topgolf Myrtle Beach",
-    "Short Description": "Open since 2019. Address needs confirming.",
+    "Short Description": "Climate-controlled hitting bays with targets, food and drinks. Open daily, late on weekends.",
     "Area": "Central Myrtle",
+    "Published": true,
     "Type": "Sports"
    }
   },
@@ -173,10 +177,13 @@
    "id": "recwBG9wlUrCtFcpN",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
+    "Phone": "(843) 527-2924",
     "Website": "https://www.swampfoxplayers.com/",
+    "Address": "710 Front St, Georgetown, SC 29440",
     "Name": "Strand Theater",
-    "Short Description": "Community theater across from the Harborwalk. Address needs confirming.",
+    "Short Description": "Community theater on Front Street, across from the Harborwalk, run by the Swamp Fox Players.",
     "Area": "Georgetown",
+    "Published": true,
     "Type": "Theater"
    }
   },

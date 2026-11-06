@@ -42,7 +42,8 @@
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
     "Website": "http://www.radicalropes.com",
-    "Short Description": "Ziplines, aerial challenges and ropes courses at the south end of Myrtle Beach. Address and status need confirming.",
+    "Short Description": "Ziplines, aerial tours and ropes courses at the south end of Myrtle Beach. Closed Mondays and Tuesdays in the off-season; check the website for hours.",
+    "Published": true,
     "Area": "Central Myrtle",
     "Name": "Radical Ropes Adventure Park",
     "Type": "Zipline / ropes"

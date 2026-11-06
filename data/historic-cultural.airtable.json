@@ -4,9 +4,12 @@
    "id": "rec0Vp5ztBTZE03ZX",
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
-    "Short Description": "Boat tours of Winyah Bay, plantations and Shell Island. Address needs confirming.",
+    "Short Description": "Boat tours of Winyah Bay, the rice plantations and Shell Island. Call to confirm the departure dock.",
+    "Phone": "(843) 477-0287",
+    "Published": true,
     "Area": "Georgetown",
     "Type": "Boat tour",
+    "Address": "701 Front St, Georgetown, SC 29440",
     "Name": "Cap'n Rod's Lowcountry Tours",
     "Website": "http://lowcountrytours.com/"
    }
@@ -39,9 +42,12 @@
    "id": "recBl8ddch4Ua6Qkm",
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
-    "Short Description": "Maritime history on the Georgetown waterfront. Address needs confirming.",
+    "Short Description": "Maritime history on the Georgetown waterfront. Free admission, open Monday to Saturday.",
+    "Phone": "(843) 520-0111",
+    "Published": true,
     "Area": "Georgetown",
     "Type": "Museum",
+    "Address": "729 Front St, Georgetown, SC 29440",
     "Name": "South Carolina Maritime Museum",
     "Website": "https://scmaritimemuseum.org/"
    }
@@ -50,9 +56,12 @@
    "id": "recJLJdezJLieBlMj",
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
-    "Short Description": "Local county history. Address needs confirming.",
+    "Short Description": "Local county history. Free admission, open Tuesday to Saturday midday.",
+    "Phone": "(843) 545-7020",
+    "Published": true,
     "Area": "Georgetown",
     "Type": "Museum",
+    "Address": "120 Broad St, Georgetown, SC 29440",
     "Name": "Georgetown County Museum",
     "Website": "http://www.georgetowncountymuseum.com/"
    }
@@ -112,7 +121,9 @@
    "id": "recy2bwSDowBo81Be",
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
-    "Short Description": "Evening ghost tours through the historic district. Address needs confirming.",
+    "Short Description": "Lantern-lit ghost walks through the historic district, Friday evenings at dusk by reservation. Call for the meeting point.",
+    "Phone": "(843) 543-5777",
+    "Published": true,
     "Area": "Georgetown",
     "Type": "Walking tour",
     "Name": "Ghosts of Georgetown Lantern Tours",

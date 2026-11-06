@@ -145,11 +145,14 @@
    "id": "recTC4JJI4vAWKTL8",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
-    "Short Description": "Kayak and paddleboard rentals and tours in the Pawleys Island area. Address needs confirming.",
+    "Short Description": "Kayak (including fishing kayaks) and paddleboard rentals, plus surf lessons, in the Pawleys Island area.",
     "Name": "Surf the Earth",
     "Area": "Murrells Inlet",
     "Website": "http://www.surf-the-earth.com/",
-    "Type": "Kayak / paddleboard"
+    "Type": "Kayak / paddleboard",
+    "Phone": "(843) 235-3500",
+    "Address": "47 Da Gullah Way, Pawleys Island, SC 29585",
+    "Published": true
    }
   },
   {
@@ -181,21 +184,24 @@
    "id": "recmK2s0IxQnQhvAL",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
-    "Short Description": "Kayak tours and rentals around Georgetown. Address needs confirming.",
+    "Short Description": "Guided kayak tours of a cypress forest, the Murrells Inlet salt marsh and Huntington Beach State Park, plus kayak fishing trips. Book online for the meeting spot.",
     "Name": "Black River Outdoors Center",
-    "Area": "Georgetown",
+    "Area": "Murrells Inlet",
     "Website": "http://www.blackriveroutdoors.com/",
-    "Type": "Kayak / paddleboard"
+    "Type": "Kayak / paddleboard",
+    "Phone": "(843) 546-4840",
+    "Published": true
    }
   },
   {
    "id": "recp7Gtgy7uv4xvVk",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
-    "Short Description": "A big-cat preserve. Address and hours need confirming.",
+    "Short Description": "A big-cat and exotic-animal preserve in the Barefoot Landing area. Check ahead for hours and the exact location.",
     "Name": "T.I.G.E.R.S. Preserve",
-    "Area": "Central Myrtle",
-    "Type": "Wildlife"
+    "Area": "North Myrtle Beach",
+    "Type": "Wildlife",
+    "Published": true
    }
   }
  ]

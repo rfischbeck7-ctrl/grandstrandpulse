@@ -68,9 +68,11 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Area": "North Myrtle Beach",
+    "Published": true,
+    "Website": "https://www.starsandstrikes.com/locations/myrtle-beach",
     "Name": "Stars and Strikes",
     "Type": "Bowling",
-    "Short Description": "Bowling lanes, laser tag, axe throwing and arcade games with a bar and restaurant. Address needs confirming."
+    "Short Description": "Bowling, augmented-reality bowling, virtual reality, laser tag, axe throwing and arcade games with a bar and restaurant in North Myrtle Beach. Use the website for the exact location and hours."
    }
   },
   {
@@ -140,12 +142,14 @@
    "id": "reckYyO652vdAnSYm",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
-    "Phone": "(843) 713-1237",
+    "Phone": "(843) 712-1237",
     "Area": "Central Myrtle",
+    "Published": true,
     "Address": "1314 Celebrity Cir #165, Myrtle Beach, SC 29577",
+    "Website": "https://www.backstageescapegames.com/",
     "Name": "Backstage Escape Games",
     "Type": "Escape room",
-    "Short Description": "Three games at Broadway at the Beach. Listed in a 2019 source, so confirm it is still open."
+    "Short Description": "Escape rooms at Broadway at the Beach, including The Legend of Atlantis and The Haunting of Hyde House, plus a mirror maze."
    }
   },
   {
@@ -189,10 +193,12 @@
    "fields": {
     "Phone": "(843) 231-5644",
     "Area": "North Myrtle Beach",
+    "Published": true,
     "Address": "314 Main St, North Myrtle Beach, SC 29582",
+    "Website": "https://www.breakoutmyrtlebeach.com/",
     "Name": "Break Out Myrtle Beach",
     "Type": "Escape room",
-    "Short Description": "Six escape games. Listed in a 2019 source, so confirm it is still open."
+    "Short Description": "Six escape games on Main Street, from family-friendly Red Beard's Revenge to the scarier Serial Killer room. Book online."
    }
   },
   {
@@ -201,10 +207,12 @@
    "fields": {
     "Phone": "(843) 444-8224",
     "Area": "Central Myrtle",
+    "Published": true,
     "Address": "1120 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Website": "https://www.captiverooms.com/myrtlebeach",
     "Name": "Captive Escape Rooms",
     "Type": "Escape room",
-    "Short Description": "Five themed rooms. Listed in a 2019 source, so confirm it is still open."
+    "Short Description": "Themed escape rooms on N Kings Hwy; its website now lists games as private bookings only. Call or book ahead."
    }
   }
  ]
