@@ -30,12 +30,64 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 945-2830",
+    "Details Source": "https://www.escapology.com/en/myrtle-beach-sc",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Book a game time online or by phone. Arrive 15 minutes early; games start on time.",
     "Address": "400 N Kings Hwy, Suite D, Myrtle Beach, SC 29577",
+    "Website": "https://www.escapology.com/en/myrtle-beach-sc",
+    "Details Checked": "2026-11-06",
     "Name": "Escapology Myrtle Beach",
+    "Good to Know": [
+     "Great for kids",
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
     "Type": "Escape room",
     "Short Description": "Four 60-minute escape games for up to six players, including Antidote, Arizona Shootout and the family-friendly Saving Santa. Book ahead."
+   }
+  },
+  {
+   "id": "recDF0jL3uEtzbxTn",
+   "createdTime": "2026-11-06T20:02:52.000Z",
+   "fields": {
+    "Phone": "(843) 282-9018",
+    "Details Source": "https://myrtlebeachpinballmuseum.org/",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "607 27th Ave N, Myrtle Beach, SC 29577",
+    "Website": "https://myrtlebeachpinballmuseum.org/",
+    "Details Checked": "2026-11-06",
+    "Name": "Myrtle Beach Pinball Museum",
+    "Good to Know": [
+     "Great for kids",
+     "Rain or shine"
+    ],
+    "Type": "Arcade",
+    "Short Description": "More than two dozen fully playable pinball machines spanning the decades, in a museum devoted to the classic American game. Come to look, stay to play."
+   }
+  },
+  {
+   "id": "recHN6ES0qayFcUNA",
+   "createdTime": "2026-11-06T20:02:52.000Z",
+   "fields": {
+    "Details Source": "https://edventure.org/visit/",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Hours Note": "Seasonal hours may apply",
+    "Address": "4005 Howard Ave, Myrtle Beach, SC 29577",
+    "Hours": "Mon-Sat 10:00-18:00\nSun 12:00-18:00",
+    "Website": "https://edventure.org/visit/",
+    "Details Checked": "2026-11-06",
+    "Name": "EdVenture Myrtle Beach",
+    "Price": "$10; first responders, military and seniors $9; under 2 free",
+    "Good to Know": [
+     "Great for kids",
+     "Rain or shine"
+    ],
+    "Price Level": "$",
+    "Type": "Children's museum",
+    "Short Description": "A hands-on children's museum at The Market Common where kids climb, build, pretend and explore. A go-to rainy-day stop for younger kids."
    }
   },
   {
@@ -56,11 +108,20 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 994-2637",
+    "Details Source": "https://theescapegame.com/myrtle-beach/",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Book a game time online. Park near Margaritaville and the Hampton Inn.",
     "Address": "1138 Celebrity Cir, Suite 323, Myrtle Beach, SC 29577",
+    "Hours": "Daily 08:00-00:00",
     "Website": "https://theescapegame.com/myrtle-beach/",
+    "Details Checked": "2026-11-06",
     "Name": "The Escape Game Myrtle Beach",
+    "Good to Know": [
+     "Great for kids",
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
     "Type": "Escape room",
     "Short Description": "Themed 60-minute escape games including Cosmic Crisis, Gold Rush and The Depths, at Broadway at the Beach."
    }
@@ -69,10 +130,17 @@
    "id": "recLxpELOT5IdPIce",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
+    "Details Source": "https://www.starsandstrikes.com/locations/myrtle-beach",
     "Area": "North Myrtle Beach",
     "Published": true,
+    "Hours Note": "Holiday hours differ around Thanksgiving.",
+    "Hours": "Mon-Thu 11:00-00:00\nFri 11:00-01:00\nSat 10:00-01:00\nSun 10:00-00:00",
     "Website": "https://www.starsandstrikes.com/locations/myrtle-beach",
+    "Details Checked": "2026-11-06",
     "Name": "Stars and Strikes",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Type": "Bowling",
     "Short Description": "Bowling, augmented-reality bowling, virtual reality, laser tag, axe throwing and arcade games with a bar and restaurant in North Myrtle Beach. Use the website for the exact location and hours."
    }
@@ -81,10 +149,19 @@
    "id": "recMyLH4QIoPEqUXf",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
+    "Details Source": "https://ripleys.com/attractions/ripleys-aquarium-of-myrtle-beach",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Recent hours 9 AM–10 PM; check ripleys.com for today's hours.",
     "Address": "1110 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Website": "https://www.ripleys.com/attractions/ripleys-aquarium-of-myrtle-beach",
+    "Details Checked": "2026-11-06",
     "Name": "Ripley's Aquarium",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online",
+     "Rain or shine"
+    ],
     "Type": "Interactive museum",
     "Short Description": "A large aquarium with a walk-through tunnel and touch tanks."
    }
@@ -93,10 +170,12 @@
    "id": "recNSCHz91MRIQsPz",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
+    "Details Source": "https://thefunplex.com/myrtle-beach/",
     "Area": "Central Myrtle",
+    "Details Checked": "2026-11-06",
     "Name": "Funplex Myrtle Beach",
     "Type": "Arcade",
-    "Short Description": "An amusement and arcade center. Address needs confirming."
+    "Short Description": "CLOSED: thefunplex.com says the Myrtle Beach location is closed (local news reported the closure Oct 30, 2024). Keep unpublished."
    }
   },
   {
@@ -104,11 +183,18 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 491-1444",
+    "Details Source": "https://www.bigairusa.com/myrtle-beach",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Call (843) 491-1444 for today's hours. Deals: 2 hours for $15 on Tuesdays, buy-one-get-one on Wednesdays.",
     "Address": "3820 S Kings Hwy, Myrtle Beach, SC 29577",
     "Website": "https://www.bigairusa.com/myrtle-beach",
+    "Details Checked": "2026-11-06",
     "Name": "Big Air Trampoline Park",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Type": "Trampoline park",
     "Short Description": "Trampolines for all ages, 40+ attractions, a Cosmic Nights session and a cafe."
    }
@@ -117,11 +203,21 @@
    "id": "recQPEFj8Xy3odxE5",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
+    "Details Source": "https://www.wonderworksonline.com/myrtle-beach/location-info/",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Last ticket sold an hour before closing. Kids 4 and under free. Busiest on rainy days.",
     "Address": "1313 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Hours": "Sun-Thu 10:30-20:00\nFri-Sat 10:30-21:00",
     "Website": "https://www.wonderworksonline.com/myrtle-beach/",
+    "Details Checked": "2026-11-06",
     "Name": "WonderWorks",
+    "Good to Know": [
+     "Great for kids",
+     "Free parking",
+     "Tickets sold online",
+     "Rain or shine"
+    ],
     "Type": "Interactive museum",
     "Short Description": "An upside-down building packed with hands-on science exhibits at Broadway at the Beach."
    }
@@ -131,11 +227,18 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 213-1586",
+    "Details Source": "http://riddlesescaperoom.com/",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Book a game time online. Kids under 6 play free with their family.",
     "Address": "9713 N Kings Hwy, Myrtle Beach, SC 29577",
     "Website": "http://riddlesescaperoom.com/",
+    "Details Checked": "2026-11-06",
     "Name": "Riddles Escape Room",
+    "Good to Know": [
+     "Great for kids",
+     "Reservations recommended"
+    ],
     "Type": "Escape room",
     "Short Description": "Several themed games with live actors and VR options, open daily in the afternoon and evening."
    }
@@ -145,11 +248,20 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 712-1237",
+    "Details Source": "https://www.backstageescapegames.com/",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Book a game time online; hours change with the season. Kids 10 and under need a private game.",
     "Address": "1314 Celebrity Cir #165, Myrtle Beach, SC 29577",
     "Website": "https://www.backstageescapegames.com/",
+    "Details Checked": "2026-11-06",
     "Name": "Backstage Escape Games",
+    "Price": "From $39.95 per person",
+    "Good to Know": [
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
+    "Price Level": "$$",
     "Type": "Escape room",
     "Short Description": "Escape rooms at Broadway at the Beach, including The Legend of Atlantis and The Haunting of Hyde House, plus a mirror maze."
    }
@@ -183,10 +295,23 @@
    "id": "reco335rXlKGo53wW",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
+    "Phone": "(843) 916-0888",
+    "Details Source": "https://www.ripleys.com/attractions/ripleys-believe-it-or-not-myrtle-beach/contact-us",
     "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "901 N Ocean Blvd, Myrtle Beach, SC 29577",
+    "Website": "https://www.ripleys.com/attractions/ripleys-believe-it-or-not-myrtle-beach",
+    "Details Checked": "2026-11-06",
     "Name": "Ripley's Believe It or Not!",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online",
+     "Paid parking",
+     "Rain or shine"
+    ],
+    "Price Level": "$$",
     "Type": "Interactive museum",
-    "Short Description": "A museum of oddities. Address needs confirming."
+    "Short Description": "Hundreds of strange-but-true artifacts plus hands-on games and exhibits on the oceanfront Boulevard. A good rainy-day pick for curious kids."
    }
   },
   {
@@ -194,11 +319,18 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 231-5644",
+    "Details Source": "https://www.breakoutmyrtlebeach.com/",
     "Area": "North Myrtle Beach",
     "Published": true,
+    "Hours Note": "Reservations required; book a game time online. Arrive 15 minutes early.",
     "Address": "314 Main St, North Myrtle Beach, SC 29582",
     "Website": "https://www.breakoutmyrtlebeach.com/",
+    "Details Checked": "2026-11-06",
     "Name": "Break Out Myrtle Beach",
+    "Good to Know": [
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
     "Type": "Escape room",
     "Short Description": "Six escape games on Main Street, from family-friendly Red Beard's Revenge to the scarier Serial Killer room. Book online."
    }
@@ -208,13 +340,44 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 444-8224",
+    "Details Source": "https://www.captiverooms.com/myrtlebeach",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Private bookings only; book a game time online. Best for ages 13 and up.",
     "Address": "1120 N Kings Hwy, Myrtle Beach, SC 29577",
     "Website": "https://www.captiverooms.com/myrtlebeach",
+    "Details Checked": "2026-11-06",
     "Name": "Captive Escape Rooms",
+    "Price": "From $25 per person",
+    "Good to Know": [
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
+    "Price Level": "$$",
     "Type": "Escape room",
     "Short Description": "Themed escape rooms on N Kings Hwy; its website now lists games as private bookings only. Call or book ahead."
+   }
+  },
+  {
+   "id": "recx3JrE9jtATaZV7",
+   "createdTime": "2026-11-06T20:02:52.000Z",
+   "fields": {
+    "Phone": "(843) 232-7079",
+    "Details Source": "https://interactiveexperienceunleashed.com/",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "7621 N Kings Hwy, Myrtle Beach, SC 29572",
+    "Hours": "Mon-Tue Closed\nWed-Thu 10:00-18:00\nFri-Sat 10:00-21:00\nSun 10:00-18:00",
+    "Website": "https://interactiveexperienceunleashed.com/",
+    "Details Checked": "2026-11-06",
+    "Name": "Interactive Experience Unleashed",
+    "Good to Know": [
+     "Great for kids",
+     "Rain or shine"
+    ],
+    "Price Level": "$$",
+    "Type": "VR & interactive",
+    "Short Description": "An indoor playground of tech: free-roam VR arenas, mixed-reality animatronic adventures, interactive games and a kids' play area. Good for a rainy afternoon."
    }
   }
  ]

@@ -5,7 +5,14 @@
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
     "Short Description": "Boat tours of Winyah Bay, the rice plantations and Shell Island. Call to confirm the departure dock.",
+    "Hours Note": "Book online. In summer, book about two weeks ahead. Tours leave from 701 Front St, Georgetown.",
     "Phone": "(843) 477-0287",
+    "Details Source": "http://lowcountrytours.com/",
+    "Good to Know": [
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
     "Published": true,
     "Area": "Georgetown",
     "Type": "Boat tour",
@@ -30,6 +37,15 @@
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
     "Short Description": "A historic lowcountry rice plantation house open for tours.",
+    "Hours Note": "House tours on the hour. Tours are for ages 6 and up.",
+    "Hours": "Tue-Sat 10:00-15:00\nSun-Mon Closed",
+    "Price": "House tour from $22; museum from $15",
+    "Details Source": "http://hopsewee.com/",
+    "Price Level": "$$",
+    "Good to Know": [
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
     "Published": true,
     "Area": "Georgetown",
     "Type": "Plantation",
@@ -44,6 +60,11 @@
    "fields": {
     "Short Description": "Maritime history on the Georgetown waterfront. Free admission, open Monday to Saturday.",
     "Phone": "(843) 520-0111",
+    "Hours": "Mon-Sat 11:00-17:00\nSun Call",
+    "Price": "Free (donations welcome)",
+    "Details Source": "https://scmaritimemuseum.org/",
+    "Price Level": "Free",
+    "Details Checked": "2026-11-06",
     "Published": true,
     "Area": "Georgetown",
     "Type": "Museum",
@@ -53,11 +74,38 @@
    }
   },
   {
+   "id": "recF5Xe9stmuheJ9l",
+   "createdTime": "2026-11-06T20:02:52.000Z",
+   "fields": {
+    "Short Description": "The Franklin G. Burroughs-Simeon B. Chapin Art Museum shows rotating art exhibitions on South Ocean Boulevard, across from the beach.",
+    "Phone": "(843) 238-2510",
+    "Details Source": "https://myrtlebeachartmuseum.org/visit/myrtle-beach/",
+    "Good to Know": [
+     "Rain or shine"
+    ],
+    "Details Checked": "2026-11-06",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Type": "Museum",
+    "Address": "3100 S Ocean Blvd, Myrtle Beach, SC 29577",
+    "Name": "Myrtle Beach Art Museum",
+    "Website": "https://myrtlebeachartmuseum.org/"
+   }
+  },
+  {
    "id": "recJLJdezJLieBlMj",
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
     "Short Description": "Local county history. Free admission, open Tuesday to Saturday midday.",
     "Phone": "(843) 545-7020",
+    "Hours": "Tue-Sat 11:00-15:00\nSun-Mon Call",
+    "Price": "Free (donations welcome)",
+    "Details Source": "http://www.georgetowncountymuseum.com/",
+    "Price Level": "Free",
+    "Good to Know": [
+     "Wheelchair accessible"
+    ],
+    "Details Checked": "2026-11-06",
     "Published": true,
     "Area": "Georgetown",
     "Type": "Museum",
@@ -83,12 +131,60 @@
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
     "Short Description": "The Moorish-style winter home of the Huntingtons, inside the state park.",
+    "Hours Note": "Open until 5 PM during Daylight Saving Time. May close for large events.",
+    "Hours": "Daily 09:00-16:00",
+    "Price": "$2 per person ages 6+, plus state park admission ($8 adults, $4 ages 6–15)",
+    "Details Source": "https://southcarolinaparks.com/huntington-beach",
+    "Price Level": "$",
+    "Good to Know": [
+     "Great for kids"
+    ],
+    "Details Checked": "2026-11-06",
     "Published": true,
     "Area": "Murrells Inlet",
     "Type": "Historic site",
     "Address": "Huntington Beach State Park, 16148 Ocean Hwy, Murrells Inlet, SC 29576",
     "Name": "Atalaya Castle",
     "Website": "http://southcarolinaparks.com/huntingtonbeach"
+   }
+  },
+  {
+   "id": "recVQhSdv4peNBwYE",
+   "createdTime": "2026-11-06T20:02:52.000Z",
+   "fields": {
+    "Short Description": "A downtown true-crime museum created by profiler Phil Chalmers, with case artifacts and a look at how investigators build a profile. Aimed at adults.",
+    "Phone": "(843) 499-9008",
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/serial-killers-the-experience-true-crime-museum",
+    "Good to Know": [
+     "Tickets sold online",
+     "Rain or shine"
+    ],
+    "Details Checked": "2026-11-06",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Type": "Museum",
+    "Address": "514 Broadway St, Myrtle Beach, SC 29577",
+    "Name": "Serial Killers: The Experience",
+    "Website": "https://www.serialkillerstheexperience.com"
+   }
+  },
+  {
+   "id": "recYB8IUvv1leCKol",
+   "createdTime": "2026-11-06T20:02:52.000Z",
+   "fields": {
+    "Short Description": "A museum and education center telling the story of the 1932 school that served the area's Black students for more than two decades, rebuilt in 2006 with help from former students.",
+    "Phone": "(843) 918-4905",
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/myrtle-beach-colored-school-museum-education-center",
+    "Good to Know": [
+     "Free parking"
+    ],
+    "Details Checked": "2026-11-06",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Type": "Museum",
+    "Address": "900 Dunbar St, Myrtle Beach, SC 29577",
+    "Name": "Historic Myrtle Beach Colored School Museum",
+    "Website": "https://www.cityofmyrtlebeach.com/i_want_to/find/historic_myrtle_beach_colored_school_museum_and_education_center.php"
    }
   },
   {
@@ -109,6 +205,9 @@
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
     "Short Description": "The story of Georgetown's rice culture in the old Market Building.",
+    "Hours": "Tue-Sat 10:30-16:30\nSun-Mon Call",
+    "Details Source": "http://www.ricemuseum.org/",
+    "Details Checked": "2026-11-06",
     "Published": true,
     "Area": "Georgetown",
     "Type": "Museum",
@@ -118,11 +217,40 @@
    }
   },
   {
+   "id": "recsFazFgvMh2PWNO",
+   "createdTime": "2026-11-06T20:02:52.000Z",
+   "fields": {
+    "Short Description": "A collection of vintage American cars and trucks, including the original Charger Daytona from the movie Joe Dirt.",
+    "Phone": "(843) 903-4774",
+    "Price": "Adults $22, ages 6-15 $15, groups of 10+ $18 each",
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/wheels-of-yesteryear",
+    "Price Level": "$$",
+    "Good to Know": [
+     "Rain or shine"
+    ],
+    "Details Checked": "2026-11-06",
+    "Published": true,
+    "Area": "Central Myrtle",
+    "Type": "Museum",
+    "Address": "413 Hospitality Ln, Myrtle Beach, SC 29579",
+    "Name": "Wheels of Yesteryear",
+    "Website": "https://www.wheelsofyesteryearmb.com/"
+   }
+  },
+  {
    "id": "recy2bwSDowBo81Be",
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
     "Short Description": "Lantern-lit ghost walks through the historic district, Friday evenings at dusk by reservation. Call for the meeting point.",
+    "Hours Note": "Friday evenings at dusk, by reservation only (at least five adults). Times change with the season.",
     "Phone": "(843) 543-5777",
+    "Price": "$20 adults (13+), $10 ages 8–12",
+    "Details Source": "http://www.ghostsofgeorgetown.com",
+    "Price Level": "$$",
+    "Good to Know": [
+     "Reservations recommended"
+    ],
+    "Details Checked": "2026-11-06",
     "Published": true,
     "Area": "Georgetown",
     "Type": "Walking tour",

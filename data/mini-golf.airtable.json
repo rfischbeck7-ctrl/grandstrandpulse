@@ -4,18 +4,26 @@
    "id": "rec0ax9haM0qSrwsY",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
+    "Price": "Adult day pass $25; kids day pass $20 with a kids meal (in store)",
     "Area": "Central Myrtle",
     "Address": "1187 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Theme": "Modern Putting Course (Tiger Woods-designed)",
     "Website": "https://popstroke.com/venues/myrtle-beach/",
     "Short Description": "Tiger Woods' TGR Design built these real-turf putting courses complete with bunkers and challenging greens. Order food and cocktails delivered right to your group between holes at Broadway at the Beach.",
     "Name": "PopStroke Myrtle Beach",
     "Phone": "(843) 932-9520",
+    "Price Level": "$$",
     "Photo Status": "Needed",
+    "Hours Note": "Recent hours 9 AM–midnight. Restaurant and full bar on site; weekend brunch 10 AM–2 PM.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8439329520",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=PopStroke+Myrtle+Beach%2C+1187+Celebrity+Cir%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=PopStroke+Myrtle+Beach%2C+1187+Celebrity+Cir%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://popstroke.com/venues/myrtle-beach/"
    }
   },
   {
@@ -45,16 +53,24 @@
    "fields": {
     "Area": "Central Myrtle",
     "Address": "2900 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids",
+     "Wheelchair accessible",
+     "Tickets sold online"
+    ],
     "Theme": "Dinosaurs",
     "Website": "https://myrtlebeachfamilygolf.com/",
     "Short Description": "Pick between the Ice Age and Predator courses and putt beneath towering dinosaurs. It's a roaring good time right on the main drag in south Myrtle Beach.",
     "Name": "Jurassic Golf",
     "Phone": "(843) 913-5333",
     "Photo Status": "Needed",
+    "Hours Note": "Hours change by season and weather, and not every course opens year-round. Call ahead.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8439135333",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Jurassic+Golf%2C+2900+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Jurassic+Golf%2C+2900+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://myrtlebeachfamilygolf.com/hours/"
    }
   },
   {
@@ -85,36 +101,52 @@
    "id": "rec4QdrfB09jRLXuU",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
+    "Price": "Ages 13+ $14.88, ages 4–12 $13.02, 3 and under free (plus tax); $1 off online",
     "Area": "North Myrtle Beach",
     "Address": "701 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Theme": "Dinosaurs",
     "Website": "https://dinosauradventuregolf.com/",
     "Short Description": "Life-size dinosaurs lurk around every corner of these two 18-hole prehistoric courses. Little paleontologists will love spotting T. rex between putts.",
     "Name": "Professor Hacker's Dinosaur Adventure Golf",
     "Phone": "(843) 272-8041",
+    "Price Level": "$",
     "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8432728041",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Professor+Hacker%27s+Dinosaur+Adventure+Golf%2C+701+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Professor+Hacker%27s+Dinosaur+Adventure+Golf%2C+701+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Details Source": "https://dinosauradventuregolf.com/"
    }
   },
   {
    "id": "rec7xLBeDAyYjIAkr",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
+    "Price": "Adults (9+) $13, kids 8 and under $9.50, 3 and under free; second round $6",
     "Area": "North Myrtle Beach",
     "Address": "1010 Vereen Rd, North Myrtle Beach, SC 29582",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Theme": "Volcano / Tropical",
     "Website": "https://paradiseadventuregolf.com/molten-mountain/",
     "Short Description": "Play Pele's Revenge outdoors around a towering volcano, then head inside to the air-conditioned Lava Louie's Challenge. It's a smart pick for hot afternoons or rainy days.",
     "Name": "Molten Mountain Miniature Golf",
     "Phone": "(843) 280-5095",
+    "Price Level": "$",
     "Photo Status": "Needed",
+    "Hours Note": "Summer (June 1 to Labor Day) daily 9 AM–11:30 PM. Call for fall, winter and spring hours.",
     "Indoor / Outdoor": "Hybrid",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8432805095",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Molten+Mountain+Miniature+Golf%2C+1010+Vereen+Rd%2C+North+Myrtle+Beach%2C+SC+29582"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Molten+Mountain+Miniature+Golf%2C+1010+Vereen+Rd%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Details Source": "https://paradiseadventuregolf.com/molten-mountain/"
    }
   },
   {
@@ -123,34 +155,49 @@
    "fields": {
     "Area": "Central Myrtle",
     "Address": "2001 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Theme": "Asian Legends / Dragons",
     "Website": "https://reddragoncove.com/",
     "Short Description": "Putt past a fierce red dragon and pagoda-style scenery inspired by Asian legends and pirate lore. It's a colorful change of pace from the usual tropical courses.",
     "Name": "Red Dragon Cove Adventure Golf",
     "Phone": "(843) 282-9477",
     "Photo Status": "Requested",
+    "Hours Note": "Regular hours 10 AM–7 PM daily; shorter hours in November and with the weather. Call (843) 282-9477.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8432829477",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Red+Dragon+Cove+Adventure+Golf%2C+2001+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Red+Dragon+Cove+Adventure+Golf%2C+2001+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://reddragoncove.com/"
    }
   },
   {
    "id": "recC8kmKeKumpSmYi",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
+    "Price": "Adults (9+) $13, kids 8 and under $9.50, 3 and under free (plus tax)",
     "Area": "Central Myrtle",
     "Address": "2101 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids",
+     "Rain or shine"
+    ],
     "Theme": "Mayan Jungle",
     "Website": "http://paradiseadventuregolf.com/cancun-lagoon-miniature-golf/",
     "Short Description": "Climb a 50-foot Mayan pyramid and explore jungle ruins across 27 holes, with some played indoors. It's one of the most dramatic-looking courses in town.",
     "Name": "Cancun Lagoon Adventure Golf",
     "Phone": "(843) 444-1098",
+    "Price Level": "$",
     "Photo Status": "Needed",
+    "Hours Note": "Summer (June 1 to Labor Day) daily 9 AM–11:30 PM. Call (843) 444-1098 for off-season hours.",
     "Indoor / Outdoor": "Hybrid",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8434441098",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Cancun+Lagoon+Adventure+Golf%2C+2101+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Cancun+Lagoon+Adventure+Golf%2C+2101+S+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://paradiseadventuregolf.com/cancun-lagoon/"
    }
   },
   {
@@ -176,22 +223,31 @@
    "id": "recDgd0MkOFujSQu9",
    "createdTime": "2026-11-05T22:23:09.000Z",
    "fields": {
+    "Price": "Included with Broadway Grand Prix all-you-can-ride wristbands ($54.99, or $49.99 online)",
     "Area": "Central Myrtle",
     "Address": "1820 21st Ave N, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Theme": "Racing / Family Fun Park",
     "Website": "https://broadwaygrandprix.com/",
     "Short Description": "Pair a round on two 18-hole mini-golf courses with go-karts, kiddie rides and a big arcade at one of Myrtle Beach's best-known family fun parks. Great for groups who want to do a little of everything in one stop.",
     "Name": "Broadway Grand Prix Challenge Mini Golf",
     "Phone": "(843) 839-4080",
+    "Price Level": "$$$",
     "Amenities": [
      "Arcade"
     ],
     "Arcade On-Site": true,
     "Photo Status": "Requested",
+    "Hours Note": "Hours change by date and season. Check the park calendar before you go.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8438394080",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Broadway+Grand+Prix+Challenge+Mini+Golf%2C+1820+21st+Ave+N%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Broadway+Grand+Prix+Challenge+Mini+Golf%2C+1820+21st+Ave+N%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://broadwaygrandprix.com/tickets-wristbands-passes/"
    }
   },
   {
@@ -200,32 +256,46 @@
    "fields": {
     "Area": "Surfside",
     "Address": "3009 Hwy 17 Business, Garden City, SC 29576",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Theme": "Deserted Island / Classic TV",
     "Website": "https://gilligansminigolf.com/",
     "Short Description": "Play past Gilligan's hut, the Skipper's helm and Mary Ann's coconut grove on this tribute to the classic TV show. A snack bar and easy parking make it a stress-free family stop.",
     "Name": "Gilligan's Island Funland",
     "Photo Status": "Needed",
+    "Hours Note": "Open 7 days. Fall hours have been 11 AM–5 PM; call ahead to confirm.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Gilligan%27s+Island+Funland%2C+3009+Hwy+17+Business%2C+Garden+City%2C+SC+29576"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Gilligan%27s+Island+Funland%2C+3009+Hwy+17+Business%2C+Garden+City%2C+SC+29576",
+    "Details Source": "https://gilligansminigolf.com/"
    }
   },
   {
    "id": "recFNb669qyoqnTN1",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
+    "Price": "Ages 13+ $14.88, ages 4–12 $13.02, 3 and under free (plus tax); $1 off online",
     "Area": "North Myrtle Beach",
     "Address": "1705 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Theme": "Treasure Hunt / Gold Mine",
     "Website": "https://losttreasuregolfnmb.com/",
     "Short Description": "Ride a mining train up the mountain to the first tee, then hunt for treasure past caves, waterfalls and volcanoes. Two 18-hole courses make it an easy spot to spend a whole evening.",
     "Name": "Professor Hacker's Lost Treasure Golf",
     "Phone": "(843) 272-5467",
+    "Price Level": "$",
     "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8432725467",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Professor+Hacker%27s+Lost+Treasure+Golf%2C+1705+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Professor+Hacker%27s+Lost+Treasure+Golf%2C+1705+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Details Source": "https://losttreasuregolfnmb.com/"
    }
   },
   {
@@ -233,17 +303,25 @@
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
     "Area": "Central Myrtle",
+    "Hours": "Mon-Thu 10:00-21:00\nFri-Sat 10:00-22:00\nSun 10:00-21:00",
     "Address": "915 N Ocean Blvd, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Theme": "Neon Glow / Crazy",
     "Website": "https://www.ripleys.com/attractions/ripleys-crazy-golf-myrtle-beach",
     "Short Description": "Three stories of glow-in-the-dark, neon-lit mini golf right on the Boardwalk. Fully air-conditioned, it's the perfect escape from summer heat or a rainy day.",
     "Name": "Ripley's Crazy Golf",
     "Phone": "(843) 916-0888",
     "Photo Status": "Needed",
+    "Hours Note": "Last ticket sold at closing time. Hours shown are for early November.",
     "Indoor / Outdoor": "Indoor/AC",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8439160888",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Ripley%27s+Crazy+Golf%2C+915+N+Ocean+Blvd%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Ripley%27s+Crazy+Golf%2C+915+N+Ocean+Blvd%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://www.ripleys.com/attractions/ripleys-crazy-golf-myrtle-beach/hours"
    }
   },
   {
@@ -279,9 +357,9 @@
      "Ice Cream"
     ],
     "Photo Status": "Needed",
+    "Hours Note": "Closed permanently (per tupelobay.com, Nov 2026).",
     "Indoor / Outdoor": "Outdoor",
     "Call Link": "tel:8432157888",
-    "Published": true,
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Runaway+Bay+Miniature+Golf%2C+1800+Hwy+17+Business%2C+Murrells+Inlet%2C+SC+29576"
    }
   },
@@ -374,15 +452,23 @@
    "id": "recPbcBiQQDj3kAiQ",
    "createdTime": "2026-11-05T22:23:09.000Z",
    "fields": {
+    "Price": "Adults (9+) $13, kids 8 and under $9.50, 3 and under free; all-day pass $19.50 (plus tax)",
     "Area": "North Myrtle Beach",
     "Address": "301 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Theme": "Pirates",
     "Short Description": "Pirate ships sit anchored in the lagoons of this swashbuckling mini-golf course, with pirate audio piping in as you putt. A fun, classic round for little buccaneers right on Highway 17 in North Myrtle Beach.",
     "Name": "Mutiny Bay Miniature Golf",
+    "Price Level": "$",
     "Photo Status": "Needed",
+    "Hours Note": "Summer (June 1 to Labor Day) daily 9 AM–11:30 PM. Call (843) 249-7844 for off-season hours.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mutiny+Bay+Miniature+Golf%2C+301+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mutiny+Bay+Miniature+Golf%2C+301+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Details Source": "https://paradiseadventuregolf.com/mutiny-bay/"
    }
   },
   {
@@ -407,16 +493,23 @@
    "fields": {
     "Area": "Central Myrtle",
     "Address": "7101 N Kings Hwy, Myrtle Beach, SC 29572",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Theme": "Safari Animals",
     "Website": "https://myrtlebeachfamilygolf.com/",
     "Short Description": "Life-size elephants, giraffes and big cats line the fairways of this safari-themed course. Kids get a wildlife adventure with every hole.",
     "Name": "Jungle Safari Mini Golf",
     "Phone": "(843) 315-0311",
     "Photo Status": "Needed",
+    "Hours Note": "Hours change by season and weather, and not every course opens year-round. Call ahead.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8433150311",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Jungle+Safari+Mini+Golf%2C+7101+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29572"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Jungle+Safari+Mini+Golf%2C+7101+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29572",
+    "Details Source": "https://myrtlebeachfamilygolf.com/hours/"
    }
   },
   {
@@ -425,16 +518,24 @@
    "fields": {
     "Area": "Central Myrtle",
     "Address": "2205 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids",
+     "Wheelchair accessible",
+     "Tickets sold online"
+    ],
     "Theme": "Pirates / Peter Pan",
     "Website": "https://myrtlebeachfamilygolf.com/",
     "Short Description": "Sail into Neverland with animatronic pirates, cascading waterfalls and Captain Hook's famous ship. It's a fan favorite for families with young adventurers.",
     "Name": "Captain Hook's Adventure Golf",
     "Phone": "(843) 913-7851",
     "Photo Status": "Needed",
+    "Hours Note": "Hours change by season and weather, and not every course opens year-round. Call ahead.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8439137851",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Captain+Hook%27s+Adventure+Golf%2C+2205+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Captain+Hook%27s+Adventure+Golf%2C+2205+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://myrtlebeachfamilygolf.com/hours/"
    }
   },
   {
@@ -463,18 +564,26 @@
    "id": "recXCgs3mIezE5nlw",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
+    "Price": "Ages 13+ $14.88, ages 4–12 $13.02, 3 and under free (plus tax); $1 off online",
     "Area": "North Myrtle Beach",
     "Address": "715 Hwy 17 N, North Myrtle Beach, SC 29582",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Theme": "Plane Crash / Jungle Rescue",
     "Website": "https://www.maydaygolf.com/",
     "Short Description": "Putt your way past a crashed cargo plane and a rescue helicopter on two jungle-themed 18-hole courses. The over-the-top scenery makes it one of the most photographed courses on the Strand.",
     "Name": "Mayday Miniature Golf",
     "Phone": "(843) 280-3535",
+    "Price Level": "$",
     "Photo Status": "Requested",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8432803535",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mayday+Miniature+Golf%2C+715+Hwy+17+N%2C+North+Myrtle+Beach%2C+SC+29582"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mayday+Miniature+Golf%2C+715+Hwy+17+N%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Details Source": "https://www.maydaygolf.com/"
    }
   },
   {
@@ -483,6 +592,9 @@
    "fields": {
     "Area": "Central Myrtle",
     "Address": "3801 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Theme": "Pirates",
     "Website": "https://www.myrtlebeachminigolf.net/spyglass-mini-golf-myrtle-beach",
     "Short Description": "A pirate-themed course with an arcade, snack bar and gift shop all in one stop. Summer nights bring lit-up golf for an after-dinner round.",
@@ -493,10 +605,13 @@
     ],
     "Arcade On-Site": true,
     "Photo Status": "Needed",
+    "Hours Note": "Peak season daily 9 AM–11 PM; hours change with the season and weather, so call ahead.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8436269309",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Spy+Glass+Adventure+Golf%2C+3801+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Spy+Glass+Adventure+Golf%2C+3801+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://www.myrtlebeachminigolf.net/spyglass-mini-golf-myrtle-beach"
    }
   },
   {
@@ -555,40 +670,58 @@
    "id": "recnEryUADEAtocEs",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
+    "Price": "Adults $12.51, kids 12 and under $10.51; all-day play $19.02 adults, $17.02 kids",
     "Area": "Central Myrtle",
+    "Hours": "Daily 09:00-17:00",
     "Address": "707 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids",
+     "Free parking",
+     "Wheelchair accessible"
+    ],
     "Theme": "Lost City of Atlantis / Minotaur",
     "Website": "https://www.mtatlanticusminotaurgoff.com/",
     "Short Description": "Explore the mythical lost city of Atlantis on a multi-level course with sweeping ocean views from the top. Its quirky storytelling and signage make it a cult favorite.",
     "Name": "Mt. Atlanticus Minotaur Goff",
     "Phone": "(843) 444-1008",
+    "Price Level": "$",
     "Photo Status": "Requested",
+    "Hours Note": "Last tee time 4:30 PM. Hours can change with the weather.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8434441008",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mt.+Atlanticus+Minotaur+Goff%2C+707+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mt.+Atlanticus+Minotaur+Goff%2C+707+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://www.mtatlanticusminotaurgoff.com/"
    }
   },
   {
    "id": "recnaPLoFL3Z1durb",
    "createdTime": "2026-11-05T17:49:51.000Z",
    "fields": {
+    "Price": "Ages 4+ $15 a round, $21 for two rounds; unlimited golf until 6 PM $26 (tax included)",
     "Area": "Surfside",
     "Address": "735 Hwy 17 S, Surfside Beach, SC 29575",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Theme": "Tropical / Surf",
     "Website": "https://mulliganslagoonsb.com/",
     "Short Description": "One of the Strand's newest spots offers 36 tropical, surf-themed holes with tiki torches and seashell-studded obstacles. Head inside afterward for the arcade and a slice from the pizza pub.",
     "Name": "Mulligan's Lagoon Golf and Arcade",
     "Phone": "(843) 839-9983",
+    "Price Level": "$",
     "Amenities": [
      "Arcade"
     ],
     "Arcade On-Site": true,
     "Photo Status": "Needed",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8438399983",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mulligan%27s+Lagoon+Golf+and+Arcade%2C+735+Hwy+17+S%2C+Surfside+Beach%2C+SC+29575"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Mulligan%27s+Lagoon+Golf+and+Arcade%2C+735+Hwy+17+S%2C+Surfside+Beach%2C+SC+29575",
+    "Details Source": "https://mulliganslagoonsb.com/"
    }
   },
   {
@@ -597,16 +730,22 @@
    "fields": {
     "Area": "Central Myrtle",
     "Address": "4801 N Kings Hwy, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Theme": "Pirates",
     "Website": "https://www.myrtlebeachminigolf.net/treasure-island-mini-golf-myrtle-beach",
     "Short Description": "A Myrtle Beach classic since 1981, this pirate course is all about old-school mini golf charm. Great for families who want a relaxed, nostalgic round.",
     "Name": "Treasure Island Golf",
     "Phone": "(843) 449-4754",
     "Photo Status": "Needed",
+    "Hours Note": "Peak season daily 9 AM–11 PM; hours change with the season and weather, so call ahead.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8434494754",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Treasure+Island+Golf%2C+4801+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Treasure+Island+Golf%2C+4801+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://www.myrtlebeachminigolf.net/treasure-island-mini-golf-myrtle-beach"
    }
   },
   {
@@ -615,16 +754,24 @@
    "fields": {
     "Area": "Central Myrtle",
     "Address": "3301 S Ocean Blvd, Myrtle Beach, SC 29577",
+    "Good to Know": [
+     "Great for kids",
+     "Wheelchair accessible",
+     "Tickets sold online"
+    ],
     "Theme": "Pirate Shipwreck",
     "Website": "https://myrtlebeachfamilygolf.com/",
     "Short Description": "Navigate the wreckage of a pirate ship on this ocean-side adventure course. Caves, bridges and waterfalls keep every hole interesting.",
     "Name": "Shipwreck Island Adventure Golf",
     "Phone": "(843) 913-5330",
     "Photo Status": "Needed",
+    "Hours Note": "Hours change by season and weather, and not every course opens year-round. Call ahead.",
     "Indoor / Outdoor": "Outdoor",
+    "Details Checked": "2026-11-06",
     "Call Link": "tel:8439135330",
     "Published": true,
-    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Shipwreck+Island+Adventure+Golf%2C+3301+S+Ocean+Blvd%2C+Myrtle+Beach%2C+SC+29577"
+    "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Shipwreck+Island+Adventure+Golf%2C+3301+S+Ocean+Blvd%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Source": "https://myrtlebeachfamilygolf.com/hours/"
    }
   }
  ]

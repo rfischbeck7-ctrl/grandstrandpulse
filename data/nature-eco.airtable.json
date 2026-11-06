@@ -6,9 +6,20 @@
    "fields": {
     "Short Description": "A beach park since 1935 with a fishing pier, trails and camping.",
     "Name": "Myrtle Beach State Park",
+    "Price Level": "$",
     "Area": "Surfside",
+    "Good to Know": [
+     "Great for kids",
+     "Dog friendly"
+    ],
+    "Website": "https://southcarolinaparks.com/myrtle-beach",
     "Type": "State park",
+    "Hours": "Daily 06:00-22:00",
     "Address": "4401 S Kings Hwy, Myrtle Beach, SC 29575",
+    "Details Source": "https://southcarolinaparks.com/myrtle-beach",
+    "Hours Note": "6 AM–8 PM December through February. Parking is limited; arrive before 10 AM or after 2 PM on busy days.",
+    "Price": "$8 adults, $5 SC seniors, $4 ages 6–15, 5 and under free; pier fishing extra",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -19,9 +30,39 @@
     "Short Description": "Speedboat dolphin tours departing Harbourgate Marina and Little River.",
     "Name": "Sea Thunder and Sea Screamer",
     "Area": "North Myrtle Beach",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online",
+     "Seasonal"
+    ],
     "Website": "https://www.myrtlebeachdolphincruises.com/",
     "Type": "Dolphin tour",
     "Address": "2111 Little River Neck Rd, North Myrtle Beach, SC 29582",
+    "Details Source": "https://www.myrtlebeachdolphincruises.com/",
+    "Hours Note": "Cruising daily in season (2026 season began March 21). Book online up to an hour before departure.",
+    "Details Checked": "2026-11-06",
+    "Published": true
+   }
+  },
+  {
+   "id": "rec4ryfeTG9iJKXFZ",
+   "createdTime": "2026-11-06T20:02:51.000Z",
+   "fields": {
+    "Short Description": "Boat tours through the Murrells Inlet salt marsh: birdwatching and shelling eco tours, history cruises and sunset cruises.",
+    "Name": "Visit Murrells Inlet Cruises & Tours",
+    "Price Level": "$$",
+    "Area": "Murrells Inlet",
+    "Good to Know": [
+     "Reservations recommended",
+     "Great for kids",
+     "Tickets sold online"
+    ],
+    "Website": "https://visitmurrellsinlet.com/",
+    "Type": "Eco tour",
+    "Phone": "(843) 357-9999",
+    "Address": "4079 US-17 Bus, Murrells Inlet, SC 29576",
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/visit-murrells-inlet",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -32,9 +73,16 @@
     "Short Description": "Dolphin watch cruises, plus kayak and paddleboard rentals.",
     "Name": "Express Watersports Dolphin Watch",
     "Area": "Murrells Inlet",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Website": "https://expresswatersports.com/myrtle-beach-dolphin-watch-cruise/",
     "Type": "Dolphin tour",
     "Address": "4042 Hwy 17 Business, Murrells Inlet, SC 29576",
+    "Details Source": "https://expresswatersports.com/",
+    "Hours Note": "Office open Mon–Sat 10 AM–5 PM. Tours run on a seasonal schedule; book online.",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -44,10 +92,16 @@
    "fields": {
     "Short Description": "A riverfront walk along Front Street with boat tours, museums and a marina.",
     "Name": "Georgetown Harborwalk",
+    "Price Level": "Free",
     "Area": "Georgetown",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Website": "http://www.historicgeorgetown.com",
     "Type": "Boardwalk",
     "Address": "Front St, Georgetown, SC 29440",
+    "Price": "Free to walk",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -57,10 +111,61 @@
    "fields": {
     "Short Description": "A beach, marsh boardwalk, birding and nature center, home to Atalaya Castle.",
     "Name": "Huntington Beach State Park",
+    "Price Level": "$",
     "Area": "Murrells Inlet",
+    "Good to Know": [
+     "Great for kids",
+     "Dog friendly"
+    ],
     "Website": "http://southcarolinaparks.com/huntingtonbeach",
     "Type": "State park",
+    "Hours": "Daily 06:00-18:00",
     "Address": "16148 Ocean Hwy, Murrells Inlet, SC 29576",
+    "Details Source": "https://southcarolinaparks.com/huntington-beach",
+    "Hours Note": "Open until 9 PM during Daylight Saving Time. Parking can fill on weekends; arrive before 10 AM or after 2 PM.",
+    "Price": "$8 adults, $5 SC seniors, $4 ages 6–15, 5 and under free",
+    "Details Checked": "2026-11-06",
+    "Published": true
+   }
+  },
+  {
+   "id": "recAXT56FySanMdxF",
+   "createdTime": "2026-11-06T20:02:51.000Z",
+   "fields": {
+    "Short Description": "An exotic petting farm inland in Conway with more than 200 animals, from goats and llamas to sloths and lemurs, and hands-on encounters for families. Visits are by appointment.",
+    "Name": "Wild Woods Farm",
+    "Area": "Central Myrtle",
+    "Good to Know": [
+     "Reservations recommended",
+     "Great for kids"
+    ],
+    "Website": "https://wildwoodsfarm.org/",
+    "Type": "Wildlife",
+    "Phone": "(843) 503-0334",
+    "Address": "5940 Dongola Hwy, Conway, SC 29527",
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/wild-woods-farm",
+    "Details Checked": "2026-11-06",
+    "Published": true
+   }
+  },
+  {
+   "id": "recBt2XlQ1NBNFcZF",
+   "createdTime": "2026-11-06T20:02:51.000Z",
+   "fields": {
+    "Short Description": "Guided or on-your-own kayak and paddleboard trips through the Cherry Grove marsh, out to undeveloped Waties Island and along the Waccamaw River. Rentals too.",
+    "Name": "Great Escapes Kayaking Expeditions",
+    "Price Level": "$$",
+    "Area": "North Myrtle Beach",
+    "Good to Know": [
+     "Reservations recommended",
+     "Great for kids"
+    ],
+    "Website": "https://greatescapeskayak.com/",
+    "Type": "Kayak / paddleboard",
+    "Phone": "(843) 241-4588",
+    "Address": "1603 Highway 17 S, North Myrtle Beach, SC 29582",
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/great-escapes-kayaking-expeditions",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -84,10 +189,18 @@
     "Short Description": "Dolphin-watch and sunset cruises from the MarshWalk.",
     "Name": "Crazy Sister Dolphin Cruises",
     "Area": "Murrells Inlet",
+    "Good to Know": [
+     "Great for kids",
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
     "Website": "https://crazysistermarina.com/",
     "Type": "Dolphin tour",
     "Phone": "(843) 651-3676",
     "Address": "4123 US-17 Business, Murrells Inlet, SC 29576",
+    "Details Source": "https://crazysistermarina.com/",
+    "Hours Note": "Cruise schedule changes through the year. Book online or call (843) 651-3676.",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -98,9 +211,15 @@
     "Short Description": "A coastal research reserve with guided tours and trails.",
     "Name": "Hobcaw Barony",
     "Area": "Georgetown",
+    "Good to Know": [
+     "Reservations recommended"
+    ],
     "Website": "http://www.hobcawbarony.org/",
     "Type": "Nature reserve",
     "Address": "22 Hobcaw Rd, Georgetown, SC 29440",
+    "Details Source": "http://www.hobcawbarony.org/",
+    "Hours Note": "Discovery Center open daytime. Guided tours Mon–Fri at 9:30, 10:30, 1:30 and 2:30, and Saturdays at 10 AM; book ahead.",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -110,9 +229,16 @@
    "fields": {
     "Short Description": "A waterfront boardwalk along the marsh, lined with live-music venues.",
     "Name": "Murrells Inlet MarshWalk",
+    "Price Level": "Free",
     "Area": "Murrells Inlet",
+    "Good to Know": [
+     "Great for kids",
+     "Dog friendly"
+    ],
     "Type": "Boardwalk",
     "Address": "4025 Hwy 17 Business, Murrells Inlet, SC 29576",
+    "Price": "Free to walk",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -123,8 +249,14 @@
     "Short Description": "A reptile park at Barefoot Landing with gators, snakes and more.",
     "Name": "Alligator Adventure",
     "Area": "North Myrtle Beach",
+    "Good to Know": [
+     "Great for kids"
+    ],
+    "Website": "https://www.alligatoradventure.com/",
     "Type": "Wildlife",
     "Address": "4604 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Details Source": "https://www.alligatoradventure.com/",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -134,10 +266,20 @@
    "fields": {
     "Short Description": "A sculpture garden since 1932, with live oaks, a wildlife trail and a lowcountry farm and zoo.",
     "Name": "Brookgreen Gardens",
+    "Price Level": "$$",
     "Area": "Murrells Inlet",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
     "Website": "http://www.brookgreen.org/",
     "Type": "Gardens",
+    "Hours": "Mon-Tue 09:30-17:00\nWed-Sun 16:00-21:00",
     "Address": "1931 Brookgreen Dr, Murrells Inlet, SC 29576",
+    "Details Source": "http://www.brookgreen.org/",
+    "Hours Note": "Daytime gates close at 4:30 PM. No pets.",
+    "Price": "Adults $25, seniors $23, ages 4–12 $14, 3 and under free; tickets good for 7 days",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -151,7 +293,10 @@
     "Website": "http://www.surf-the-earth.com/",
     "Type": "Kayak / paddleboard",
     "Phone": "(843) 235-3500",
+    "Hours": "Mon-Sat 10:00-17:00\nSun Closed",
     "Address": "47 Da Gullah Way, Pawleys Island, SC 29585",
+    "Details Source": "http://www.surf-the-earth.com/",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -161,9 +306,15 @@
    "fields": {
     "Short Description": "An oceanfront promenade with piers, rides and summer live music.",
     "Name": "Myrtle Beach Boardwalk",
+    "Price Level": "Free",
     "Area": "Central Myrtle",
+    "Good to Know": [
+     "Great for kids"
+    ],
     "Type": "Boardwalk",
     "Address": "Ocean Blvd, Myrtle Beach, SC",
+    "Price": "Free to walk",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -186,10 +337,19 @@
    "fields": {
     "Short Description": "Guided kayak tours of a cypress forest, the Murrells Inlet salt marsh and Huntington Beach State Park, plus kayak fishing trips. Book online for the meeting spot.",
     "Name": "Black River Outdoors Center",
+    "Price Level": "$$",
     "Area": "Murrells Inlet",
+    "Good to Know": [
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
     "Website": "http://www.blackriveroutdoors.com/",
     "Type": "Kayak / paddleboard",
     "Phone": "(843) 546-4840",
+    "Details Source": "http://www.blackriveroutdoors.com/",
+    "Hours Note": "Guided kayak tours by reservation; book online or call (843) 546-4840.",
+    "Price": "Guided tours from $40 (2-hour salt marsh) to $130 (4-hour kayak fishing)",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   },
@@ -200,8 +360,16 @@
     "Short Description": "A big-cat and exotic-animal preserve with up-close tours. Check ahead for hours and booking.",
     "Name": "T.I.G.E.R.S. / Myrtle Beach Safari",
     "Area": "Central Myrtle",
+    "Good to Know": [
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
+    "Website": "https://www.myrtlebeachsafari.com/",
     "Type": "Wildlife",
     "Address": "851 Folly Ranch Ln, Myrtle Beach, SC 29588",
+    "Details Source": "https://www.myrtlebeachsafari.com/",
+    "Hours Note": "Open three days a week, by reservation only.",
+    "Details Checked": "2026-11-06",
     "Published": true
    }
   }

@@ -4,11 +4,19 @@
    "id": "rec42VT2B4HGVRQqA",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
+    "Website": "https://www.myrtlewaves.com/",
     "Address": "3000 Hwy 17 Bypass S, Myrtle Beach, SC 29577",
     "Short Description": "One of the area's largest water parks, open since 1985. Seasonal.",
     "Published": true,
+    "Details Source": "https://www.myrtlewaves.com/",
     "Area": "Central Myrtle",
     "Name": "Myrtle Waves Water Park",
+    "Hours Note": "Seasonal water park; check the park calendar for open days.",
+    "Good to Know": [
+     "Great for kids",
+     "Seasonal"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Water park"
    }
   },
@@ -16,11 +24,19 @@
    "id": "rec4VqPkXsHGlWbb2",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
+    "Website": "https://www.familykingdomfun.com/",
     "Address": "300 4th Ave S, Myrtle Beach, SC 29577",
     "Short Description": "Oceanfront rides since 1966, with the Splashes Oceanfront Water Park on the same grounds.",
     "Published": true,
+    "Details Source": "https://www.familykingdomfun.com/",
     "Area": "Central Myrtle",
     "Name": "Family Kingdom Amusement Park",
+    "Hours Note": "Closed for the season; the 2026 season has ended. Check the 2027 calendar or call (843) 626-3447.",
+    "Good to Know": [
+     "Great for kids",
+     "Seasonal"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Amusement park"
    }
   },
@@ -44,9 +60,55 @@
     "Website": "http://www.radicalropes.com",
     "Short Description": "Ziplines, aerial tours and ropes courses at the south end of Myrtle Beach. Closed Mondays and Tuesdays in the off-season; check the website for hours.",
     "Published": true,
+    "Details Source": "http://www.radicalropes.com",
     "Area": "Central Myrtle",
     "Name": "Radical Ropes Adventure Park",
+    "Hours Note": "Fall hours: Wed–Fri noon–10 PM, Sat–Sun 10 AM–10 PM, closed Mon–Tue. Last aerial tour 7 PM, last zip tour 8 PM.",
+    "Details Checked": "2026-11-06",
     "Type": "Zipline / ropes"
+   }
+  },
+  {
+   "id": "rec6j8r3mV8yTwsnG",
+   "createdTime": "2026-11-06T20:02:50.000Z",
+   "fields": {
+    "Website": "https://sharkwakepark.com",
+    "Phone": "(843) 399-9253",
+    "Address": "150 Citizens Circle, Little River, SC 29566",
+    "Short Description": "Wakeboard, kneeboard or water-ski behind a cable instead of a boat, no gear or experience needed, or bounce around a floating inflatable obstacle course. It's on the lake at the North Myrtle Beach Park & Sports Complex.",
+    "Published": true,
+    "Details Source": "https://sharkwakepark.com",
+    "Area": "North Myrtle Beach",
+    "Name": "Shark Wake Park",
+    "Price Level": "$$",
+    "Hours Note": "Seasonal: weekends in spring and fall, daily in summer; hours vary, so call ahead",
+    "Good to Know": [
+     "Seasonal",
+     "Great for kids"
+    ],
+    "Details Checked": "2026-11-06",
+    "Type": "Cable / wake park"
+   }
+  },
+  {
+   "id": "recBJrYXozTVBUKcE",
+   "createdTime": "2026-11-06T20:02:50.000Z",
+   "fields": {
+    "Website": "https://inletpointplantation.com/",
+    "Phone": "(843) 249-2989",
+    "Address": "5800 Highway 236, North Myrtle Beach, SC 29582",
+    "Short Description": "Guided horseback rides on an undeveloped island beach, including sunset rides, plus waterway trail rides and short pony rides for little ones. Rides run year round.",
+    "Published": true,
+    "Details Source": "https://inletpointplantation.com/",
+    "Area": "North Myrtle Beach",
+    "Name": "Inlet Point Plantation",
+    "Price Level": "$$$",
+    "Good to Know": [
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
+    "Type": "Horseback riding"
    }
   },
   {
@@ -58,8 +120,17 @@
     "Address": "1820 21st Ave N, Myrtle Beach, SC 29577",
     "Short Description": "Seven go-kart tracks including a pro track and a kids' track, plus bumper cars, kiddie rides and an arcade.",
     "Published": true,
+    "Details Source": "https://broadwaygrandprix.com/tickets-wristbands-passes/",
     "Area": "Central Myrtle",
     "Name": "Broadway Grand Prix",
+    "Price": "All-you-can-ride wristbands $54.99 (48\" and up) or $44.99 (40–48\"), $5 less online; toddler band $14.99",
+    "Price Level": "$$$",
+    "Hours Note": "Hours change by date and season (typically late morning to evening). Check the park calendar before you go.",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Go-karts"
    }
   },
@@ -83,8 +154,16 @@
     "Address": "Broadway at the Beach, Myrtle Beach, SC 29577",
     "Short Description": "A 1,000-foot zipline over Lake Broadway and a ropes obstacle course.",
     "Published": true,
+    "Details Source": "https://www.wonderworksonline.com/myrtle-beach/location-info/",
     "Area": "Central Myrtle",
     "Name": "Soar & Explore (WonderWorks)",
+    "Hours Note": "Closed for the season (fall 2026). WonderWorks itself stays open.",
+    "Good to Know": [
+     "Great for kids",
+     "Free parking",
+     "Seasonal"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Zipline / ropes"
    }
   },
@@ -96,8 +175,15 @@
     "Address": "4042 Hwy 17 Business, Murrells Inlet, SC 29576",
     "Short Description": "Parasailing, jet skis, kayak and paddleboard rentals and dolphin cruises from Murrells Inlet.",
     "Published": true,
+    "Details Source": "https://expresswatersports.com/",
     "Area": "Murrells Inlet",
     "Name": "Express Watersports",
+    "Hours Note": "Office open Mon–Sat 10 AM–5 PM. Parasailing and jet skis run on a seasonal schedule; book online.",
+    "Good to Know": [
+     "Tickets sold online",
+     "Seasonal"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Parasailing / jet ski"
    }
   },
@@ -130,11 +216,21 @@
    "id": "recb07Aw1IGAwLh3g",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
+    "Website": "https://skywheelmb.com/",
     "Address": "1110 N Ocean Blvd, Myrtle Beach, SC 29577",
     "Short Description": "A Ferris wheel above the oceanfront with views of the whole Strand.",
     "Published": true,
+    "Details Source": "https://skywheelmb.com/",
     "Area": "Central Myrtle",
     "Name": "Myrtle Beach SkyWheel",
+    "Price": "$20.99 per adult",
+    "Price Level": "$$",
+    "Hours Note": "Recent hours 11 AM–7 PM.",
+    "Good to Know": [
+     "Great for kids",
+     "Rain or shine"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Observation wheel"
    }
   },
@@ -147,8 +243,36 @@
     "Address": "4123 US-17 Business, Murrells Inlet, SC 29576",
     "Short Description": "MarshWalk marina with jet skis, banana boat rides, dolphin cruises and sunset sails.",
     "Published": true,
+    "Details Source": "https://crazysistermarina.com/",
     "Area": "Murrells Inlet",
     "Name": "Crazy Sister Marina",
+    "Hours Note": "Fishing trips, jet skis and cruises run on a seasonal schedule. Book online or call (843) 651-3676.",
+    "Good to Know": [
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
+    "Type": "Jet ski / boat rides"
+   }
+  },
+  {
+   "id": "receEFCpOIm9zLnAK",
+   "createdTime": "2026-11-06T20:02:50.000Z",
+   "fields": {
+    "Website": "https://www.actionwatersportz.com/",
+    "Phone": "(843) 280-4100",
+    "Address": "1525 13th Ave N, North Myrtle Beach, SC 29582",
+    "Short Description": "Rent jet skis for the waterway, backwater or ocean, join a 2-hour jet ski dolphin excursion, or take a pontoon out for a half or full day on the Intracoastal.",
+    "Published": true,
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/action-water-sportz",
+    "Area": "North Myrtle Beach",
+    "Name": "Action Water Sportz",
+    "Price Level": "$$$",
+    "Good to Know": [
+     "Reservations recommended",
+     "Seasonal"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Jet ski / boat rides"
    }
   },
@@ -156,12 +280,19 @@
    "id": "reclXj1mYyGe4depi",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
+    "Hours": "Mon-Wed 11:00-22:00\nThu 11:00-23:00\nFri-Sat 10:00-00:00\nSun 12:00-22:00",
     "Website": "https://funwarehousemb.com/",
     "Address": "2349 Dick Pond Rd, Myrtle Beach, SC 29575",
     "Short Description": "Indoor and outdoor speed-kart racing with roller skating, bowling, laser tag, inflatables and an arcade of 50+ games.",
     "Published": true,
+    "Details Source": "https://funwarehousemb.com/",
     "Area": "Central Myrtle",
     "Name": "Fun Warehouse",
+    "Good to Know": [
+     "Great for kids",
+     "Rain or shine"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Go-karts"
    }
   },
@@ -173,8 +304,15 @@
     "Address": "9589 N Kings Hwy, Myrtle Beach, SC 29572",
     "Short Description": "Two elevated tracks, the Mighty Myrtle and the Wild Woody, plus a rookie track, carousel, blaster boats and arcade.",
     "Published": true,
+    "Details Source": "https://funatthetrack.com/",
     "Area": "Central Myrtle",
     "Name": "The Track Family Fun Park",
+    "Price": "Pay-as-you-go point cards: 60 points $55, 125 points $110, 250 points $215",
+    "Hours Note": "Hours change with the season; call ahead.",
+    "Good to Know": [
+     "Great for kids"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Go-karts"
    }
   },
@@ -206,12 +344,19 @@
    "id": "recxzvixqnu8v48ns",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
+    "Hours": "Mon Closed\nTue-Thu 13:00-20:00\nFri-Sat 13:00-21:00\nSun 13:00-20:00",
     "Website": "https://www.k1speed.com/myrtle-beach-location.html",
     "Address": "720 Main St, North Myrtle Beach, SC 29582",
     "Short Description": "A fully enclosed indoor track with fast electric karts, plus an arcade and pool tables.",
     "Published": true,
+    "Details Source": "https://www.k1speed.com/myrtle-beach-location.html",
     "Area": "North Myrtle Beach",
     "Name": "K1 Speed",
+    "Hours Note": "Holiday hours can differ.",
+    "Good to Know": [
+     "Rain or shine"
+    ],
+    "Details Checked": "2026-11-06",
     "Type": "Go-karts"
    }
   }

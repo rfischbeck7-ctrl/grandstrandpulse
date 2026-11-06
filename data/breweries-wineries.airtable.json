@@ -4,11 +4,15 @@
    "id": "recAzmxVRfwsa2gff",
    "createdTime": "2026-11-06T14:17:52.000Z",
    "fields": {
+    "Hours": "Mon-Sat 12:00-20:00\nSun Call",
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Duplin+Winery%2C+4650+Hwy+17+S%2C+North+Myrtle+Beach%2C+SC+29582",
+    "Details Checked": "2026-11-06",
     "Address": "4650 Hwy 17 S, North Myrtle Beach, SC 29582",
     "Type": "Winery",
+    "Price Level": "$$",
     "Name": "Duplin Winery",
     "Vibe": "Sweet Southern wines",
+    "Hours Note": "Tastings until 7 PM, walk-in only. Sunday hours aren't posted.",
     "Phone": "(843) 663-1710",
     "Short Description": "Taste your way through a family-owned North Carolina winery's lineup of sweet, fruit-forward Southern wines near Barefoot Landing. Tastings and food-pairing lessons make it a fun stop on a beach-day detour.",
     "Area": "North Myrtle Beach",
@@ -16,7 +20,9 @@
      "Tastings & Tours",
      "Live Music"
     ],
+    "Price": "Wine tasting $20 (with cheese dip and crackers); premium tasting $48; flights $20–28. Tastings are 21+.",
     "Published": true,
+    "Details Source": "https://duplinwinery.com/pages/north-myrtle",
     "Website": "https://www.duplinwinery.com/",
     "Photo Status": "Needed"
    }
@@ -25,11 +31,14 @@
    "id": "recB4A3w2P5wD4fHo",
    "createdTime": "2026-11-06T14:17:52.000Z",
    "fields": {
+    "Hours": "Mon 16:00-21:30\nTue-Thu 11:00-21:30\nFri-Sat 11:00-22:00\nSun Closed",
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Southern+Hops+Brewing+Company%2C+5148+Hwy+17+Business%2C+Murrells+Inlet%2C+SC+29576",
+    "Details Checked": "2026-11-06",
     "Address": "5148 Hwy 17 Business, Murrells Inlet, SC 29576",
     "Type": "Brewery",
     "Name": "Southern Hops Brewing Company",
     "Vibe": "Brewpub with Southern comfort food",
+    "Hours Note": "Kitchen closes 30 minutes before the bar.",
     "Phone": "(843) 299-1254",
     "Short Description": "House beers like Pop's Pilsner and Blackwater Porter are paired with Southern-inspired dishes in a full-service restaurant and bar. Outdoor dining, family-friendly games and live music make it an easy stop in Murrells Inlet.",
     "Area": "Murrells Inlet",
@@ -40,6 +49,7 @@
      "Live Music"
     ],
     "Published": true,
+    "Details Source": "https://southernhops.com/",
     "Website": "https://southernhops.com/",
     "Photo Status": "Needed"
    }
@@ -123,11 +133,14 @@
    "id": "recKF5FTgkKAWRain",
    "createdTime": "2026-11-06T14:17:52.000Z",
    "fields": {
+    "Hours": "Sun-Thu 11:00-22:00\nFri-Sat 11:00-23:00",
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=South+Coast+Beer+Project%2C+5020+Carolina+Forest+Blvd%2C+Myrtle+Beach%2C+SC+29579",
+    "Details Checked": "2026-11-06",
     "Address": "5020 Carolina Forest Blvd, Myrtle Beach, SC 29579",
     "Type": "Brewery",
     "Name": "South Coast Beer Project",
     "Vibe": "Family-friendly brewery in Carolina Forest",
+    "Hours Note": "Happy hour daily 4–6 PM.",
     "Phone": "(843) 236-0277",
     "Short Description": "Rotating local craft beers, Detroit-style pizza and wings come with pond views at this family-friendly Carolina Forest brewery. The outdoor beer garden has lawn games and a big screen for game day.",
     "Area": "Central Myrtle",
@@ -137,6 +150,7 @@
      "Live Music"
     ],
     "Published": true,
+    "Details Source": "https://southcoastbeer.com/",
     "Website": "https://southcoastbeer.com/",
     "Photo Status": "Needed"
    }
@@ -145,11 +159,14 @@
    "id": "recPXaWIx6r9J8KXU",
    "createdTime": "2026-11-06T14:17:52.000Z",
    "fields": {
+    "Hours": "Sun-Thu 11:00-21:00\nFri-Sat 11:00-22:00",
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Yee-Haw+Brewing+at+Ole+Smoky+Distillery%2C+1214+Celebrity+Cir%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Checked": "2026-11-06",
     "Address": "1214 Celebrity Cir, Myrtle Beach, SC 29577",
     "Type": "Brewery",
     "Name": "Yee-Haw Brewing at Ole Smoky Distillery",
     "Vibe": "Moonshine, beer and live music at Broadway at the Beach",
+    "Hours Note": "Live entertainment most days.",
     "Phone": "(843) 286-5693",
     "Short Description": "Combine craft beer, moonshine tastings and live entertainment in one waterfront stop at Broadway at the Beach. There's a beer garden and a full-service restaurant.",
     "Area": "Central Myrtle",
@@ -159,6 +176,7 @@
      "Live Music"
     ],
     "Published": true,
+    "Details Source": "https://myrtlebeach.olesmoky.com/",
     "Website": "https://myrtlebeach.olesmoky.com/",
     "Photo Status": "Needed"
    }
@@ -186,7 +204,9 @@
    "id": "recl1HagtRYmgtGlc",
    "createdTime": "2026-11-06T14:17:52.000Z",
    "fields": {
+    "Hours": "Sun-Thu 12:00-20:00\nFri-Sat 12:00-21:00",
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Grand+Strand+Brewing+Company%2C+819+N+Kings+Hwy%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Checked": "2026-11-06",
     "Address": "819 N Kings Hwy, Myrtle Beach, SC 29577",
     "Type": "Brewery",
     "Name": "Grand Strand Brewing Company",
@@ -200,6 +220,7 @@
      "Live Music"
     ],
     "Published": true,
+    "Details Source": "https://grandstrandbrewing.com/",
     "Website": "https://grandstrandbrewing.com/",
     "Photo Status": "Needed"
    }
@@ -208,7 +229,9 @@
    "id": "recqiJCwgt6hGAMKz",
    "createdTime": "2026-11-06T14:17:52.000Z",
    "fields": {
+    "Hours": "Wed-Thu 16:00-21:00\nFri-Sat 16:00-22:00\nSun 13:00-18:00\nMon-Tue Closed",
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=The+Tasting+Room+on+9th%2C+505+9th+Ave+N%2C+Unit+A%2C+Myrtle+Beach%2C+SC+29577",
+    "Details Checked": "2026-11-06",
     "Address": "505 9th Ave N, Unit A, Myrtle Beach, SC 29577",
     "Type": "Wine Bar",
     "Name": "The Tasting Room on 9th",
@@ -217,6 +240,7 @@
     "Short Description": "A relaxed wine bar serving curated wines, craft cocktails and international beers. It's a good spot for catching up with friends or trying something new.",
     "Area": "Central Myrtle",
     "Published": true,
+    "Details Source": "https://ttron9th.com/",
     "Website": "https://ttron9th.com/",
     "Photo Status": "Needed"
    }
@@ -225,11 +249,14 @@
    "id": "rect2vpxzuY4LvgIH",
    "createdTime": "2026-11-06T14:17:52.000Z",
    "fields": {
+    "Hours": "Daily 11:00-22:00",
     "Google Maps Link": "https://www.google.com/maps/search/?api=1&query=Black+Drum+Brewing%2C+9800+Queensway+Blvd%2C+Myrtle+Beach%2C+SC+29572",
+    "Details Checked": "2026-11-06",
     "Address": "9800 Queensway Blvd, Myrtle Beach, SC 29572",
     "Type": "Brewery",
     "Name": "Black Drum Brewing",
     "Vibe": "Ocean views and about 40 Carolina taps",
+    "Hours Note": "Live music on the terrace Friday and Saturday, 6–9 PM.",
     "Phone": "(843) 449-0006",
     "Short Description": "Pick from about 40 South and North Carolina beers on tap, with ocean views from the building. Smoked meats and fresh seafood pair with an outdoor beer garden and yard games.",
     "Area": "Central Myrtle",
@@ -238,6 +265,7 @@
      "Outdoor Space"
     ],
     "Published": true,
+    "Details Source": "https://www.blackdrumbrewing.com/",
     "Website": "https://www.blackdrumbrewing.com/",
     "Photo Status": "Needed"
    }

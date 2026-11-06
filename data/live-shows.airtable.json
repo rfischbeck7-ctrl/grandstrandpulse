@@ -80,8 +80,16 @@
    "id": "recGOkjQcKobhCeVr",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
+    "Details Source": "https://www.alabama-theatre.com/",
+    "Hours Note": "Box office hours. Show times vary; see the show calendar.",
+    "Good to Know": [
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
+    "Website": "https://www.alabama-theatre.com/",
     "Address": "4750 Hwy 17 S, North Myrtle Beach, SC 29582",
     "Name": "Alabama Theatre",
+    "Hours": "Mon-Sat 09:00-20:00\nSun 10:00-18:00",
     "Short Description": "Open since 1993 at Barefoot Landing. Home of the ICONIC show, with guest artists all year.",
     "Area": "North Myrtle Beach",
     "Published": true,
@@ -140,6 +148,15 @@
    "id": "recf1IY8sD1wmCMC6",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
+    "Details Source": "https://piratesvoyage.com/",
+    "Hours Note": "Christmas show runs from November 4. Every ticket includes a four-course feast; kids 2 and under free on a lap.",
+    "Good to Know": [
+     "Great for kids",
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
+    "Website": "https://piratesvoyage.com/",
     "Address": "8907 N Kings Hwy, Myrtle Beach, SC 29572",
     "Name": "Pirates Voyage",
     "Short Description": "Pirate ship battles, acrobatics, sea lions and a four-course dinner.",
@@ -152,6 +169,17 @@
    "id": "recjno83z7Ur27xaF",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
+    "Details Source": "https://www.medievaltimes.com/myrtle-beach",
+    "Hours Note": "Show times vary by date; see the calendar. About two hours, with a four-course dinner.",
+    "Price Level": "$$$",
+    "Good to Know": [
+     "Great for kids",
+     "Reservations recommended",
+     "Tickets sold online"
+    ],
+    "Price": "Adults $76.95, kids $47.95 (dinner and two rounds of soft drinks included)",
+    "Details Checked": "2026-11-06",
+    "Website": "https://www.medievaltimes.com/myrtle-beach",
     "Address": "2904 Fantasy Way, Myrtle Beach, SC 29579",
     "Name": "Medieval Times",
     "Short Description": "A jousting tournament with horses, a falcon and a feast eaten by hand.",
@@ -164,6 +192,13 @@
    "id": "recnI56sJrqtDbD3m",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
+    "Details Source": "https://www.thecarolinaopry.com",
+    "Hours Note": "The Christmas Special is playing now, most days at 7 PM with some 1 PM matinees.",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online"
+    ],
+    "Details Checked": "2026-11-06",
     "Website": "https://www.thecarolinaopry.com",
     "Address": "8901 N Kings Hwy, Myrtle Beach, SC 29572",
     "Name": "Carolina Opry",
