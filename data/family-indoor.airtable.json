@@ -19,7 +19,6 @@
    "fields": {
     "Phone": "(843) 272-6598",
     "Area": "North Myrtle Beach",
-    "Published": true,
     "Address": "10177 N Kings Hwy, North Myrtle Beach, SC 29572",
     "Website": "https://www.amctheatres.com/movie-theatres/myrtle-beach-sc/amc-classic-myrtle-beach-12",
     "Name": "AMC Classic Myrtle Beach 12",
@@ -378,7 +377,6 @@
    "fields": {
     "Phone": "(843) 282-0550",
     "Area": "Central Myrtle",
-    "Published": true,
     "Address": "4002 Deville St, Myrtle Beach, SC 29577",
     "Name": "Grand 14 Cinemas at Market Common",
     "Type": "Movie theater",
@@ -391,7 +389,6 @@
    "fields": {
     "Phone": "(843) 839-3225",
     "Area": "Central Myrtle",
-    "Published": true,
     "Address": "2100 Coastal Grand Circle, Myrtle Beach, SC 29577",
     "Website": "https://www.cinemark.com/theatres/sc-myrtle-beach/cinemark-myrtle-beach",
     "Name": "Cinemark Myrtle Beach",

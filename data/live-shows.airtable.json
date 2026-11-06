@@ -13,6 +13,23 @@
    }
   },
   {
+   "id": "rec4efFsW579BQ6lO",
+   "createdTime": "2026-11-06T23:41:41.000Z",
+   "fields": {
+    "Phone": "(843) 282-0550",
+    "Good to Know": [
+     "Great for kids",
+     "Rain or shine"
+    ],
+    "Address": "4002 Deville St, Myrtle Beach, SC 29577",
+    "Name": "Grand 14 Cinemas at Market Common",
+    "Short Description": "A 14-screen first-run theater in The Market Common with roomy club-style seats, a gourmet concession stand and beer and wine. It also shows older films now and then.",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Type": "Movie theater"
+   }
+  },
+  {
    "id": "rec5KFcNsnwKwRCyz",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
@@ -133,6 +150,25 @@
    }
   },
   {
+   "id": "recbgCywiSWYEvNHn",
+   "createdTime": "2026-11-06T23:41:41.000Z",
+   "fields": {
+    "Phone": "(843) 272-6598",
+    "Good to Know": [
+     "Great for kids",
+     "Tickets sold online",
+     "Rain or shine"
+    ],
+    "Website": "https://www.amctheatres.com/movie-theatres/myrtle-beach-sc/amc-classic-myrtle-beach-12",
+    "Address": "10177 N Kings Hwy, North Myrtle Beach, SC 29572",
+    "Name": "AMC Classic Myrtle Beach 12",
+    "Short Description": "A 12-screen first-run theater near Barefoot Landing with recliners and reserved seating. Crowds tend to be smaller than at the bigger venues.",
+    "Area": "North Myrtle Beach",
+    "Published": true,
+    "Type": "Movie theater"
+   }
+  },
+  {
    "id": "reccpHHm0da5uIg7D",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
@@ -232,6 +268,7 @@
    "id": "recuOJcyXUhP5HPvX",
    "createdTime": "2026-11-06T20:18:45.000Z",
    "fields": {
+    "Phone": "(843) 839-3225",
     "Details Source": "https://www.cinemark.com/theatres/sc-myrtle-beach/cinemark-myrtle-beach",
     "Hours Note": "Showtimes change daily; check Cinemark's site.",
     "Good to Know": [
@@ -241,7 +278,7 @@
     ],
     "Details Checked": "2026-11-06",
     "Website": "https://www.cinemark.com/theatres/sc-myrtle-beach/cinemark-myrtle-beach",
-    "Address": "Coastal Grand Mall, Myrtle Beach, SC 29577",
+    "Address": "2100 Coastal Grand Circle, Myrtle Beach, SC 29577",
     "Name": "Cinemark Myrtle Beach",
     "Short Description": "The latest movies in recliner seats, with popcorn and drinks for the grown-ups. A good rainy-day escape at Coastal Grand Mall.",
     "Area": "Central Myrtle",
