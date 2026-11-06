@@ -2,6 +2,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import config from "../site.config.mjs";
+import { artSvg } from "./art.mjs";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dist = path.join(root, "dist");
@@ -171,11 +172,14 @@ function tagList(cat, item) {
   return tags.length ? `<ul class="tags">${tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : "";
 }
 
-function photoOrPlate(item, size = "card") {
+function photoOrPlate(item, size = "card", cat) {
   if (item.photo) {
     return `<img src="${esc(item.photo.src)}" alt="${esc(item.name)}" loading="${size === "card" ? "lazy" : "eager"}"${item.photo.w ? ` width="${item.photo.w}" height="${item.photo.h}"` : ""}>`;
   }
-  // No photo yet: a type plate with the place's theme, so the list never shows grey boxes.
+  // No photo yet: themed illustration generated from the listing, replaced automatically once a photo is added in Airtable.
+  if (cat) {
+    return `<img class="art" src="/art/${cat.slug}/${item.slug}.svg" alt="" width="400" height="240" loading="${size === "card" ? "lazy" : "eager"}" aria-hidden="true">`;
+  }
   const word = item.subtitle || item.area || item.name;
   return `<div class="plate" aria-hidden="true"><span>${esc(word)}</span></div>`;
 }
@@ -261,7 +265,7 @@ async function buildCategory(cat) {
         .join(" ")
         .toLowerCase();
       return `<li class="listing" data-area="${esc(item.area)}" ${filterData} data-search="${esc(searchText)}">
-  <a class="listing-media" href="/${cat.slug}/${item.slug}/" tabindex="-1" aria-hidden="true">${photoOrPlate(item)}</a>
+  <a class="listing-media" href="/${cat.slug}/${item.slug}/" tabindex="-1" aria-hidden="true">${photoOrPlate(item, "card", cat)}</a>
   <div class="listing-body">
     <p class="listing-area">${esc(item.area)}</p>
     <h2 class="listing-name"><a href="/${cat.slug}/${item.slug}/">${esc(item.name)}</a></h2>
@@ -325,6 +329,7 @@ ${list}
 }
 
 async function buildDetail(cat, item) {
+  if (!item.photo) await write(`art/${cat.slug}/${item.slug}.svg`, artSvg(item, cat.slug));
   const facts = cat.details
     .map((d) => {
       const v = asList(item.raw[d.field]);
@@ -349,7 +354,7 @@ async function buildDetail(cat, item) {
     ${actionButtons(item)}
   </header>
   <figure class="detail-media" data-area="${esc(item.area)}">
-    ${photoOrPlate(item, "hero")}
+    ${photoOrPlate(item, "hero", cat)}
     ${item.photo && item.photoCredit ? `<figcaption>${esc(item.photoCredit)}</figcaption>` : ""}
   </figure>
   <div class="detail-body">
