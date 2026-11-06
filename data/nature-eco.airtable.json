@@ -197,10 +197,11 @@
    "id": "recp7Gtgy7uv4xvVk",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
-    "Short Description": "A big-cat and exotic-animal preserve in the Barefoot Landing area. Check ahead for hours and the exact location.",
-    "Name": "T.I.G.E.R.S. Preserve",
-    "Area": "North Myrtle Beach",
+    "Short Description": "A big-cat and exotic-animal preserve with up-close tours. Check ahead for hours and booking.",
+    "Name": "T.I.G.E.R.S. / Myrtle Beach Safari",
+    "Area": "Central Myrtle",
     "Type": "Wildlife",
+    "Address": "851 Folly Ranch Ln, Myrtle Beach, SC 29588",
     "Published": true
    }
   }
