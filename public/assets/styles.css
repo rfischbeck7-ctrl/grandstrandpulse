@@ -466,3 +466,12 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 .detail-head h1, .detail-head .detail-where { flex-basis: 100%; }
 .detail-head .actions { flex: 0 1 auto; }
 .listing-desc { overflow-wrap: anywhere; }
+
+/* ---- saved places hearts ---- */
+.fav { position: absolute; top: .6rem; right: .6rem; z-index: 2; display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 0; cursor: pointer; background: rgba(255,255,255,.92); color: #8a97a0; box-shadow: 0 2px 8px rgba(11,58,83,.25); transition: transform .15s, color .15s; }
+.fav:hover { transform: scale(1.1); color: var(--neon-pink); }
+.fav.is-saved { color: var(--neon-pink); }
+.fav-btn { position: static; width: auto; height: auto; border-radius: 999px; display: inline-flex; gap: .4rem; align-items: center; padding: .55rem 1.1rem; background: var(--white); box-shadow: none; border: 2px solid var(--ink); color: var(--ink); font: inherit; font-weight: 700; }
+.fav-btn.is-saved svg { color: var(--neon-pink); }
+.fav-btn svg { color: #8a97a0; }
+#saved-clear { cursor: pointer; }

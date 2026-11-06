@@ -43,7 +43,9 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 
 ## Site features (beyond category pages)
 - Site-wide search (`/search/`, client-side over `/search-index.json`), area hubs (`/areas/<area>/`), themed guides (`/guides/<slug>/`, defined by the `guides` rules in `scripts/build.mjs`), About, Privacy (mentions AdSense cookies and Google Fonts; update if analytics or forms are added), Add-or-fix-a-listing (mailto template), Share button, BreadcrumbList/ItemList/typed schema.org markup, Open Graph + Twitter cards (`public/og.png`), sitemap includes all of these.
-- Ideas not built yet (need data or a service): events calendar, hours/"open now", prices, ratings/reviews, map pins (needs coordinates), newsletter signup, saved favorites.
+- Saved places: heart buttons are added by `public/assets/app.js` to every card and detail page; the list lives in the visitor's own browser (localStorage `mbc-saved`) and shows on `/saved/`. No upkeep.
+- JS gotcha: one uncaught error in `app.js` stops every script after it. Filter groups are `.chips[data-filter]` only (the "Open now" chip row has no legend).
+- Ideas not built yet (all need upkeep, an account or data): events calendar, newsletter signup, map pins (needs coordinates per listing), visitor ratings/reviews (moderation).
 
 ## Content status
 - ~177 listings published across 11 categories (154 across 9 before golf/beaches/venues) after the Nov 6 additions (new **Fishing & piers** category: 4 piers + 2 charters; plus Shark Wake Park, Action Water Sportz, Inlet Point Plantation horseback, Great Escapes Kayaking, Visit Murrells Inlet eco cruises, Wild Woods Farm, EdVenture, Interactive Experience Unleashed, Pinball Museum, Ripley's Believe It or Not!, Art Museum, Wheels of Yesteryear, Colored School Museum, Serial Killers: The Experience).

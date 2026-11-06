@@ -61,7 +61,7 @@
   const slug = (s) => s.toLowerCase().replace(/['’]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const items = [...document.querySelectorAll(".listing")];
   const pins = [...document.querySelectorAll("#coast-filter .pin")];
-  const groups = [...document.querySelectorAll(".chips")];
+  const groups = [...document.querySelectorAll(".chips[data-filter]")];
   const q = document.getElementById("q");
   const count = document.getElementById("count");
   const empty = document.getElementById("empty");
@@ -216,4 +216,61 @@
       } catch (e) {}
     })
   );
+})();
+
+
+// Saved places: hearts on listings, kept in this browser only (localStorage).
+(function () {
+  const KEY = "mbc-saved";
+  const read = () => { try { return JSON.parse(localStorage.getItem(KEY) || "[]"); } catch (e) { return []; } };
+  const write = (v) => { try { localStorage.setItem(KEY, JSON.stringify(v)); } catch (e) {} };
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+  const HEART = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 2.8 5 6.1 5c2 0 3.4 1.1 4.2 2.5h3.4C14.5 6.1 15.9 5 17.9 5c3.3 0 5.2 3.3 3.7 6.7C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>';
+  const isSaved = (u) => read().includes(u);
+  function toggle(u) {
+    const l = read(); const i = l.indexOf(u);
+    i >= 0 ? l.splice(i, 1) : l.unshift(u);
+    write(l);
+  }
+  function paint(btn, u) {
+    const on = isSaved(u);
+    btn.setAttribute("aria-pressed", String(on));
+    btn.classList.toggle("is-saved", on);
+    if (btn.dataset.label) btn.querySelector(".fav-text").textContent = on ? "Saved" : "Save";
+    btn.setAttribute("aria-label", (on ? "Remove from saved: " : "Save: ") + btn.dataset.name);
+  }
+  function make(u, name, label) {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "fav" + (label ? " fav-btn btn" : ""); b.dataset.name = name;
+    if (label) b.dataset.label = "1";
+    b.innerHTML = HEART + (label ? '<span class="fav-text">Save</span>' : "");
+    paint(b, u);
+    b.addEventListener("click", (e) => { e.preventDefault(); e.stopPropagation(); toggle(u); paint(b, u); });
+    return b;
+  }
+  // listing cards
+  document.querySelectorAll(".listing").forEach((li) => {
+    const a = li.querySelector(".listing-name a"); const media = li.querySelector(".listing-media");
+    if (!a || !media) return;
+    li.style.position = "relative";
+    li.appendChild(make(new URL(a.getAttribute("href"), location.href).pathname, a.textContent.trim(), false));
+  });
+  // detail page
+  const share = document.querySelector("[data-share]");
+  if (share) share.parentNode.insertBefore(make(location.pathname, share.dataset.title, true), share);
+  // saved page
+  const out = document.getElementById("saved-results");
+  if (out) {
+    const note = document.getElementById("saved-note"); const clear = document.getElementById("saved-clear");
+    fetch("/search-index.json").then((r) => r.json()).then((idx) => {
+      const draw = () => {
+        const list = read(); const rows = list.map((u) => idx.find((r) => r.u === u)).filter(Boolean);
+        out.innerHTML = rows.map((r) => '<li><a href="' + r.u + '"><strong>' + esc(r.n) + '</strong><span>' + esc(r.c) + (r.t ? " · " + esc(r.t) : "") + " · " + esc(r.a) + "</span></a><p>" + esc(r.d) + "</p></li>").join("");
+        clear.hidden = !rows.length;
+        if (rows.length) note.textContent = rows.length + (rows.length === 1 ? " saved place" : " saved places") + ". Kept in this browser only.";
+      };
+      draw();
+      clear.addEventListener("click", () => { write([]); draw(); note.textContent = "Nothing saved yet. Tap the heart on any listing to save it here."; });
+    });
+  }
 })();

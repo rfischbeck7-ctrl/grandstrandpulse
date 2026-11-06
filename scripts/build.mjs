@@ -160,7 +160,7 @@ ${body}
   <p>Every listing is checked against the business or an official visitor guide, but hours and details change. Call ahead before you drive over.</p>
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
   <nav class="foot-links" aria-label="More">
-    <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/privacy/">Privacy</a>
+    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/privacy/">Privacy</a>
   </nav>
   <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
@@ -342,6 +342,22 @@ async function buildExtraPages() {
     })
   );
 
+  // saved places (stored only in the visitor's own browser)
+  await write(
+    "saved/index.html",
+    layout({
+      title: `Saved places | ${config.siteName}`,
+      description: "Places you've saved while browsing, kept in your own browser.",
+      canonical: "/saved/",
+      body: `<section class="page-text search-page">
+<h1>Saved places</h1>
+<p id="saved-note">Tap the heart on any listing to save it here. Your list stays in this browser only, on this device. We don't keep it.</p>
+<ul class="search-results" id="saved-results"></ul>
+<p><button type="button" class="btn" id="saved-clear" hidden>Clear saved places</button></p>
+<noscript><p>Saved places needs JavaScript.</p></noscript>
+</section>`,
+    })
+  );
   // area hubs
   const areaCards = areaNames
     .map((a) => {
@@ -724,7 +740,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/search/", "/areas/", "/guides/", "/about/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/saved/", "/search/", "/areas/", "/guides/", "/about/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
