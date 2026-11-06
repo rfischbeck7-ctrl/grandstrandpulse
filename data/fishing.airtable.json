@@ -1,0 +1,120 @@
+{
+ "records": [
+  {
+   "id": "rec4jFU9K0CuYDCeZ",
+   "createdTime": "2026-11-06T20:01:20.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/14th-avenue-pier",
+    "Address": "1306 N Ocean Blvd, Myrtle Beach, SC 29577",
+    "Published": true,
+    "Name": "Pier 14",
+    "Short Description": "Fish or just stroll out over the surf from this pier in the middle of the oceanfront Boardwalk. A restaurant and lounge sit at the foot of the pier.",
+    "Area": "Central Myrtle",
+    "Type": "Fishing pier",
+    "Details Checked": "2026-11-06"
+   }
+  },
+  {
+   "id": "recZm0VXKGAGuXz19",
+   "createdTime": "2026-11-06T20:01:20.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/fine-catch-fishing-charters",
+    "Website": "https://finecatchfishingcharters.com/",
+    "Address": "4495 Bakers St, Little River, SC 29566",
+    "Published": true,
+    "Name": "Fine Catch Fishing Charters",
+    "Short Description": "Captain Chris Ossmann has run 4-, 5- and 7-hour fishing charters out of Little River since 2015. Trips range from easygoing family outings to full-on fishing days.",
+    "Price Level": "$$$",
+    "Area": "North Myrtle Beach",
+    "Good to Know": [
+     "Reservations recommended"
+    ],
+    "Phone": "(843) 655-6440",
+    "Type": "Fishing charter",
+    "Details Checked": "2026-11-06"
+   }
+  },
+  {
+   "id": "recaIiRAgEfLhLelk",
+   "createdTime": "2026-11-06T20:01:20.000Z",
+   "fields": {
+    "Hours": "Daily 07:00-23:00",
+    "Details Source": "https://www.surfsidebeach.org/212/Pier",
+    "Website": "https://www.surfsidebeach.org/212/Pier",
+    "Address": "11 Ocean Blvd S, Surfside Beach, SC 29575",
+    "Published": true,
+    "Name": "Surfside Beach Pier",
+    "Short Description": "Surfside's town pier is free to walk, with fishing passes, rod rentals and bait at Perry's Bait & Tackle. It stays open late in summer for night fishing.",
+    "Price Level": "$",
+    "Area": "Surfside",
+    "Good to Know": [
+     "Great for kids",
+     "Paid parking"
+    ],
+    "Phone": "(843) 913-6360",
+    "Hours Note": "April-October: 6 AM-1 AM",
+    "Type": "Fishing pier",
+    "Details Checked": "2026-11-06",
+    "Price": "Walking the pier free; fishing $14/day ($16 king fishing), kids under 12 $2; rod rental $25/day"
+   }
+  },
+  {
+   "id": "recfA3BCABaTQ1kKh",
+   "createdTime": "2026-11-06T20:01:20.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/second-avenue-pier",
+    "Address": "110 S Ocean Blvd, Myrtle Beach, SC 29577",
+    "Published": true,
+    "Name": "Second Avenue Pier",
+    "Short Description": "A classic south-end fishing pier just off Ocean Boulevard, with The Wicked Tuna restaurant at its base. Cast for whiting and spot or walk out for wide ocean views.",
+    "Area": "Central Myrtle",
+    "Phone": "(843) 445-7437",
+    "Type": "Fishing pier",
+    "Details Checked": "2026-11-06"
+   }
+  },
+  {
+   "id": "reckJqDG8XxdNuHja",
+   "createdTime": "2026-11-06T20:01:20.000Z",
+   "fields": {
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/fish-finder-fishing-charters",
+    "Website": "https://fishfinderfishing.com/",
+    "Address": "4123 US-17 Bus, Crazy Sister Marina, Murrells Inlet, SC 29576",
+    "Published": true,
+    "Name": "Fish Finder Fishing Charters",
+    "Short Description": "Local captains run inshore trips for flounder, trout and redfish and nearshore trips for Spanish and king mackerel and cobia. Family-friendly, with trips for beginners and seasoned anglers.",
+    "Price Level": "$$$",
+    "Area": "Murrells Inlet",
+    "Good to Know": [
+     "Reservations recommended",
+     "Great for kids"
+    ],
+    "Phone": "(843) 347-4464",
+    "Type": "Fishing charter",
+    "Details Checked": "2026-11-06"
+   }
+  },
+  {
+   "id": "recpZYuBVuPTuIq9y",
+   "createdTime": "2026-11-06T20:01:20.000Z",
+   "fields": {
+    "Hours": "Sun-Thu 06:00-21:00\nFri-Sat 06:00-22:00",
+    "Details Source": "http://www.cherrygrovepier.com/",
+    "Website": "http://www.cherrygrovepier.com/",
+    "Address": "3500 N Ocean Blvd, North Myrtle Beach, SC 29582",
+    "Published": true,
+    "Name": "Cherry Grove Pier",
+    "Short Description": "Rebuilt after Hurricane Ian, this long Cherry Grove pier is a favorite for king mackerel and sunset strolls. A tackle and gift shop rents rods and sells bait, and the Driftwood Restaurant sits on the pier.",
+    "Price Level": "$",
+    "Area": "North Myrtle Beach",
+    "Good to Know": [
+     "Great for kids"
+    ],
+    "Phone": "(843) 249-1625",
+    "Type": "Fishing pier",
+    "Details Checked": "2026-11-06",
+    "Price": "Rod rental $26; check the pier for daily fishing passes"
+   }
+  }
+ ]
+}
