@@ -176,6 +176,20 @@ export default {
       details: [{ label: "Type", field: "Type" }],
     },
     {
+      slug: "fishing",
+      theme: { a: "#0b3a53", b: "#1f8ea0", tint: "#ecf7f8" },
+      blurb: "Fishing piers, head boats and charter captains.",
+      cover: "Cherry Grove Pier", title: "Fishing & piers",
+      noun: { one: "spot", many: "spots" }, table: "Fishing & Piers",
+      searchHint: "Search name or type",
+      intro:
+        "Cast off a pier at sunrise or head offshore with a local captain. Here are the Strand's fishing piers and charters, sorted by where you're staying.",
+      fields: { name: "Name", area: "Area", description: "Short Description", subtitle: "Type", address: "Address", phone: "Phone", website: "Website", maps: "Google Maps Link", photo: "Photo", photoCredit: "Photo Credit", published: "Published" },
+      tags: ["Type"],
+      filters: [{ field: "Type", label: "Type" }],
+      details: [{ label: "Type", field: "Type" }],
+    },
+    {
       slug: "historic-cultural",
       theme: { a: "#57301c", b: "#a96a37", tint: "#f8f0e8" },
       blurb: "Plantations, a seaside castle and Lowcountry museums.",
