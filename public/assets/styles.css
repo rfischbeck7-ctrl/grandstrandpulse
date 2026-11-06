@@ -389,3 +389,50 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 .notfound { padding-top: 3rem; display: grid; gap: 1rem; }
 .notfound p:last-child { display: flex; gap: .6rem; flex-wrap: wrap; }
 .listing-media, .detail-media a { text-decoration: none; }
+
+/* ---------- visitor details: open now, price, hours, good to know ---------- */
+.listing-meta, .detail-meta { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .6rem; }
+.open-badge {
+  display: inline-flex; align-items: center; gap: .4rem;
+  font-size: .85rem; font-weight: 700; color: #8a2a1c;
+}
+.open-badge::before { content: ""; width: .55rem; height: .55rem; border-radius: 50%; background: currentColor; flex: none; }
+.open-badge.is-open { color: #0f7a3d; }
+.open-badge.is-soon { color: #a35a00; }
+.price-level { font-weight: 700; font-size: .9rem; letter-spacing: .04em; color: var(--ink-soft); }
+.listing-meta .open-badge + .price-level::before { content: "·"; margin-right: .6rem; color: var(--line); color: #9fb3bb; }
+.detail-meta { margin-top: -.15rem; }
+.detail-meta .open-badge, .detail-meta .price-level {
+  background: var(--white); color: #8a2a1c; padding: .3rem .7rem; border-radius: 999px; font-size: .9rem;
+}
+.detail-meta .open-badge.is-open { color: #0f7a3d; }
+.detail-meta .open-badge.is-soon { color: #a35a00; }
+.detail-meta .price-level { color: var(--ink); }
+.detail-meta .open-badge + .price-level::before { content: none; }
+
+.btn-review { font-size: .92rem; min-height: 40px; padding: .45rem .95rem; }
+.hero-wrap .btn-review { background: rgba(255, 255, 255, .14); color: var(--white); border-color: rgba(255, 255, 255, .7); }
+.hero-wrap .btn-review:hover { background: rgba(255, 255, 255, .26); }
+
+.hours h2, .gtk h2 { font-size: 1.25rem; margin-bottom: .5rem; }
+.hours-table { width: 100%; border-collapse: collapse; }
+.hours-table th, .hours-table td { text-align: left; padding: .45rem .6rem; border-top: 1px solid var(--line); vertical-align: top; }
+.hours-table th { width: 4.5rem; font-weight: 700; }
+.hours-table abbr { text-decoration: none; }
+.hours-table tr.is-today { background: var(--white); }
+.hours-table tr.is-today th, .hours-table tr.is-today td { font-weight: 700; box-shadow: inset 0 0 0 0 transparent; }
+.hours-table tr.is-today th { border-left: 4px solid var(--band-a, var(--sea)); }
+.hours-note { margin-top: .6rem; color: var(--ink-soft); font-size: .95rem; }
+.gtk-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .45rem; }
+.gtk-list li { padding: .35rem .8rem; border-radius: 999px; background: var(--white); border: 1px solid var(--line); font-weight: 700; font-size: .9rem; }
+.gtk-list li::before { content: "✓"; margin-right: .4rem; color: var(--band-a, var(--sea)); }
+.checked { font-size: .88rem; color: var(--ink-soft); }
+.facts dd .price-level { margin-left: .4rem; }
+.chips-open { align-self: center; }
+.chip-open::before { content: ""; display: inline-block; width: .55rem; height: .55rem; border-radius: 50%; background: #0f7a3d; margin-right: .45rem; vertical-align: middle; }
+.chip-open[aria-pressed="true"]::before { background: #6ee7a0; }
+@media (min-width: 880px) {
+  .finder-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 2rem; }
+  .finder-controls .search { flex: 1 1 18rem; }
+  .finder-controls .chips { flex: 0 1 auto; }
+}

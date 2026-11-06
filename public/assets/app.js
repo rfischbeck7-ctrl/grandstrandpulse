@@ -1,3 +1,55 @@
+// "Open now" badges, worked out in Myrtle Beach time (Eastern) from each listing's weekly hours.
+(function () {
+  const badges = document.querySelectorAll(".open-badge[data-hours]");
+  const rows = document.querySelectorAll(".hours-table tr[data-day]");
+  if (!badges.length && !rows.length) return;
+  const DAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  function nowEastern() {
+    const parts = new Intl.DateTimeFormat("en-US", { timeZone: "America/New_York", weekday: "short", hour: "numeric", minute: "numeric", hourCycle: "h23" })
+      .formatToParts(new Date())
+      .reduce((o, p) => ((o[p.type] = p.value), o), {});
+    return { day: DAYS.indexOf(parts.weekday), min: (+parts.hour % 24) * 60 + +parts.minute };
+  }
+  function fmt(min) {
+    const m = ((min % 1440) + 1440) % 1440;
+    if (m === 0) return "midnight";
+    if (m === 720) return "noon";
+    const h = Math.floor(m / 60), mm = m % 60;
+    return `${h % 12 || 12}${mm ? ":" + String(mm).padStart(2, "0") : ""} ${h < 12 ? "AM" : "PM"}`;
+  }
+  function status(week, now) {
+    const today = week[now.day] || [];
+    const yesterday = week[(now.day + 6) % 7] || [];
+    for (const [o, c] of yesterday) if (c > 1440 && now.min < c - 1440) return { open: true, until: c - 1440 };
+    for (const [o, c] of today) if (now.min >= o && now.min < c) return { open: true, until: c, allDay: o === 0 && c >= 1440 };
+    for (const [o] of today) if (o > now.min) return { open: false, next: `opens ${fmt(o)}` };
+    for (let i = 1; i <= 7; i++) {
+      const day = week[(now.day + i) % 7] || [];
+      if (day.length) return { open: false, next: `opens ${i === 1 ? "tomorrow" : DAYS[(now.day + i) % 7]} ${fmt(day[0][0])}` };
+    }
+    return { open: false, next: "" };
+  }
+  function paint() {
+    const now = nowEastern();
+    badges.forEach((b) => {
+      let week;
+      try { week = JSON.parse(b.dataset.hours); } catch (e) { return; }
+      const st = status(week, now);
+      b.dataset.open = st.open ? "1" : "0";
+      b.classList.toggle("is-open", st.open);
+      b.classList.toggle("is-soon", st.open && !st.allDay && st.until - now.min <= 60 && st.until - now.min > 0);
+      b.textContent = st.open
+        ? st.allDay ? "Open 24 hours" : `Open now · until ${fmt(st.until)}`
+        : `Closed${st.next ? " · " + st.next : ""}`;
+      b.hidden = false;
+    });
+    rows.forEach((r) => r.classList.toggle("is-today", +r.dataset.day === now.day));
+    document.dispatchEvent(new Event("mbc:hours"));
+  }
+  paint();
+  setInterval(paint, 60000);
+})();
+
 // Search and filters for category pages. Everything works without JavaScript too:
 // with JS off, every listing is simply shown.
 (function () {
@@ -13,7 +65,8 @@
   const empty = document.getElementById("empty");
   const noun = { one: finder.dataset.nounOne, many: finder.dataset.nounMany };
 
-  const state = { areas: new Set(), q: "", chips: {} };
+  const openBtn = document.getElementById("open-now");
+  const state = { areas: new Set(), q: "", chips: {}, open: false };
   groups.forEach((g) => (state.chips[g.dataset.filter] = new Set()));
 
   // Read filters from the address bar, e.g. ?area=surfside&setting=indoor-ac
@@ -30,6 +83,7 @@
     });
   });
   if (params.get("q")) state.q = params.get("q");
+  if (params.get("open") === "now" && openBtn) state.open = true;
   if (q) q.value = state.q;
 
   function syncUrl() {
@@ -40,6 +94,7 @@
       if (set.size) p.set(slug(g.querySelector("legend").textContent), [...set].map(slug).join(","));
     });
     if (state.q) p.set("q", state.q);
+    if (state.open) p.set("open", "now");
     const s = p.toString();
     history.replaceState(null, "", s ? `?${s}` : location.pathname);
   }
@@ -59,6 +114,7 @@
         }
       }
       if (ok && words.length) ok = words.every((w) => li.dataset.search.includes(w));
+      if (ok && state.open) ok = li.querySelector(".open-badge")?.dataset.open === "1";
       li.hidden = !ok;
       if (ok) shown++;
     });
@@ -66,6 +122,7 @@
       (shown === items.length ? "" : ` of ${items.length}`);
     empty.hidden = shown !== 0;
     pins.forEach((p) => p.setAttribute("aria-pressed", String(state.areas.has(p.dataset.area))));
+    if (openBtn) openBtn.setAttribute("aria-pressed", String(state.open));
     groups.forEach((g) =>
       g.querySelectorAll(".chip").forEach((c) =>
         c.setAttribute("aria-pressed", String(state.chips[g.dataset.filter].has(c.dataset.value)))
@@ -90,6 +147,9 @@
       apply();
     })
   );
+  openBtn && openBtn.addEventListener("click", () => { state.open = !state.open; apply(); });
+  // Badges refresh every minute; keep the "Open now" filter in step.
+  document.addEventListener("mbc:hours", () => { if (state.open) apply(); });
   let t;
   q && q.addEventListener("input", () => {
     clearTimeout(t);
@@ -99,6 +159,7 @@
     state.areas.clear();
     Object.values(state.chips).forEach((s) => s.clear());
     state.q = "";
+    state.open = false;
     if (q) q.value = "";
     apply();
     q && q.focus();

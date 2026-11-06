@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import config from "../site.config.mjs";
 import { artSvg } from "./art.mjs";
+import { parseHours, weekRows, openingSpec } from "./hours.mjs";
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dist = path.join(root, "dist");
@@ -76,6 +77,21 @@ for (const cat of config.categories) {
             : ""),
         photo: photo?.localPath ? { src: photo.localPath, w: photo.width, h: photo.height } : null,
         photoCredit: x[f.photoCredit] || "",
+        // Visitor details (same field names in every table).
+        week: (() => {
+          try {
+            return parseHours(x["Hours"]);
+          } catch (e) {
+            console.warn(`Hours for ${x[f.name]} (${cat.slug}) skipped: ${e.message}`);
+            return null;
+          }
+        })(),
+        hoursNote: x["Hours Note"] || "",
+        price: x["Price"] || "",
+        priceLevel: x["Price Level"] || "",
+        goodToKnow: asList(x["Good to Know"]),
+        detailsSource: safeUrl(x["Details Source"]),
+        detailsChecked: x["Details Checked"] || "",
         raw: x,
       };
     })
@@ -190,11 +206,33 @@ function photoOrPlate(item, size = "card", cat) {
   return `<div class="plate" aria-hidden="true"><span>${esc(word)}</span></div>`;
 }
 
+// "Open now" badge: filled in by app.js from the weekly schedule, in Myrtle Beach time.
+const openBadge = (item) =>
+  item.week ? `<span class="open-badge" data-hours="${esc(JSON.stringify(item.week))}" hidden></span>` : "";
+const priceTag = (item) =>
+  item.priceLevel ? `<span class="price-level" title="${esc(priceWords[item.priceLevel] || "")}">${esc(item.priceLevel)}</span>` : "";
+const priceWords = { Free: "Free", $: "Under about $15 per person", $$: "About $15–40 per person", $$$: "Over about $40 per person" };
+const metaLine = (item, cls) => {
+  const bits = [openBadge(item), priceTag(item)].filter(Boolean);
+  return bits.length ? `<p class="${cls}">${bits.join("")}</p>` : "";
+};
+const reviewLinks = (item) => {
+  const where = item.address || "Myrtle Beach, SC";
+  const google = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${item.name}, ${where}`);
+  const yelp = "https://www.yelp.com/search?find_desc=" + encodeURIComponent(item.name) + "&find_loc=" + encodeURIComponent(where);
+  return `<a class="btn btn-review" href="${esc(google)}" target="_blank" rel="noopener">Google reviews</a><a class="btn btn-review" href="${esc(yelp)}" target="_blank" rel="noopener">Yelp reviews</a>`;
+};
+const fmtDate = (iso) => {
+  const d = new Date(iso + "T12:00:00");
+  return isNaN(d) ? "" : d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+};
+
 function actionButtons(item, { compact = false } = {}) {
   const out = [];
   if (item.maps) out.push(`<a class="btn btn-go" href="${esc(item.maps)}" target="_blank" rel="noopener">Get directions</a>`);
   if (item.phone && !compact) out.push(`<a class="btn" href="${telHref(item.phone)}">Call ${esc(item.phone)}</a>`);
   if (item.website && !compact) out.push(`<a class="btn" href="${esc(item.website)}" target="_blank" rel="noopener">Visit website</a>`);
+  if (!compact) out.push(reviewLinks(item));
   return out.length ? `<div class="actions">${out.join("")}</div>` : "";
 }
 
@@ -277,10 +315,11 @@ async function buildCategory(cat) {
       const searchText = [item.name, item.subtitle, item.area, item.description, ...cat.tags.flatMap((t) => asList(item.raw[t]))]
         .join(" ")
         .toLowerCase();
-      return `<li class="listing" data-area="${esc(item.area)}" ${filterData} data-search="${esc(searchText)}">
+      return `<li class="listing" data-area="${esc(item.area)}"${item.week ? " data-has-hours" : ""} ${filterData} data-search="${esc(searchText)}">
   <a class="listing-media" href="/${cat.slug}/${item.slug}/" tabindex="-1" aria-hidden="true">${photoOrPlate(item, "card", cat)}</a>
   <div class="listing-body">
     <p class="listing-area">${esc(item.area)}</p>
+    ${metaLine(item, "listing-meta")}
     <h2 class="listing-name"><a href="/${cat.slug}/${item.slug}/">${esc(item.name)}</a></h2>
     ${item.subtitle ? `<p class="listing-sub">${esc(item.subtitle)}</p>` : ""}
     <p class="listing-desc">${esc(item.description)}</p>
@@ -309,6 +348,7 @@ async function buildCategory(cat) {
       <input type="search" id="q" placeholder="${esc(cat.searchHint || "Search a name or theme, like pirates")}" autocomplete="off">
     </label>
     ${filterGroups}
+    ${cat.items.some((i) => i.week) ? `<div class="chips chips-open"><button type="button" class="chip chip-open" id="open-now" aria-pressed="false">Open now</button></div>` : ""}
   </div>
   <p class="result-count" id="count" aria-live="polite">${plural(cat.items.length, cat.noun)}</p>
   <ul class="listings" id="listings">
@@ -347,6 +387,16 @@ ${list}
 
 async function buildDetail(cat, item) {
   if (!item.photo) await write(`art/${cat.slug}/${item.slug}.svg`, artSvg(item, cat.slug));
+  const hoursBlock =
+    item.week || item.hoursNote
+      ? `<section class="hours"><h2>Hours</h2>${
+          item.week
+            ? `<table class="hours-table"><tbody>${weekRows(item.week)
+                .map((r) => `<tr data-day="${r.index}"><th scope="row"><abbr title="${r.long}">${r.day}</abbr></th><td>${esc(r.text)}</td></tr>`)
+                .join("")}</tbody></table>`
+            : ""
+        }${item.hoursNote ? `<p class="hours-note">${esc(item.hoursNote)}</p>` : ""}</section>`
+      : "";
   const facts = cat.details
     .map((d) => {
       const v = asList(item.raw[d.field]);
@@ -368,6 +418,7 @@ async function buildDetail(cat, item) {
   <header class="detail-head">
     <h1>${esc(item.name)}</h1>
     <p class="detail-where">${esc(item.subtitle)}${item.subtitle && item.area ? " in " : ""}${esc(item.area)}</p>
+    ${metaLine(item, "detail-meta")}
     ${actionButtons(item)}
   </header>
 </section>`;
@@ -382,8 +433,12 @@ async function buildDetail(cat, item) {
     <dl class="facts">
       ${item.address ? `<div><dt>Address</dt><dd>${esc(item.address)}</dd></div>` : ""}
       ${item.phone ? `<div><dt>Phone</dt><dd><a href="${telHref(item.phone)}">${esc(item.phone)}</a></dd></div>` : ""}
+      ${item.price || item.priceLevel ? `<div><dt>Price</dt><dd>${esc(item.price || priceWords[item.priceLevel] || "")}${item.price && item.priceLevel ? ` <span class="price-level">${esc(item.priceLevel)}</span>` : ""}</dd></div>` : ""}
       ${facts}
     </dl>
+    ${hoursBlock}
+    ${item.goodToKnow.length ? `<section class="gtk"><h2>Good to know</h2><ul class="gtk-list">${item.goodToKnow.map((g) => `<li>${esc(g)}</li>`).join("")}</ul></section>` : ""}
+    ${item.detailsChecked || item.detailsSource ? `<p class="checked">Hours and prices${item.detailsChecked ? ` checked ${esc(fmtDate(item.detailsChecked))}` : ""}${item.detailsSource ? ` from <a href="${esc(item.detailsSource)}" target="_blank" rel="noopener">${esc(new URL(item.detailsSource).hostname.replace(/^www\./, ""))}</a>` : ""}. They can change, so check before you go.</p>` : ""}
   </div>
   <aside class="detail-map" aria-label="Where it is on the Grand Strand">
     ${coastline({ highlight: item.area, id: "coast-detail" })}
@@ -402,6 +457,9 @@ async function buildDetail(cat, item) {
   if (item.phone) ld.telephone = item.phone;
   if (item.website) ld.sameAs = item.website;
   if (item.photo) ld.image = `${origin}${item.photo.src}`;
+  if (item.week) ld.openingHoursSpecification = openingSpec(item.week);
+  if (item.priceLevel && item.priceLevel !== "Free") ld.priceRange = item.priceLevel;
+  if (item.priceLevel === "Free") ld.isAccessibleForFree = true;
 
   await write(
     `${cat.slug}/${item.slug}/index.html`,
