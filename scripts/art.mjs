@@ -864,6 +864,7 @@ function varyWithinTheme(body, theme) {
 }
 
 // ---------- Added Nov 6: golf courses and beaches ----------
+const flipSvg = (svg) => `<g transform="translate(400 0) scale(-1 1)">${svg}</g>`;
 const pine = (x, y, s = 1, c = "#1f5e46") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-3" y="-20" width="6" height="20" fill="#7a4e2a"/><path d="M0 -92 L18 -52 H8 L24 -24 H-24 L-8 -52 H-18Z" fill="${c}"/></g>`;
 const bunker = (x, y, rx = 30, ry = 8, c = "#f4e2b8") => `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${c}"/>`;
@@ -911,7 +912,7 @@ const golfScenes = {
   "Dunes Golf & Beach Club": { sky: "aqua", ocean: true, trees: [["palm", 360, 186, 1]], extra: seaOats(60, 196, 1.2), bunkers: [[150, 218, 40]], greenX: 250, flag: "#ffb627" },
   "Grande Dunes Golf Club": { sky: "dusk", waterway: true, extra: `<path d="M0 168 Q200 110 400 168" stroke="#fff8e6" stroke-width="6" fill="none"/>${[60, 120, 180, 240, 300, 340].map((x) => `<line x1="${x}" y1="${168 - Math.sin((x / 400) * Math.PI) * 52}" x2="${x}" y2="168" stroke="#fff8e6" stroke-width="2"/>`).join("")}`, trees: [["palm", 50, 188, 0.8]], greenX: 240, flag: "#00e5cc" },
   "Arcadian Shores Golf Club": { sky: "coral", ocean: true, extra: seaOats(330, 194, 1) + seaOats(360, 196, 0.8), trees: [["oak", 60, 190, 0.9]], bunkers: [[170, 216, 34], [220, 226, 16]], greenX: 220, flag: "#0b3a53", flip: true },
-  "Prestwick Country Club": { sky: "day", pond: true, pondX: 300, pondR: 80, greenX: 170, extra: `<rect x="96" y="200" width="148" height="10" fill="#6b4a2f"/>`, bunkers: [[90, 222, 18], [250, 224, 18]], trees: [["pine", 370, 186, 0.9]], flag: "#ff7a59" },
+  "Prestwick Country Club": { sky: "golden", pond: true, pondX: 300, pondR: 80, greenX: 170, extra: `<rect x="96" y="200" width="148" height="10" fill="#6b4a2f"/>`, bunkers: [[90, 222, 18], [250, 224, 18]], trees: [["pine", 370, 186, 0.9]], flag: "#ff7a59" },
   "Legends Resort – Moorland Course": { sky: "plum", hill: "#5a3f6e", g1: "#4a9e5f", g2: "#3a8550", bunkers: [[100, 212, 18], [140, 222, 14], [180, 214, 16], [320, 220, 22]], extra: `<ellipse cx="320" cy="220" rx="12" ry="5" fill="#d6c08f"/>`, greenX: 240, flag: "#ffd24a" },
   "Long Bay Golf Club": { sky: "pastel", trees: [["pine", 60, 186, 0.9], ["oak", 340, 190, 1.1]], pond: true, pondX: 140, pondR: 70, extra: `<text x="200" y="70" font-family="Georgia,serif" font-size="22" fill="#fff" opacity=".85" text-anchor="middle" font-weight="bold">18</text>`, greenX: 270, flag: "#ff3d8b", flip: true },
   "True Blue Golf Club": { sky: "dawn", marsh: true, trees: [["oak", 70, 188, 1.3], ["pine", 360, 184, 1]], bunkers: [[200, 222, 60]], greenX: 220, greenY: 198, flag: "#3f7fd6" },

@@ -13,8 +13,8 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Directions links fall back to a Google Maps search from name + address when the Google Maps Link field is empty.
 
 ## Design (cleaned up Nov 6, 2026)
-- Header: brand on one row, all 8 categories on one row below (scrolls sideways on phones).
-- Home: ocean-colored hero (headline, "Browse N places" button, static coastline map with total listings per area), then a "Pick your kind of fun" grid of 8 category cards, then "Coming soon". No badges, no eyebrow labels.
+- Header: brand on one row, all 11 categories on one row below (scrolls sideways on phones).
+- Home: ocean-colored hero (headline, "Browse N places" button, static coastline map with total listings per area), then a "Pick your kind of fun" grid of 11 category cards, then "Coming soon". No badges, no eyebrow labels.
 - **Each category has its own colors** in `site.config.mjs` (`theme: { a, b, tint }`): a/b color the header band on that category's page and on every listing page in it; tint is the page background. Also `blurb` (home card text) and `cover` (listing whose art or photo shows on the home card).
   Mini golf green, breweries amber/wine, nightlife plum, thrill coral, family indigo, nature sage, live shows velvet red, historic brick.
 - Listing pages: name, type/area and buttons sit in the colored band with a "← Category" link; "More <category> in <area>" at the bottom.
@@ -28,7 +28,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Nov 6 pass: 72 of the original 134 listings filled. Not yet done: all nightlife spots, most live shows, small mini golf courses with no official site, and every listing added on Nov 6 (Fishing & piers etc.). Sites that block automated reading: Carolina Vineyards, Crooked Hammock, Snake River, Black Pearl, Capt. Dick's, Children's Museum of SC.
 - Runaway Bay Miniature Golf closed permanently (unpublished Nov 6). Snake River Golf: conflicting reports (defunct vs revived); verify.
 - A duplicate "Myrtle Beach Art Museum" record (rec9rfmDaz0mcWIDp) was created by mistake and unpublished; safe to delete.
-- Still missing vs visitmyrtlebeach.com: **Golf courses**, **Beaches**, and **Concerts & venues** (House of Blues sits in Nightlife; Myrtle Beach Convention Center etc.).
+- Added Nov 6: **Golf courses** (table Golf Courses `tblq22Z2f9YBZoKkO`, 16 courses) and **Beaches** (table `tbl7jPW1l49fiufTl`, 6 beaches), 11 categories total. Live Shows is now "Concerts, shows & movies" with House of Blues Myrtle Beach and Cinemark Myrtle Beach. Hours/prices for these are mostly blank (courses: tee times on each site). Other cinemas not verified.
 
 ## Placeholder art (added Nov 2026)
 - Every listing **without a photo** gets a generated flat retro-poster illustration (400x240 SVG, sunset gradients, no faces, no outlines, beachy). It is written to `dist/art/<category>/<slug>.svg` and shown on list and detail pages.
@@ -41,7 +41,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Before pushing art changes, run a duplicate check: render every `dist/art` SVG to 80x48 with `rsvg-convert` and compare mean pixel difference pairwise (numpy). Nov 6 baseline: no pair below 0.045. Then eyeball an 8-wide `montage` contact sheet. A new listing on a generic theme should get its own `CUSTOM` scene if it lands close to another.
 
 ## Content status
-- 154 listings published across 9 categories after the Nov 6 additions (new **Fishing & piers** category: 4 piers + 2 charters; plus Shark Wake Park, Action Water Sportz, Inlet Point Plantation horseback, Great Escapes Kayaking, Visit Murrells Inlet eco cruises, Wild Woods Farm, EdVenture, Interactive Experience Unleashed, Pinball Museum, Ripley's Believe It or Not!, Art Museum, Wheels of Yesteryear, Colored School Museum, Serial Killers: The Experience).
+- ~177 listings published across 11 categories (154 across 9 before golf/beaches/venues) after the Nov 6 additions (new **Fishing & piers** category: 4 piers + 2 charters; plus Shark Wake Park, Action Water Sportz, Inlet Point Plantation horseback, Great Escapes Kayaking, Visit Murrells Inlet eco cruises, Wild Woods Farm, EdVenture, Interactive Experience Unleashed, Pinball Museum, Ripley's Believe It or Not!, Art Museum, Wheels of Yesteryear, Colored School Museum, Serial Killers: The Experience).
 - Unpublished and **set aside by Ryan (Nov 6): ignore these, don't raise them as follow-ups:** Go Ape, Adrenaline Adventure Zipline, Rover Boat Tours, Crocodile Rocks, Master's Club, Club Vybe, Carolina Improv, Hot Fish Club. Funplex is **closed for good** (its own site says so) and stays unpublished. Also closed: Wild Water & Wheels (Surfside). Not yet added because current details couldn't be confirmed: Springmaid Pier, Warbird Park, Waccatee Zoo, Hurricane Fleet, Surf's Up laser tag; Thompson Farm is seasonal (closed after Nov 1). Laser tag is already covered by WonderWorks, Fun Warehouse and Stars and Strikes.
 - Rules we follow: don't invent businesses or addresses; use the business's own website for phones and addresses; leave a listing unpublished if it can't be verified.
 - **Things to do only (Ryan, Nov 6): no restaurants, bars or shopping categories.** The existing Nightlife and Breweries categories stay.
