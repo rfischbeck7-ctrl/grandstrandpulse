@@ -18,6 +18,7 @@
     return `${h % 12 || 12}${mm ? ":" + String(mm).padStart(2, "0") : ""} ${h < 12 ? "AM" : "PM"}`;
   }
   function status(week, now) {
+    if (week[now.day] === null) return null; // today's hours aren't posted
     const today = week[now.day] || [];
     const yesterday = week[(now.day + 6) % 7] || [];
     for (const [o, c] of yesterday) if (c > 1440 && now.min < c - 1440) return { open: true, until: c - 1440 };
@@ -35,6 +36,7 @@
       let week;
       try { week = JSON.parse(b.dataset.hours); } catch (e) { return; }
       const st = status(week, now);
+      if (!st) { b.hidden = true; b.dataset.open = "0"; return; }
       b.dataset.open = st.open ? "1" : "0";
       b.classList.toggle("is-open", st.open);
       b.classList.toggle("is-soon", st.open && !st.allDay && st.until - now.min <= 60 && st.until - now.min > 0);

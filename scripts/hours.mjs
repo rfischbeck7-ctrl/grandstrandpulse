@@ -43,6 +43,7 @@ const toMin = (t) => {
 function parseTimes(spec) {
   const s = spec.trim();
   if (/^closed$/i.test(s)) return [];
+  if (/^(call|varies|unknown)$/i.test(s)) return null; // hours not posted for that day
   if (/^(24 hours|open 24 hours)$/i.test(s)) return [[0, 1440]];
   return s.split(/\s*,\s*/).map((range) => {
     const [a, b] = range.split(/\s*[-–]\s*/);
@@ -60,13 +61,18 @@ export function parseHours(text) {
   if (!lines.length) return null;
   const week = Array.from({ length: 7 }, () => null);
   for (const line of lines) {
-    const m = line.match(/^(.*?)\s+(closed|24 hours|open 24 hours|\d{1,2}:\d{2}\s*[-–].*)$/i);
+    const m = line.match(/^(.*?)\s+(closed|call|varies|unknown|24 hours|open 24 hours|\d{1,2}:\d{2}\s*[-–].*)$/i);
     if (!m) throw new Error(`can't read "${line}"`);
     const times = parseTimes(m[2]);
     for (const d of parseDays(m[1])) week[d] = times;
   }
-  // Days never mentioned are treated as closed only if at least one day has hours.
-  return week.map((d) => d || []);
+  // A day marked "Call" stays null (hours not posted); days never mentioned count as closed.
+  const said = new Set();
+  for (const line of lines) {
+    const m = line.match(/^(.*?)\s+(call|varies|unknown)$/i);
+    if (m) for (const d of parseDays(m[1])) said.add(d);
+  }
+  return week.map((d, i) => (d === null && said.has(i) ? null : d || []));
 }
 
 export function fmtTime(min) {
@@ -79,7 +85,7 @@ export function fmtTime(min) {
 }
 
 export const fmtRanges = (ranges) =>
-  !ranges.length ? "Closed" : ranges.map(([o, c]) => (o === 0 && c === 1440 ? "Open 24 hours" : `${fmtTime(o)}–${fmtTime(c)}`)).join(", ");
+  ranges === null ? "Call for hours" : !ranges.length ? "Closed" : ranges.map(([o, c]) => (o === 0 && c === 1440 ? "Open 24 hours" : `${fmtTime(o)}–${fmtTime(c)}`)).join(", ");
 
 // Rows for the hours table, Monday first: [{ day, long, index, text }]
 export const weekRows = (week) =>
@@ -88,7 +94,7 @@ export const weekRows = (week) =>
 // schema.org openingHoursSpecification for search engines.
 export const openingSpec = (week) =>
   week.flatMap((ranges, i) =>
-    ranges.map(([o, c]) => ({
+    (ranges || []).map(([o, c]) => ({
       "@type": "OpeningHoursSpecification",
       dayOfWeek: `https://schema.org/${LONG[i]}`,
       opens: `${String(Math.floor(o / 60)).padStart(2, "0")}:${String(o % 60).padStart(2, "0")}`,
