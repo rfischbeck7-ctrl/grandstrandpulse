@@ -83,6 +83,12 @@ for (const cat of config.categories) {
   categories.push({ ...cat, items });
 }
 
+// Version stamps so browsers fetch a fresh stylesheet/script after every change (no stale cached CSS).
+const assetVersion = async (rel) =>
+  (await import("node:crypto")).createHash("sha1").update(await fs.readFile(path.join(root, "public", rel))).digest("hex").slice(0, 10);
+const cssV = await assetVersion("assets/styles.css");
+const jsV = await assetVersion("assets/app.js");
+
 // ---------- shared pieces ----------
 const fonts =
   "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Bowlby+One&display=swap";
@@ -112,7 +118,7 @@ function layout({ title, description, canonical, body, jsonLd, active, hero = ""
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fonts}">
-<link rel="stylesheet" href="/assets/styles.css">
+<link rel="stylesheet" href="/assets/styles.css?v=${cssV}">
 ${adsensePub ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-${adsensePub}" crossorigin="anonymous"></script>` : ""}
 ${jsonLd ? `<script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>` : ""}
 </head>
@@ -134,7 +140,7 @@ ${body}
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
   <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
-<script src="/assets/app.js" defer></script>
+<script src="/assets/app.js?v=${jsV}" defer></script>
 </body>
 </html>`;
 }
