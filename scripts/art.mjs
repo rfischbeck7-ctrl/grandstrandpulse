@@ -40,7 +40,7 @@ const cloud = (x, y, s = 1, c = "#fff", o = 0.9) =>
   `<g transform="translate(${x} ${y}) scale(${s})" fill="${c}" opacity="${o}"><g class="cl"><ellipse cx="0" cy="0" rx="26" ry="9"/><ellipse cx="-14" cy="-7" rx="14" ry="9"/><ellipse cx="8" cy="-10" rx="16" ry="11"/></g></g>`;
 const bird = (x, y, s = 1) => `<path class="bd" d="M${x} ${y} q${5 * s} ${-6 * s} ${10 * s} 0 q${5 * s} ${-6 * s} ${10 * s} 0 q${-5 * s} ${4 * s} ${-10 * s} ${1 * s} q${-5 * s} ${3 * s} ${-10 * s} ${-1 * s}z" fill="#fff"/>`;
 const sea = (y = 168, a = "#12a6a0", b = "#0e8c87", c = "#2b86a8") =>
-  `<rect y="${y}" width="400" height="${240 - y}" fill="${c}"/><path d="M0 ${y + 8} Q60 ${y - 6} 120 ${y + 8} T240 ${y + 8} T400 ${y + 6} V240 H0Z" fill="${a}"/><path d="M0 ${y + 34} Q60 ${y + 20} 120 ${y + 34} T240 ${y + 34} T400 ${y + 30} V240 H0Z" fill="${b}"/><g class="wv" stroke="#fff" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"><path d="M36 ${y + 20} q9 -5 18 0"/><path d="M290 ${y + 26} q9 -5 18 0"/><path d="M190 ${y + 14} q9 -5 18 0"/></g>`;
+  `<rect y="${y}" width="400" height="${240 - y}" fill="${c}"/><path class="wa" d="M-60 ${y + 8} Q0 ${y - 6} 60 ${y + 8} T180 ${y + 8} T300 ${y + 8} T460 ${y + 6} V240 H-60Z" fill="${a}"/><path class="wb" d="M-60 ${y + 34} Q0 ${y + 20} 60 ${y + 34} T180 ${y + 34} T300 ${y + 34} T460 ${y + 30} V240 H-60Z" fill="${b}"/><g class="wv" stroke="#fff" stroke-width="3" fill="none" opacity=".55" stroke-linecap="round"><path d="M36 ${y + 20} q9 -5 18 0"/><path d="M290 ${y + 26} q9 -5 18 0"/><path d="M190 ${y + 14} q9 -5 18 0"/></g>`;
 const sand = (y = 196, c = "#f2dfb4", d = "#e7c98f") =>
   `<path d="M0 ${y} Q100 ${y - 14} 200 ${y} T400 ${y - 4} V240 H0Z" fill="${c}"/><path d="M0 ${y + 24} Q100 ${y + 12} 200 ${y + 24} T400 ${y + 20} V240 H0Z" fill="${d}"/>`;
 const grass = (y = 184, a = "#2f9e6b", b = "#1f7a52") =>
@@ -52,67 +52,67 @@ const road = (y = 176) =>
 const floor = (y = 170, c = "#1b1740") =>
   `<rect y="${y}" width="400" height="${240 - y}" fill="${c}"/><g stroke="#fff" opacity=".12" stroke-width="2"><path d="M0 ${y + 20} H400 M0 ${y + 44} H400 M200 ${y} L60 240 M200 ${y} L340 240 M200 ${y} L200 240"/></g>`;
 const palm = (x, y, s = 1, c = "#1d7f5a", t = "#8a5a2b") =>
-  `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-3 0 C-4 -26 -2 -44 2 -62 L7 -62 C5 -42 5 -22 5 0Z" fill="${t}"/><path d="M4 -62 q-30 -2 -44 18 q30 0 44 -14z M4 -62 q30 -16 52 2 q-30 -2 -52 6z M4 -64 q-4 -26 -24 -34 q2 22 20 36z M6 -64 q10 -26 34 -28 q-10 22 -30 32z" fill="${c}"/></g>`;
-const sunbrella = (x, y, s = 1, a = "#ff3d8b", b = "#fff") =>
+  `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-3 0 C-4 -26 -2 -44 2 -62 L7 -62 C5 -42 5 -22 5 0Z" fill="${t}"/><path class="sw" d="M4 -62 q-30 -2 -44 18 q30 0 44 -14z M4 -62 q30 -16 52 2 q-30 -2 -52 6z M4 -64 q-4 -26 -24 -34 q2 22 20 36z M6 -64 q10 -26 34 -28 q-10 22 -30 32z" fill="${c}"/></g>`;
+const __sunbrella = (x, y, s = 1, a = "#ff3d8b", b = "#fff") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-1.5" y="-46" width="3" height="48" fill="#8a5a2b"/><path d="M-34 -46 Q0 -78 34 -46Z" fill="${a}"/><path d="M-34 -46 Q-17 -64 0 -62 Q-8 -52 -11 -46Z M0 -62 Q17 -64 34 -46 L12 -46 Q8 -54 0 -62Z" fill="${b}"/></g>`;
-const mug = (x, y, s = 1) =>
+const __mug = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-30 -62 H30 L25 0 Q25 6 19 6 H-19 Q-25 6 -25 0Z" fill="#ffb627"/><path d="M-27 -22 H27 L25 0 Q25 6 19 6 H-19 Q-25 6 -25 0Z" fill="#e8920c"/><path d="M30 -48 H44 Q56 -48 56 -32 Q56 -16 42 -16 H28" fill="none" stroke="#ffb627" stroke-width="7"/><path d="M-34 -62 Q-40 -82 -20 -80 Q-14 -98 4 -92 Q22 -102 32 -82 Q48 -80 34 -62Z" fill="#fff8e6"/><rect x="-16" y="-52" width="5" height="46" rx="2.5" fill="#fff" opacity=".35"/></g>`;
-const glass = (x, y, s = 1, wine = "#8e1b3a") =>
+const __glass = (x, y, s = 1, wine = "#8e1b3a") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-22 -86 H22 Q26 -42 0 -34 Q-26 -42 -22 -86Z" fill="#f7e9d0" opacity=".95"/><path d="M-20 -66 H20 Q21 -46 0 -40 Q-21 -46 -20 -66Z" fill="${wine}"/><rect x="-2" y="-34" width="4" height="34" fill="#f7e9d0"/><rect x="-20" y="-2" width="40" height="4" rx="2" fill="#f7e9d0"/></g>`;
-const hops = (x, y, s = 1) =>
+const __hops = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})" fill="#7bc043"><path d="M0 0 q30 -14 38 18 q-30 18 -38 -18z"/><path d="M12 32 q30 -14 38 18 q-30 18 -38 -18z"/><path d="M-4 34 q-26 -4 -30 24 q28 6 30 -24z"/></g>`;
-const ship = (x, y, s = 1, sail = "#202638", hull = "#161b2a", flag = "#ff3d8b", sails = 2) =>
+const __ship = (x, y, s = 1, sail = "#202638", hull = "#161b2a", flag = "#ff3d8b", sails = 2) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-80 0 Q0 30 90 0 L74 18 Q0 40 -64 18Z" fill="${hull}"/><rect x="-2" y="-112" width="4" height="114" fill="${hull}"/>${sails === 2 ? `<path d="M4 -104 Q62 -72 56 -22 L4 -22Z" fill="${sail}"/><path d="M-4 -96 Q-50 -66 -46 -22 L-4 -22Z" fill="${sail}"/>` : `<path d="M4 -104 Q62 -72 56 -22 L4 -22Z" fill="${sail}"/>`}<path d="M0 -128 l24 8 l-24 8z" fill="${flag}"/><g fill="#f7e9d0"><circle cx="30" cy="-62" r="7"/><rect x="28" y="-56" width="4" height="8"/></g></g>`;
-const dino = (x, y, s = 1, c = "#3b8f3a", spike = "#2a6f2c") =>
+const __dino = (x, y, s = 1, c = "#3b8f3a", spike = "#2a6f2c") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-12 0 q5 -62 38 -66 l10 -26 q12 -8 22 2 q4 12 -6 20 l-6 4 q18 10 22 40 q10 4 30 8 l-6 8 q-22 2 -34 -2 l-4 20 h-14 l-2 -18 q-18 4 -34 -2 l-4 20 h-14 l-2 -18Z" transform="translate(-30 -10)" fill="${c}"/><g fill="${spike}" transform="translate(-30 -10)"><path d="M10 -62 l8 -12 l8 12z M30 -70 l8 -12 l8 12z M50 -72 l8 -12 l8 12z"/></g><circle cx="42" cy="-102" r="3.4" fill="#fff"/><circle cx="43" cy="-102" r="1.6" fill="#0b3a53"/></g>`;
 const volcano = (x, y, s = 1, lava = "#ff5a3d") =>
-  `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-60 0 L-18 -64 H18 L60 0Z" fill="#7a2b3f"/><path d="M-18 -64 q18 -14 36 0z" fill="${lava}"/><path d="M-4 -64 q-2 22 -10 46 M6 -64 q4 20 12 42" stroke="${lava}" stroke-width="4" fill="none" opacity=".8"/><g fill="#555" opacity=".5"><circle cx="0" cy="-86" r="9"/><circle cx="10" cy="-100" r="12"/></g></g>`;
+  `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-60 0 L-18 -64 H18 L60 0Z" fill="#7a2b3f"/><path class="glw" d="M-18 -64 q18 -14 36 0z" fill="${lava}"/><path class="glw" d="M-4 -64 q-2 22 -10 46 M6 -64 q4 20 12 42" stroke="${lava}" stroke-width="4" fill="none" opacity=".8"/><g class="rise" fill="#555" opacity=".5"><circle cx="0" cy="-86" r="9"/><circle cx="10" cy="-100" r="12"/></g></g>`;
 const flag = (x, y, c = "#ffb627") =>
-  `<g><rect x="${x}" y="${y - 42}" width="2.4" height="42" fill="#fff"/><path d="M${x + 2} ${y - 42} l22 8 l-22 8z" fill="${c}"/><circle cx="${x + 1}" cy="${y + 2}" r="9" fill="#ff3d8b"/></g>`;
-const dolphin = (x, y, s = 1, c = "#7fd6ea") =>
+  `<g><rect x="${x}" y="${y - 42}" width="2.4" height="42" fill="#fff"/><path class="wave" d="M${x + 2} ${y - 42} l22 8 l-22 8z" fill="${c}"/><circle cx="${x + 1}" cy="${y + 2}" r="9" fill="#ff3d8b"/></g>`;
+const __dolphin = (x, y, s = 1, c = "#7fd6ea") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-48 8 Q-42 -36 4 -34 Q28 -32 44 -46 Q36 -26 50 -22 Q34 -14 18 0 Q-6 14 -48 8Z" fill="${c}"/><path d="M-4 -34 q8 -22 24 -22 q-4 12 -12 22z" fill="${c}"/><path d="M-48 8 q-14 -2 -22 -14 q16 0 22 8z" fill="${c}"/><circle cx="26" cy="-34" r="2.4" fill="#0b3a53"/><path d="M-30 4 Q-6 2 14 -6" stroke="#fff" stroke-width="3" fill="none" opacity=".6"/></g>`;
-const boat = (x, y, s = 1, hull = "#fff8e6", trim = "#ff3d8b", cab = true) =>
+const __boat = (x, y, s = 1, hull = "#fff8e6", trim = "#ff3d8b", cab = true) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-54 0 H56 L42 20 H-40Z" fill="${hull}"/><rect x="-54" y="0" width="110" height="5" fill="${trim}"/>${cab ? `<path d="M-18 0 V-24 H18 L28 0Z" fill="${hull}"/><rect x="-10" y="-18" width="14" height="10" fill="#6fd3e8"/><rect x="8" y="-18" width="10" height="10" fill="#6fd3e8"/><rect x="-1" y="-40" width="2.4" height="16" fill="${hull}"/>` : ""}</g>`;
-const sail = (x, y, s = 1, a = "#ff3d8b", b = "#ffb627") =>
+const __sail = (x, y, s = 1, a = "#ff3d8b", b = "#ffb627") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-30 0 h60 l-8 16 h-44z" fill="#fff8e6"/><rect x="-1.5" y="-42" width="3" height="42" fill="#fff8e6"/><path d="M4 -40 l24 36 h-24z" fill="${a}"/><path d="M-4 -34 l-18 30 h18z" fill="${b}"/></g>`;
-const gator = (x, y, s = 1) =>
+const __gator = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-120 0 q-34 8 -52 -4 q24 -6 52 -10z" fill="#3f8f3a"/><path d="M-120 0 Q-110 -30 -60 -28 L40 -34 Q94 -40 128 -16 L170 -8 Q184 -4 168 4 L148 6 Q120 18 60 8 Q-10 18 -70 8 Q-110 8 -120 0Z" fill="#3f8f3a"/><path d="M128 -16 L170 -8 Q184 -4 168 4 L146 4 Q128 -4 128 -16Z" fill="#35802f"/><circle cx="140" cy="-22" r="5" fill="#fff"/><circle cx="141" cy="-22" r="2.4" fill="#0b3a53"/><g fill="#2b6a2a"><path d="M-60 -28 l6 -12 l6 12z M-32 -30 l6 -12 l6 12z M-4 -32 l6 -12 l6 12z M24 -34 l6 -12 l6 12z M52 -34 l6 -12 l6 12z"/></g><path d="M146 4 l3 5 l3 -5 M156 4 l3 5 l3 -5" fill="#fff"/></g>`;
-const cattail = (x, y, s = 1) =>
+const __cattail = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 0 q-6 -40 6 -60 M12 0 q4 -30 -2 -50" stroke="#1d5c3f" stroke-width="4" fill="none"/><ellipse cx="6" cy="-64" rx="5" ry="12" fill="#7a4a2a"/><ellipse cx="11" cy="-52" rx="5" ry="10" fill="#7a4a2a"/></g>`;
 const lighthouse = (x, y, s = 1) =>
-  `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-14 0 L-9 -64 H9 L14 0Z" fill="#fff8e6"/><path d="M-12 -18 H12 L11 -30 H-11Z M-9 -46 H9 L9 -56 H-9Z" fill="#e0527a"/><rect x="-11" y="-76" width="22" height="12" fill="#ffd47a"/><path d="M-14 -76 H14 L0 -90Z" fill="#161b2a"/><path d="M-60 -70 L-11 -70 L-11 -78 Z M60 -70 L11 -70 L11 -78Z" fill="#fff3c4" opacity=".6"/></g>`;
+  `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-14 0 L-9 -64 H9 L14 0Z" fill="#fff8e6"/><path d="M-12 -18 H12 L11 -30 H-11Z M-9 -46 H9 L9 -56 H-9Z" fill="#e0527a"/><rect x="-11" y="-76" width="22" height="12" fill="#ffd47a"/><path d="M-14 -76 H14 L0 -90Z" fill="#161b2a"/><path class="pls" d="M-60 -70 L-11 -70 L-11 -78 Z M60 -70 L11 -70 L11 -78Z" fill="#fff3c4" opacity=".6"/></g>`;
 const pier = (y = 180, c = "#6b4a2f") =>
   `<rect y="${y}" width="400" height="${240 - y}" fill="${c}"/><rect y="${y}" width="400" height="6" fill="#85603c"/><g fill="#4a321f">${[40, 130, 220, 310].map((x) => `<rect x="${x}" y="${y}" width="8" height="${240 - y}"/>`).join("")}</g>`;
 const ferris = (x, y, s = 1) =>
-  `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 0 L-34 90 M0 0 L34 90" stroke="#fff8e6" stroke-width="6"/><circle r="64" fill="none" stroke="#fff8e6" stroke-width="5"/><circle r="6" fill="#ff3d8b"/><g stroke="#fff8e6" stroke-width="2.5">${Array.from({ length: 8 }, (_, i) => `<path d="M0 0 L${(64 * Math.cos((i * Math.PI) / 4)).toFixed(1)} ${(64 * Math.sin((i * Math.PI) / 4)).toFixed(1)}"/>`).join("")}</g>${Array.from({ length: 8 }, (_, i) => `<rect x="${(64 * Math.cos((i * Math.PI) / 4) - 6).toFixed(1)}" y="${(64 * Math.sin((i * Math.PI) / 4) - 4).toFixed(1)}" width="12" height="11" rx="3" fill="${["#ff3d8b", "#ffb627", "#00e5cc", "#ff7a59"][i % 4]}"/>`).join("")}</g>`;
+  `<g transform="translate(${x} ${y}) scale(${s})"><path d="M0 0 L-34 90 M0 0 L34 90" stroke="#fff8e6" stroke-width="6"/><g class="spin"><circle r="64" fill="none" stroke="#fff8e6" stroke-width="5"/><circle r="6" fill="#ff3d8b"/><g stroke="#fff8e6" stroke-width="2.5">${Array.from({ length: 8 }, (_, i) => `<path d="M0 0 L${(64 * Math.cos((i * Math.PI) / 4)).toFixed(1)} ${(64 * Math.sin((i * Math.PI) / 4)).toFixed(1)}"/>`).join("")}</g>${Array.from({ length: 8 }, (_, i) => `<rect x="${(64 * Math.cos((i * Math.PI) / 4) - 6).toFixed(1)}" y="${(64 * Math.sin((i * Math.PI) / 4) - 4).toFixed(1)}" width="12" height="11" rx="3" fill="${["#ff3d8b", "#ffb627", "#00e5cc", "#ff7a59"][i % 4]}"/>`).join("")}</g></g>`;
 const coaster = (y = 160) =>
   `<path d="M0 ${y} Q50 ${y - 90} 100 ${y - 10} T200 ${y - 70} T300 ${y - 6} T400 ${y - 60}" fill="none" stroke="#fff8e6" stroke-width="6"/><g stroke="#fff8e6" stroke-width="3">${[30, 70, 110, 150, 190, 230, 270, 310, 350].map((x, i) => `<path d="M${x} ${y - ((i * 37) % 60) - 8} V${y + 20}"/>`).join("")}</g>`;
-const kart = (x, y, s = 1, body = "#00e5cc") =>
+const __kart = (x, y, s = 1, body = "#00e5cc") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-110 -10 Q-108 -42 -70 -44 L-10 -46 L12 -70 L42 -70 L50 -44 Q100 -40 102 -10Z" fill="${body}"/><path d="M-6 -46 L14 -66 L38 -66 L44 -46Z" fill="#bfede6"/><rect x="-90" y="-32" width="170" height="5" fill="#ff3d8b"/><circle cx="-70" cy="-2" r="26" fill="#0b0f14"/><circle cx="-70" cy="-2" r="11" fill="#8892a0"/><circle cx="68" cy="-2" r="26" fill="#0b0f14"/><circle cx="68" cy="-2" r="11" fill="#8892a0"/></g>`;
-const speed = () => `<g stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"><path d="M30 130 H80"/><path d="M14 148 H70"/><path d="M36 166 H76"/></g>`;
+const speed = () => `<g class="dash" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".8"><path d="M30 130 H80"/><path d="M14 148 H70"/><path d="M36 166 H76"/></g>`;
 const curtain = () =>
   `<rect width="400" height="240" fill="#4a0f2a"/><path d="M0 0 H400 V30 Q380 44 360 30 Q340 44 320 30 Q300 44 280 30 Q260 44 240 30 Q220 44 200 30 Q180 44 160 30 Q140 44 120 30 Q100 44 80 30 Q60 44 40 30 Q20 44 0 30Z" fill="#c2184f"/><path d="M0 30 Q50 120 0 240 H40 Q90 120 40 30Z" fill="#8e0f3a"/><path d="M400 30 Q350 120 400 240 H360 Q310 120 360 30Z" fill="#8e0f3a"/><rect y="196" width="400" height="44" fill="#2a1a12"/>`;
-const spot = (x = 200) => `<path d="M${x - 8} 0 L${x - 90} 200 H${x + 90} L${x + 8} 0Z" fill="#fff3c4" opacity=".28"/>`;
+const spot = (x = 200) => `<path class="sweep" d="M${x - 8} 0 L${x - 90} 200 H${x + 90} L${x + 8} 0Z" fill="#fff3c4" opacity=".28"/>`;
 const mask = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-34 -30 Q-34 -50 0 -50 Q34 -50 34 -30 Q34 8 0 26 Q-34 8 -34 -30Z" fill="#ffd47a"/><path d="M-22 -26 q8 -8 16 0 q-8 6 -16 0z M6 -26 q8 -8 16 0 q-8 6 -16 0z" fill="#161b2a"/><path d="M-18 -4 Q0 12 18 -4" stroke="#161b2a" stroke-width="4" fill="none"/></g>`;
-const disco = (x, y, s = 1) =>
-  `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-1.5" y="-60" width="3" height="40" fill="#fff" opacity=".7"/><circle r="30" fill="#c9d3e6"/><g stroke="#8892a8" stroke-width="1.6" opacity=".9"><path d="M-30 0 H30 M-26 -14 H26 M-26 14 H26 M0 -30 V30 M-14 -28 V28 M14 -28 V28"/></g><g fill="#fff"><rect x="-18" y="-18" width="8" height="8"/><rect x="6" y="-6" width="8" height="8"/><rect x="-6" y="12" width="8" height="8"/></g></g>`;
+const __disco = (x, y, s = 1) =>
+  `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-1.5" y="-60" width="3" height="40" fill="#fff" opacity=".7"/><circle r="30" fill="#c9d3e6"/><g stroke="#8892a8" stroke-width="1.6" opacity=".9"><path d="M-30 0 H30 M-26 -14 H26 M-26 14 H26 M0 -30 V30 M-14 -28 V28 M14 -28 V28"/></g><g class="fl2" fill="#fff"><rect x="-18" y="-18" width="8" height="8"/><rect x="6" y="-6" width="8" height="8"/><rect x="-6" y="12" width="8" height="8"/></g><g class="fl" fill="#ffd6f0"><rect x="10" y="-22" width="6" height="6"/><rect x="-24" y="4" width="6" height="6"/><rect x="-2" y="-8" width="6" height="6"/></g></g>`;
 const cowboy = (x, y, s = 1, c = "#a0642f") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-62 0 Q-40 -14 -24 -10 Q-20 -46 0 -48 Q20 -46 24 -10 Q40 -14 62 0 Q36 12 0 10 Q-36 12 -62 0Z" fill="${c}"/><path d="M-24 -10 Q0 0 24 -10 L22 -18 Q0 -8 -22 -18Z" fill="#161b2a"/></g>`;
-const mic = (x, y, s = 1) =>
+const __mic = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-3" y="-4" width="6" height="64" fill="#8892a0"/><rect x="-26" y="56" width="52" height="6" rx="3" fill="#8892a0"/><circle cy="-22" r="20" fill="#c9d3e6"/><path d="M-20 -22 H20 M-14 -34 H14 M-14 -10 H14" stroke="#8892a8" stroke-width="2"/></g>`;
-const neonRing = (x, y, r, c, w = 6) => `<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${c}" stroke-width="${w}" opacity=".9"/><circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="#fff" stroke-width="1.6" opacity=".7"/>`;
-const pins = (x, y, s = 1) =>
+const __neonRing = (x, y, r, c, w = 6) => `<circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="${c}" stroke-width="${w}" opacity=".9"/><circle cx="${x}" cy="${y}" r="${r}" fill="none" stroke="#fff" stroke-width="1.6" opacity=".7"/>`;
+const __pins = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})">${[[-24, 0], [0, 0], [24, 0], [-12, -22], [12, -22], [0, -44]].map(([a, b]) => `<g transform="translate(${a} ${b})"><path d="M-6 0 Q-9 -14 -4 -26 Q-6 -34 0 -38 Q6 -34 4 -26 Q9 -14 6 0Z" fill="#fff8e6"/><rect x="-6" y="-24" width="12" height="4" fill="#ff3d8b"/></g>`).join("")}</g>`;
-const ball = (x, y, r = 14, c = "#ff3d8b") => `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/><circle cx="${x - r / 3}" cy="${y - r / 3}" r="${r / 5}" fill="#fff" opacity=".6"/>`;
+const __ball = (x, y, r = 14, c = "#ff3d8b") => `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/><circle cx="${x - r / 3}" cy="${y - r / 3}" r="${r / 5}" fill="#fff" opacity=".6"/>`;
 const door = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-40" y="-110" width="80" height="112" rx="6" fill="#6b3f1f"/><rect x="-32" y="-102" width="64" height="96" rx="3" fill="#8a5a2b"/><circle cx="18" cy="-52" r="5" fill="#ffd47a"/><path d="M-6 -70 a9 9 0 1 1 12 0 l4 20 h-20z" fill="#161b2a"/><circle cx="-60" cy="-30" r="8" fill="#ffd47a"/><rect x="-62" y="-30" width="4" height="22" fill="#ffd47a"/></g>`;
-const key = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})" fill="#ffd47a"><circle r="12"/><circle r="5" fill="#161b2a"/><rect x="10" y="-3" width="40" height="6"/><rect x="38" y="3" width="5" height="10"/><rect x="46" y="3" width="5" height="8"/></g>`;
+const __key = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})" fill="#ffd47a"><circle r="12"/><circle r="5" fill="#161b2a"/><rect x="10" y="-3" width="40" height="6"/><rect x="38" y="3" width="5" height="10"/><rect x="46" y="3" width="5" height="8"/></g>`;
 const axe = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><circle r="46" fill="#fff8e6"/><circle r="34" fill="#ff3d8b"/><circle r="22" fill="#fff8e6"/><circle r="10" fill="#ff3d8b"/><g transform="rotate(-35) translate(-8 -70)"><rect x="-3" y="0" width="6" height="64" fill="#8a5a2b"/><path d="M3 4 Q30 0 32 20 Q30 36 3 30Z" fill="#c9d3e6"/></g></g>`;
-const tramp = (x, y, s = 1) =>
+const __tramp = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-70" y="0" width="140" height="8" rx="4" fill="#00e5cc"/><path d="M-60 8 L-66 40 M60 8 L66 40 M-20 8 V36 M20 8 V36" stroke="#8892a0" stroke-width="4"/><g transform="translate(0 -46)"><circle cy="-22" r="10" fill="#ffd1a8"/><path d="M-4 -12 L-4 14 M-4 0 L-26 -14 M-4 0 L20 -10 M-4 14 L-18 36 M-4 14 L10 32" stroke="#ff3d8b" stroke-width="6" stroke-linecap="round" fill="none"/></g></g>`;
-const fish = (x, y, s = 1, c = "#ffb627") =>
+const __fish = (x, y, s = 1, c = "#ffb627") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-24 0 Q-4 -20 20 0 Q-4 20 -24 0Z M20 0 L36 -14 V14Z" fill="${c}"/><circle cx="-12" cy="-3" r="2.6" fill="#0b3a53"/></g>`;
 const waveSlide = () =>
   `<path d="M40 190 V70 Q40 40 80 40 H150 Q190 40 190 80 V110 Q190 130 170 130 H150 Q120 130 130 160 V190" fill="none" stroke="#ff3d8b" stroke-width="22" stroke-linecap="round"/><path d="M40 190 V70 Q40 40 80 40 H150 Q190 40 190 80 V110 Q190 130 170 130 H150 Q120 130 130 160 V190" fill="none" stroke="#fff" stroke-width="3" opacity=".5" stroke-linecap="round"/><path d="M230 190 L330 60 Q350 36 372 60 V190" fill="none" stroke="#ffb627" stroke-width="22" stroke-linecap="round"/>`;
@@ -124,9 +124,9 @@ const oak = (x, y, s = 1, c = "#2a6f4a") =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-8 0 Q-6 -40 -22 -62 L-10 -58 Q0 -50 0 -70 Q2 -48 12 -60 L24 -62 Q8 -40 8 0Z" fill="#5a3b22"/><ellipse cx="0" cy="-80" rx="58" ry="32" fill="${c}"/><ellipse cx="-30" cy="-62" rx="30" ry="18" fill="${c}"/><ellipse cx="32" cy="-60" rx="30" ry="18" fill="${c}"/><g stroke="#cfd9c4" stroke-width="3" opacity=".7" fill="none"><path d="M-40 -56 q-4 22 -2 36 M-18 -52 q-2 20 2 32 M24 -50 q4 20 0 34 M44 -54 q2 18 -2 28"/></g></g>`;
 const castle = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-70" y="-60" width="140" height="60" fill="#e8d8b6"/><rect x="-30" y="-96" width="60" height="40" fill="#e8d8b6"/><path d="M-30 -96 q30 -34 60 0z" fill="#c2415d"/><rect x="-4" y="-132" width="8" height="12" fill="#c2415d"/><path d="M-70 -60 h140 v-8 h-12 v-8 h-12 v8 h-12 v-8 h-12 v8 h-12 v-8 h-12 v8 h-12 v-8 h-12 v8 h-12z" fill="#e8d8b6"/>${[-52, -22, 8, 38].map((a) => `<path d="M${a} -8 V-34 q10 -14 20 0 V-8Z" fill="#7a2b3f"/>`).join("")}<path d="M-14 -52 V-76 q14 -16 28 0 V-52Z" fill="#7a2b3f"/></g>`;
-const lantern = (x, y, s = 1) =>
-  `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-1.5" y="-60" width="3" height="22" fill="#c9d3e6"/><path d="M-14 -38 H14 L10 -34 H-10Z" fill="#161b2a"/><rect x="-11" y="-34" width="22" height="30" fill="#ffd47a"/><path d="M-11 -34 V-4 M0 -34 V-4 M11 -34 V-4" stroke="#161b2a" stroke-width="2"/><rect x="-14" y="-4" width="28" height="5" fill="#161b2a"/><circle cy="-20" r="26" fill="#ffd47a" opacity=".25"/></g>`;
-const ghost = (x, y, s = 1) =>
+const __lantern = (x, y, s = 1) =>
+  `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-1.5" y="-60" width="3" height="22" fill="#c9d3e6"/><path d="M-14 -38 H14 L10 -34 H-10Z" fill="#161b2a"/><rect x="-11" y="-34" width="22" height="30" fill="#ffd47a"/><path d="M-11 -34 V-4 M0 -34 V-4 M11 -34 V-4" stroke="#161b2a" stroke-width="2"/><rect x="-14" y="-4" width="28" height="5" fill="#161b2a"/><circle class="glw" cy="-20" r="26" fill="#ffd47a" opacity=".25"/></g>`;
+const __ghost = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})" opacity=".95"><path d="M-22 0 V-30 Q-22 -58 0 -58 Q22 -58 22 -30 V0 L14 -8 L7 0 L0 -8 L-7 0 L-14 -8Z" fill="#f4f8ff"/><circle cx="-8" cy="-34" r="3.6" fill="#161b2a"/><circle cx="8" cy="-34" r="3.6" fill="#161b2a"/><ellipse cx="0" cy="-22" rx="4" ry="5" fill="#161b2a"/></g>`;
 const hauntedHouse = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})" fill="#120a24"><rect x="-70" y="-70" width="100" height="70"/><rect x="30" y="-96" width="40" height="96"/><path d="M-76 -70 L-20 -112 L36 -70Z M26 -96 L50 -126 L74 -96Z"/><g fill="#ffb627">${[[-56, -52], [-30, -52], [-4, -52], [40, -78], [40, -50]].map(([a, b]) => `<rect x="${a}" y="${b}" width="12" height="16"/>`).join("")}</g></g>`;
@@ -135,47 +135,47 @@ const baseball = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><circle r="30" fill="#fff8e6"/><path d="M-22 -18 q12 18 0 36 M22 -18 q-12 18 0 36" stroke="#e0527a" stroke-width="3" fill="none"/><g stroke="#e0527a" stroke-width="2.5">${[-14, -6, 2, 10].map((a) => `<path d="M${-20 + Math.abs(a) * 0.1} ${a} l-6 2 M${20 - Math.abs(a) * 0.1} ${a} l6 2"/>`).join("")}</g></g>`;
 const diamond = () => `<path d="M200 176 L330 120 L200 64 L70 120Z" fill="#2f9e6b"/><path d="M200 176 L290 128 L200 90 L110 128Z" fill="#d9a066"/><g fill="#fff"><rect x="196" y="170" width="10" height="10" transform="rotate(45 201 175)"/></g>`;
 const bays = () => `<rect y="150" width="400" height="90" fill="#1a2b3a"/>${[0, 1, 2, 3].map((i) => `<path d="M${20 + i * 92} 150 V240" stroke="#fff" opacity=".25" stroke-width="3"/>`).join("")}<g>${[60, 150, 242, 330].map((x) => `<circle cx="${x}" cy="176" r="22" fill="#fff" opacity=".9"/><circle cx="${x}" cy="176" r="14" fill="#ff3d8b"/><circle cx="${x}" cy="176" r="6" fill="#fff"/>`).join("")}</g>`;
-const cat = (x, y, s = 1) =>
+const __cat = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><circle r="46" fill="#ff9b3d"/><path d="M-40 -28 L-30 -58 L-12 -38Z M40 -28 L30 -58 L12 -38Z" fill="#ff9b3d"/><g fill="#161b2a"><path d="M-6 -44 h12 l-3 14 h-6z M-40 -6 l16 -4 l-2 8z M40 -6 l-16 -4 l2 8z M-30 22 l14 -10 l2 8z M30 22 l-14 -10 l-2 8z"/></g><ellipse cx="0" cy="18" rx="22" ry="16" fill="#fff8e6"/><circle cx="-16" cy="-10" r="6" fill="#fff"/><circle cx="16" cy="-10" r="6" fill="#fff"/><circle cx="-15" cy="-10" r="3" fill="#161b2a"/><circle cx="17" cy="-10" r="3" fill="#161b2a"/><path d="M-6 10 h12 l-6 8z" fill="#ff3d8b"/></g>`;
-const elephant = (x, y, s = 1) =>
+const __elephant = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})" fill="#8d9bb0"><path d="M-70 0 V-40 Q-70 -76 -30 -76 H30 Q64 -76 64 -44 V0 H44 V-22 H16 V0 H-4 V-22 H-44 V0Z"/><path d="M60 -66 Q100 -70 98 -34 Q96 -6 84 -2 Q80 -26 74 -30 Q66 -10 60 -34Z"/><ellipse cx="62" cy="-48" rx="16" ry="24" fill="#a4b2c6"/><circle cx="78" cy="-58" r="3" fill="#161b2a"/><path d="M92 -30 q20 6 18 -6" stroke="#fff8e6" stroke-width="5" fill="none"/></g>`;
-const giraffe = (x, y, s = 1) =>
+const __giraffe = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})" fill="#ffc04a"><path d="M-30 0 V-44 Q-30 -60 -10 -60 H20 Q36 -60 36 -44 V0 H26 V-30 H-18 V0Z"/><path d="M18 -56 L30 -130 H44 L38 -54Z"/><ellipse cx="44" cy="-136" rx="16" ry="10"/><rect x="40" y="-152" width="3" height="10"/><circle cx="52" cy="-138" r="2.4" fill="#161b2a"/><g fill="#a0642f"><circle cx="-6" cy="-44" r="6"/><circle cx="16" cy="-40" r="5"/><circle cx="34" cy="-92" r="5"/><circle cx="36" cy="-70" r="5"/></g></g>`;
-const plane = (x, y, s = 1, rot = -14) =>
+const __plane = (x, y, s = 1, rot = -14) =>
   `<g transform="translate(${x} ${y}) rotate(${rot}) scale(${s})"><path d="M-80 0 Q-80 -20 -50 -22 H60 Q96 -20 104 0 Q96 18 60 20 H-50 Q-80 18 -80 0Z" fill="#e9eef7"/><path d="M-80 -2 L-96 -34 H-76 L-52 -22Z" fill="#c2415d"/><path d="M-10 -20 L-30 -64 H-8 L24 -20Z" fill="#c9d3e6"/><path d="M-10 18 L-24 52 H-6 L22 18Z" fill="#c9d3e6"/><g fill="#6fd3e8">${[-30, -10, 10, 30, 50].map((a) => `<circle cx="${a}" cy="-6" r="4.5"/>`).join("")}</g><path d="M90 -14 h12 v10 h-12z" fill="#6fd3e8"/></g>`;
-const smoke = (x, y) => `<g fill="#555" opacity=".45"><circle cx="${x}" cy="${y}" r="10"/><circle cx="${x + 10}" cy="${y - 16}" r="14"/><circle cx="${x + 26}" cy="${y - 36}" r="18"/></g>`;
+const smoke = (x, y) => `<g class="rise" fill="#555" opacity=".45"><circle cx="${x}" cy="${y}" r="10"/><circle cx="${x + 10}" cy="${y - 16}" r="14"/><circle cx="${x + 26}" cy="${y - 36}" r="18"/></g>`;
 const pyramid = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})">${[0, 1, 2, 3, 4].map((i) => `<rect x="${-80 + i * 14}" y="${-i * 18 - 18}" width="${160 - i * 28}" height="18" fill="${["#b99d6e", "#c7ab7a", "#d4b987", "#e1c794", "#eed4a2"][i]}"/>`).join("")}<rect x="-12" y="-36" width="24" height="36" fill="#6a4a25"/><path d="M-20 -108 h40 v-10 h-40z" fill="#eed4a2"/></g>`;
 const pagoda = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})">${[0, 1, 2].map((i) => `<g transform="translate(0 ${-i * 34})"><rect x="${-34 + i * 8}" y="-30" width="${68 - i * 16}" height="30" fill="#e0527a"/><path d="M${-48 + i * 8} -30 Q${-44 + i * 8} -36 ${-34 + i * 8} -38 H${34 - i * 8} Q${44 - i * 8} -36 ${48 - i * 8} -30Z" fill="#7a1f3a"/></g>`).join("")}<rect x="-2" y="-124" width="4" height="22" fill="#ffd47a"/></g>`;
-const dragon = (x, y, s = 1) =>
+const __dragon = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-90 20 Q-60 -40 -20 -10 T40 -30 T90 -50" fill="none" stroke="#e0302a" stroke-width="18" stroke-linecap="round"/><path d="M80 -62 q28 -4 38 10 q-12 14 -34 10z" fill="#e0302a"/><path d="M84 -66 l-6 -18 l12 10z M96 -64 l2 -18 l8 14z" fill="#ffd47a"/><circle cx="104" cy="-56" r="3" fill="#fff"/><g fill="#ffd47a"><path d="M-70 -10 l6 -12 l6 12z M-40 -22 l6 -12 l6 12z M-8 -22 l6 -12 l6 12z M24 -36 l6 -12 l6 12z"/></g></g>`;
 const tikiHut = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-34" y="-34" width="68" height="34" fill="#a0642f"/><path d="M-46 -30 L0 -74 L46 -30Z" fill="#d9a066"/><g stroke="#8a5a2b" stroke-width="2.4"><path d="M-30 -30 L-16 -56 M-10 -34 L0 -62 M10 -34 L16 -58 M28 -30 L20 -50" fill="none"/></g><rect x="-8" y="-24" width="16" height="24" fill="#4a321f"/></g>`;
-const torch = (x, y) => `<g><rect x="${x - 2}" y="${y - 40}" width="4" height="40" fill="#8a5a2b"/><path d="M${x} ${y - 66} q12 14 0 26 q-12 -12 0 -26z" fill="#ffb627"/><path d="M${x} ${y - 58} q6 8 0 16 q-6 -8 0 -16z" fill="#ff5a3d"/></g>`;
+const torch = (x, y) => `<g><rect x="${x - 2}" y="${y - 40}" width="4" height="40" fill="#8a5a2b"/><path class="fire" d="M${x} ${y - 66} q12 14 0 26 q-12 -12 0 -26z" fill="#ffb627"/><path class="fire f2" d="M${x} ${y - 58} q6 8 0 16 q-6 -8 0 -16z" fill="#ff5a3d"/></g>`;
 const goldMine = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-74 0 Q-74 -80 0 -80 Q74 -80 74 0Z" fill="#8a6a45"/><path d="M-44 0 V-44 H44 V0Z" fill="#1a1208"/><rect x="-52" y="-52" width="10" height="52" fill="#a0642f"/><rect x="42" y="-52" width="10" height="52" fill="#a0642f"/><rect x="-56" y="-58" width="112" height="9" fill="#a0642f"/><path d="M-30 0 H30" stroke="#8892a0" stroke-width="4"/></g><g><path d="M120 -2 H190 L180 -34 H130Z" transform="translate(${x - 60} ${y})" fill="#8892a0"/><g transform="translate(${x + 70} ${y - 38})" fill="#ffd24a"><circle cx="0" cy="0" r="8"/><circle cx="14" cy="-4" r="7"/><circle cx="26" cy="2" r="8"/></g></g>`;
-const treasureChest = (x, y, s = 1) =>
+const __treasureChest = (x, y, s = 1) =>
   `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-34" y="-30" width="68" height="30" fill="#8a5a2b"/><path d="M-34 -30 Q-34 -58 0 -58 Q34 -58 34 -30Z" fill="#a0642f"/><rect x="-34" y="-34" width="68" height="6" fill="#ffd24a"/><rect x="-5" y="-38" width="10" height="14" fill="#ffd24a"/><g fill="#ffd24a"><circle cx="-14" cy="-62" r="6"/><circle cx="2" cy="-66" r="6"/><circle cx="18" cy="-62" r="6"/></g></g>`;
-const coffee = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-22 -34 H18 V-6 Q18 4 8 4 H-12 Q-22 4 -22 -6Z" fill="#fff8e6"/><path d="M18 -28 q14 0 14 10 q0 10 -14 10" fill="none" stroke="#fff8e6" stroke-width="5"/><rect x="-18" y="-34" width="32" height="6" fill="#6b3f1f"/><path d="M-10 -44 q-6 -10 0 -18 M2 -44 q-6 -10 0 -18" stroke="#fff" stroke-width="3" fill="none" opacity=".6"/></g>`;
-const hammock = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-80 -60 Q0 10 80 -60" fill="none" stroke="#ff3d8b" stroke-width="10" stroke-linecap="round"/><path d="M-80 -60 Q0 10 80 -60" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="10 8" opacity=".6"/></g>`;
-const jar = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-22" y="-62" width="44" height="12" rx="3" fill="#c9d3e6"/><path d="M-26 -50 H26 V-4 Q26 4 18 4 H-18 Q-26 4 -26 -4Z" fill="#fff8e6" opacity=".9"/><path d="M-22 -34 H22 V-4 Q22 0 16 0 H-16 Q-22 0 -22 -4Z" fill="#ffd47a"/></g>`;
-const grapes = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})" fill="#7a2b8e"><circle cx="-12" cy="0" r="9"/><circle cx="8" cy="0" r="9"/><circle cx="-2" cy="14" r="9"/><circle cx="-22" cy="14" r="9"/><circle cx="18" cy="14" r="9"/><circle cx="-12" cy="28" r="9"/><circle cx="8" cy="28" r="9"/><circle cx="-2" cy="42" r="9"/><path d="M-2 -8 q-4 -16 12 -22 q-2 14 -12 22z" fill="#3b8f3a"/></g>`;
+const __coffee = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-22 -34 H18 V-6 Q18 4 8 4 H-12 Q-22 4 -22 -6Z" fill="#fff8e6"/><path d="M18 -28 q14 0 14 10 q0 10 -14 10" fill="none" stroke="#fff8e6" stroke-width="5"/><rect x="-18" y="-34" width="32" height="6" fill="#6b3f1f"/><path class="rise" d="M-10 -44 q-6 -10 0 -18 M2 -44 q-6 -10 0 -18" stroke="#fff" stroke-width="3" fill="none" opacity=".6"/></g>`;
+const __hammock = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-80 -60 Q0 10 80 -60" fill="none" stroke="#ff3d8b" stroke-width="10" stroke-linecap="round"/><path d="M-80 -60 Q0 10 80 -60" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="10 8" opacity=".6"/></g>`;
+const __jar = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-22" y="-62" width="44" height="12" rx="3" fill="#c9d3e6"/><path d="M-26 -50 H26 V-4 Q26 4 18 4 H-18 Q-26 4 -26 -4Z" fill="#fff8e6" opacity=".9"/><path d="M-22 -34 H22 V-4 Q22 0 16 0 H-16 Q-22 0 -22 -4Z" fill="#ffd47a"/></g>`;
+const __grapes = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})" fill="#7a2b8e"><circle cx="-12" cy="0" r="9"/><circle cx="8" cy="0" r="9"/><circle cx="-2" cy="14" r="9"/><circle cx="-22" cy="14" r="9"/><circle cx="18" cy="14" r="9"/><circle cx="-12" cy="28" r="9"/><circle cx="8" cy="28" r="9"/><circle cx="-2" cy="42" r="9"/><path d="M-2 -8 q-4 -16 12 -22 q-2 14 -12 22z" fill="#3b8f3a"/></g>`;
 const vineRows = (y = 168) => `<path d="M0 ${y} Q100 ${y - 34} 200 ${y - 6} T400 ${y - 22} V240 H0Z" fill="#3a2a5a"/><g stroke="#6a8f4a" stroke-width="3" fill="none" opacity=".9"><path d="M0 ${y + 14} Q100 ${y - 14} 200 ${y + 10} T400 ${y - 4}"/><path d="M0 ${y + 32} Q100 ${y + 6} 200 ${y + 28} T400 ${y + 14}"/><path d="M0 ${y + 50} Q100 ${y + 26} 200 ${y + 46} T400 ${y + 32}"/></g>`;
-const stringLights = () => `<path d="M0 30 Q100 70 200 30 T400 30" fill="none" stroke="#161b2a" stroke-width="2"/>${[30, 80, 130, 180, 230, 280, 330, 380].map((x, i) => `<circle cx="${x}" cy="${30 + Math.sin(x / 63) * 14 + 22}" r="5" fill="${["#ffd47a", "#ff9ab0"][i % 2]}"/>`).join("")}`;
+const stringLights = () => `<path d="M0 30 Q100 70 200 30 T400 30" fill="none" stroke="#161b2a" stroke-width="2"/>${[30, 80, 130, 180, 230, 280, 330, 380].map((x, i) => `<circle cx="${x}" cy="${30 + Math.sin(x / 63) * 14 + 22}" r="5" class="tw" style="animation-delay:-${(i * 0.45).toFixed(2)}s" fill="${["#ffd47a", "#ff9ab0"][i % 2]}"/>`).join("")}`;
 const bar = () => `<rect y="170" width="400" height="70" fill="#2a1638"/><rect y="170" width="400" height="8" fill="#6b3f1f"/>`;
 const storefront = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-80" y="-84" width="160" height="84" fill="#b5533c"/><g stroke="#8e3a28" stroke-width="2" opacity=".6">${[-60, -40, -20, 0, 20, 40, 60].map((a) => `<path d="M${a} -84 V0"/>`).join("")}</g><path d="M-86 -50 H86 L78 -30 H-78Z" fill="#fff8e6"/>${Array.from({ length: 8 }, (_, i) => `<path d="M${-86 + i * 21.5} -50 h10.75 l-3 20 h-10.75z" fill="#e0527a"/>`).join("")}<rect x="-70" y="-26" width="46" height="26" fill="#6fd3e8"/><rect x="-14" y="-28" width="24" height="28" fill="#4a321f"/><rect x="26" y="-26" width="46" height="26" fill="#6fd3e8"/></g>`;
 const taps = (x, y) => `<g transform="translate(${x} ${y})"><rect x="-90" y="-8" width="180" height="10" rx="3" fill="#8892a0"/>${Array.from({ length: 9 }, (_, i) => `<g transform="translate(${-80 + i * 20} 0)"><rect x="-3" y="0" width="6" height="14" fill="#c9d3e6"/><circle cy="-14" r="6" fill="${["#ffb627", "#ff3d8b", "#00e5cc", "#7bc043"][i % 4]}"/></g>`).join("")}</g>`;
 const planet = (x, y, r, c) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/><ellipse cx="${x}" cy="${y}" rx="${r * 1.7}" ry="${r * 0.3}" fill="none" stroke="#fff" stroke-width="2.4" opacity=".8" transform="rotate(-18 ${x} ${y})"/>`;
-const kayak = (x, y, s = 1, c = "#ff7a59") => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-70 0 Q0 -22 70 0 Q0 14 -70 0Z" fill="${c}"/><circle cy="-14" r="8" fill="#ffd1a8"/><path d="M-6 -6 H6 L8 -20 H-8Z" fill="#00e5cc"/><path d="M-50 -30 L50 8" stroke="#161b2a" stroke-width="3"/><path d="M-56 -36 l14 8 l-8 4z M44 4 l14 8 l-8 4z" fill="#161b2a"/></g>`;
-const jetski = (x, y, s = 1, c = "#ff3d8b") => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-60 0 Q-50 -22 -10 -22 L20 -22 Q40 -40 56 -34 L60 -20 Q74 -14 66 4 Q10 12 -60 0Z" fill="${c}"/><path d="M-10 -22 Q4 -36 14 -22Z" fill="#bfede6"/><g fill="#fff" opacity=".85"><path d="M-72 4 q-12 -4 -20 4 q10 6 22 2z M-84 -2 q-8 -8 -16 -2 q8 6 18 4z"/></g><circle cx="-8" cy="-32" r="8" fill="#ffd1a8"/><rect x="-14" y="-24" width="12" height="16" fill="#161b2a"/></g>`;
-const parachute = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-60 0 Q0 -70 60 0Z" fill="#ff3d8b"/><path d="M-60 0 Q-30 -54 0 -56 Q-12 -30 -12 0Z M0 -56 Q30 -54 60 0 H12 Q12 -30 0 -56Z" fill="#ffb627"/><path d="M-60 0 L0 70 M60 0 L0 70 M-20 0 L0 70 M20 0 L0 70" stroke="#fff" stroke-width="1.6" fill="none" opacity=".8"/><circle cy="76" r="8" fill="#ffd1a8"/></g>`;
+const __kayak = (x, y, s = 1, c = "#ff7a59") => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-70 0 Q0 -22 70 0 Q0 14 -70 0Z" fill="${c}"/><circle cy="-14" r="8" fill="#ffd1a8"/><path d="M-6 -6 H6 L8 -20 H-8Z" fill="#00e5cc"/><path d="M-50 -30 L50 8" stroke="#161b2a" stroke-width="3"/><path d="M-56 -36 l14 8 l-8 4z M44 4 l14 8 l-8 4z" fill="#161b2a"/></g>`;
+const __jetski = (x, y, s = 1, c = "#ff3d8b") => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-60 0 Q-50 -22 -10 -22 L20 -22 Q40 -40 56 -34 L60 -20 Q74 -14 66 4 Q10 12 -60 0Z" fill="${c}"/><path d="M-10 -22 Q4 -36 14 -22Z" fill="#bfede6"/><g fill="#fff" opacity=".85"><path d="M-72 4 q-12 -4 -20 4 q10 6 22 2z M-84 -2 q-8 -8 -16 -2 q8 6 18 4z"/></g><circle cx="-8" cy="-32" r="8" fill="#ffd1a8"/><rect x="-14" y="-24" width="12" height="16" fill="#161b2a"/></g>`;
+const __parachute = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><path d="M-60 0 Q0 -70 60 0Z" fill="#ff3d8b"/><path d="M-60 0 Q-30 -54 0 -56 Q-12 -30 -12 0Z M0 -56 Q30 -54 60 0 H12 Q12 -30 0 -56Z" fill="#ffb627"/><path d="M-60 0 L0 70 M60 0 L0 70 M-20 0 L0 70 M20 0 L0 70" stroke="#fff" stroke-width="1.6" fill="none" opacity=".8"/><circle cy="76" r="8" fill="#ffd1a8"/></g>`;
 const zip = () => `<path d="M10 70 L390 130" stroke="#fff8e6" stroke-width="3"/><g transform="translate(200 100)"><path d="M0 -4 v20 M-10 12 q10 -4 20 0" stroke="#fff" stroke-width="3"/><circle cy="24" r="8" fill="#ffd1a8"/><path d="M-6 32 L-8 56 M6 32 L8 56 M-6 36 L-18 44 M6 36 L18 44" stroke="#ff3d8b" stroke-width="6" stroke-linecap="round"/></g><rect x="14" y="66" width="8" height="120" fill="#6b4a2f"/>`;
 const treehouse = () => `<g fill="#6b4a2f"><rect x="40" y="90" width="12" height="100"/><rect x="340" y="110" width="12" height="80"/></g>${oak(60, 100, 0.9, "#1d6b45")}${oak(350, 120, 0.9, "#1d6b45")}<path d="M54 110 L346 130" stroke="#8a5a2b" stroke-width="6"/>`;
-const wax = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><circle cy="-60" r="14" fill="#ffd1a8"/><path d="M-4 -62 q0 -22 18 -18 q-2 16 -14 20z" fill="#6b3f1f"/><path d="M-22 -46 H22 L26 0 H-26Z" fill="#c2184f"/><path d="M-22 -46 L-40 -20 M22 -46 L40 -20" stroke="#c2184f" stroke-width="8" stroke-linecap="round"/></g>`;
-const star = (x, y, r, c = "#ffd24a") => `<path d="${Array.from({ length: 10 }, (_, i) => { const a = (Math.PI / 5) * i - Math.PI / 2; const rr = i % 2 ? r * 0.45 : r; return `${i ? "L" : "M"}${(x + rr * Math.cos(a)).toFixed(1)} ${(y + rr * Math.sin(a)).toFixed(1)}`; }).join("")}Z" fill="${c}"/>`;
+const __wax = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><circle cy="-60" r="14" fill="#ffd1a8"/><path d="M-4 -62 q0 -22 18 -18 q-2 16 -14 20z" fill="#6b3f1f"/><path d="M-22 -46 H22 L26 0 H-26Z" fill="#c2184f"/><path d="M-22 -46 L-40 -20 M22 -46 L40 -20" stroke="#c2184f" stroke-width="8" stroke-linecap="round"/></g>`;
+const __star = (x, y, r, c = "#ffd24a") => `<path d="${Array.from({ length: 10 }, (_, i) => { const a = (Math.PI / 5) * i - Math.PI / 2; const rr = i % 2 ? r * 0.45 : r; return `${i ? "L" : "M"}${(x + rr * Math.cos(a)).toFixed(1)} ${(y + rr * Math.sin(a)).toFixed(1)}`; }).join("")}Z" fill="${c}"/>`;
 const upsideBuilding = (x, y, s = 1) => `<g transform="translate(${x} ${y}) scale(${s})"><rect x="-70" y="-90" width="140" height="70" fill="#7aa6d6"/><path d="M-70 -20 L0 40 L70 -20Z" fill="#c2415d"/><g fill="#fff8e6">${[-52, -22, 8, 38].map((a) => `<rect x="${a}" y="-76" width="16" height="22"/>`).join("")}</g><rect x="-70" y="-100" width="140" height="10" fill="#ffd47a"/><g stroke="#0b3a53" stroke-width="3"><path d="M-40 -100 v-14 M40 -100 v-14"/></g></g>`;
-const aquarium = () => `<rect width="400" height="240" fill="#0a3d6a"/><g fill="#7fd6ea" opacity=".16"><path d="M60 0 L20 240 H100Z M240 0 L190 240 H290Z"/></g>${fish(80, 90, 1.5)}${fish(210, 60, 1.1, "#ff3d8b")}${fish(300, 130, 1.8, "#7bc043")}${fish(150, 160, 1, "#ffd47a")}<path d="M0 240 Q60 200 120 240Z M280 240 Q330 190 400 240Z" fill="#1f7a52"/>${[40, 340, 370].map((x) => `<circle cx="${x}" cy="${100 + (x % 70)}" r="4" fill="#fff" opacity=".6"/>`).join("")}<path d="M0 180 Q100 150 200 180 T400 170 V240 H0Z" fill="#1b5a8a" opacity=".7"/><path d="M120 200 q60 -44 130 0" fill="none" stroke="#bfe9ff" stroke-width="10" opacity=".5"/>`;
+const aquarium = () => `<rect width="400" height="240" fill="#0a3d6a"/><g fill="#7fd6ea" opacity=".16"><path d="M60 0 L20 240 H100Z M240 0 L190 240 H290Z"/></g>${fish(80, 90, 1.5)}${fish(210, 60, 1.1, "#ff3d8b")}${fish(300, 130, 1.8, "#7bc043")}${fish(150, 160, 1, "#ffd47a")}<path d="M0 240 Q60 200 120 240Z M280 240 Q330 190 400 240Z" fill="#1f7a52"/>${[40, 340, 370].map((x) => `<circle class="rise" cx="${x}" cy="${100 + (x % 70)}" r="4" fill="#fff" opacity=".6"/>`).join("")}<path d="M0 180 Q100 150 200 180 T400 170 V240 H0Z" fill="#1b5a8a" opacity=".7"/><path d="M120 200 q60 -44 130 0" fill="none" stroke="#bfe9ff" stroke-width="10" opacity=".5"/>`;
 const scoreboardGlow = () => "";
 
 // ---------- scene recipes ----------
@@ -495,55 +495,55 @@ S.arcade = (r) => [`<rect width="400" height="240" fill="#14082e"/>`, `<g fill="
 // Palette rule: warm Myrtle Beach vacation tones (sunset, golden hour, dawn, coral by day;
 // warm dusk, plum and neon by night), teal water, sand, palms and coral-pink accents.
 const T = (x, y, s, inner) => `<g transform="translate(${x} ${y}) scale(${s})">${inner}</g>`;
-const bottle = (x, y, s = 1, c = "#6e1430", label = "#fff8e6") =>
+const __bottle = (x, y, s = 1, c = "#6e1430", label = "#fff8e6") =>
   T(x, y, s, `<rect x="-15" y="-74" width="30" height="74" rx="7" fill="${c}"/><path d="M-15 -66 Q-15 -82 -6 -86 V-104 H6 V-86 Q15 -82 15 -66Z" fill="${c}"/><rect x="-7" y="-110" width="14" height="8" fill="#ffd24a"/><rect x="-13" y="-48" width="26" height="24" rx="2" fill="${label}"/><rect x="-8" y="-40" width="16" height="3" fill="${c}"/>`);
-const barrel = (x, y, s = 1) =>
+const __barrel = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-30 -70 Q-40 -35 -30 0 H30 Q40 -35 30 -70Z" fill="#a0642f"/><ellipse cy="-70" rx="30" ry="8" fill="#c48448"/><path d="M-36 -52 H36 M-38 -18 H38" stroke="#5a3a1f" stroke-width="5"/><circle cy="-35" r="6" fill="#5a3a1f"/>`);
-const can = (x, y, s = 1, c = "#00b3a6", stripe = "#ffd24a") =>
+const __can = (x, y, s = 1, c = "#00b3a6", stripe = "#ffd24a") =>
   T(x, y, s, `<rect x="-24" y="-80" width="48" height="80" rx="6" fill="${c}"/><ellipse cy="-80" rx="24" ry="6" fill="#d7dde6"/><path d="M-24 -40 Q-8 -52 8 -40 T24 -40 V-26 Q8 -38 -8 -26 T-24 -26Z" fill="${stripe}"/><circle cx="0" cy="-60" r="8" fill="#fff8e6"/>`);
-const growler = (x, y, s = 1) =>
+const __growler = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-30 0 V-56 Q-30 -76 -12 -82 V-100 H12 V-82 Q30 -76 30 -56 V0Z" fill="#b4621c"/><path d="M12 -88 Q34 -88 34 -66" stroke="#b4621c" stroke-width="7" fill="none"/><rect x="-14" y="-106" width="28" height="8" rx="3" fill="#161b2a"/><rect x="-22" y="-50" width="44" height="26" rx="4" fill="#fff8e6"/><path d="M-12 -38 q6 -8 12 0 t12 0" stroke="#ff3d8b" stroke-width="3" fill="none"/>`);
-const bigFish = (x, y, s = 1, c = "#3d4a5c", belly = "#9aa6b8") =>
+const __bigFish = (x, y, s = 1, c = "#3d4a5c", belly = "#9aa6b8") =>
   T(x, y, s, `<path d="M-70 0 Q-30 -40 30 -22 Q50 -16 60 0 Q50 16 30 22 Q-30 40 -70 0Z" fill="${c}"/><path d="M-30 6 Q10 24 50 6 Q30 22 -30 14Z" fill="${belly}"/><path d="M-70 0 L-100 -26 L-94 0 L-100 26Z" fill="${c}"/><path d="M-10 -30 L10 -48 L20 -24Z" fill="${c}"/><circle cx="40" cy="-6" r="5" fill="#fff"/><circle cx="41" cy="-6" r="2.4" fill="#161b2a"/><path d="M56 6 q6 8 2 16 M52 8 q2 10 -4 16" stroke="${belly}" stroke-width="2" fill="none"/>`);
 const waterfall = (x, y, w = 40, h = 90) =>
   `<rect x="${x - w / 2}" y="${y - h}" width="${w}" height="${h}" fill="#bff0ea"/><g stroke="#fff" stroke-width="3" opacity=".8">${[0.2, 0.5, 0.8].map((f) => `<path d="M${x - w / 2 + w * f} ${y - h + 6} V${y - 8}"/>`).join("")}</g><ellipse cx="${x}" cy="${y}" rx="${w * 0.9}" ry="8" fill="#fff" opacity=".7"/>`;
 const rock = (x, y, w = 90, h = 100, c = "#8a6a4a") => `<path d="M${x - w / 2} ${y} L${x - w / 3} ${y - h} L${x + w / 3} ${y - h * 0.9} L${x + w / 2} ${y}Z" fill="${c}"/>`;
-const parrot = (x, y, s = 1, c = "#ff3d3d") =>
+const __parrot = (x, y, s = 1, c = "#ff3d3d") =>
   T(x, y, s, `<path d="M0 0 Q-16 -30 0 -50 Q18 -40 14 -10Z" fill="${c}"/><circle cx="4" cy="-44" r="10" fill="${c}"/><path d="M12 -46 l10 4 l-10 6z" fill="#ffd24a"/><circle cx="6" cy="-46" r="2" fill="#161b2a"/><path d="M-2 -20 Q-26 -10 -20 10 Q-6 0 0 -10Z" fill="#00b3a6"/><path d="M2 0 L-4 26 L8 26Z" fill="#2456b8"/><rect x="-24" y="2" width="48" height="5" rx="2" fill="#8a5a2b"/>`);
-const tikiStatue = (x, y, s = 1, c = "#a0642f") =>
+const __tikiStatue = (x, y, s = 1, c = "#a0642f") =>
   T(x, y, s, `<rect x="-24" y="-110" width="48" height="110" rx="6" fill="${c}"/><rect x="-30" y="-118" width="60" height="14" rx="4" fill="#7a4a22"/><path d="M-16 -88 h12 v8 h-12z M4 -88 h12 v8 h-12z" fill="#161b2a"/><path d="M-14 -60 H14 V-44 H-14Z" fill="#161b2a"/><path d="M-10 -56 v8 M0 -56 v8 M10 -56 v8" stroke="#fff8e6" stroke-width="3"/><path d="M-24 -28 H24" stroke="#7a4a22" stroke-width="5"/>`);
 const mineCart = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-40 -40 H40 L32 0 H-32Z" fill="#7a4a22"/><path d="M-40 -40 H40" stroke="#5a3a1f" stroke-width="5"/><g fill="#ffd24a"><circle cx="-18" cy="-46" r="9"/><circle cx="0" cy="-50" r="10"/><circle cx="18" cy="-46" r="8"/></g><circle cx="-20" cy="4" r="8" fill="#161b2a"/><circle cx="20" cy="4" r="8" fill="#161b2a"/>`);
 const track = (y) => `<path d="M0 ${y} H400" stroke="#5a3a1f" stroke-width="5"/><g stroke="#7a4a22" stroke-width="6">${Array.from({ length: 14 }, (_, i) => `<path d="M${i * 30 + 6} ${y - 2} v8"/>`).join("")}</g>`;
-const gems = (x, y, s = 1) =>
+const __gems = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-30 0 L-22 -18 L-12 0Z" fill="#00e5cc"/><path d="M-8 0 L4 -28 L16 0Z" fill="#ff3d8b"/><path d="M18 0 L26 -14 L34 0Z" fill="#7a2fc2"/><path d="M-20 0 L-14 -10 L-6 0Z" fill="#ffd24a"/>`);
 const sluice = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-80 -40 L60 -10 V0 L-80 -30Z" fill="#a0642f"/><path d="M-78 -36 L58 -8" stroke="#7fd6ea" stroke-width="6"/><rect x="-76" y="-30" width="6" height="30" fill="#7a4a22"/><rect x="40" y="-12" width="6" height="12" fill="#7a4a22"/>`);
-const carousel = (x, y, s = 1) =>
+const __carousel = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-80 -90 L0 -130 L80 -90Z" fill="#ff3d8b"/><path d="M-80 -90 L-40 -90 L0 -130Z" fill="#fff8e6" opacity=".8"/><path d="M0 -130 L40 -90 L80 -90Z" fill="#fff8e6" opacity=".35"/><rect x="-80" y="-92" width="160" height="10" fill="#ffd24a"/><rect x="-80" y="-6" width="160" height="10" rx="3" fill="#ffd24a"/>${[-56, -18, 20, 58].map((px, i) => `<rect x="${px - 1.5}" y="-82" width="3" height="76" fill="#d7dde6"/><path d="M${px - 16} ${-34 - (i % 2) * 10} q10 -14 26 -6 l6 -8 l4 10 q-6 14 -26 12z" fill="${["#fff8e6", "#00b3a6", "#ffb627", "#fff8e6"][i]}"/>`).join("")}<circle cy="-138" r="5" fill="#ffd24a"/>`);
 const woodCoaster = (y = 196) =>
   `<g stroke="#a0642f" stroke-width="3" fill="none"><path d="M0 ${y - 70} Q60 ${y - 150} 120 ${y - 70} T240 ${y - 100} T400 ${y - 60}"/>${Array.from({ length: 20 }, (_, i) => `<path d="M${i * 20 + 4} ${y} V${y - 60}"/>`).join("")}<path d="M0 ${y - 30} H400 M0 ${y - 56} H400" opacity=".7"/></g><path d="M0 ${y - 70} Q60 ${y - 150} 120 ${y - 70} T240 ${y - 100} T400 ${y - 60}" stroke="#ff3d8b" stroke-width="6" fill="none"/><g transform="translate(78 ${y - 128}) rotate(-28)"><rect x="-22" y="-12" width="44" height="14" rx="4" fill="#ffd24a"/><circle cx="-10" cy="-16" r="5" fill="#fff8e6"/><circle cx="10" cy="-16" r="5" fill="#fff8e6"/></g>`;
-const helmet = (x, y, s = 1, c = "#ff3d8b") =>
+const __helmet = (x, y, s = 1, c = "#ff3d8b") =>
   T(x, y, s, `<path d="M-46 0 Q-50 -64 0 -66 Q48 -64 46 -12 H6 V0Z" fill="${c}"/><path d="M6 -40 H46 V-14 H6Z" fill="#161b2a"/><path d="M-30 -50 Q0 -62 30 -50" stroke="#fff8e6" stroke-width="6" fill="none"/>`);
 const checker = (x, y, w = 60, h = 40, n = 6) =>
   `<g transform="translate(${x} ${y})"><rect width="${w}" height="${h}" fill="#fff"/>${Array.from({ length: n * 4 }, (_, i) => { const cx = i % n; const cy = Math.floor(i / n); return (cx + cy) % 2 ? `<rect x="${(cx * w) / n}" y="${(cy * h) / 4}" width="${w / n}" height="${h / 4}" fill="#161b2a"/>` : ""; }).join("")}</g>`;
-const skate = (x, y, s = 1, c = "#ff3d8b") =>
+const __skate = (x, y, s = 1, c = "#ff3d8b") =>
   T(x, y, s, `<path d="M-36 -10 V-62 H-4 V-34 Q30 -34 36 -16 V-10Z" fill="${c}"/><path d="M-30 -56 H-10 M-30 -48 H-10 M-30 -40 H-10" stroke="#fff8e6" stroke-width="3"/><rect x="-40" y="-12" width="80" height="6" rx="3" fill="#d7dde6"/><circle cx="-26" cy="2" r="8" fill="#ffd24a"/><circle cx="26" cy="2" r="8" fill="#ffd24a"/>`);
 const ropeNet = (x, y, w = 200, h = 80) =>
   `<g stroke="#e7c98f" stroke-width="2.5">${Array.from({ length: 9 }, (_, i) => `<path d="M${x + (i * w) / 8} ${y} L${x + (i * w) / 8 + 10} ${y + h}"/>`).join("")}${Array.from({ length: 5 }, (_, i) => `<path d="M${x} ${y + (i * h) / 4} H${x + w}"/>`).join("")}</g><rect x="${x - 6}" y="${y - 10}" width="8" height="${h + 60}" fill="#8a5a2b"/><rect x="${x + w}" y="${y - 10}" width="8" height="${h + 60}" fill="#8a5a2b"/>`;
-const bananaBoat = (x, y, s = 1) =>
+const __bananaBoat = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-80 0 Q-10 26 80 -10 Q86 4 70 10 Q-10 36 -84 8Z" fill="#ffd24a"/><path d="M-80 -2 Q-10 22 80 -12" stroke="#e8a80c" stroke-width="4" fill="none"/>${[-50, -16, 18, 50].map((px) => `<circle cx="${px}" cy="-18" r="7" fill="#ffd1a8"/><rect x="${px - 6}" y="-12" width="12" height="16" rx="4" fill="${px % 2 ? "#ff3d8b" : "#00b3a6"}"/>`).join("")}`);
-const speedboat = (x, y, s = 1, c = "#ff3d8b") =>
+const __speedboat = (x, y, s = 1, c = "#ff3d8b") =>
   T(x, y, s, `<path d="M-90 -10 H70 Q96 -8 100 -20 L90 6 Q40 14 -84 10Z" fill="#fff8e6"/><path d="M-88 0 H96" stroke="${c}" stroke-width="7"/><path d="M-30 -10 L-10 -34 H30 L40 -10Z" fill="#7fd6ea"/><g stroke="#fff" stroke-width="3" opacity=".8"><path d="M-110 4 h-20 M-104 12 h-30"/></g>`);
-const tourBoat = (x, y, s = 1) =>
+const __tourBoat = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-110 -10 H110 L96 12 H-100Z" fill="#fff8e6"/><path d="M-110 -10 H110" stroke="#00b3a6" stroke-width="6"/><rect x="-80" y="-44" width="150" height="34" fill="#fff8e6"/><rect x="-80" y="-50" width="160" height="8" fill="#2456b8"/><g fill="#7fd6ea">${[-70, -44, -18, 8, 34].map((px) => `<rect x="${px}" y="-36" width="18" height="14" rx="2"/>`).join("")}</g><rect x="-6" y="-74" width="12" height="24" fill="#ff3d8b"/>`);
-const couple = (x, y, s = 1) =>
+const __couple = (x, y, s = 1) =>
   T(x, y, s, `<circle cx="-18" cy="-86" r="10" fill="#ffd1a8"/><path d="M-30 -74 H-6 L-2 -26 H-34Z" fill="#2456b8"/><path d="M-26 -26 L-30 0 M-10 -26 L-4 0" stroke="#161b2a" stroke-width="6"/><circle cx="20" cy="-84" r="10" fill="#c98a5a"/><path d="M8 -72 H32 L44 -24 H-4Z" fill="#ff3d8b"/><path d="M12 -24 L8 0 M28 -24 L34 0" stroke="#161b2a" stroke-width="6"/><path d="M-6 -60 Q4 -66 10 -58" stroke="#ffd1a8" stroke-width="5" fill="none"/>`);
-const record = (x, y, r = 44) =>
+const __record = (x, y, r = 44) =>
   `<g transform="translate(${x} ${y})"><circle r="${r}" fill="#161b2a"/><circle r="${r * 0.78}" fill="none" stroke="#3a4050" stroke-width="2"/><circle r="${r * 0.56}" fill="none" stroke="#3a4050" stroke-width="2"/><circle r="${r * 0.32}" fill="#ffb627"/><circle r="3" fill="#161b2a"/></g>`;
 const tikiBar = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-90 -80 L0 -118 L90 -80Z" fill="#e7c98f"/><path d="M-90 -80 L0 -118 L90 -80" stroke="#c9a05a" stroke-width="4" fill="none"/><g stroke="#c9a05a" stroke-width="2">${[-70, -50, -30, -10, 10, 30, 50, 70].map((px) => `<path d="M${px} -80 l-6 12"/>`).join("")}</g><rect x="-80" y="-80" width="8" height="80" fill="#8a5a2b"/><rect x="72" y="-80" width="8" height="80" fill="#8a5a2b"/><rect x="-86" y="-34" width="172" height="34" fill="#a0642f"/><rect x="-90" y="-38" width="180" height="8" fill="#7a4a22"/>`);
-const margarita = (x, y, s = 1) =>
+const __margarita = (x, y, s = 1) =>
   T(x, y, s, `<path d="M-40 -80 H40 L6 -40 V-6 H22 V0 H-22 V-6 H-6 V-40Z" fill="#c8f08a" opacity=".95"/><path d="M-40 -80 H40" stroke="#fff" stroke-width="4"/><circle cx="34" cy="-80" r="14" fill="#7bc043"/><circle cx="34" cy="-80" r="9" fill="#c8f08a"/><path d="M-10 -90 L-30 -120" stroke="#ff3d8b" stroke-width="4"/>`);
 const rod = (x, y, s = 1) =>
   T(x, y, s, `<path d="M0 0 L90 -110" stroke="#161b2a" stroke-width="4"/><path d="M90 -110 Q130 -60 120 20" stroke="#fff" stroke-width="1.5" fill="none"/><circle cx="16" cy="-20" r="7" fill="#d7dde6"/><circle cx="120" cy="20" r="5" fill="#ff3d8b"/>`);
@@ -632,6 +632,64 @@ const schoolhouse = (x, y, s = 1) => T(x, y, s, `<rect x="-110" y="-70" width="2
 const books = (x, y) => `<g transform="translate(${x} ${y})"><rect x="-30" y="-12" width="60" height="12" fill="#2456b8"/><rect x="-26" y="-24" width="54" height="12" fill="#ffb627"/><rect x="-30" y="-36" width="58" height="12" fill="#00b3a6"/><circle cx="4" cy="-48" r="10" fill="#ff3d3d"/><path d="M4 -58 q4 -6 8 -6" stroke="#2f9e6b" stroke-width="3" fill="none"/></g>`;
 const fingerprint = (x, y) => `<g transform="translate(${x} ${y})" fill="none" stroke="#5a3a1f" stroke-width="3" opacity=".85">${[12, 20, 28, 36, 44].map((r) => `<path d="M${-r} 10 Q${-r} ${-r - 10} 0 ${-r - 10} Q${r} ${-r - 10} ${r} 10"/>`).join("")}</g>`;
 
+let _an = 0;
+const anim = (str, cls) => `<g class="${cls}" style="animation-delay:-${((_an++ * 0.83) % 4).toFixed(2)}s">${str}</g>`;
+const ship = (...a) => anim(__ship(...a), "bob");
+const boat = (...a) => anim(__boat(...a), "bob");
+const sail = (...a) => anim(__sail(...a), "bob");
+const kayak = (...a) => anim(__kayak(...a), "bob");
+const jetski = (...a) => anim(__jetski(...a), "bob");
+const dolphin = (...a) => anim(__dolphin(...a), "leap");
+const fish = (...a) => anim(__fish(...a), "swim");
+const bigFish = (...a) => anim(__bigFish(...a), "swim");
+const speedboat = (...a) => anim(__speedboat(...a), "bob");
+const bananaBoat = (...a) => anim(__bananaBoat(...a), "bob");
+const tourBoat = (...a) => anim(__tourBoat(...a), "bob");
+const parachute = (...a) => anim(__parachute(...a), "pend");
+const ghost = (...a) => anim(__ghost(...a), "float");
+const plane = (...a) => anim(__plane(...a), "bob");
+const dragon = (...a) => anim(__dragon(...a), "float");
+const gator = (...a) => anim(__gator(...a), "bob");
+const disco = (...a) => anim(__disco(...a), "swing");
+const neonRing = (...a) => anim(__neonRing(...a), "fl");
+const hammock = (...a) => anim(__hammock(...a), "pend");
+const cattail = (...a) => anim(__cattail(...a), "sw");
+const record = (...a) => anim(__record(...a), "spin");
+const kart = (...a) => anim(__kart(...a), "bump");
+const tramp = (...a) => anim(__tramp(...a), "hop");
+const dino = (...a) => anim(__dino(...a), "bob");
+const star = (...a) => anim(__star(...a), "tw");
+const key = (...a) => anim(__key(...a), "tw");
+const lantern = (...a) => anim(__lantern(...a), "pend2");
+const mug = (...a) => anim(__mug(...a), "bob2");
+const glass = (...a) => anim(__glass(...a), "bob2");
+const parrot = (...a) => anim(__parrot(...a), "bob");
+const elephant = (...a) => anim(__elephant(...a), "bob2");
+const giraffe = (...a) => anim(__giraffe(...a), "bob2");
+const cat = (...a) => anim(__cat(...a), "bob2");
+const couple = (...a) => anim(__couple(...a), "bob2");
+const wax = (...a) => anim(__wax(...a), "bob2");
+
+
+const hops = (...a) => anim(__hops(...a), "sw");
+const grapes = (...a) => anim(__grapes(...a), "pend");
+const bottle = (...a) => anim(__bottle(...a), "bob2");
+const can = (...a) => anim(__can(...a), "bob2");
+const growler = (...a) => anim(__growler(...a), "bob2");
+const pins = (...a) => anim(__pins(...a), "bob2");
+const ball = (...a) => anim(__ball(...a), "bob2");
+const sunbrella = (...a) => anim(__sunbrella(...a), "sw");
+const coffee = (...a) => anim(__coffee(...a), "bob2");
+const margarita = (...a) => anim(__margarita(...a), "bob2");
+const barrel = (...a) => anim(__barrel(...a), "bob2");
+const jar = (...a) => anim(__jar(...a), "bob2");
+const mic = (...a) => anim(__mic(...a), "bob2");
+const tikiStatue = (...a) => anim(__tikiStatue(...a), "bob2");
+const treasureChest = (...a) => anim(__treasureChest(...a), "tw");
+const gems = (...a) => anim(__gems(...a), "tw");
+const carousel = (...a) => anim(__carousel(...a), "spin");
+const helmet = (...a) => anim(__helmet(...a), "bob2");
+const skate = (...a) => anim(__skate(...a), "bump");
 const CUSTOM = {
   // ---------- Breweries & wineries ----------
   "Bin 2004": () => [sky("dusk"), sun("dusk", 320, 70, 26), lights(30), `<rect y="150" width="400" height="90" fill="#5a2a3a"/><rect y="146" width="400" height="10" fill="#a0642f"/>`, bottle(150, 146, 1, "#6e1430"), glass(210, 146, 0.8, "#c2184f"), glass(250, 146, 0.8, "#ffd47a"), `<g fill="#ffd24a" opacity=".9"><rect x="40" y="70" width="30" height="40" rx="3"/><rect x="330" y="96" width="34" height="44" rx="3"/></g>`].join(""),
@@ -930,6 +988,43 @@ const beachScenes = {
 for (const [n, o] of Object.entries(golfScenes)) CUSTOM[`golf/${n}`] = () => S.golf(rng(hash(n)), o);
 for (const [n, o] of Object.entries(beachScenes)) CUSTOM[`beaches/${n}`] = () => S.beachtown(rng(hash(n)), o);
 
+
+const ANIM = {
+  cl: ".cl{animation:dr 11s ease-in-out infinite alternate}@keyframes dr{to{transform:translateX(70px)}}",
+  sn: ".sn{transform-box:fill-box;transform-origin:center;animation:pu 4s ease-in-out infinite alternate}@keyframes pu{to{transform:scale(1.14)}}",
+  bd: ".bd{animation:fl 7s ease-in-out infinite alternate}@keyframes fl{to{transform:translate(60px,-14px)}}",
+  st: ".st{animation:tw 2s ease-in-out infinite alternate}",
+  tw: ".tw{transform-box:fill-box;transform-origin:center;animation:tw 1.6s ease-in-out infinite alternate}@keyframes tw{to{opacity:.15;transform:scale(.7)}}",
+  wv: ".wv{animation:sw2 4s ease-in-out infinite alternate}@keyframes sw2{to{transform:translateX(30px)}}",
+  wa: ".wa{animation:wa 5s ease-in-out infinite alternate}@keyframes wa{to{transform:translateX(26px)}}",
+  wb: ".wb{animation:wb 4s ease-in-out infinite alternate}@keyframes wb{to{transform:translateX(-26px)}}",
+  sw: ".sw{transform-box:fill-box;transform-origin:50% 100%;animation:sw 3s ease-in-out infinite alternate}@keyframes sw{from{transform:rotate(-4deg)}to{transform:rotate(4deg)}}",
+  bob: ".bob{transform-box:fill-box;transform-origin:center;animation:bob 2.6s ease-in-out infinite alternate}@keyframes bob{from{transform:translateY(-3px) rotate(-1.5deg)}to{transform:translateY(4px) rotate(1.5deg)}}",
+  bob2: ".bob2{animation:bob2 2.2s ease-in-out infinite alternate}@keyframes bob2{to{transform:translateY(-4px)}}",
+  leap: ".leap{transform-box:fill-box;transform-origin:center;animation:leap 2.2s ease-in-out infinite alternate}@keyframes leap{from{transform:translateY(8px) rotate(-8deg)}to{transform:translateY(-14px) rotate(8deg)}}",
+  swim: ".swim{animation:swim 5s ease-in-out infinite alternate}@keyframes swim{to{transform:translateX(40px)}}",
+  fire: ".fire{transform-box:fill-box;transform-origin:50% 100%;animation:fire .32s ease-in-out infinite alternate}.f2{animation-duration:.23s}@keyframes fire{from{transform:scale(1,1) skewX(-3deg);opacity:1}to{transform:scale(.82,1.22) skewX(4deg);opacity:.8}}",
+  glw: ".glw{animation:glw 1.3s ease-in-out infinite alternate}@keyframes glw{from{opacity:.35}to{opacity:1}}",
+  fl: ".fl{animation:fls .9s ease-in-out infinite alternate}@keyframes fls{from{opacity:1}to{opacity:.2}}",
+  fl2: ".fl2{animation:fls .45s steps(2,jump-none) infinite alternate}",
+  spin: ".spin{transform-box:fill-box;transform-origin:center;animation:spin 18s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}",
+  swing: ".swing{transform-box:fill-box;transform-origin:50% 0;animation:swing 2.4s ease-in-out infinite alternate}@keyframes swing{from{transform:rotate(-12deg)}to{transform:rotate(12deg)}}",
+  pend: ".pend{transform-box:fill-box;transform-origin:50% 0;animation:swing 3.2s ease-in-out infinite alternate}",
+  pend2: ".pend2{transform-box:fill-box;transform-origin:50% 0;animation:swing 2.8s ease-in-out infinite alternate}",
+  wave: ".wave{transform-box:fill-box;transform-origin:0 50%;animation:wave .7s ease-in-out infinite alternate}@keyframes wave{from{transform:scaleX(1) skewY(-6deg)}to{transform:scaleX(.78) skewY(6deg)}}",
+  rise: ".rise{animation:rise 3.6s ease-out infinite alternate}@keyframes rise{from{transform:translateY(6px);opacity:.5}to{transform:translateY(-22px);opacity:.1}}",
+  float: ".float{animation:float 2.6s ease-in-out infinite alternate}@keyframes float{to{transform:translateY(-9px)}}",
+  sweep: ".sweep{animation:sweep 2.2s ease-in-out infinite alternate}@keyframes sweep{from{opacity:.32}to{opacity:.08}}",
+  pls: ".pls{animation:sweep 1.8s ease-in-out infinite alternate}",
+  dash: ".dash{animation:dash .7s linear infinite}@keyframes dash{from{transform:translateX(30px);opacity:0}30%{opacity:.9}to{transform:translateX(-30px);opacity:0}}",
+  bump: ".bump{animation:bump .22s ease-in-out infinite alternate}@keyframes bump{to{transform:translateY(-2px)}}",
+  hop: ".hop{animation:hop .9s ease-in-out infinite alternate}@keyframes hop{to{transform:translateY(-16px)}}",
+};
+const animCss = (body) => {
+  const used = Object.keys(ANIM).filter((k) => new RegExp(`class="[^"]*\\b${k}\\b`).test(body));
+  return `<style>${used.map((k) => ANIM[k]).join("")}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>`;
+};
+
 export function artSvg(item, catSlug) {
   const theme = detect(item, catSlug);
   const r = rng(hash(`${catSlug}/${item.name}`));
@@ -942,8 +1037,8 @@ export function artSvg(item, catSlug) {
   } catch {
     body = S.putting(r, {});
   }
-  if (!/class="(cl|sn|bd|st|wv)"/.test(body)) body += `<g class="st" fill="#fff" opacity=".8"><circle cx="48" cy="38" r="2.6"/><circle cx="130" cy="22" r="2"/><circle cx="262" cy="34" r="2.8"/><circle cx="352" cy="58" r="2.2"/><circle cx="214" cy="16" r="1.8"/></g><g class="bd" fill="#fff" opacity=".9"><path d="M300 52 q5 -6 10 0 q5 -6 10 0 q-5 4 -10 1 q-5 3 -10 -1z"/></g>`;
+  if (!/class="[^"]*\b(cl|sn|bd|st|wv|bob|bob2|leap|swim|fire|fl|spin|swing|float)\b/.test(body)) body += `<g class="st" fill="#fff" opacity=".8"><circle cx="48" cy="38" r="2.6"/><circle cx="130" cy="22" r="2"/><circle cx="262" cy="34" r="2.8"/><circle cx="352" cy="58" r="2.2"/><circle cx="214" cy="16" r="1.8"/></g><g class="bd" fill="#fff" opacity=".9"><path d="M300 52 q5 -6 10 0 q5 -6 10 0 q-5 4 -10 1 q-5 3 -10 -1z"/></g>`;
   // ids inside each svg are namespaced by being inlined as an <img>, so no clashes.
-  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${(item.name || "").replace(/[<>&"]/g, "")}"><style>.cl{animation:dr 11s ease-in-out infinite alternate}.sn{transform-box:fill-box;transform-origin:center;animation:pu 4s ease-in-out infinite alternate}.bd{animation:fl 7s ease-in-out infinite alternate}.st{animation:tw 2s ease-in-out infinite alternate}.wv{animation:sw 4s ease-in-out infinite alternate}@keyframes dr{to{transform:translateX(70px)}}@keyframes pu{to{transform:scale(1.14)}}@keyframes fl{to{transform:translate(60px,-14px)}}@keyframes tw{to{opacity:.15}}@keyframes sw{to{transform:translateX(30px)}}@media(prefers-reduced-motion:reduce){*{animation:none!important}}</style>${body}</svg>`;
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${(item.name || "").replace(/[<>&\"]/g, "")}">${animCss(body)}${body}</svg>`;
 }
 export const themeFor = detect;
