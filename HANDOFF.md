@@ -28,6 +28,8 @@ Read CLAUDE.md first (full project notes). This file is only the state of play a
 - Ryan asked to fill hours and prices for listings with a website but blank details (125 targets). Done from official pages so far: Pinball Museum, WonderWorks (price note), Sky Zone, Wheels of Yesteryear hours, Hobcaw, Alligator Adventure, T.I.G.E.R.S. Safari, Myrtle Waves (closed for season), Family Kingdom (closed for season). Hours/Price/Level field IDs per table: read from `list_tables_for_base`.
 - Many sites state no prices (Ripley's, Big Air, Escapology, Stars and Strikes) or no hours; leave blank. Not yet fetched: remaining mini golf, cruises, watersports, historic, live shows, nightlife.
 
+- (Nov 7 later) Pass completed for every page that states hours/prices; the rest stay blank on purpose. Added a **Booking Link** URL field to Family, Thrill, Nature, Live Shows, Historic and Mini Golf tables (not yet Fishing, Nightlife, Breweries, Golf); the listing page shows a "Tickets & booking" button when set (`bookingLink` in build.mjs). Links are the business's own booking pages. Photos are deferred until AdSense approves (Ryan, Nov 7).
+
 ## Gotchas learned
 - Built-in browser: parallel navigate calls on one tab collide; do them one at a time. AdSense pages load slowly (wait ~3s, then screenshot).
 - places_search returns ~1,200 tokens of review text per place: never copy ratings or reviews.

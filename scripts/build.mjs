@@ -148,6 +148,7 @@ for (const cat of config.categories) {
         price: x["Price"] || "",
         priceLevel: x["Price Level"] || "",
         goodToKnow: asList(x["Good to Know"]),
+        bookingLink: safeUrl(x["Booking Link"]),
         detailsSource: safeUrl(x["Details Source"]),
         detailsChecked: x["Details Checked"] || "",
         raw: x,
@@ -303,6 +304,7 @@ function actionButtons(item, { compact = false } = {}) {
   if (item.directions) out.push(`<a class="btn btn-go" href="${esc(item.directions)}" target="_blank" rel="noopener">Get directions</a>`);
   if (item.phone && !compact) out.push(`<a class="btn" href="${telHref(item.phone)}">Call ${esc(item.phone)}</a>`);
   if (item.website && !compact) out.push(`<a class="btn" href="${esc(item.website)}" target="_blank" rel="noopener">Visit website</a>`);
+  if (item.bookingLink && !compact) out.push(`<a class="btn btn-book" href="${esc(item.bookingLink)}" target="_blank" rel="noopener">Tickets &amp; booking</a>`);
   if (!compact) out.push(reviewLinks(item));
   return out.length ? `<div class="actions">${out.join("")}</div>` : "";
 }

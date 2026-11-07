@@ -110,6 +110,8 @@ main > section, main > article, .hero-wrap > .hero { max-width: var(--max); marg
 .btn:hover { background: var(--foam); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(11, 58, 83, .25); }
 .btn-go { background: var(--sun); }
 .btn-go:hover { background: #ffc54d; }
+.btn-book { background: var(--coral, #ff6f61); color: #fff; border-color: transparent; }
+.btn-book:hover { filter: brightness(1.08); }
 .actions { display: flex; flex-wrap: wrap; gap: .6rem; }
 
 /* ---------- the coastline ---------- */
