@@ -204,6 +204,22 @@
    }
   },
   {
+   "id": "recL80GqcAc3qEPXZ",
+   "createdTime": "2026-11-07T16:59:51.000Z",
+   "fields": {
+    "Short Description": "Waites Island is an undeveloped barrier island of more than 1,000 acres at the northern tip of South Carolina, between Cherry Grove and Sunset Beach. There are no roads: visitors arrive by guided horseback ride, kayak or paddleboard through the salt marsh. Bald eagles, ospreys and herons live there, and dolphins and sea turtles are seen in summer.",
+    "Name": "Waites Island",
+    "Price Level": "Free",
+    "Area": "North Myrtle Beach",
+    "Type": "Nature reserve",
+    "Address": "Cherry Grove, North Myrtle Beach, SC 29582",
+    "Details Source": "https://www.explorenorthmyrtlebeach.com/things-to-do/outdoor-activities/waites-island/",
+    "Hours Note": "Guided trips by Inlet Point Plantation Stables and Great Escapes Kayak Expeditions; reservations required",
+    "Details Checked": "2026-11-07",
+    "Published": true
+   }
+  },
+  {
    "id": "recLpiMloct7TxhWL",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
@@ -222,6 +238,22 @@
     "Details Source": "https://crazysistermarina.com/",
     "Hours Note": "Cruise schedule changes through the year. Book online or call (843) 651-3676.",
     "Details Checked": "2026-11-06",
+    "Published": true
+   }
+  },
+  {
+   "id": "recM3m6yGz86hvwSA",
+   "createdTime": "2026-11-07T16:59:19.000Z",
+   "fields": {
+    "Short Description": "Socastee Recreation Park is a 91.5-acre Horry County park with multi-purpose fields, picnic areas, a disc golf course, walking trails and a playground. It is a free place for families to spend a few hours away from the oceanfront.",
+    "Name": "Socastee Recreation Park",
+    "Price Level": "Free",
+    "Area": "Central Myrtle",
+    "Type": "Nature reserve",
+    "Address": "7485 Butler Rd, Myrtle Beach, SC 29588",
+    "Details Source": "https://www.horrycountysc.gov/departments/parksandrecreation/parks/",
+    "Hours Note": "County parks are open dawn to dusk",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },
@@ -277,6 +309,21 @@
     "Address": "4025 Hwy 17 Business, Murrells Inlet, SC 29576",
     "Price": "Free to walk",
     "Details Checked": "2026-11-06",
+    "Published": true
+   }
+  },
+  {
+   "id": "recOyp6J8fjNoLkpt",
+   "createdTime": "2026-11-07T16:59:19.000Z",
+   "fields": {
+    "Short Description": "This 70-acre Horry County park has seven miles of mountain biking and hiking trails near the Intracoastal Waterway. It is a good stop for riders and hikers who want a break from the beach, and it is run by the county as a public park.",
+    "Name": "Horry County Bike & Run Park",
+    "Area": "Central Myrtle",
+    "Type": "Nature reserve",
+    "Hours": "Daily 05:00-20:00",
+    "Address": "150 Frontage Rd B-2, Myrtle Beach, SC 29579",
+    "Details Source": "https://www.horrycountysc.gov/departments/parksandrecreation/parks/",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },
@@ -404,6 +451,22 @@
    }
   },
   {
+   "id": "rechEWz1cKqEZO8A4",
+   "createdTime": "2026-11-07T16:59:19.000Z",
+   "fields": {
+    "Short Description": "Vereen Memorial Gardens is an Horry County park on the waterfront in Little River with about three miles of nature trails and boardwalks. It is a quiet, free spot for a walk, bird watching and views over the marsh and waterway. Beach wheelchairs can be reserved through the county.",
+    "Name": "Vereen Memorial Gardens",
+    "Price Level": "Free",
+    "Area": "Little River",
+    "Type": "Nature reserve",
+    "Address": "2250 Hwy 179, Little River, SC 29566",
+    "Details Source": "https://www.horrycountysc.gov/departments/parksandrecreation/parks/",
+    "Hours Note": "County parks are open dawn to dusk",
+    "Details Checked": "2026-11-07",
+    "Published": true
+   }
+  },
+  {
    "id": "recmK2s0IxQnQhvAL",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
@@ -472,6 +535,22 @@
     "Type": "Boardwalk",
     "Address": "Downtown Conway, SC 29526",
     "Details Source": "https://www.visitmyrtlebeach.com/article/your-guide-to-conway-sc",
+    "Details Checked": "2026-11-07",
+    "Published": true
+   }
+  },
+  {
+   "id": "recxo8tC8n0OFL39i",
+   "createdTime": "2026-11-07T16:59:19.000Z",
+   "fields": {
+    "Short Description": "Splinter City is a 25-acre Horry County disc golf course in Myrtle Beach with two sets of tees. It is open daily and free to play, which makes it an easy low-cost activity for visitors who bring their own discs.",
+    "Name": "Splinter City Disc Golf Course",
+    "Price Level": "Free",
+    "Area": "Central Myrtle",
+    "Type": "Nature reserve",
+    "Address": "3383 Splinter City St, Myrtle Beach, SC 29577",
+    "Details Source": "https://www.horrycountysc.gov/departments/parksandrecreation/parks/",
+    "Hours Note": "Open daily",
     "Details Checked": "2026-11-07",
     "Published": true
    }
