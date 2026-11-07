@@ -345,6 +345,28 @@ const guides = [
       (inCat(c, "nightlife", "breweries-wineries") && /waterfront|marsh|oceanfront|pier|bay|ocean/i.test(`${i.name} ${i.description}`)),
   },
   {
+    slug: "free-things-to-do",
+    title: "Free things to do",
+    intro: "Not every good day on the Grand Strand costs money. Beaches, public piers, boardwalk strolls and a few parks and museums are free or close to it. Check each listing for current hours and any parking or entry fees, since those can change by season.",
+    test: (c, i) => c.slug === "beaches" || i.priceLevel === "Free",
+  },
+  {
+    slug: "indoor-mini-golf",
+    title: "Indoor mini golf",
+    intro: "Mini golf is a Myrtle Beach tradition, and a few courses are fully or partly indoors, so a rainy afternoon or a hot July day doesn't cancel the round. Look at each listing for the course style and the hours before you go.",
+    test: (c, i) => c.slug === "mini-golf" && /indoor|hybrid/i.test(asList(i.raw["Indoor / Outdoor"]).join(" ")),
+  },
+  {
+    slug: "sunset-and-views",
+    title: "Sunset and waterfront views",
+    intro: "Piers, boardwalks, marsh-side docks and oceanfront decks are the best places on the Strand to watch the light change. Pick a spot, check the hours, and plan to arrive a little before sunset.",
+    test: (c, i) =>
+      c.slug === "beaches" ||
+      (c.slug === "fishing" && /pier/i.test(`${i.name} ${i.subtitle}`)) ||
+      (c.slug === "nature-eco" && /boardwalk|harborwalk|marshwalk|state park/i.test(`${i.subtitle} ${i.name}`)) ||
+      (inCat(c, "nightlife") && /pier|oceanfront|sunset/i.test(i.name)),
+  },
+  {
     slug: "after-dark",
     title: "After dark",
     intro: "Live music, dance floors, rooftop bars, breweries, comedy and big stage shows once the sun goes down.",
@@ -467,7 +489,7 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
   const guideRows = guides.map((g) => ({ ...g, rows: allItems.filter((r) => g.test(r.c, r.i)) })).filter((g) => g.rows.length);
   await write(
     "guides/index.html",
-    simplePage("Guides", "Hand-sorted lists for the Grand Strand: rainy-day ideas, on the water, after dark and with the kids.", "/guides/",
+    simplePage("Guides", "Hand-sorted lists for the Grand Strand: rainy-day ideas, free things to do, indoor mini golf, sunsets, on the water, after dark and with the kids.", "/guides/",
       `<h1>Guides</h1><p>Not sure what you're in the mood for? Start with one of these.</p>
 <ul class="hub-list">${guideRows.map((g) => `<li><a href="/guides/${g.slug}/"><strong>${esc(g.title)}</strong><span>${g.rows.length} places</span></a></li>`).join("")}</ul>`)
   );
