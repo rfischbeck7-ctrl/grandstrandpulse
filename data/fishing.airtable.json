@@ -15,6 +15,40 @@
    }
   },
   {
+   "id": "rec65WEjVwZFPb74z",
+   "createdTime": "2026-11-07T16:50:50.000Z",
+   "fields": {
+    "Details Source": "https://saltyhookerfishingcharters.com",
+    "Website": "https://saltyhookerfishingcharters.com",
+    "Address": "1508 S Waccamaw Dr, Murrells Inlet, SC 29576",
+    "Published": true,
+    "Name": "Salty Hooker Fishing Charters",
+    "Short Description": "Salty Hooker offers offshore fishing trips out of Marlin Quay Marina in Murrells Inlet, seven days a week. Trips include a five-hour half day, an eight-hour three-quarter day, a ten-hour full day and a twelve-hour Gulf Stream trip, with half-day trips departing at 7 AM or 1 PM.",
+    "Area": "Murrells Inlet",
+    "Phone": "(843) 504-9667",
+    "Hours Note": "Half-day trips depart 7 AM or 1 PM; open 7 days",
+    "Type": "Fishing charter",
+    "Details Checked": "2026-11-07"
+   }
+  },
+  {
+   "id": "rec7KYzwodLOQNbV1",
+   "createdTime": "2026-11-07T16:50:50.000Z",
+   "fields": {
+    "Details Source": "https://littleriverfleet.com/",
+    "Website": "https://littleriverfleet.com/",
+    "Address": "1522 Watson Ave, Little River, SC 29566",
+    "Published": true,
+    "Name": "Little River Fishing Fleet",
+    "Short Description": "Little River Fishing Fleet runs headboat trips from Little River Landing: an 11-hour Gulf Stream trip 35 to 50 miles offshore and a four-hour half-day trip. It also offers inshore charters, specialty and private charters, and scuba dives. The main office is at 1901 Hwy 17 S, but boats do not leave from there.",
+    "Area": "Little River",
+    "Phone": "(843) 361-3323",
+    "Hours Note": "Call 843-361-3323 or see the online schedule",
+    "Type": "Fishing charter",
+    "Details Checked": "2026-11-07"
+   }
+  },
+  {
    "id": "recZm0VXKGAGuXz19",
    "createdTime": "2026-11-06T20:01:20.000Z",
    "fields": {

@@ -27,6 +27,22 @@
    }
   },
   {
+   "id": "recAyZTJYMyh4VOgR",
+   "createdTime": "2026-11-07T16:50:50.000Z",
+   "fields": {
+    "Details Source": "https://www.ripleys.com/attractions/ripleys-mirror-maze-myrtle-beach",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Hours Note": "Check the Ripley's hours page",
+    "Address": "913 N Ocean Blvd, Myrtle Beach, SC 29577",
+    "Website": "https://www.ripleys.com/attractions/ripleys-mirror-maze-myrtle-beach",
+    "Details Checked": "2026-11-07",
+    "Name": "Ripley's Mirror Maze",
+    "Type": "Mirror maze",
+    "Short Description": "Ripley's Mirror Maze is a perplexing puzzle of mirrors on Ocean Boulevard near the SkyWheel where visitors try to find their way out. It is a quick, indoor activity that suits families and groups, and sits next to Ripley's other Boardwalk-area attractions."
+   }
+  },
+  {
    "id": "recBrglKMU1L5lSnV",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
@@ -196,6 +212,22 @@
    }
   },
   {
+   "id": "recPUw8VbDD4Dv3Qr",
+   "createdTime": "2026-11-07T16:50:50.000Z",
+   "fields": {
+    "Details Source": "https://www.ripleys.com/myrtlebeach/haunted-adventure/",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Hours Note": "Check the Ripley's hours page",
+    "Address": "915 N Ocean Blvd, Myrtle Beach, SC 29577",
+    "Website": "https://www.ripleys.com/myrtlebeach/haunted-adventure/",
+    "Details Checked": "2026-11-07",
+    "Name": "Ripley's Haunted Adventure",
+    "Type": "Haunted house",
+    "Short Description": "Ripley's Haunted Adventure on Ocean Boulevard is a walk-through haunted attraction built on spooky suspense and surprises, steps from the Boardwalk and SkyWheel. It is an indoor, rain-or-shine stop for teens and adults who want a scare. Check the Ripley's site for current hours."
+   }
+  },
+  {
    "id": "recPrJ6VMRqchrSXL",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
@@ -358,6 +390,21 @@
     "Name": "AlleyOops North Myrtle Beach",
     "Type": "Bowling",
     "Short Description": "Duckpin bowling, a golf simulator, games and a full restaurant."
+   }
+  },
+  {
+   "id": "recnF14KKvXvikiig",
+   "createdTime": "2026-11-07T16:50:50.000Z",
+   "fields": {
+    "Details Source": "https://www.backstagemirrormaze.com/",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "Broadway at the Beach, Myrtle Beach, SC 29577",
+    "Website": "https://www.backstagemirrormaze.com/",
+    "Details Checked": "2026-11-07",
+    "Name": "Backstage Mirror Maze & The Vault Laser Maze",
+    "Type": "Mirror maze",
+    "Short Description": "At Broadway at the Beach, the Backstage Mirror Maze fills over 2,000 square feet of an Off Broadway theater's backstage with a 1933 bank-heist escape story, kaleidoscope glasses and colored lights. The Vault Laser Maze is a heist-style challenge through a web of security beams, with scores posted on a Top Ten list."
    }
   },
   {

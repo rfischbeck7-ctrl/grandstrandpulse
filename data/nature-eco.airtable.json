@@ -109,6 +109,23 @@
    }
   },
   {
+   "id": "rec9PLox8aSI7TXMS",
+   "createdTime": "2026-11-07T16:50:49.000Z",
+   "fields": {
+    "Short Description": "PonTiki runs daily party boat cruises on the Intracoastal Waterway with music, dancing and drinks included. Public cruises last two hours, private cruises run two to eight hours, and the largest boat holds up to 47 passengers. Outside drinks are not allowed. Guests should be of drinking age.",
+    "Name": "PonTiki Myrtle Beach",
+    "Area": "Little River",
+    "Website": "https://pontikimyrtlebeach.com/",
+    "Type": "Scenic cruise",
+    "Phone": "(843) 491-9549",
+    "Address": "4430 Kingsport Rd, Little River, SC 29566",
+    "Details Source": "https://pontikimyrtlebeach.com/",
+    "Hours Note": "Seasonal schedule; check the contact page",
+    "Details Checked": "2026-11-07",
+    "Published": true
+   }
+  },
+  {
    "id": "rec9fGS2LdgSi4hA1",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
@@ -298,6 +315,23 @@
    }
   },
   {
+   "id": "recRiYAPh1q8T3elE",
+   "createdTime": "2026-11-07T16:50:49.000Z",
+   "fields": {
+    "Short Description": "Sea Racer runs dolphin-watching cruises from the Big M Casino boat dock in Little River on a 70-foot boat with a 360-degree viewing area and room for up to 128 passengers. Tours last about 1.5 to 2 hours along the Little River and Myrtle Beach coastline. Dolphin sightings are not guaranteed.",
+    "Name": "Sea Racer Tours",
+    "Area": "Little River",
+    "Website": "https://searacermyrtlebeach.com/",
+    "Type": "Dolphin tour",
+    "Phone": "(843) 273-5039",
+    "Address": "4491 Waterfront Ave, Little River, SC 29566",
+    "Details Source": "https://searacermyrtlebeach.com/",
+    "Hours Note": "Seasonal: reopens March 15, 2027; check the schedule online",
+    "Details Checked": "2026-11-07",
+    "Published": true
+   }
+  },
+  {
    "id": "recRzF300xwSl2AIi",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
@@ -408,6 +442,22 @@
     "Details Source": "https://www.myrtlebeachsafari.com/",
     "Hours Note": "Open three days a week, by reservation only.",
     "Details Checked": "2026-11-06",
+    "Published": true
+   }
+  },
+  {
+   "id": "recsT3FphHKLrKdpa",
+   "createdTime": "2026-11-07T16:50:49.000Z",
+   "fields": {
+    "Short Description": "Plantation River Tours leaves from Wacca Wache Marina in Murrells Inlet on two river trips: the Waccamaw Lady, a 60-foot pontoon boat narrated by a local historian who covers the plantations' history, and the Waccamaw Cooter airboat tour of the Waccamaw, Black and Pee Dee rivers.",
+    "Name": "Plantation River Tours",
+    "Area": "Murrells Inlet",
+    "Website": "https://www.plantationrivertours.com/",
+    "Type": "Eco tour",
+    "Address": "Wacca Wache Marina, Murrells Inlet, SC",
+    "Details Source": "https://www.plantationrivertours.com/",
+    "Hours Note": "Check the website for tour times",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },

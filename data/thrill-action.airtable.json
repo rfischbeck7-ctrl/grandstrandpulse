@@ -57,6 +57,23 @@
    }
   },
   {
+   "id": "rec51nPCg0f0SyefE",
+   "createdTime": "2026-11-07T16:50:48.000Z",
+   "fields": {
+    "Website": "https://www.seakartadventuresc.com",
+    "Phone": "(843) 344-7870",
+    "Address": "4123 US-17 Business, Murrells Inlet, SC 29576",
+    "Short Description": "Seakart Adventure is a jet ski and boat hybrid that you drive yourself behind a professional guide boat. Each guided tour lasts 60 minutes and up to three guests can ride in each Seakart. The tour runs out of Crazy Sister Marina in Murrells Inlet and is described as family friendly.",
+    "Published": true,
+    "Details Source": "https://www.seakartadventuresc.com",
+    "Area": "Murrells Inlet",
+    "Name": "Seakart Adventure SC",
+    "Hours Note": "Spots fill quickly in peak season; book ahead",
+    "Details Checked": "2026-11-07",
+    "Type": "Jet boat / sea kart"
+   }
+  },
+  {
    "id": "rec5g7gbv5I2NTZGR",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
@@ -150,6 +167,23 @@
    }
   },
   {
+   "id": "recNUea2QJn2BoKpi",
+   "createdTime": "2026-11-07T16:50:48.000Z",
+   "fields": {
+    "Website": "https://www.love2livealoha.com/",
+    "Phone": "(843) 249-9908",
+    "Address": "2208 N Ocean Blvd, North Myrtle Beach, SC 29582",
+    "Short Description": "Aloha Watersports runs parasailing, Big Island banana boat rides, jet ski rentals and pontoon boats in North Myrtle Beach, and has a surf shop on site. It is a one-stop spot for a day on the water for families and groups.",
+    "Published": true,
+    "Details Source": "https://www.love2livealoha.com/",
+    "Area": "North Myrtle Beach",
+    "Name": "Aloha Watersports",
+    "Hours Note": "Hours not posted; call ahead",
+    "Details Checked": "2026-11-07",
+    "Type": "Parasailing / jet ski"
+   }
+  },
+  {
    "id": "recPSQtS83S8M4nVr",
    "createdTime": "2026-11-07T16:43:43.000Z",
    "fields": {
@@ -164,6 +198,23 @@
     "Hours Note": "Book online; bring a valid ID",
     "Details Checked": "2026-11-07",
     "Type": "Party bike"
+   }
+  },
+  {
+   "id": "recQ7mAEgLJ0ii2Ie",
+   "createdTime": "2026-11-07T16:50:48.000Z",
+   "fields": {
+    "Website": "https://www.coastalscuba.com",
+    "Phone": "(843) 361-3323",
+    "Address": "1903 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Short Description": "Coastal Scuba runs dive charters to Myrtle Beach dive sites, teaches certification classes from beginner to PADI professional programs, and sells and rents dive gear. The shop also books dive trips to destinations such as Cozumel, Key Largo, Roatan and Belize.",
+    "Published": true,
+    "Details Source": "https://www.coastalscuba.com",
+    "Area": "North Myrtle Beach",
+    "Name": "Coastal Scuba",
+    "Hours Note": "Hours not posted; see the dive calendar online",
+    "Details Checked": "2026-11-07",
+    "Type": "Scuba diving"
    }
   },
   {
@@ -227,6 +278,23 @@
    }
   },
   {
+   "id": "recVD1OSsw46nlYGp",
+   "createdTime": "2026-11-07T16:50:48.000Z",
+   "fields": {
+    "Website": "https://southernshorescruises.com/",
+    "Phone": "(843) 364-9962",
+    "Address": "2201 Little River Neck Rd, North Myrtle Beach, SC 29582",
+    "Short Description": "Southern Shores Cruises offers a two-hour catamaran island and dolphin cruise, the one-hour Thrill Seeker jet boat ride, a 90-minute Need 4 Speed offshore boating experience, private charters, and jet ski rentals and dolphin tours for drivers 18 and older. Guests should arrive 30 minutes before their scheduled time.",
+    "Published": true,
+    "Details Source": "https://southernshorescruises.com/",
+    "Area": "Little River",
+    "Name": "Southern Shores Cruises",
+    "Hours Note": "Arrive 30 minutes early; book ahead",
+    "Details Checked": "2026-11-07",
+    "Type": "Jet boat / cruises"
+   }
+  },
+  {
    "id": "recX47FJQ0tQmOmcU",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
@@ -238,6 +306,23 @@
     "Area": "Little River",
     "Name": "Myrtle Beach Jet Ski Rental",
     "Type": "Jet ski"
+   }
+  },
+  {
+   "id": "recYbgzCvxJ5WRWcd",
+   "createdTime": "2026-11-07T16:50:48.000Z",
+   "fields": {
+    "Website": "https://oceanfrontheli.com/",
+    "Phone": "(843) 946-0022",
+    "Address": "3000 S Kings Hwy, Myrtle Beach, SC 29577",
+    "Short Description": "Oceanfront Helicopters, formerly Huffman Helicopters, flies sightseeing tours over the Myrtle Beach coastline from an office at the end of the airport runway. Routes include the original beach flight, a Broadway tour past the local attractions, oceanfront estates, a family tour and longer routes with wildlife views.",
+    "Published": true,
+    "Details Source": "https://oceanfrontheli.com/",
+    "Area": "Central Myrtle",
+    "Name": "Oceanfront Helicopters",
+    "Hours Note": "Book ahead; call for flight times",
+    "Details Checked": "2026-11-07",
+    "Type": "Helicopter tours"
    }
   },
   {
@@ -317,6 +402,23 @@
    }
   },
   {
+   "id": "reckPihjninqvIymK",
+   "createdTime": "2026-11-07T16:50:48.000Z",
+   "fields": {
+    "Website": "https://www.newwavewatersports.com/index.php",
+    "Phone": "(843) 361-3322",
+    "Address": "1701 S Ocean Blvd, North Myrtle Beach, SC 29582",
+    "Short Description": "New Wave Watersports offers parasailing and banana boat rides from the beach in North Myrtle Beach. Check-in is on the sand behind Molly Darcy's Irish Pub, so you can walk from the beach, board the boat and float high above the coast.",
+    "Published": true,
+    "Details Source": "https://www.newwavewatersports.com/index.php",
+    "Area": "North Myrtle Beach",
+    "Name": "New Wave Watersports",
+    "Hours Note": "Hours not posted; call or check the booking page",
+    "Details Checked": "2026-11-07",
+    "Type": "Parasailing"
+   }
+  },
+  {
    "id": "reclXj1mYyGe4depi",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
@@ -369,6 +471,23 @@
     "Area": "North Myrtle Beach",
     "Name": "Myrtle Beach Watersports",
     "Type": "Jet ski"
+   }
+  },
+  {
+   "id": "recwGXlGQTV4fXVAy",
+   "createdTime": "2026-11-07T16:50:48.000Z",
+   "fields": {
+    "Website": "https://myrtlebeachsharktoothadventures.com/",
+    "Phone": "(843) 427-4144",
+    "Address": "1903 Hwy 17 S, North Myrtle Beach, SC 29582",
+    "Short Description": "Myrtle Beach Shark Tooth Adventures lets you sift through material brought up from the ocean floor in search of shark teeth and fossils. Several trip levels, from Sandbar to Megalodon, are offered in standard and premium versions, with a booking calendar to check availability by date.",
+    "Published": true,
+    "Details Source": "https://myrtlebeachsharktoothadventures.com/",
+    "Area": "North Myrtle Beach",
+    "Name": "Myrtle Beach Shark Tooth Adventures",
+    "Hours Note": "Book online by date",
+    "Details Checked": "2026-11-07",
+    "Type": "Shark tooth hunt"
    }
   },
   {
