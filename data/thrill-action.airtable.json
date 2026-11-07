@@ -150,6 +150,23 @@
    }
   },
   {
+   "id": "recPSQtS83S8M4nVr",
+   "createdTime": "2026-11-07T16:43:43.000Z",
+   "fields": {
+    "Website": "https://www.pedalpub.com/myrtle-beach-sc/conway/",
+    "Phone": "(843) 999-0258",
+    "Address": "4 Elm St, Conway, SC 29526",
+    "Short Description": "Pedal Pub Conway is a two-hour pedal-powered party bike ride through historic downtown Conway and along the riverfront, with stops at local establishments along the way. The bike seats 8 to 15 people. Smaller groups can reserve individual seats, and larger groups such as birthday parties can book the whole bike.",
+    "Published": true,
+    "Details Source": "https://www.pedalpub.com/myrtle-beach-sc/conway/",
+    "Area": "Conway",
+    "Name": "Pedal Pub Conway",
+    "Hours Note": "Book online; bring a valid ID",
+    "Details Checked": "2026-11-07",
+    "Type": "Party bike"
+   }
+  },
+  {
    "id": "recQr56M10L6nupS5",
    "createdTime": "2026-11-07T16:28:29.000Z",
    "fields": {

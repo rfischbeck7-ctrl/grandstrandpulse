@@ -264,6 +264,21 @@
    }
   },
   {
+   "id": "recPSULCdmLvljMjK",
+   "createdTime": "2026-11-07T16:43:44.000Z",
+   "fields": {
+    "Short Description": "Tiki Tours runs scenic cruises on the Intracoastal Waterway near Myrtle Beach aboard an 18-passenger tiki boat, including sunset cruises. It is a laid-back way to see the waterway with friends or family, and the boat is also booked for bachelor and bachelorette parties, corporate outings and other special occasions.",
+    "Name": "Tiki Tours of Myrtle Beach",
+    "Area": "Central Myrtle",
+    "Type": "Scenic cruise",
+    "Address": "5843 Dick Pond Rd, Myrtle Beach, SC 29588",
+    "Details Source": "https://www.visitmyrtlebeach.com/listings/tiki-tours-of-myrtle-beach",
+    "Hours Note": "Book ahead; call or check online for departure times",
+    "Details Checked": "2026-11-07",
+    "Published": true
+   }
+  },
+  {
    "id": "recPSWNPRI8QIlHve",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
