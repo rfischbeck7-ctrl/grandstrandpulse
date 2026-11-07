@@ -1,9 +1,19 @@
 // Builds the static site into dist/ from data/*.airtable.json + site.config.mjs.
 import fs from "node:fs/promises";
 import path from "node:path";
+import { readFileSync } from "node:fs";
 import config from "../site.config.mjs";
 import { artSvg } from "./art.mjs";
 import { parseHours, weekRows, openingSpec } from "./hours.mjs";
+
+// Google Place IDs (data/place-ids.json, name -> id). Optional; listings without one fall back to a name + address search.
+const placeIds = (() => {
+  try {
+    return JSON.parse(readFileSync(new URL("../data/place-ids.json", import.meta.url), "utf8"));
+  } catch {
+    return {};
+  }
+})();
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const dist = path.join(root, "dist");
@@ -230,7 +240,11 @@ const metaLine = (item, cls) => {
 };
 const reviewLinks = (item) => {
   const where = item.address || "Myrtle Beach, SC";
-  const google = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${item.name}, ${where}`);
+  const pid = placeIds[item.name];
+  const google =
+    "https://www.google.com/maps/search/?api=1&query=" +
+    encodeURIComponent(`${item.name}, ${where}`) +
+    (pid ? "&query_place_id=" + encodeURIComponent(pid) : "");
   const yelp = "https://www.yelp.com/search?find_desc=" + encodeURIComponent(item.name) + "&find_loc=" + encodeURIComponent(where);
   return `<a class="btn btn-review" href="${esc(google)}" target="_blank" rel="noopener">Google reviews</a><a class="btn btn-review" href="${esc(yelp)}" target="_blank" rel="noopener">Yelp reviews</a>`;
 };
