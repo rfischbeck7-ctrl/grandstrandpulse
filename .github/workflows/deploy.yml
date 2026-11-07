@@ -43,7 +43,14 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           git add data public/photos
-          git diff --cached --quiet || (git commit -m "Refresh listings from Airtable" && git push)
+          if ! git diff --cached --quiet; then
+            git commit -m "Refresh listings from Airtable"
+            # Someone may have pushed while this ran, so rebase and retry instead of failing
+            for i in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              sleep $((i * 5))
+            done
+          fi
 
       - name: Build site
         run: npm run build
