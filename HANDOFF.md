@@ -1,4 +1,4 @@
-# Handoff: Myrtle Beach Compass (written Nov 7, 2026 ~12:50 ET)
+# Handoff: Myrtle Beach Compass (written Nov 7, 2026 ~12:50 ET; descriptions section updated ~2:15 PM ET)
 
 Read CLAUDE.md first (full project notes). This file is only the state of play at the end of a long session.
 
@@ -15,7 +15,11 @@ Read CLAUDE.md first (full project notes). This file is only the state of play a
 - Open question asked of Ryan (unanswered): relax the "official site only" rule for phone numbers (Google lists numbers for some blank listings)?
 
 ## Optional work, in value order
-1. Expand short descriptions: ~111 listings under 30 words. Use the business's own site via WebFetch, no prices/hours in text. Airtable Short Description field IDs by table: thrill `fldLtOEmSUPDeEctg`, family `flduA7KJc2DLH9gIv`, nature `fld5p6irAHEUqNvyX`, historic `fld80Uz9LF7FWmwpz` (others: run get_table_schema; it is the multilineText right after the Website url). Find short ones by reading `data/*.airtable.json` (word count < 30). Can't be done honestly: Kaminski House (listed site is a travel blog), Voyager (site errors), most nightlife/theaters (no official site). Topgolf is excluded by past decision.
+1. Short descriptions: **done for everything that has a readable official source (Nov 7 evening: 54 expanded, written to Airtable, deploy triggered).** 46 listings are still under 30 words and cannot be expanded honestly without a source. Don't redo them unless a readable official page turns up:
+   - Blocked/errored/wrong site: Black Pearl (site errors), Aloha Village (listed site is the wrong page), King's North (site errors), Wild Woods Farm (robots), AMC Classic 12 (robots), SkyWheel (blocks bots), Voyager (site errors), Kaminski House (listed site is a travel blog), Georgetown Harborwalk (listed historicgeorgetown.com is now a domain-for-sale page; the Website field needs a new official link).
+   - No official site: Inlet Adventure, Jungle Lagoon, Bin 2004, La Belle Amie, 810 Billiards, Hollywood Wax, MB Room Escape, AlleyOops, Jack Axe, Pier 14, Second Avenue Pier, Horry County Museum, MarshWalk, Boardwalk, Pavilion Nostalgia Park, TPC, and most live-show and nightlife listings (Charles Bach, Grand 14, Le Grand Cirque, Polynesian Fire Luau, Pelicans, Riga Tony's, Legends in Concert, GTS, Asher; Pier at Garden City, Apache Pier, Pirate's Cove, Duck's, OD Arcade, Ocean Annie's, Spanish Galleon, 3001, Senor Frog's, Bowery, Dead Dog). Topgolf is excluded by past decision.
+   - Short Description field IDs by table: mini golf `fldKkiiuBXM0cKTqq`, golf `fld8jbHhMa9J7WDM9`, breweries `fldlp0h7sa3hLRl0z`, nightlife `fldNsef8LCshidbMx`, live shows `fldnTU1ufN6yBHLZu`, fishing `fldRHcuycl91Xc4V0`, beaches `fldq2tlle7Ws6sa0e`, thrill `fldLtOEmSUPDeEctg`, family `flduA7KJc2DLH9gIv`, nature `fld5p6irAHEUqNvyX`, historic `fld80Uz9LF7FWmwpz`. Find short ones by word count (< 30) in `data/*.airtable.json` (records are under `.records[].fields`).
+   - Facts worth knowing: Wachesaw East is a Clyde Johnston design (not Fazio); Legends Moorland is credited to P.B. Dye; Red Dragon Cove's site still says "coming soon" (the page may be stale); Serial Killers' Dahmer room was scheduled to open Oct 1, 2026 (not confirmed, left out of the text).
 2. Photo-request email drafts for breweries/wineries/newer venues (drafts only, never send without asking).
 3. Place IDs: retried Legends Moorland, Barefoot Fazio, Pedal Pub Conway, Getaway, MB Watersports: Google returns a different business, so they stay on the fallback. Don't retry without a new angle.
 4. Phone gaps: official sites state none for Ripley's x3, Sky Zone, 810 (only a corporate number), Backstage Mirror Maze, Plantation River Tours, EdVenture, SkyWheel, etc. Leave blank unless Ryan relaxes the rule.
