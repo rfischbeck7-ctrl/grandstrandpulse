@@ -717,8 +717,8 @@ async function buildHome() {
   <ul class="cat-grid">${cards}</ul>
 </section>
 <section class="home-hubs">
-  <div><h2>Browse by area</h2><ul class="hub-list">${areaHub}</ul></div>
   <div><h2>Guides</h2><ul class="hub-list">${guideLinks}</ul></div>
+  <div><h2>Browse by area</h2><ul class="hub-list">${areaHub}</ul></div>
 </section>
 ${soon}`;
   await write(
