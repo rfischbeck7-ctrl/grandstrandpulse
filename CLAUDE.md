@@ -54,9 +54,9 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - **Things to do only (Ryan, Nov 6): no restaurants, bars or shopping categories.** The existing Nightlife and Breweries categories stay.
 
 ## Nov 6 night pass
-- Tin Roof and Comedy Cabana got phone/website (and Tin Roof hours) from their own sites. Many nightlife sites block automated reading (Apache Pier, 3001, Bowery, Ocean Annie's, Dead Dog Saloon); most nightlife listings still lack website/hours.
+- Tin Roof, Comedy Cabana and Fat Harold's got phone/website (Tin Roof hours; Fat Harold's opening times as a note, no closing time posted) from their own sites. Delete of the duplicate Art Museum record was blocked by the permission check even after Ryan said "Go"; it is still there, unpublished. Many nightlife sites block automated reading (Apache Pier, 3001, Bowery, Ocean Annie's, Dead Dog Saloon); most nightlife listings still lack website/hours.
 - Checked and NOT added: Waccatee Zoo (reported permanently closing), Warbird Park, Hurricane Fleet and Springmaid Pier (no official site found).
-- Live site checked at phone size: home, search, saved hearts, about/privacy/areas/guides/saved all load; no sideways overflow; art animates. Hearts are not on search-result rows (minor).
+- Live site checked at phone size: home, search, saved hearts, about/privacy/areas/guides/saved all load; no sideways overflow; art animates. Hearts were added to search-result rows (MutationObserver in app.js).
 - Not doable by Claude: 2FA on Porkbun/GitHub/Airtable, deleting the unused Airtable token, visitor-counter account.
 
 ## Open follow-ups (not yet requested)
