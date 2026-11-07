@@ -342,6 +342,10 @@ const areaIntros = {
     "Murrells Inlet is a working fishing village on a tidal marsh, and the marsh is the draw. The MarshWalk follows the water, boats leave from the inlet for dolphin watches and fishing trips, and the marsh side faces west, which makes it one of the better places on the coast to watch the sun go down.",
     "Close by are Brookgreen Gardens and Huntington Beach State Park, so the area works well for a slower day of nature, wildlife and gardens as well as an evening out.",
   ],
+  "Conway": [
+    "Conway is the Horry County seat, about a 20-minute drive inland from the beaches, with a small historic downtown beside the Waccamaw River. It is a calmer alternative to the oceanfront, with local theater, a river park and a county museum.",
+    "The Horry County Museum and its L.W. Paul Living History Farm cover local history, Theatre of the Republic stages plays on Main Street, and a modern movie theater is close by. Most visitors combine Conway with a beach day.",
+  ],
   "Georgetown": [
     "Georgetown is the quiet end of the Grand Strand. Founded in 1729, it is one of South Carolina's oldest port cities, with a walkable historic district along the Sampit River, a Harborwalk, and several museums.",
     "Visitors come for history, the Lowcountry rice-plantation story, and boat tours of the surrounding waterways and Winyah Bay. It is about a 45-minute drive from central Myrtle Beach, so most people give it a half or full day.",

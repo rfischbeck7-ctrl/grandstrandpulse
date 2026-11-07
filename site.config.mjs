@@ -24,6 +24,7 @@ export default {
   areas: [
     { name: "North Myrtle Beach", x: 87, y: 21 },
     { name: "Central Myrtle", x: 66, y: 42 },
+    { name: "Conway", x: 46, y: 33 },
     { name: "Surfside", x: 46, y: 59 },
     { name: "Murrells Inlet", x: 28, y: 72 },
     { name: "Georgetown", x: 11, y: 89 },
