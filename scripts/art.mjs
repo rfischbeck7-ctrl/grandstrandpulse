@@ -845,6 +845,8 @@ const THEATER_PROPS = {
   "legends in concert": () => `<g transform="translate(200 200)"><path d="M-30 0 V-64 Q-30 -88 0 -88 Q30 -88 30 -64 V0Z" fill="#fff8e6"/><circle cy="-104" r="14" fill="#ffd1a8"/><path d="M-14 -112 Q0 -132 16 -112 Q10 -120 0 -120 Q-10 -120 -14 -112Z" fill="#161b2a"/><path d="M-30 -60 L30 -60 M-26 -40 L26 -40" stroke="#ffd24a" stroke-width="4"/></g>${mic(296, 140, 0.8)}`,
   // community theatre: comedy and tragedy masks
   "strand theater": () => `<g transform="translate(150 130)">${mask(0, 0, 1.2)}</g><g transform="translate(250 136) rotate(12)"><path d="M-34 -30 Q-34 -50 0 -50 Q34 -50 34 -30 Q34 8 0 26 Q-34 8 -34 -30Z" fill="#c9d3e6"/><path d="M-22 -22 q8 -8 16 0 q-8 6 -16 0z M6 -22 q8 -8 16 0 q-8 6 -16 0z" fill="#161b2a"/><path d="M-18 8 Q0 -8 18 8" stroke="#161b2a" stroke-width="4" fill="none"/></g>`,
+  // community playhouse: laurel wreath around a standing lectern on the stage
+  "theatre of the republic": () => `<g transform="translate(200 120)"><circle r="56" fill="none" stroke="#3f9b4f" stroke-width="8" stroke-dasharray="14 7"/><circle r="40" fill="#fff3d6" opacity="0.15"/></g><g transform="translate(200 196)"><path d="M-30 0 L-22 -70 H22 L30 0Z" fill="#7a4a24"/><rect x="-34" y="-78" width="68" height="10" rx="3" fill="#a0642f"/><rect x="-14" y="-92" width="28" height="14" rx="2" fill="#fff8e6"/></g>${note(88, 130, 0.9, "#ffd24a")}`,
   // family magic and comedy: fanned playing cards and a wand
   "the asher theatre": () => `<g transform="translate(200 176)">${[-30, -10, 10, 30].map((a, i) => `<g transform="rotate(${a})"><rect x="-22" y="-96" width="44" height="64" rx="5" fill="#fff8e6"/><path d="M0 -${76 - (i % 2) * 2} l8 12 -8 12 -8 -12Z" fill="${i % 2 ? "#161b2a" : "#c2184f"}"/></g>`).join("")}</g><g transform="translate(300 90) rotate(-35)"><rect x="-4" y="0" width="8" height="70" fill="#161b2a"/><rect x="-4" y="0" width="8" height="12" fill="#fff"/></g>${star(318, 72, 10)}`,
 };
@@ -856,6 +858,7 @@ const THEATER_CURTAIN = {
   "legends in concert": "gold",
   "strand theater": "teal",
   "the asher theatre": "navy",
+  "theatre of the republic": "red",
   "charles bach wonders theatre": "silver",
 };
 function theaterOverride(item) {
