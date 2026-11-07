@@ -218,7 +218,7 @@ ${body}
   <p>Every listing is checked against the business or an official visitor guide, but hours and details change. Call ahead before you drive over.</p>
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
   <nav class="foot-links" aria-label="More">
-    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/privacy/">Privacy</a>
+    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/privacy/">Privacy</a>
   </nav>
   <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
@@ -560,6 +560,50 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
 <h2>Get in touch</h2>
 <p>${mail ? `Email <a href="mailto:${mail}">${mail}</a> to correct a listing, send a photo, or <a href="/add-your-business/">add a place</a>.` : "Use the Add or fix a listing page."}</p>`)
   );
+
+  // ---------- planning pages ----------
+  await write(
+    "plan/index.html",
+    simplePage("Plan your trip", "Planning pages for visiting the Grand Strand: when to go, how to get around and where to park.", "/plan/",
+      `<h1>Plan your trip</h1>
+<p>Practical notes for visiting Myrtle Beach and the Grand Strand, drawn from official city and visitor-bureau pages.</p>
+<ul class="hub-list"><li><a href="/plan/when-to-visit/"><strong>When to visit</strong><span>Seasons, crowds and what's open</span></a></li><li><a href="/plan/getting-around/"><strong>Getting around and parking</strong><span>Roads, buses and beach parking</span></a></li></ul>`)
+  );
+  await write(
+    "plan/when-to-visit/index.html",
+    simplePage("When to visit the Grand Strand", "The best time to visit Myrtle Beach and the Grand Strand: how summer, shoulder season and winter differ for crowds, weather and what's open.", "/plan/when-to-visit/",
+      `<p class="crumbs"><a href="/plan/">Plan your trip</a></p><h1>When to visit the Grand Strand</h1>
+<p>There isn't one best month. It depends on whether you want beach weather, shorter lines, lower prices or a quieter pace. Here is how the year breaks down.</p>
+<h2>Summer: June to August</h2>
+<p>Summer is peak season. July is generally the busiest month and August is the lightest of the summer months, with crowds thinning toward the end. Daytime highs reach about 90°F in July, the ocean is warm, and the seasonal attractions, water parks and concert series are all running. Expect the largest crowds on the beach, in traffic and at the biggest attractions, so book popular shows and tours ahead.</p>
+<h2>Spring and fall: March to May and September to October</h2>
+<p>Many locals consider these the best months. Crowds are lighter, restaurants are easier, and golfers come in spring when the weather is cooler. Fall brings festivals, sunny days and an ocean that stays swimmable into October, with crowds dropping sharply after Labor Day. Some summer-only attractions begin closing in September, so check hours before you go. Late May can be busy when motorcycle rally crowds arrive.</p>
+<h2>Winter: November to February</h2>
+<p>Winter is the quiet season. Hotel and resort rates are at their lowest, and holiday shows and events run from early November into early January. The weather is cool and can be unpredictable, and some attractions and seasonal businesses close or cut their hours. Indoor options such as <a href="/guides/rainy-day/">rainy-day picks</a>, <a href="/live-shows/">shows and theaters</a>, <a href="/historic-cultural/">museums</a> and indoor mini golf are the safest bets.</p>
+<h2>Hurricane season</h2>
+<p>The Atlantic hurricane season runs from June 1 through the end of November. The risk is higher from late summer into early fall and falls sharply by late October. If you're traveling in that window, watch the forecast, and consider flexible bookings.</p>
+<h2>Always check hours</h2>
+<p>Off-season hours vary a lot, and many places do not post them. Each listing on this site shows hours when the business publishes them. When it doesn't, call ahead.</p>
+<p class="foot-small">Sources: seasonal summaries from <a href="https://www.lonelyplanet.com/articles/best-time-to-visit-myrtle-beach" rel="noopener">Lonely Planet</a> and <a href="https://www.myrtlebeach.com/?p=17280" rel="noopener">MyrtleBeach.com</a>. Conditions and prices change from year to year.</p>`)
+  );
+  await write(
+    "plan/getting-around/index.html",
+    simplePage("Getting around and parking", "How to get around Myrtle Beach and the Grand Strand: main roads, public buses, and how paid beach parking works in Myrtle Beach and North Myrtle Beach.", "/plan/getting-around/",
+      `<p class="crumbs"><a href="/plan/">Plan your trip</a></p><h1>Getting around and parking</h1>
+<p>The Grand Strand is about 60 miles of coast, and most visitors drive. The notes below cover the main roads, the public bus and how paid beach parking works. Rules and prices change, so check the town's page before you go.</p>
+<h2>Main roads</h2>
+<p>Ocean Boulevard and Kings Highway run north and south along the coast through Myrtle Beach, and the Highway 17 Bypass is the westernmost of the main routes. Veterans Highway (S.C. 22) links U.S. 501 near Conway to U.S. 17 north of Myrtle Beach, and Carolina Bays Parkway (S.C. 31) is a six-lane route on the west side of town. Harrelson Boulevard connects Myrtle Beach International Airport to the Highway 17 Bypass.</p>
+<h2>Public bus</h2>
+<p>Coast RTA runs buses seven days a week on routes serving Georgetown, Myrtle Beach, Surfside Beach and Conway. Its phone number is (843) 488-0865.</p>
+<h2>Parking in Myrtle Beach</h2>
+<p>Paid parking applies at city meters and pay stations, beach accesses and street ends. Under the city's current rules, paid parking runs from 9 a.m. to midnight every day from March 1 through September 30. From October 1 through February 28, metered spaces between Sixth Avenue South and 21st Avenue North are free, while paid parking stays in effect year-round north of 21st Avenue North and south of Sixth Avenue South.</p>
+<p>Beach accesses and street ends cost $3 per hour or $15 for the day, and other areas cost less. A seven-day visitor pass is $50. You can pay with coins, at pay stations, by text, or with the ParkMobile app. See the <a href="https://cityofmyrtlebeach.com/services/parking_meters/" rel="noopener">City of Myrtle Beach parking page</a> for current rates and zones.</p>
+<h2>Parking in North Myrtle Beach</h2>
+<p>North Myrtle Beach has more than 50 public beach-access parking locations. From March through October parking costs $4 per hour, paid through the Passport Parking app or at pay stations, and from November through February it is free. Parking is free every day before 9 a.m. and after 5 p.m., but overnight parking isn't allowed. The city's <a href="https://www.explorenorthmyrtlebeach.com/plan/transportation/beach-parking/" rel="noopener">beach parking page</a> has a map of access points.</p>
+<h2>Other areas</h2>
+<p>Surfside Beach, Garden City, Murrells Inlet and Georgetown each set their own parking rules, and some attractions have their own lots. Check each town's website or the listing before you go.</p>
+<p class="foot-small">Sources: City of Myrtle Beach, City of North Myrtle Beach and Visit Myrtle Beach. Details as of November 2026.</p>`)
+  );
   const tpl = encodeURIComponent("Business name:\nWebsite:\nAddress:\nPhone:\nType (mini golf, brewery, tour, show...):\nOne-sentence description:\nAre you the owner or a fan?\n(Photos welcome: attach one you took or have the right to share.)");
   await write(
     "add-your-business/index.html",
@@ -877,7 +921,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/areas/", "/guides/", "/about/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", "/about/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
