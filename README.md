@@ -5,7 +5,7 @@ turns them into a fast, free website at **myrtlebeachcompass.com**, hosted on Gi
 
 ## How it works
 
-1. You edit listings in the Airtable base (named **Grand Strand Pulse** in Airtable).
+1. You edit listings in the Airtable base (named **Myrtle Beach Compass** in Airtable).
 2. Every night (about 4 AM Eastern), GitHub pulls the latest listings and rebuilds the site.
 3. Want a change live right away? On GitHub, open **Actions → Refresh and publish site → Run workflow**.
 
