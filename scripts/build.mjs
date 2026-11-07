@@ -76,6 +76,9 @@ for (const cat of config.categories) {
             ? "https://www.google.com/maps/search/?api=1&query=" +
               encodeURIComponent(`${x[f.name]}, ${x[f.address]}`)
             : ""),
+        directions:
+          "https://www.google.com/maps/dir/?api=1&destination=" +
+          encodeURIComponent(x[f.address] ? `${x[f.name]}, ${x[f.address]}` : `${x[f.name]}, ${x[f.area] || "Myrtle Beach"}, SC`),
         photo: photo?.localPath ? { src: photo.localPath, w: photo.width, h: photo.height } : null,
         photoCredit: x[f.photoCredit] || "",
         // Visitor details (same field names in every table).
@@ -227,7 +230,7 @@ const metaLine = (item, cls) => {
 };
 const reviewLinks = (item) => {
   const where = item.address || "Myrtle Beach, SC";
-  const google = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${item.name}, ${where}`);
+  const google = "https://www.google.com/search?q=" + encodeURIComponent(`${item.name} ${where} reviews`);
   const yelp = "https://www.yelp.com/search?find_desc=" + encodeURIComponent(item.name) + "&find_loc=" + encodeURIComponent(where);
   return `<a class="btn btn-review" href="${esc(google)}" target="_blank" rel="noopener">Google reviews</a><a class="btn btn-review" href="${esc(yelp)}" target="_blank" rel="noopener">Yelp reviews</a>`;
 };
@@ -238,7 +241,7 @@ const fmtDate = (iso) => {
 
 function actionButtons(item, { compact = false } = {}) {
   const out = [];
-  if (item.maps) out.push(`<a class="btn btn-go" href="${esc(item.maps)}" target="_blank" rel="noopener">Get directions</a>`);
+  if (item.directions) out.push(`<a class="btn btn-go" href="${esc(item.directions)}" target="_blank" rel="noopener">Get directions</a>`);
   if (item.phone && !compact) out.push(`<a class="btn" href="${telHref(item.phone)}">Call ${esc(item.phone)}</a>`);
   if (item.website && !compact) out.push(`<a class="btn" href="${esc(item.website)}" target="_blank" rel="noopener">Visit website</a>`);
   if (!compact) out.push(reviewLinks(item));
