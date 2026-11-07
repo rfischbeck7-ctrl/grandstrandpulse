@@ -72,14 +72,17 @@
     "Details Source": "https://myrtlebeachpinballmuseum.org/",
     "Area": "Central Myrtle",
     "Published": true,
+    "Hours Note": "Hours change week to week; check the museum's site or call before you go",
     "Address": "607 27th Ave N, Myrtle Beach, SC 29577",
     "Website": "https://myrtlebeachpinballmuseum.org/",
-    "Details Checked": "2026-11-06",
+    "Details Checked": "2026-11-07",
     "Name": "Myrtle Beach Pinball Museum",
+    "Price": "$12 per person per hour; free play",
     "Good to Know": [
      "Great for kids",
      "Rain or shine"
     ],
+    "Price Level": "$",
     "Type": "Arcade",
     "Short Description": "A pinball museum with more than two dozen machines from the 1970s to today, all fully playable on Free Play. Come to look at the machines, then stay to play. Capacity is limited, so advance reservations are required."
    }
@@ -253,15 +256,16 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 626-9962",
-    "Details Source": "https://www.wonderworksonline.com/myrtle-beach/location-info/",
+    "Details Source": "https://www.wonderworksonline.com/myrtle-beach/location-info/ticket-prices/",
     "Area": "Central Myrtle",
     "Published": true,
     "Hours Note": "Last ticket sold an hour before closing. Kids 4 and under free. Busiest on rainy days.",
     "Address": "1313 Celebrity Cir, Myrtle Beach, SC 29577",
     "Hours": "Sun-Thu 10:30-20:00\nFri-Sat 10:30-21:00",
     "Website": "https://www.wonderworksonline.com/myrtle-beach/",
-    "Details Checked": "2026-11-06",
+    "Details Checked": "2026-11-07",
     "Name": "WonderWorks",
+    "Price": "Ages 4 and under free; see the website for ticket prices",
     "Good to Know": [
      "Great for kids",
      "Free parking",
@@ -314,7 +318,7 @@
    "id": "rece2OK20qTPVipws",
    "createdTime": "2026-11-07T16:38:04.000Z",
    "fields": {
-    "Details Source": "https://www.skyzone.com/myrtlebeach",
+    "Details Source": "https://www.skyzone.com/myrtlebeach/tickets/",
     "Area": "Central Myrtle",
     "Published": true,
     "Hours Note": "Glow party Fri and Sat 20:00-22:00; call ahead for open jump times",
@@ -322,6 +326,8 @@
     "Website": "https://www.skyzone.com/myrtlebeach",
     "Details Checked": "2026-11-07",
     "Name": "Sky Zone Myrtle Beach",
+    "Price": "90-minute Open Jump $22.99; all-day unlimited $29.99; required Sky Socks $5",
+    "Price Level": "$$",
     "Type": "Trampoline park",
     "Short Description": "Sky Zone is an indoor trampoline park with open jump sessions, a Warped Wall, Ninja Warrior course, Battle Beam, Ultimate Dodgeball, aerial silks and the Sky Tower. Pleyo turns the trampolines into a video game, and a toddler-only Little Leapers morning session is offered for children six and under with a parent."
    }

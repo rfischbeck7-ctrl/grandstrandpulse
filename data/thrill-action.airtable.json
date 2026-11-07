@@ -9,15 +9,17 @@
     "Address": "3000 Hwy 17 Bypass S, Myrtle Beach, SC 29577",
     "Short Description": "One of the area's largest water parks, open since 1985. Slides include tube slides, a mat slide and a FlowRider surf wave, and there are family attractions and play areas for younger kids. Cabanas can be rented, and food and shopping are on site. It suits families and groups, with party and group outings available. Seasonal, so check the website for current days and hours.",
     "Published": true,
-    "Details Source": "https://www.myrtlewaves.com/",
+    "Details Source": "https://myrtlewaves.com/tickets/",
     "Area": "Central Myrtle",
     "Name": "Myrtle Waves Water Park",
-    "Hours Note": "Seasonal water park; check the park calendar for open days.",
+    "Price": "Over 48 in. $49.99, under 48 in. $39.99, seniors 55+ and military $44.99; age 2 and under free (plus tax)",
+    "Price Level": "$$$",
+    "Hours Note": "Seasonal; closed for the season, reopens in 2027",
     "Good to Know": [
      "Great for kids",
      "Seasonal"
     ],
-    "Details Checked": "2026-11-06",
+    "Details Checked": "2026-11-07",
     "Type": "Water park"
    }
   },
@@ -33,12 +35,14 @@
     "Details Source": "https://www.familykingdomfun.com/",
     "Area": "Central Myrtle",
     "Name": "Family Kingdom Amusement Park",
+    "Price": "All-day ride wristband $45; military and locals $25; ride credits $1 each (2027 prices)",
+    "Price Level": "$$$",
     "Hours Note": "Closed for the season; the 2026 season has ended. Check the 2027 calendar or call (843) 626-3447.",
     "Good to Know": [
      "Great for kids",
      "Seasonal"
     ],
-    "Details Checked": "2026-11-06",
+    "Details Checked": "2026-11-07",
     "Type": "Amusement park"
    }
   },

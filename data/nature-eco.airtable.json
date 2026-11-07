@@ -279,6 +279,7 @@
    "fields": {
     "Short Description": "A 16,000-acre coastal research reserve near Georgetown that you can only visit on a guided tour or program. Options include a two-hour weekday tour, a longer seasonal Saturday tour, and a four-mile hike to the North Inlet salt marsh, along with programs such as birding and trail rides. More than 70 cultural sites, including the Baruch family homes, cemeteries and former enslaved people's cabins, tell the property's history. Tours are booked through the website.",
     "Name": "Hobcaw Barony",
+    "Price Level": "$$",
     "Area": "Georgetown",
     "Good to Know": [
      "Reservations recommended"
@@ -289,7 +290,8 @@
     "Address": "22 Hobcaw Rd, Georgetown, SC 29440",
     "Details Source": "http://www.hobcawbarony.org/",
     "Hours Note": "Discovery Center open daytime. Guided tours Mon–Fri at 9:30, 10:30, 1:30 and 2:30, and Saturdays at 10 AM; book ahead.",
-    "Details Checked": "2026-11-06",
+    "Price": "Discovery Center free; Discover Hobcaw tour $30; Explore Hobcaw tour $40",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },
@@ -348,6 +350,7 @@
    "fields": {
     "Short Description": "A reptile park beside Barefoot Landing in North Myrtle Beach, billed as one of the world's biggest homes for reptiles. Alongside alligators you'll see snakes, turtles and other animals, with some mammals and birds, such as lemurs, flamingos and a capybara, on view for limited times. Live shows let guests meet animals up close and learn about them. Check the website for current hours and tickets.",
     "Name": "Alligator Adventure",
+    "Price Level": "$$",
     "Area": "North Myrtle Beach",
     "Good to Know": [
      "Great for kids"
@@ -357,7 +360,8 @@
     "Phone": "(843) 361-0789",
     "Address": "4604 Hwy 17 S, North Myrtle Beach, SC 29582",
     "Details Source": "https://www.alligatoradventure.com/",
-    "Details Checked": "2026-11-06",
+    "Price": "Adults $32.99, ages 4-12 $22.99",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },
@@ -494,6 +498,7 @@
    "fields": {
     "Short Description": "A big-cat and exotic-animal preserve offering hands-on wildlife encounters. Day and night safari tours feature tigers and wolves, and the animals include Bubbles, a rescued African elephant, Odin the liger, and chimp brothers Vali and Sugriva. Photo encounters, the Capybara Café and private group experiences are also offered. Tours are by reservation only.",
     "Name": "T.I.G.E.R.S. / Myrtle Beach Safari",
+    "Price Level": "$$$",
     "Area": "Central Myrtle",
     "Good to Know": [
      "Reservations recommended",
@@ -504,7 +509,8 @@
     "Address": "851 Folly Ranch Ln, Myrtle Beach, SC 29588",
     "Details Source": "https://www.myrtlebeachsafari.com/",
     "Hours Note": "Open three days a week, by reservation only.",
-    "Details Checked": "2026-11-06",
+    "Price": "Capybara Café Experience $150; Wild Encounters Tour from $389",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },
