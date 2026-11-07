@@ -4,10 +4,15 @@
    "id": "rec0SAkB2cyz1mNjS",
    "createdTime": "2026-11-06T15:11:17.000Z",
    "fields": {
+    "Details Source": "https://www.comedycabana.com/",
     "Published": true,
     "Name": "Comedy Cabana",
     "Short Description": "A club-style comedy room that has hosted touring national comedians since 1996, with a full bar.",
     "Area": "Central Myrtle",
+    "Hours Note": "Show times and tickets are listed on each show page.",
+    "Details Checked": "2026-11-06",
+    "Website": "https://www.comedycabana.com/",
+    "Phone": "(843) 449-4242",
     "Type": "Comedy",
     "Address": "9588 N Kings Hwy, Myrtle Beach, SC 29572"
    }
@@ -16,10 +21,15 @@
    "id": "rec1ksW9kzEaKvbvc",
    "createdTime": "2026-11-06T15:11:17.000Z",
    "fields": {
+    "Details Source": "https://www.tinroofmyrtlebeach.com/",
     "Published": true,
     "Name": "Tin Roof",
     "Short Description": "An oceanfront rooftop with live bands and DJs on two stages. Country bands on weekends, acoustic sets on weeknights.",
     "Area": "Central Myrtle",
+    "Details Checked": "2026-11-06",
+    "Website": "https://www.tinroofmyrtlebeach.com/",
+    "Hours": "Mon-Thu 16:00-02:00\nFri-Sun 11:00-02:00",
+    "Phone": "(843) 945-9867",
     "Type": "Live music",
     "Address": "1410 N Ocean Blvd, Myrtle Beach, SC 29577"
    }
