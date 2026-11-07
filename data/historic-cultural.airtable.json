@@ -203,6 +203,42 @@
    }
   },
   {
+   "id": "recg3g84RwuJXmQfq",
+   "createdTime": "2026-11-07T16:35:23.000Z",
+   "fields": {
+    "Short Description": "Start at the Conway Visitor Center in a historic building on Main Street for a self-guided historic walking tour of downtown Conway, where many sites are listed on the National Register of Historic Places. The center also offers a tree tour and a mural guide, and guided historic tours can be arranged by reservation for individuals and groups.",
+    "Hours Note": "Visitor Center hours aren't posted online; call ahead for guided tours",
+    "Phone": "(843) 248-1700",
+    "Details Source": "https://conwayalive.com/services/conway_visitor_center",
+    "Price Level": "Free",
+    "Details Checked": "2026-11-07",
+    "Published": true,
+    "Area": "Conway",
+    "Type": "Walking tour",
+    "Address": "428 Main St, Conway, SC 29526",
+    "Name": "Historic Downtown Conway Walking Tour",
+    "Website": "https://conwayalive.com/services/conway_visitor_center"
+   }
+  },
+  {
+   "id": "reckm61NHME0C3aPb",
+   "createdTime": "2026-11-07T16:35:23.000Z",
+   "fields": {
+    "Short Description": "Run by the Horry County Museum, this working farm shows daily life on a Horry County farm family's land between 1900 and 1955. Seasonal demonstrations include a blacksmith shop, gristmill, farm animals, tobacco raising and cane syrup making. Free guided tours of about an hour are offered on Saturday mornings.",
+    "Hours Note": "Guided tours Saturdays at 10:00 (staff permitting, not on holidays or farm event days); call ahead",
+    "Phone": "(843) 915-5321",
+    "Details Source": "https://www.horrycountymuseum.org/farm/",
+    "Price Level": "Free",
+    "Details Checked": "2026-11-07",
+    "Published": true,
+    "Area": "Conway",
+    "Type": "Historic site",
+    "Address": "2279 Harris Short Cut Rd, Conway, SC 29526",
+    "Name": "L.W. Paul Living History Farm",
+    "Website": "https://www.horrycountymuseum.org/farm/"
+   }
+  },
+  {
    "id": "recsErV4HvPKVY7kY",
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
