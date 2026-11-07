@@ -342,6 +342,10 @@ const areaIntros = {
     "Murrells Inlet is a working fishing village on a tidal marsh, and the marsh is the draw. The MarshWalk follows the water, boats leave from the inlet for dolphin watches and fishing trips, and the marsh side faces west, which makes it one of the better places on the coast to watch the sun go down.",
     "Close by are Brookgreen Gardens and Huntington Beach State Park, so the area works well for a slower day of nature, wildlife and gardens as well as an evening out.",
   ],
+  "Little River": [
+    "Little River is the northernmost town on the Grand Strand, a working waterfront on the Intracoastal Waterway just over the North Carolina line. Charter boats, dolphin tours and jet skis leave from its docks, and the town has a sports park, a pickleball and golf venue, and a mini golf course.",
+    "It sits next to North Myrtle Beach, so many visitors pair a morning on the water here with an afternoon on the beach.",
+  ],
   "Conway": [
     "Conway is the Horry County seat, about a 20-minute drive inland from the beaches, with a small historic downtown beside the Waccamaw River. It is a calmer alternative to the oceanfront, with local theater, a river park and a county museum.",
     "The Horry County Museum and its L.W. Paul Living History Farm cover local history, Theatre of the Republic stages plays on Main Street, and a modern movie theater is close by. Most visitors combine Conway with a beach day.",

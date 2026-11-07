@@ -22,7 +22,8 @@ export default {
 
   // Areas, listed north to south. "x"/"y" place each area on the coastline map (percent).
   areas: [
-    { name: "North Myrtle Beach", x: 87, y: 21 },
+    { name: "Little River", x: 93, y: 13 },
+    { name: "North Myrtle Beach", x: 83, y: 26 },
     { name: "Central Myrtle", x: 66, y: 42 },
     { name: "Conway", x: 46, y: 33 },
     { name: "Surfside", x: 46, y: 59 },
