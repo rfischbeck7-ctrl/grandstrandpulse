@@ -117,7 +117,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 
 ## Art replaced with plain tiles (Nov 7, Ryan: the illustrations "look like AI slop")
 - Listings without a photo now get `scripts/tile.mjs` instead of the illustrated scenes: category gradient (each listing sits at its own point between the category's two colors), one line icon chosen by `RULES` (type first, then name, place words stripped), type label and area. No scenes, animals, props or text-in-sky. Real photo in Airtable still wins.
-- The old scenes (`scripts/art.mjs`, `CUSTOM`, duplicate-check workflow above) are kept but unused; `ART_STYLE=scenes node scripts/build.mjs` brings them back. The "distinct artwork per business" rule is now met by color position + icon + labels, not unique drawings. Best fix for real quality is real photos (see photo-request drafts in open follow-ups).
+- The old scenes (`scripts/art.mjs`, `CUSTOM`, duplicate-check workflow above) are kept but unused; **Ryan rejected the tiles within minutes (Nov 7 12:09) and wants the illustrated scenes kept and cleaned up.** Scenes are the default again; `ART_STYLE=tiles` builds the tile version. The "distinct artwork per business" rule is now met by color position + icon + labels, not unique drawings. Best fix for real quality is real photos (see photo-request drafts in open follow-ups).
 - To fix a wrong icon: reorder/add a rule in `RULES` in tile.mjs, or add a path to `ICONS`.
 
 ## AdSense pass 2 (Nov 7 afternoon)

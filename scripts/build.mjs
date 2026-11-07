@@ -828,7 +828,7 @@ ${list}
 }
 
 async function buildDetail(cat, item) {
-  if (!item.photo) await write(`art/${cat.slug}/${item.slug}.svg`, process.env.ART_STYLE === "scenes" ? artSvg(item, cat.slug) : tileSvg(item, cat));
+  if (!item.photo) await write(`art/${cat.slug}/${item.slug}.svg`, process.env.ART_STYLE === "tiles" ? tileSvg(item, cat) : artSvg(item, cat.slug));
   const hoursBlock =
     item.week || item.hoursNote
       ? `<section class="hours"><h2>Hours</h2>${
