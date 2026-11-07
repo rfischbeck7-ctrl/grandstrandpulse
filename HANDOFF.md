@@ -11,7 +11,7 @@ Read CLAUDE.md first (full project notes). This file is only the state of play a
 ## Waiting on Ryan
 - Replace the clipped consent-message logo: new file `mbc-logo-wide.png` was sent in chat. AdSense > Privacy & messaging > European regulations > Edit message > site logo. Cosmetic only. I cannot do it (native file picker on his computer).
 - Wait for Google's AdSense decision. If rejected, the reason appears in AdSense > Sites and by email: fix what it names. Avoid big structural changes until then.
-- Not doable by Claude: 2FA on Porkbun/GitHub/Airtable, deleting unused Airtable token.
+- Not doable by Claude: deleting the unused Airtable token. (2FA on Porkbun/GitHub/Airtable is done, Nov 7.)
 - Open question asked of Ryan (unanswered): relax the "official site only" rule for phone numbers (Google lists numbers for some blank listings)?
 
 ## Optional work, in value order
