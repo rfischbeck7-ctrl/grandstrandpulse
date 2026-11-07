@@ -150,6 +150,23 @@
    }
   },
   {
+   "id": "recQr56M10L6nupS5",
+   "createdTime": "2026-11-07T16:28:29.000Z",
+   "fields": {
+    "Hours": "Daily 08:00-17:00",
+    "Website": "https://www.backwoodsquailclub.com",
+    "Phone": "(843) 546-1466",
+    "Address": "647 Hemingway Ln, Georgetown, SC 29440",
+    "Short Description": "Back Woods Quail Club near Georgetown is a shooting and hunting preserve with sporting clays, skeet, trap and 5-stand, plus a pistol and rifle range. Quail, turkey, pheasant and deer hunts are offered, with individual and group packages. Call or email the club to book.",
+    "Published": true,
+    "Details Source": "https://www.backwoodsquailclub.com",
+    "Area": "Georgetown",
+    "Name": "Back Woods Quail Club",
+    "Details Checked": "2026-11-07",
+    "Type": "Shooting sports"
+   }
+  },
+  {
    "id": "recTAfqOU3c4Fkakh",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {

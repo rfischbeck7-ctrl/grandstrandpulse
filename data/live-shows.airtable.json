@@ -141,6 +141,20 @@
    }
   },
   {
+   "id": "recQjGjSPR9IYbY8I",
+   "createdTime": "2026-11-07T16:28:14.000Z",
+   "fields": {
+    "Phone": "(843) 488-0821",
+    "Details Checked": "2026-11-07",
+    "Address": "335 Main St, Conway, SC 29526",
+    "Name": "Theatre of the Republic",
+    "Short Description": "Theatre of the Republic is a nonprofit community theater in downtown Conway, founded in 1969. It stages a season of plays and musicals on Main Street, with a schedule that runs through November 2027, and is a good evening out for anyone staying in the Conway area or driving in from the beach.",
+    "Area": "Conway",
+    "Published": true,
+    "Type": "Theater"
+   }
+  },
+  {
    "id": "recXO2PIWBxoZUNJ9",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
@@ -247,6 +261,20 @@
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Dinner show"
+   }
+  },
+  {
+   "id": "reckpy3t5hcJYrpd8",
+   "createdTime": "2026-11-07T16:28:14.000Z",
+   "fields": {
+    "Phone": "(854) 333-5084",
+    "Details Checked": "2026-11-07",
+    "Address": "220 Rivertown Blvd, Conway, SC 29526",
+    "Name": "B&B Theatres Conway 12",
+    "Short Description": "B&B Theatres Conway 12 is a twelve-screen movie theater at Rivertown in Conway with recliner seating and party rooms. It is an easy rainy-day option for families and groups staying inland.",
+    "Area": "Conway",
+    "Published": true,
+    "Type": "Movie theater"
    }
   },
   {

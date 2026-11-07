@@ -246,6 +246,37 @@
    }
   },
   {
+   "id": "recgrHiea3moAUsSy",
+   "createdTime": "2026-11-07T16:28:02.000Z",
+   "fields": {
+    "Details Source": "https://www.daveandbusters.com/us/en/about/locations/myrtle-beach",
+    "Area": "Central Myrtle",
+    "Published": true,
+    "Address": "1322 Celebrity Cir, Myrtle Beach, SC 29577",
+    "Website": "https://www.daveandbusters.com/us/en/about/locations/myrtle-beach",
+    "Details Checked": "2026-11-07",
+    "Name": "Dave & Buster's",
+    "Type": "Arcade",
+    "Short Description": "Dave & Buster's at Broadway at the Beach is a big arcade with racing games, shooters, air hockey and basketball, plus screens showing football, basketball and hockey games. It also has a full food and drink menu, so groups can eat and play in one place on a rainy evening."
+   }
+  },
+  {
+   "id": "rechGctKfAFX3iOgN",
+   "createdTime": "2026-11-07T16:28:02.000Z",
+   "fields": {
+    "Phone": "(843) 352-4035",
+    "Details Source": "https://www.pinpointindoor.com/",
+    "Area": "North Myrtle Beach",
+    "Published": true,
+    "Address": "304 SC-90 E, Unit A-1, Little River, SC 29566",
+    "Website": "https://www.pinpointindoor.com/",
+    "Details Checked": "2026-11-07",
+    "Name": "Pin Point Indoor Pickleball & Golf",
+    "Type": "Sports & games",
+    "Short Description": "Pin Point is an indoor sports venue in Little River with nine pickleball courts and seven TrackMan golf simulators, so a rainy day does not cancel the game. A full bar and kitchen are on site, which makes it an easy stop for a group that wants to play and then stay a while."
+   }
+  },
+  {
    "id": "reckYyO652vdAnSYm",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
