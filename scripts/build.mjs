@@ -325,6 +325,37 @@ function schemaTypes(cat, item) {
   return out;
 }
 
+const areaIntros = {
+  "North Myrtle Beach": [
+    "North Myrtle Beach sits at the top of the Grand Strand, close to the North Carolina line. It takes in Cherry Grove, Ocean Drive, Crescent Beach and Windy Hill, and it is generally quieter and more residential than the stretch around downtown Myrtle Beach.",
+    "Along Highway 17 you'll find mini golf, wineries and breweries, music venues and family attractions, while the beachfront side has piers, small beach bars and a relaxed pace. Little River, just north, adds harbor-side boat tours and fishing charters.",
+  ],
+  "Central Myrtle": [
+    "Central Myrtle Beach is the busiest part of the coast. The Boardwalk and Ocean Boulevard run along the beach, Broadway at the Beach and its surrounding blocks hold many of the big attractions, and Kings Highway and the Highway 17 Bypass carry most of the mini golf, theaters and family fun.",
+    "Expect crowds in summer and on holiday weekends, and plan for parking. Many places here sit a short drive from the oceanfront, so a car or rideshare is the easiest way to link several stops in one day.",
+  ],
+  "Surfside": [
+    "Surfside Beach, just south of Myrtle Beach, bills itself as the family beach and has a smaller-town feel, with a public pier and a wide, easy beach. Garden City Beach lies a little farther south.",
+    "The stops listed here range from beach and pier time to mini golf, arcades and indoor fun for a day when the weather doesn't cooperate.",
+  ],
+  "Murrells Inlet": [
+    "Murrells Inlet is a working fishing village on a tidal marsh, and the marsh is the draw. The MarshWalk follows the water, boats leave from the inlet for dolphin watches and fishing trips, and the marsh side faces west, which makes it one of the better places on the coast to watch the sun go down.",
+    "Close by are Brookgreen Gardens and Huntington Beach State Park, so the area works well for a slower day of nature, wildlife and gardens as well as an evening out.",
+  ],
+  "Georgetown": [
+    "Georgetown is the quiet end of the Grand Strand. Founded in 1729, it is one of South Carolina's oldest port cities, with a walkable historic district along the Sampit River, a Harborwalk, and several museums.",
+    "Visitors come for history, the Lowcountry rice-plantation story, and boat tours of the surrounding waterways and Winyah Bay. It is about a 45-minute drive from central Myrtle Beach, so most people give it a half or full day.",
+  ],
+};
+const guideMore = {
+  "rainy-day": "Summer storms along the coast often pass within an hour or two, but a wet day can last longer. Hours change by season, and ticketed shows and escape rooms often fill up, so call ahead or book online before you set out.",
+  "free-things-to-do": "Beaches are public, but some towns charge for parking or have metered spots near beach access points, so check the town's rules before you go. Museums and parks that list a small fee are still among the cheaper ways to spend a day.",
+  "indoor-mini-golf": "Indoor courses stay open on hot afternoons and in bad weather, and some are part of a larger arcade or bowling venue. Hours shift between seasons, so check the listing and call if you're planning around closing time.",
+  "sunset-and-views": "A note on direction: the Grand Strand beachfront faces southeast, so the ocean is the place for sunrise rather than sunset. For sunsets, head to the west-facing marsh and river side, such as the Murrells Inlet MarshWalk or the Georgetown Harborwalk. The piers and beaches below are best at sunrise or in the golden light just after.",
+  "on-the-water": "Dolphins are regularly seen in the inlets and nearshore waters, but sightings are never guaranteed. Many boat and rental operators run seasonally, so confirm the schedule, bring sun protection and arrive a little early.",
+  "after-dark": "Many nightlife venues are 21 and over, and some shows have their own age rules, so check before bringing kids. Hours vary by night and season, and a rideshare is often easier than finding parking.",
+  "with-kids": "Check each place for height or age limits before you go, and look for combo tickets if you plan several stops in a day. Mini golf and the indoor attractions both work well in the summer heat."
+};
 const inCat = (c, ...slugs) => slugs.includes(c.slug);
 const guides = [
   {
@@ -475,7 +506,7 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
         title: fit(`Things to do in ${areaLabel(a)}${brandSuffix}`, `Things to do in ${areaLabel(a)}`),
         description: `${rows.length} places to go in ${areaLabel(a)}: mini golf, breweries, nightlife, shows, attractions and outdoor spots, with directions and phone numbers.`,
         canonical: `/areas/${slugify(a)}/`,
-        body: `<section class="page-text wide"><p class="crumbs"><a href="/areas/">All areas</a></p><h1>Things to do in ${esc(a)}</h1><p>${rows.length} places, grouped by type.</p>\n${sections}</section>`,
+        body: `<section class="page-text wide"><p class="crumbs"><a href="/areas/">All areas</a></p><h1>Things to do in ${esc(a)}</h1>${(areaIntros[a] || []).map((t) => `<p>${esc(t)}</p>`).join("")}<p class="result-count">${rows.length} places, grouped by type.</p>\n${sections}</section>`,
         jsonLd: {
           "@context": "https://schema.org",
           "@type": "ItemList",
@@ -501,7 +532,7 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
         title: fit(`${g.title} in Myrtle Beach, SC${brandSuffix}`, `${g.title} in Myrtle Beach, SC`),
         description: g.intro.slice(0, 155),
         canonical: `/guides/${g.slug}/`,
-        body: `<section class="page-text wide"><p class="crumbs"><a href="/guides/">All guides</a></p><h1>${esc(g.title)}</h1><p>${esc(g.intro)}</p><p class="result-count">${g.rows.length} places</p>\n${itemCards(g.rows)}</section>`,
+        body: `<section class="page-text wide"><p class="crumbs"><a href="/guides/">All guides</a></p><h1>${esc(g.title)}</h1><p>${esc(g.intro)}</p>${guideMore[g.slug] ? `<p>${esc(guideMore[g.slug])}</p>` : ""}<p class="result-count">${g.rows.length} places</p>\n${itemCards(g.rows)}</section>`,
         jsonLd: {
           "@context": "https://schema.org",
           "@type": "ItemList",
@@ -518,8 +549,12 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
     simplePage("About", `About ${config.siteName}, a free guide to things to do on the Grand Strand.`, "/about/",
       `<h1>About ${esc(config.siteName)}</h1>
 <p>${esc(config.siteName)} is a free guide to things to do along the Grand Strand, from North Myrtle Beach down through Murrells Inlet to Georgetown. It covers mini golf, breweries and wineries, nightlife, thrill rides, family and indoor fun, nature, live shows and history.</p>
+<h2>Who runs this site</h2>
+<p>${esc(config.siteName)} is an independent project run by Ryan. It started as a way to keep Grand Strand things to do, from mini golf to museums and boat tours, in one easy place with directions, phone numbers and the practical details people look for before heading out. It isn't owned by or paid for by any of the businesses listed.</p>
 <h2>How listings get here</h2>
 <p>Each listing is checked against the business's own website or an official visitor guide before it goes up. If we can't confirm that a place is open or what it offers, it stays off the site. Hours, prices and offerings change, so call ahead before you drive over.</p>
+<h2>Corrections and updates</h2>
+<p>Businesses change hours, prices and phone numbers often. The site rebuilds every night from our listing database, so a correction usually appears the next day. Each listing page shows where its details came from when we have that information. If you find a mistake, email us and we will fix it.</p>
 <h2>No pay to play</h2>
 <p>Listings are free. Ads, when shown, are served by Google and don't change what we list or how it's described.</p>
 <h2>Get in touch</h2>
