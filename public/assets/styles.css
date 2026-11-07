@@ -475,3 +475,6 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 .fav-btn.is-saved svg { color: var(--neon-pink); }
 .fav-btn svg { color: #8a97a0; }
 #saved-clear { cursor: pointer; }
+
+.search-results li { padding-right: 3.6rem; }
+.search-results .fav { top: .7rem; }

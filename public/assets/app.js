@@ -255,6 +255,17 @@
     li.style.position = "relative";
     li.appendChild(make(new URL(a.getAttribute("href"), location.href).pathname, a.textContent.trim(), false));
   });
+  // search results (rendered later by the search script)
+  const gres = document.getElementById("gresults");
+  if (gres) {
+    const decorate = () => gres.querySelectorAll("li").forEach((li) => {
+      const a = li.querySelector("a"); if (!a || li.querySelector(".fav")) return;
+      li.style.position = "relative";
+      li.appendChild(make(new URL(a.getAttribute("href"), location.href).pathname, a.querySelector("strong").textContent.trim(), false));
+    });
+    new MutationObserver(decorate).observe(gres, { childList: true });
+    decorate();
+  }
   // detail page
   const share = document.querySelector("[data-share]");
   if (share) share.parentNode.insertBefore(make(location.pathname, share.dataset.title, true), share);
