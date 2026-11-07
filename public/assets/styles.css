@@ -175,7 +175,9 @@ button.pin:disabled { opacity: .45; cursor: default; }
 @media (max-width: 520px) {
   .pin { font-size: .78rem; }
   .pin-label { padding: .25rem .5rem; }
-  .pin-dot { width: 18px; height: 18px; }
+  .coast-sea { font-size: .8rem; }
+  .coast { aspect-ratio: 1000 / 1020; }
+  .pin { min-height: 36px; }
   .coast-sea { font-size: .8rem; }
 }
 

@@ -692,7 +692,8 @@ async function buildHome() {
     <p>Local, checked listings for the Grand Strand, from Little River down to Georgetown.</p>
     <a class="btn btn-go" href="#categories">Browse ${total} places</a>
   </div>
-  ${coastline({ counts: areaTotals, id: "coast-home" })}
+  <div class="hero-map"><p class="map-hint">Tap a city to see what's there.</p>
+  ${coastline({ counts: areaTotals, linkBase: "/areas/", id: "coast-home" }).replace(/href="\/areas\/\?area=([a-z0-9-]+)"/g, 'href="/areas/$1/"')}</div>
 </section>`;
   const guideLinks = guides
     .map((g) => ({ g, n: allItems.filter((r) => g.test(r.c, r.i)).length }))
@@ -896,7 +897,7 @@ async function buildDetail(cat, item) {
     ${item.detailsChecked || item.detailsSource ? `<p class="checked">Hours and prices${item.detailsChecked ? ` checked ${esc(fmtDate(item.detailsChecked))}` : ""}${item.detailsSource ? ` from <a href="${esc(item.detailsSource)}" target="_blank" rel="noopener">${esc(new URL(item.detailsSource).hostname.replace(/^www\./, ""))}</a>` : ""}. They can change, so check before you go.</p>` : ""}
   </div>
   <aside class="detail-map" aria-label="Where it is on the Grand Strand">
-    ${coastline({ highlight: item.area, id: "coast-detail" })}
+    ${coastline({ highlight: item.area, linkBase: "/areas/", id: "coast-detail" }).replace(/href="\/areas\/\?area=([a-z0-9-]+)"/g, 'href="/areas/$1/"')}
   </aside>
   ${nearbyHtml}
   ${aroundHtml}
