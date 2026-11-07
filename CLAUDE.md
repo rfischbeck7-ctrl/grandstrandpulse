@@ -81,3 +81,10 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Address check (Nov 7, against each business's own site): fixed Arcadian Shores (710 Hilton Rd), Carolina Vineyards (4720 Hwy 17 S), Yee-Haw/Ole Smoky (1216 Celebrity Cir), Downwind Sails (301 S Ocean Blvd; it also has a 2985 S Ocean Blvd location), Sea Thunder (1522 Watson Ave, Little River; Sea Screamer boards at 4499 Mineola Ave), Hollywood Wax Museum (1808 21st Ave N Unit A, per Broadway at the Beach), Black Drum phone (843-282-8080). Inlet Point Plantation (5800 Highway 236) and Black Drum (9800 Queensway) were already right; Google's pins differ.
 - Left as is: Grand 14 Cinemas (Market Common's own site still says Grand 14), Pirate's Cove Lounge (myrtlebeach.com still lists it). Myrtle Beach Room Escape: same address and phone as "Race 2 Escape" on Google, no official site found to confirm a rename.
 - New listings: add the ID to `data/place-ids.json` when adding a business.
+
+## SEO pass (Nov 7)
+- Titles are built by `fit()` in `scripts/build.mjs` to stay near 60 characters: listing = "Name | Category keyword in Place | Brand" (shortens by dropping brand, then place). `placeName()` turns Airtable's "Central Myrtle" into "Myrtle Beach" and "Surfside" into "Surfside Beach" for titles/descriptions only; `catKeyword` holds the per-category word. Descriptions are trimmed at sentence/word boundaries (`trimDesc`) and short ones get a directions line appended. Category descriptions use the category `blurb`.
+- `/search/`, `/saved/` and `404.html` are `noindex,follow` and not in the sitemap (`noindex: true` option on `layout`).
+- Listing schema uses a `PostalAddress` parsed from the Address field (`postalAddress`); home page has WebSite + Organization markup.
+- Not done: `geo` coordinates in the schema (needs a lat/long per listing; the places_search tool returns them but a pass is ~25 calls). Four listings have no address (Black River Outdoors, Stars and Strikes, Ghosts of Georgetown, Radical Ropes).
+- Home description no longer claims "every listing checked".

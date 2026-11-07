@@ -39,6 +39,49 @@ const telHref = (phone) => {
   return `tel:+${digits.length === 10 ? "1" + digits : digits}`;
 };
 const plural = (n, noun) => `${n} ${n === 1 ? noun.one : noun.many}`;
+
+// ---------- SEO helpers ----------
+// Names people actually search for (the area labels in Airtable are shorter).
+const placeName = (area) =>
+  ({ "Central Myrtle": "Myrtle Beach", Surfside: "Surfside Beach" })[area] || area || "Myrtle Beach";
+const areaLabel = (a) => ({ "Central Myrtle": "Central Myrtle Beach", Surfside: "Surfside Beach" })[a] || a;
+const catKeyword = {
+  "mini-golf": "Mini golf",
+  "breweries-wineries": "Brewery",
+  nightlife: "Nightlife",
+  "thrill-action": "Things to do",
+  "family-indoor": "Family fun",
+  "nature-eco": "Nature & tours",
+  "live-shows": "Shows & movies",
+  fishing: "Fishing",
+  golf: "Golf course",
+  "historic-cultural": "History & museums",
+  beaches: "Things to do",
+};
+// First candidate that fits in about 60 characters (what Google shows), else the shortest.
+const fit = (...cands) => cands.find((c) => c.length <= 60) || cands[cands.length - 1];
+// " in Place" unless the name already says it
+const inPlace = (item) => (item.name.toLowerCase().includes(placeName(item.area).toLowerCase()) ? "" : ` in ${placeName(item.area)}`);
+const brandSuffix = ` | ${config.siteName}`;
+// Cut text at a sentence or word boundary, never mid-word.
+function trimDesc(text, max = 155) {
+  const t = (text || "").replace(/\s+/g, " ").trim();
+  if (t.length <= max) return t;
+  const cut = t.slice(0, max);
+  const sentence = Math.max(cut.lastIndexOf(". "), cut.lastIndexOf("! "), cut.lastIndexOf("? "));
+  if (sentence > 80) return cut.slice(0, sentence + 1);
+  return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:\-–]+$/, "") + "…";
+}
+// "123 Main St, Myrtle Beach, SC 29577" -> PostalAddress (falls back to plain text).
+function postalAddress(addr) {
+  const city = (addr || "").match(/^([^,]+),\s*([A-Z]{2})\s*(\d{5})?$/);
+  if (city) return { "@type": "PostalAddress", addressLocality: city[1].trim(), addressRegion: city[2], addressCountry: "US", ...(city[3] ? { postalCode: city[3] } : {}) };
+  const m = (addr || "").match(/^(.*?),\s*([^,]+),\s*([A-Z]{2})\s*(\d{5})?$/);
+  if (!m) return addr;
+  const a = { "@type": "PostalAddress", streetAddress: m[1].trim(), addressLocality: m[2].trim(), addressRegion: m[3], addressCountry: "US" };
+  if (m[4]) a.postalCode = m[4];
+  return a;
+}
 const safeUrl = (u) => (/^https?:\/\//i.test(u || "") ? u : "");
 
 async function write(rel, content) {
@@ -123,7 +166,7 @@ const jsV = await assetVersion("assets/app.js");
 const fonts =
   "https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Bowlby+One&display=swap";
 
-function layout({ title, description, canonical, body, jsonLd, active, hero = "", theme = null, heroClass = "" }) {
+function layout({ title, description, canonical, body, jsonLd, active, hero = "", theme = null, heroClass = "", noindex = false }) {
   const nav = categories
     .map(
       (c) =>
@@ -137,7 +180,7 @@ function layout({ title, description, canonical, body, jsonLd, active, hero = ""
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
-<link rel="canonical" href="${origin}${canonical}">
+${noindex ? '<meta name="robots" content="noindex,follow">\n' : ""}<link rel="canonical" href="${origin}${canonical}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:type" content="website">
@@ -350,6 +393,7 @@ async function buildExtraPages() {
       description: "Search every mini golf course, brewery, bar, show, museum and outdoor spot on the Grand Strand.",
       canonical: "/search/",
       active: "search",
+      noindex: true,
       body: `<section class="page-text search-page">
 <h1>Search the Grand Strand</h1>
 <label class="search"><span class="visually-hidden">Search all listings</span><input type="search" id="gq" placeholder="Try pirates, dolphins, brewery, kids, rooftop" autocomplete="off" autofocus></label>
@@ -367,6 +411,7 @@ async function buildExtraPages() {
       title: `Saved places | ${config.siteName}`,
       description: "Places you've saved while browsing, kept in your own browser.",
       canonical: "/saved/",
+      noindex: true,
       body: `<section class="page-text search-page">
 <h1>Saved places</h1>
 <p id="saved-note">Tap the heart on any listing to save it here. Your list stays in this browser only, on this device. We don't keep it.</p>
@@ -404,8 +449,8 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
     await write(
       `areas/${slugify(a)}/index.html`,
       layout({
-        title: `Things to do in ${a} | ${config.siteName}`,
-        description: `${rows.length} places to go in ${a}: mini golf, breweries, nightlife, shows, attractions and outdoor spots, with directions and phone numbers.`,
+        title: fit(`Things to do in ${areaLabel(a)}${brandSuffix}`, `Things to do in ${areaLabel(a)}`),
+        description: `${rows.length} places to go in ${areaLabel(a)}: mini golf, breweries, nightlife, shows, attractions and outdoor spots, with directions and phone numbers.`,
         canonical: `/areas/${slugify(a)}/`,
         body: `<section class="page-text wide"><p class="crumbs"><a href="/areas/">All areas</a></p><h1>Things to do in ${esc(a)}</h1><p>${rows.length} places, grouped by type.</p>\n${sections}</section>`,
         jsonLd: {
@@ -430,7 +475,7 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
     await write(
       `guides/${g.slug}/index.html`,
       layout({
-        title: `${g.title} in Myrtle Beach | ${config.siteName}`,
+        title: fit(`${g.title} in Myrtle Beach, SC${brandSuffix}`, `${g.title} in Myrtle Beach, SC`),
         description: g.intro.slice(0, 155),
         canonical: `/guides/${g.slug}/`,
         body: `<section class="page-text wide"><p class="crumbs"><a href="/guides/">All guides</a></p><h1>${esc(g.title)}</h1><p>${esc(g.intro)}</p><p class="result-count">${g.rows.length} places</p>\n${itemCards(g.rows)}</section>`,
@@ -551,12 +596,15 @@ ${soon}`;
   await write(
     "index.html",
     layout({
-      title: `${config.siteName}: things to do in Myrtle Beach and the Grand Strand`,
+      title: `Things to do in Myrtle Beach, SC${brandSuffix}`,
       description: config.description,
       canonical: "/",
       hero,
       body,
-      jsonLd: { "@context": "https://schema.org", "@type": "WebSite", name: config.siteName, url: origin },
+      jsonLd: [
+        { "@context": "https://schema.org", "@type": "WebSite", name: config.siteName, url: origin },
+        { "@context": "https://schema.org", "@type": "Organization", name: config.siteName, url: origin, logo: `${origin}/og.png`, ...(config.contactEmail ? { email: config.contactEmail } : {}) },
+      ],
     })
   );
 }
@@ -629,8 +677,8 @@ ${list}
   await write(
     `${cat.slug}/index.html`,
     layout({
-      title: `${cat.title} in Myrtle Beach and the Grand Strand | ${config.siteName}`,
-      description: `${plural(cat.items.length, cat.noun)} from Little River to Georgetown, with directions, phone numbers and what makes each one different.`,
+      title: fit(`${cat.title} in Myrtle Beach, SC${brandSuffix}`, `${cat.title} in Myrtle Beach, SC`, cat.title),
+      description: trimDesc(`${plural(cat.items.length, cat.noun)} along the Grand Strand: ${(cat.blurb || "").replace(/\.$/, "").replace(/^./, (ch) => ch.toLowerCase())}. Directions, phone numbers and details.`, 158),
       canonical: `/${cat.slug}/`,
       body,
       hero,
@@ -714,6 +762,12 @@ async function buildDetail(cat, item) {
   ${nearbyHtml}
 </article>`;
 
+  const detailDescription = (cat, item) => {
+    const base = trimDesc(item.description, 155);
+    if (base.length >= 90) return base;
+    const extra = ` ${item.name}${inPlace(item)}: directions, phone and details.`;
+    return trimDesc(`${base}${base && !/[.!?]$/.test(base) ? "." : ""}${extra}`, 158);
+  };
   const ld = {
     "@context": "https://schema.org",
     "@type": schemaTypes(cat, item),
@@ -721,7 +775,7 @@ async function buildDetail(cat, item) {
     description: item.description,
     url: `${origin}/${cat.slug}/${item.slug}/`,
   };
-  if (item.address) ld.address = item.address;
+  if (item.address) ld.address = postalAddress(item.address);
   if (item.phone) ld.telephone = item.phone;
   if (item.website) ld.sameAs = item.website;
   if (item.photo) ld.image = `${origin}${item.photo.src}`;
@@ -744,8 +798,13 @@ async function buildDetail(cat, item) {
   await write(
     `${cat.slug}/${item.slug}/index.html`,
     layout({
-      title: `${item.name}, ${item.area} | ${config.siteName}`,
-      description: item.description.slice(0, 155),
+      title: fit(
+        `${item.name} | ${catKeyword[cat.slug] || cat.title}${inPlace(item)}${brandSuffix}`,
+        `${item.name} | ${catKeyword[cat.slug] || cat.title}${inPlace(item)}`,
+        `${item.name} | ${catKeyword[cat.slug] || cat.title}`,
+        item.name
+      ),
+      description: detailDescription(cat, item),
       canonical: `/${cat.slug}/${item.slug}/`,
       body,
       hero,
@@ -758,7 +817,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/saved/", "/search/", "/areas/", "/guides/", "/about/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/areas/", "/guides/", "/about/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
@@ -776,6 +835,7 @@ async function buildExtras() {
       title: `Page not found | ${config.siteName}`,
       description: config.description,
       canonical: "/404.html",
+      noindex: true,
       body: `<section class="notfound"><h1>That page isn't here.</h1><p>It may have moved, or the place may have closed.</p><p><a class="btn btn-go" href="/">Go to the home page</a>${first ? ` <a class="btn" href="/${first.slug}/">Browse ${esc(first.title.toLowerCase())}</a>` : ""}</p></section>`,
     })
   );

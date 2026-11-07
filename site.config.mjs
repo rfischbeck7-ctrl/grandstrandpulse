@@ -13,7 +13,7 @@ export default {
   domain: "myrtlebeachcompass.com",
   tagline: "Things to do, from Little River to Georgetown",
   description:
-    "Things to do in Myrtle Beach and along the Grand Strand, from Little River to Georgetown. Every listing checked before it goes up.",
+    "Things to do in Myrtle Beach and along the Grand Strand, from Little River to Georgetown. Directions, phone numbers and what makes each place different.",
   // Google AdSense publisher ID, like "pub-1234567890123456" (also accepts "ca-pub-...").
   // Adds the AdSense script to every page and creates /ads.txt. Leave empty to turn ads off.
   adsensePublisherId: "ca-pub-6449115884515319",
