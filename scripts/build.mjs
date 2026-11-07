@@ -4,6 +4,7 @@ import path from "node:path";
 import { readFileSync } from "node:fs";
 import config from "../site.config.mjs";
 import { artSvg } from "./art.mjs";
+import { tileSvg } from "./tile.mjs";
 import { parseHours, weekRows, openingSpec } from "./hours.mjs";
 
 // Google Place IDs (data/place-ids.json, name -> id). Optional; listings without one fall back to a name + address search.
@@ -813,7 +814,7 @@ ${list}
 }
 
 async function buildDetail(cat, item) {
-  if (!item.photo) await write(`art/${cat.slug}/${item.slug}.svg`, artSvg(item, cat.slug));
+  if (!item.photo) await write(`art/${cat.slug}/${item.slug}.svg`, process.env.ART_STYLE === "scenes" ? artSvg(item, cat.slug) : tileSvg(item, cat));
   const hoursBlock =
     item.week || item.hoursNote
       ? `<section class="hours"><h2>Hours</h2>${
