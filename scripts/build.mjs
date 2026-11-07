@@ -230,7 +230,7 @@ const metaLine = (item, cls) => {
 };
 const reviewLinks = (item) => {
   const where = item.address || "Myrtle Beach, SC";
-  const google = "https://www.google.com/search?q=" + encodeURIComponent(`${item.name} ${where} reviews`);
+  const google = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${item.name}, ${where}`);
   const yelp = "https://www.yelp.com/search?find_desc=" + encodeURIComponent(item.name) + "&find_loc=" + encodeURIComponent(where);
   return `<a class="btn btn-review" href="${esc(google)}" target="_blank" rel="noopener">Google reviews</a><a class="btn btn-review" href="${esc(yelp)}" target="_blank" rel="noopener">Yelp reviews</a>`;
 };
