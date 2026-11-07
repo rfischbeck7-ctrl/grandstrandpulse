@@ -5,6 +5,7 @@
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
     "Website": "https://www.myrtlewaves.com/",
+    "Phone": "(843) 913-9250",
     "Address": "3000 Hwy 17 Bypass S, Myrtle Beach, SC 29577",
     "Short Description": "One of the area's largest water parks, open since 1985. Seasonal.",
     "Published": true,
@@ -25,6 +26,7 @@
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
     "Website": "https://www.familykingdomfun.com/",
+    "Phone": "(843) 626-3447",
     "Address": "300 4th Ave S, Myrtle Beach, SC 29577",
     "Short Description": "Oceanfront rides since 1966, with the Splashes Oceanfront Water Park on the same grounds.",
     "Published": true,
@@ -152,6 +154,7 @@
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
     "Website": "https://www.wonderworksonline.com/myrtle-beach/the-experience/soar-explore/",
+    "Phone": "(843) 626-9962",
     "Address": "Broadway at the Beach, Myrtle Beach, SC 29577",
     "Short Description": "A 1,000-foot zipline over Lake Broadway and a ropes obstacle course.",
     "Published": true,
@@ -173,6 +176,7 @@
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
     "Website": "https://expresswatersports.com/",
+    "Phone": "(843) 357-7777",
     "Address": "4042 Hwy 17 Business, Murrells Inlet, SC 29576",
     "Short Description": "Parasailing, jet skis, kayak and paddleboard rentals and dolphin cruises from Murrells Inlet.",
     "Published": true,
@@ -193,6 +197,7 @@
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
     "Website": "https://myrtlebeachjetskirental.com/",
+    "Phone": "(843) 999-3095",
     "Address": "4495 Baker St, Little River, SC 29566",
     "Short Description": "Jet ski rentals from Cricket Cove Marina in Little River.",
     "Published": true,
@@ -283,6 +288,7 @@
    "fields": {
     "Hours": "Mon-Wed 11:00-22:00\nThu 11:00-23:00\nFri-Sat 10:00-00:00\nSun 12:00-22:00",
     "Website": "https://funwarehousemb.com/",
+    "Phone": "(843) 748-0302",
     "Address": "2349 Dick Pond Rd, Myrtle Beach, SC 29575",
     "Short Description": "Indoor and outdoor speed-kart racing with roller skating, bowling, laser tag, inflatables and an arcade of 50+ games.",
     "Published": true,
@@ -322,6 +328,7 @@
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
     "Website": "https://www.myrtlebeachwatersports.com/north-myrtle-beach/jet-ski-dolphin-watch-tour/",
+    "Phone": "(843) 280-7777",
     "Address": "Harbourgate Marina, 2100 Sea Mountain Hwy, North Myrtle Beach, SC 29582",
     "Short Description": "Guided jet ski dolphin tours from Harbourgate Marina.",
     "Published": true,
@@ -347,6 +354,7 @@
    "fields": {
     "Hours": "Mon Closed\nTue-Thu 13:00-20:00\nFri-Sat 13:00-21:00\nSun 13:00-20:00",
     "Website": "https://www.k1speed.com/myrtle-beach-location.html",
+    "Phone": "(843) 492-6101",
     "Address": "720 Main St, North Myrtle Beach, SC 29582",
     "Short Description": "A fully enclosed indoor track with fast electric karts, plus an arcade and pool tables.",
     "Published": true,
