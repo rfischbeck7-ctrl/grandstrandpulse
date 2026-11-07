@@ -223,10 +223,15 @@
    "id": "recv0baQqH1BQbnAP",
    "createdTime": "2026-11-06T15:11:17.000Z",
    "fields": {
+    "Details Source": "https://www.fatharolds.com/",
     "Published": true,
     "Name": "Fat Harold's Beach Club",
     "Short Description": "A mid-century-style beach club with a large dance floor, live music and shag lessons.",
     "Area": "North Myrtle Beach",
+    "Hours Note": "Opens 4 PM Mon-Thu and Sun, 11 AM Fri and Sat; closing time not posted, call ahead. DJs nightly at 7 PM.",
+    "Details Checked": "2026-11-06",
+    "Website": "https://www.fatharolds.com/",
+    "Phone": "(843) 249-5779",
     "Type": "Beach club",
     "Address": "212 Main St, North Myrtle Beach, SC 29582"
    }
