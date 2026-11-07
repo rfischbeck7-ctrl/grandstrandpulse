@@ -49,7 +49,7 @@
     "Website": "https://gregrowleslegacytheatre.com/",
     "Address": "701 Main St, North Myrtle Beach, SC 29582",
     "Name": "Greg Rowles Legacy Theatre",
-    "Short Description": "A local favorite for music, comedy and storytelling.",
+    "Short Description": "A local favorite for music, comedy and storytelling. The North Myrtle Beach theater bills itself as 100% live music, with concerts and shows through the year, a Broadway series and a Christmas show. Check the theater's calendar for the current lineup.",
     "Area": "North Myrtle Beach",
     "Published": true,
     "Type": "Theater"
@@ -75,7 +75,7 @@
     "Website": "https://murderinthewildwest.com/",
     "Address": "10429 N Kings Hwy, Myrtle Beach, SC 29572",
     "Name": "Murder in the Wild West",
-    "Short Description": "Cowboy stunts, trick riding and gunfights over dinner.",
+    "Short Description": "A Wild West-themed murder mystery dinner show where guests witness a crime and help solve it. The show runs about two hours and is open to all ages, and an optional package lets one member of your party kick off the show. The menu is listed on the website.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Dinner show"
@@ -110,7 +110,7 @@
     "Address": "4750 Hwy 17 S, North Myrtle Beach, SC 29582",
     "Name": "Alabama Theatre",
     "Hours": "Mon-Sat 09:00-20:00\nSun 10:00-18:00",
-    "Short Description": "Open since 1993 at Barefoot Landing. Home of the ICONIC show, with guest artists all year.",
+    "Short Description": "Open since 1993 at Barefoot Landing. Home of the ICONIC variety show, which combines music, dance and comedy and runs February through October, with The South's Grandest Christmas Show in November and December. On nights the cast is off, guest artists perform country, Motown, pop and comedy.",
     "Area": "North Myrtle Beach",
     "Published": true,
     "Type": "Theater"
@@ -219,7 +219,7 @@
     "Website": "https://piratesvoyage.com/",
     "Address": "8907 N Kings Hwy, Myrtle Beach, SC 29572",
     "Name": "Pirates Voyage",
-    "Short Description": "Pirate ship battles, acrobatics, sea lions and a four-course dinner.",
+    "Short Description": "Pirate ship battles, acrobatics, sea lions and a four-course dinner. Guests cheer for the Crimson or Sapphire crew as a pirate battle with mermaids unfolds, with horse-riding stunts, music and special effects along the way. It is built for families, with child tickets for kids up to age 9.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Dinner show"
@@ -243,7 +243,7 @@
     "Website": "https://www.medievaltimes.com/myrtle-beach",
     "Address": "2904 Fantasy Way, Myrtle Beach, SC 29579",
     "Name": "Medieval Times",
-    "Short Description": "A jousting tournament with horses, a falcon and a feast eaten by hand.",
+    "Short Description": "A jousting tournament with horses, a falcon and a feast eaten by hand. The two-hour show features six knights in jousts and sword fights alongside Pure Spanish horses and a royal falcon, with a four-course meal served during the performance. Preferred and priority seating are available as upgrades.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Dinner show"
@@ -264,7 +264,7 @@
     "Website": "https://www.thecarolinaopry.com",
     "Address": "8901 N Kings Hwy, Myrtle Beach, SC 29572",
     "Name": "Carolina Opry",
-    "Short Description": "Music, dance and comedy, including Time Warp and a long-running Christmas show.",
+    "Short Description": "Music, dance and comedy, including Time Warp and a long-running Christmas show. The theater is in its 38th season and also hosts a performing arts concert series with guest acts. Check the calendar for the current lineup.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Theater"
