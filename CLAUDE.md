@@ -88,3 +88,10 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Listing schema uses a `PostalAddress` parsed from the Address field (`postalAddress`); home page has WebSite + Organization markup.
 - Not done: `geo` coordinates in the schema (needs a lat/long per listing; the places_search tool returns them but a pass is ~25 calls). Four listings have no address (Black River Outdoors, Stars and Strikes, Ghosts of Georgetown, Radical Ropes).
 - Home description no longer claims "every listing checked".
+
+## Nov 7 later
+- Guides now 7: rainy-day, free-things-to-do, indoor-mini-golf, sunset-and-views, on-the-water, after-dark, with-kids.
+- Search Console: domain property sc-domain:myrtlebeachcompass.com is verified; sitemap.xml submitted Nov 6, read OK (36 discovered when read).
+- `geo` coordinates skipped: places_search returns ~1,200 tokens of review text per place, so a 177-listing pass is very costly for little SEO gain. Only do it if map pins get built.
+- Phone gaps: WebFetch now asks for per-URL permission, which times out when Ryan is away, so official-site lookups can't run unattended. WonderWorks phone filled. Remaining no-phone listings with websites need a session where Ryan is present.
+- Analytics not added: needs an account Ryan creates (e.g. Cloudflare Web Analytics token); then add the script in `layout()` and update Privacy.
