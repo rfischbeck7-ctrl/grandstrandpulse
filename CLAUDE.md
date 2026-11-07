@@ -93,5 +93,5 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Guides now 7: rainy-day, free-things-to-do, indoor-mini-golf, sunset-and-views, on-the-water, after-dark, with-kids.
 - Search Console: domain property sc-domain:myrtlebeachcompass.com is verified; sitemap.xml submitted Nov 6, read OK (36 discovered when read).
 - `geo` coordinates skipped: places_search returns ~1,200 tokens of review text per place, so a 177-listing pass is very costly for little SEO gain. Only do it if map pins get built.
-- Phone gaps: WebFetch now asks for per-URL permission, which times out when Ryan is away, so official-site lookups can't run unattended. WonderWorks phone filled. Remaining no-phone listings with websites need a session where Ryan is present.
+- Phone gaps (Nov 7, Ryan present): ~27 phones filled from official sites. Still blank (site did not state one): Ripley's Aquarium, EdVenture, Radical Ropes, SkyWheel, The Track, Getaway Adventures, Voyager Dolphin Cruises (site errored), T.I.G.E.R.S., Harborwalk, Stars and Strikes (ambiguous corporate number), Kaminski House (only a web-designer number found).
 - Analytics: Cloudflare Web Analytics beacon added in `layout()` (token in build.mjs, public), Privacy page has an Analytics section. Dashboard at dash.cloudflare.com → Web Analytics.
