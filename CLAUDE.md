@@ -1,5 +1,7 @@
 # Myrtle Beach Compass: project notes for Claude
 
+> New session? Read HANDOFF.md (state at end of the Nov 7 session) after this file.
+
 Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is the CMS, a Node script builds a static site, GitHub Pages hosts it. The owner is Ryan (rfischbeck7@gmail.com). Many requests arrive while he is away, so work unattended, publish when asked, and report briefly.
 
 ## How it fits together
