@@ -27,7 +27,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Rule: hours and prices only from the business's own site (or SC Parks for state parks); leave blank if not stated. Many off-season hours aren't posted, so Hours Note says "call ahead".
 - Nov 6 pass: 72 of the original 134 listings filled. Not yet done: all nightlife spots, most live shows, small mini golf courses with no official site, and every listing added on Nov 6 (Fishing & piers etc.). Sites that block automated reading: Carolina Vineyards, Crooked Hammock, Snake River, Black Pearl, Capt. Dick's, Children's Museum of SC.
 - Runaway Bay Miniature Golf closed permanently (unpublished Nov 6). Snake River Golf: conflicting reports (independent sources say defunct; only a content-farm page says revived); **unpublished Nov 6 night** until snakerivergolf.com can be read and confirms it is open.
-- A duplicate "Myrtle Beach Art Museum" record (rec9rfmDaz0mcWIDp, Historic table) is unpublished. Ryan interrupted the delete on Nov 6, so **leave it until he says yes in chat**.
+- Nov 6 (late): Ryan approved deleting duplicates. Deleted the duplicate Art Museum record (rec9rfmDaz0mcWIDp) and three unpublished cinema copies in Family & Indoor (Grand 14, AMC Classic 12, Cinemark; the published ones live in Live Shows).
 - Added Nov 6: **Golf courses** (table Golf Courses `tblq22Z2f9YBZoKkO`, 16 courses) and **Beaches** (table `tbl7jPW1l49fiufTl`, 6 beaches), 11 categories total. Live Shows is now "Concerts, shows & movies" with House of Blues Myrtle Beach and Cinemark Myrtle Beach. Hours/prices for these are mostly blank (courses: tee times on each site). Other cinemas not verified.
 
 ## Placeholder art (added Nov 2026)
@@ -54,7 +54,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - **Things to do only (Ryan, Nov 6): no restaurants, bars or shopping categories.** The existing Nightlife and Breweries categories stay.
 
 ## Nov 6 night pass
-- Tin Roof, Comedy Cabana and Fat Harold's got phone/website (Tin Roof hours; Fat Harold's opening times as a note, no closing time posted) from their own sites. Delete of the duplicate Art Museum record was blocked by the permission check even after Ryan said "Go"; it is still there, unpublished. Many nightlife sites block automated reading (Apache Pier, 3001, Bowery, Ocean Annie's, Dead Dog Saloon); most nightlife listings still lack website/hours.
+- Tin Roof, Comedy Cabana and Fat Harold's got phone/website (Tin Roof hours; Fat Harold's opening times as a note, no closing time posted) from their own sites. Delete of the duplicate Art Museum record was blocked by the permission check even after Ryan said "Go"; it has since been deleted (Ryan approved). Many nightlife sites block automated reading (Apache Pier, 3001, Bowery, Ocean Annie's, Dead Dog Saloon); most nightlife listings still lack website/hours.
 - Checked and NOT added: Waccatee Zoo (reported permanently closing), Warbird Park, Hurricane Fleet and Springmaid Pier (no official site found).
 - Live site checked at phone size: home, search, saved hearts, about/privacy/areas/guides/saved all load; no sideways overflow; art animates. Hearts were added to search-result rows (MutationObserver in app.js).
 - Not doable by Claude: 2FA on Porkbun/GitHub/Airtable, deleting the unused Airtable token, visitor-counter account.
@@ -67,3 +67,9 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 ## Working rules
 - Sending email, publishing public content, or deleting data needs the user's go-ahead in chat. Ryan has pre-approved publishing the site art and (Nov 6) gave authority to update the website; anything else, ask.
 - The sandbox shell has no general internet access (use WebFetch/WebSearch for research), package installs are blocked, and WebFetch caches ~15 minutes, so verify deploys through the git data snapshots or `gh run`.
+
+## Art fixes (Nov 6 late)
+- Ryan's feedback: pictures must look believable, nothing floating in mid-air (waterfalls, props, text hanging in the sky). Anything that stands must sit on ground, a dock or a rock; waterfalls must start at a rock crest and end at ground or water.
+- Captain Hook's, Inlet Adventure, TPC, King's North and Long Bay were rebuilt for this; the three cinemas now have their own movie-theater scenes. Avoid `<text>` in scenes that can be mirrored (varyWithinTheme or `flip`), it comes out backwards.
+- Nov 6 late duplicate check: closest pair 0.0476 (Pine Lakes vs Prestwick).
+- Details pass: nightlife sites still blocked by robots.txt or errors (Apache Pier, Spanish Galleon, Ocean Annie's, Dead Dog Saloon, Señor Frog's). Leave blank; don't use third-party directories.
