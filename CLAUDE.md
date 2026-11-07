@@ -26,8 +26,8 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - `scripts/hours.mjs` parses Hours (build warns and skips a line it can't read). The site shows a weekly hours table (today highlighted), an Open now / Closed badge worked out in Eastern time in the browser, an "Open now" filter on category pages, price, Good-to-know chips, and Google + Yelp review buttons (links only; never copy ratings: against their terms and goes stale).
 - Rule: hours and prices only from the business's own site (or SC Parks for state parks); leave blank if not stated. Many off-season hours aren't posted, so Hours Note says "call ahead".
 - Nov 6 pass: 72 of the original 134 listings filled. Not yet done: all nightlife spots, most live shows, small mini golf courses with no official site, and every listing added on Nov 6 (Fishing & piers etc.). Sites that block automated reading: Carolina Vineyards, Crooked Hammock, Snake River, Black Pearl, Capt. Dick's, Children's Museum of SC.
-- Runaway Bay Miniature Golf closed permanently (unpublished Nov 6). Snake River Golf: conflicting reports (defunct vs revived); verify.
-- A duplicate "Myrtle Beach Art Museum" record (rec9rfmDaz0mcWIDp) was created by mistake and unpublished; safe to delete.
+- Runaway Bay Miniature Golf closed permanently (unpublished Nov 6). Snake River Golf: conflicting reports (independent sources say defunct; only a content-farm page says revived); **unpublished Nov 6 night** until snakerivergolf.com can be read and confirms it is open.
+- A duplicate "Myrtle Beach Art Museum" record (rec9rfmDaz0mcWIDp, Historic table) is unpublished. Ryan interrupted the delete on Nov 6, so **leave it until he says yes in chat**.
 - Added Nov 6: **Golf courses** (table Golf Courses `tblq22Z2f9YBZoKkO`, 16 courses) and **Beaches** (table `tbl7jPW1l49fiufTl`, 6 beaches), 11 categories total. Live Shows is now "Concerts, shows & movies" with House of Blues Myrtle Beach and Cinemark Myrtle Beach. Hours/prices for these are mostly blank (courses: tee times on each site). Other cinemas not verified.
 
 ## Placeholder art (added Nov 2026)
@@ -52,6 +52,12 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Unpublished and **set aside by Ryan (Nov 6): ignore these, don't raise them as follow-ups:** Go Ape, Adrenaline Adventure Zipline, Rover Boat Tours, Crocodile Rocks, Master's Club, Club Vybe, Carolina Improv, Hot Fish Club. Funplex is **closed for good** (its own site says so) and stays unpublished. Also closed: Wild Water & Wheels (Surfside). Not yet added because current details couldn't be confirmed: Springmaid Pier, Warbird Park, Waccatee Zoo, Hurricane Fleet, Surf's Up laser tag; Thompson Farm is seasonal (closed after Nov 1). Laser tag is already covered by WonderWorks, Fun Warehouse and Stars and Strikes.
 - Rules we follow: don't invent businesses or addresses; use the business's own website for phones and addresses; leave a listing unpublished if it can't be verified.
 - **Things to do only (Ryan, Nov 6): no restaurants, bars or shopping categories.** The existing Nightlife and Breweries categories stay.
+
+## Nov 6 night pass
+- Tin Roof and Comedy Cabana got phone/website (and Tin Roof hours) from their own sites. Many nightlife sites block automated reading (Apache Pier, 3001, Bowery, Ocean Annie's, Dead Dog Saloon); most nightlife listings still lack website/hours.
+- Checked and NOT added: Waccatee Zoo (reported permanently closing), Warbird Park, Hurricane Fleet and Springmaid Pier (no official site found).
+- Live site checked at phone size: home, search, saved hearts, about/privacy/areas/guides/saved all load; no sideways overflow; art animates. Hearts are not on search-result rows (minor).
+- Not doable by Claude: 2FA on Porkbun/GitHub/Airtable, deleting the unused Airtable token, visitor-counter account.
 
 ## Open follow-ups (not yet requested)
 - Photo-request emails to breweries, wineries and newer venues (drafts only; never send without asking).
