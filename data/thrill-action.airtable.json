@@ -54,9 +54,13 @@
     "Phone": "(843) 236-7245",
     "Address": "301 S Ocean Blvd, Myrtle Beach, SC 29577",
     "Short Description": "Parasailing from the Myrtle Beach oceanfront. A second location is at 2985 S Ocean Blvd. Riders go up to 400 feet above the ocean with licensed professionals, on a Coast Guard-inspected 35-foot parasail boat. Flights last 8 to 10 minutes in the air. The company recommends flying between 9 a.m. and 1 p.m., before afternoon winds build.",
+    "Booking Link": "https://fareharbor.com/embeds/book/downwindsailsmyrtlebeach/?ref=https%3A%2F%2Fwww.downwindsailsmyrtlebeach.com&flow=315306",
     "Published": true,
     "Area": "Central Myrtle",
     "Name": "Downwind Sails Parasailing",
+    "Price": "Parasail flights $79-$89",
+    "Price Level": "$$$",
+    "Details Checked": "2026-11-07",
     "Type": "Parasailing"
    }
   },
@@ -68,10 +72,13 @@
     "Phone": "(843) 344-7870",
     "Address": "4123 US-17 Business, Murrells Inlet, SC 29576",
     "Short Description": "Seakart Adventure is a jet ski and boat hybrid that you drive yourself behind a professional guide boat. Each guided tour lasts 60 minutes and up to three guests can ride in each Seakart. The tour runs out of Crazy Sister Marina in Murrells Inlet and is described as family friendly.",
+    "Booking Link": "https://fareharbor.com/embeds/book/seakartadventuresc/?full-items=yes",
     "Published": true,
     "Details Source": "https://www.seakartadventuresc.com",
     "Area": "Murrells Inlet",
     "Name": "Seakart Adventure SC",
+    "Price": "From $219 per Seakart (up to 3 guests, 60 minutes)",
+    "Price Level": "$$$",
     "Hours Note": "Spots fill quickly in peak season; book ahead",
     "Details Checked": "2026-11-07",
     "Type": "Jet boat / sea kart"
@@ -122,6 +129,7 @@
     "Phone": "(843) 249-2989",
     "Address": "5800 Highway 236, North Myrtle Beach, SC 29582",
     "Short Description": "Guided horseback rides on the plantation's private island beach, including one-hour sunset rides, plus waterway trail rides along the Intracoastal Waterway and 15-minute pony rides for little ones. Riders also hear local history, including Battery Hill beside Fort Randall, a Confederate fort. Rides run year round.",
+    "Booking Link": "https://fareharbor.com/embeds/book/inletpointplantation/?full-items=yes&flow=1380424",
     "Published": true,
     "Details Source": "https://inletpointplantation.com/",
     "Area": "North Myrtle Beach",
@@ -178,6 +186,7 @@
     "Phone": "(843) 249-9908",
     "Address": "2208 N Ocean Blvd, North Myrtle Beach, SC 29582",
     "Short Description": "Aloha Watersports runs parasailing, Big Island banana boat rides, jet ski rentals and pontoon boats in North Myrtle Beach, and has a surf shop on site. It is a one-stop spot for a day on the water for families and groups.",
+    "Booking Link": "https://fareharbor.com/embeds/book/alohawatersportsmyrtlebeach/items/549737/?full-items=yes&flow=1187470",
     "Published": true,
     "Details Source": "https://www.love2livealoha.com/",
     "Area": "North Myrtle Beach",
@@ -289,10 +298,13 @@
     "Phone": "(843) 364-9962",
     "Address": "2201 Little River Neck Rd, North Myrtle Beach, SC 29582",
     "Short Description": "Southern Shores Cruises offers a two-hour catamaran island and dolphin cruise, the one-hour Thrill Seeker jet boat ride, a 90-minute Need 4 Speed offshore boating experience, private charters, and jet ski rentals and dolphin tours for drivers 18 and older. Guests should arrive 30 minutes before their scheduled time.",
+    "Booking Link": "https://fareharbor.com/embeds/book/southernshorescruises/",
     "Published": true,
     "Details Source": "https://southernshorescruises.com/",
     "Area": "Little River",
     "Name": "Southern Shores Cruises",
+    "Price": "Catamaran dolphin cruise from $35; jet boat ride from $50; jet ski rental from $85",
+    "Price Level": "$$",
     "Hours Note": "Arrive 30 minutes early; book ahead",
     "Details Checked": "2026-11-07",
     "Type": "Jet boat / cruises"
@@ -302,13 +314,18 @@
    "id": "recX47FJQ0tQmOmcU",
    "createdTime": "2026-11-06T15:11:18.000Z",
    "fields": {
+    "Hours": "Daily 07:30-18:00",
     "Website": "https://myrtlebeachjetskirental.com/",
     "Phone": "(843) 999-3095",
     "Address": "4495 Baker St, Little River, SC 29566",
     "Short Description": "A family-run company at Cricket Cove Marina in Little River offering jet ski rentals, guided dolphin sightseeing tours, 2-hour ocean rides and island and waterway tours through the Intracoastal and inlets. Pontoon boats seat up to 15. Beginner rides and guides make it friendly for first-timers and families.",
+    "Booking Link": "https://fareharbor.com/embeds/book/myrtlebeachjetskirental/?full-items=yes",
     "Published": true,
     "Area": "Little River",
     "Name": "Myrtle Beach Jet Ski Rental",
+    "Price": "Jet ski rental from $99; dolphin tour from $199; pontoon boat from $299",
+    "Price Level": "$$$",
+    "Details Checked": "2026-11-07",
     "Type": "Jet ski"
    }
   },
@@ -320,10 +337,13 @@
     "Phone": "(843) 946-0022",
     "Address": "3000 S Kings Hwy, Myrtle Beach, SC 29577",
     "Short Description": "Oceanfront Helicopters, formerly Huffman Helicopters, flies sightseeing tours over the Myrtle Beach coastline from an office at the end of the airport runway. Routes include the original beach flight, a Broadway tour past the local attractions, oceanfront estates, a family tour and longer routes with wildlife views.",
+    "Booking Link": "https://oceanfront-helicopters.rezgo.com/details/26005/north-beach-tour",
     "Published": true,
     "Details Source": "https://oceanfrontheli.com/",
     "Area": "Central Myrtle",
     "Name": "Oceanfront Helicopters",
+    "Price": "Flights from $29.99 (Intro) to $249.99 (VIP)",
+    "Price Level": "$$$",
     "Hours Note": "Book ahead; call for flight times",
     "Details Checked": "2026-11-07",
     "Type": "Helicopter tours"
@@ -371,6 +391,7 @@
     "Phone": "(843) 651-3676",
     "Address": "4123 US-17 Business, Murrells Inlet, SC 29576",
     "Short Description": "A locally owned MarshWalk marina with dolphin and eco tours, sunset and family pirate cruises, holiday fireworks and ghost-story trips, plus head-boat and private fishing charters. Rent pontoon boats, skiffs, kayaks and jet skis, or book a guided jet ski dolphin tour.",
+    "Booking Link": "https://fareharbor.com/embeds/book/crazysister/?full-items=yes&ref=https%3A%2F%2Fcrazysistermarina.com&flow=956393",
     "Published": true,
     "Details Source": "https://crazysistermarina.com/",
     "Area": "Murrells Inlet",
@@ -388,6 +409,7 @@
    "id": "receEFCpOIm9zLnAK",
    "createdTime": "2026-11-06T20:02:50.000Z",
    "fields": {
+    "Hours": "Daily 09:00-19:00",
     "Website": "https://www.actionwatersportz.com/",
     "Phone": "(843) 280-4100",
     "Address": "1525 13th Ave N, North Myrtle Beach, SC 29582",
@@ -401,7 +423,7 @@
      "Reservations recommended",
      "Seasonal"
     ],
-    "Details Checked": "2026-11-06",
+    "Details Checked": "2026-11-07",
     "Type": "Jet ski / boat rides"
    }
   },
@@ -413,10 +435,13 @@
     "Phone": "(843) 361-3322",
     "Address": "1701 S Ocean Blvd, North Myrtle Beach, SC 29582",
     "Short Description": "New Wave Watersports offers parasailing and banana boat rides from the beach in North Myrtle Beach. Check-in is on the sand behind Molly Darcy's Irish Pub, so you can walk from the beach, board the boat and float high above the coast.",
+    "Booking Link": "https://fareharbor.com/embeds/book/newwavewatersports/?full-items=yes",
     "Published": true,
     "Details Source": "https://www.newwavewatersports.com/index.php",
     "Area": "North Myrtle Beach",
     "Name": "New Wave Watersports",
+    "Price": "Parasailing from $75 per person; banana boat $30; observer spot $35",
+    "Price Level": "$$",
     "Hours Note": "Hours not posted; call or check the booking page",
     "Details Checked": "2026-11-07",
     "Type": "Parasailing"
@@ -431,6 +456,7 @@
     "Phone": "(843) 748-0302",
     "Address": "2349 Dick Pond Rd, Myrtle Beach, SC 29575",
     "Short Description": "An indoor and outdoor family fun center with speed-kart racing, bowling, roller skating, laser tag, inflatables, Krazy Darts, virtual reality, an arcade and a two-story PlayPort for kids. Pizza and a full bar are on site, and it also hosts school field trips, birthday parties and group events.",
+    "Booking Link": "https://reservations.meriq.com/funwarehousemb/",
     "Published": true,
     "Details Source": "https://funwarehousemb.com/",
     "Area": "Central Myrtle",
@@ -439,7 +465,7 @@
      "Great for kids",
      "Rain or shine"
     ],
-    "Details Checked": "2026-11-06",
+    "Details Checked": "2026-11-07",
     "Type": "Go-karts"
    }
   },
@@ -485,10 +511,13 @@
     "Phone": "(843) 427-4144",
     "Address": "1903 Hwy 17 S, North Myrtle Beach, SC 29582",
     "Short Description": "Myrtle Beach Shark Tooth Adventures lets you sift through material brought up from the ocean floor in search of shark teeth and fossils. Several trip levels, from Sandbar to Megalodon, are offered in standard and premium versions, with a booking calendar to check availability by date.",
+    "Booking Link": "https://fareharbor.com/embeds/book/myrtlebeachsharktoothadventures/items/calendar/?full-items=yes&ref=https%3A%2F%2Fmyrtlebeachsharktoothadventures.com&flow=1198416",
     "Published": true,
     "Details Source": "https://myrtlebeachsharktoothadventures.com/",
     "Area": "North Myrtle Beach",
     "Name": "Myrtle Beach Shark Tooth Adventures",
+    "Price": "Sandbar shark trips from $39; bull shark from $75; megalodon from $370",
+    "Price Level": "$$",
     "Hours Note": "Book online by date",
     "Details Checked": "2026-11-07",
     "Type": "Shark tooth hunt"
@@ -514,15 +543,18 @@
     "Phone": "(843) 492-6101",
     "Address": "720 Main St, North Myrtle Beach, SC 29582",
     "Short Description": "A fully enclosed indoor track with fast electric karts, plus an arcade and pool tables. The track has 14 turns, and adult and junior electric karts give instant acceleration with no indoor fumes. A cafe lounge and a meeting room round out the visit.",
+    "Booking Link": "https://www.k1speed.com/booking-form-myrtle-beach.html",
     "Published": true,
     "Details Source": "https://www.k1speed.com/myrtle-beach-location.html",
     "Area": "North Myrtle Beach",
     "Name": "K1 Speed",
+    "Price": "Single race $26.95; 2-race pack $48.95; 3-race pack $62.95; annual license $7.95",
+    "Price Level": "$$",
     "Hours Note": "Holiday hours can differ.",
     "Good to Know": [
      "Rain or shine"
     ],
-    "Details Checked": "2026-11-06",
+    "Details Checked": "2026-11-07",
     "Type": "Go-karts"
    }
   }

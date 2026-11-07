@@ -30,6 +30,7 @@
    "id": "recAyZTJYMyh4VOgR",
    "createdTime": "2026-11-07T16:50:50.000Z",
    "fields": {
+    "Booking Link": "https://www.ripleys.com/tickets/myrtle-beach",
     "Details Source": "https://www.ripleys.com/attractions/ripleys-mirror-maze-myrtle-beach",
     "Area": "Central Myrtle",
     "Published": true,
@@ -47,6 +48,7 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 945-2830",
+    "Booking Link": "https://www.escapology.com/en/myrtle-beach-sc/escape-games",
     "Details Source": "https://www.escapology.com/en/myrtle-beach-sc",
     "Area": "Central Myrtle",
     "Published": true,
@@ -144,6 +146,7 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 994-2637",
+    "Booking Link": "https://theescapegame.com/myrtle-beach/book-now/",
     "Details Source": "https://theescapegame.com/myrtle-beach/",
     "Area": "Central Myrtle",
     "Published": true,
@@ -166,6 +169,7 @@
    "id": "recLxpELOT5IdPIce",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
+    "Booking Link": "https://secure.meriq.com/starsandstrikes/openplay",
     "Details Source": "https://www.starsandstrikes.com/locations/myrtle-beach",
     "Area": "North Myrtle Beach",
     "Published": true,
@@ -185,6 +189,7 @@
    "id": "recMyLH4QIoPEqUXf",
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
+    "Booking Link": "https://www.ripleys.com/tickets/myrtle-beach",
     "Details Source": "https://ripleys.com/attractions/ripleys-aquarium-of-myrtle-beach",
     "Area": "Central Myrtle",
     "Published": true,
@@ -218,6 +223,7 @@
    "id": "recPUw8VbDD4Dv3Qr",
    "createdTime": "2026-11-07T16:50:50.000Z",
    "fields": {
+    "Booking Link": "https://www.ripleys.com/tickets/myrtle-beach",
     "Details Source": "https://www.ripleys.com/myrtlebeach/haunted-adventure/",
     "Area": "Central Myrtle",
     "Published": true,
@@ -281,6 +287,7 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 213-1586",
+    "Booking Link": "https://riddlesescaperoom.com/book-online/",
     "Details Source": "http://riddlesescaperoom.com/",
     "Area": "Central Myrtle",
     "Published": true,
@@ -302,11 +309,13 @@
    "createdTime": "2026-11-07T16:38:04.000Z",
    "fields": {
     "Phone": "(800) 963-8082",
+    "Booking Link": "https://blackflagforging.com/booking/",
     "Details Source": "https://www.visitmyrtlebeach.com/listings/black-flag-forge",
     "Area": "Central Myrtle",
     "Published": true,
     "Hours Note": "Book ahead on their website",
     "Address": "1116 Celebrity Cir, Unit 310C, Myrtle Beach, SC 29577",
+    "Hours": "Sun-Thu 11:00-19:00\nFri-Sat 11:00-21:00",
     "Website": "https://www.blackflagforging.com/",
     "Details Checked": "2026-11-07",
     "Name": "Black Flag Forge",
@@ -356,9 +365,12 @@
     "Area": "Little River",
     "Published": true,
     "Address": "304 SC-90 E, Unit A-1, Little River, SC 29566",
+    "Hours": "Daily 07:00-21:00",
     "Website": "https://www.pinpointindoor.com/",
     "Details Checked": "2026-11-07",
     "Name": "Pin Point Indoor Pickleball & Golf",
+    "Price": "Golf simulator $40/hour; pickleball court $50/hour; Open Play $15 for 2 hours",
+    "Price Level": "$$",
     "Type": "Sports & games",
     "Short Description": "Pin Point is an indoor sports venue in Little River with nine pickleball courts and seven TrackMan golf simulators, so a rainy day does not cancel the game. A full bar and kitchen are on site, which makes it an easy stop for a group that wants to play and then stay a while."
    }
@@ -431,6 +443,7 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 916-0888",
+    "Booking Link": "https://www.ripleys.com/tickets/myrtle-beach",
     "Details Source": "https://www.ripleys.com/attractions/ripleys-believe-it-or-not-myrtle-beach/contact-us",
     "Area": "Central Myrtle",
     "Published": true,
@@ -454,6 +467,7 @@
    "createdTime": "2026-11-06T15:12:09.000Z",
    "fields": {
     "Phone": "(843) 231-5644",
+    "Booking Link": "https://www.breakoutmyrtlebeach.com/appointments/",
     "Details Source": "https://www.breakoutmyrtlebeach.com/",
     "Area": "North Myrtle Beach",
     "Published": true,

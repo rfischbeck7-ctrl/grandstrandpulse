@@ -37,6 +37,7 @@
      "Seasonal"
     ],
     "Website": "https://www.myrtlebeachdolphincruises.com/",
+    "Booking Link": "https://www.myrtlebeachdolphincruises.com/book-online/",
     "Type": "Dolphin tour",
     "Phone": "(843) 280-8400",
     "Address": "1522 Watson Ave, Little River, SC 29566",
@@ -60,6 +61,7 @@
      "Tickets sold online"
     ],
     "Website": "https://visitmurrellsinlet.com/",
+    "Booking Link": "https://visitmurrellsinlet.com/cruises/",
     "Type": "Eco tour",
     "Phone": "(843) 357-9999",
     "Address": "4079 US-17 Bus, Murrells Inlet, SC 29576",
@@ -74,18 +76,21 @@
    "fields": {
     "Short Description": "A 1.5-hour dolphin watch cruise leaving the MarshWalk dock in Murrells Inlet on a 46-foot boat with covered and open decks and a restroom. Marine science students or a naturalist narrate, and snacks and drinks are sold on board. It suits families and anyone after a relaxed outing; sightings aren't guaranteed. Kayak and paddleboard rentals are also available.",
     "Name": "Express Watersports Dolphin Watch",
+    "Price Level": "$$",
     "Area": "Murrells Inlet",
     "Good to Know": [
      "Great for kids",
      "Tickets sold online"
     ],
     "Website": "https://expresswatersports.com/myrtle-beach-dolphin-watch-cruise/",
+    "Booking Link": "https://fareharbor.com/embeds/book/expresswatersports/?flow=1238058",
     "Type": "Dolphin tour",
     "Phone": "(843) 357-7777",
     "Address": "4042 Hwy 17 Business, Murrells Inlet, SC 29576",
     "Details Source": "https://expresswatersports.com/",
-    "Hours Note": "Office open Mon–Sat 10 AM–5 PM. Tours run on a seasonal schedule; book online.",
-    "Details Checked": "2026-11-06",
+    "Hours Note": "March to early December; 1.5-hour trips, check in 30 minutes early",
+    "Price": "Adults $28, children 12 and under $20, age 2 and under free",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },
@@ -114,13 +119,16 @@
    "fields": {
     "Short Description": "PonTiki runs daily party boat cruises on the Intracoastal Waterway with music, dancing and drinks included. Public cruises last two hours, private cruises run two to eight hours, and the largest boat holds up to 47 passengers. Outside drinks are not allowed. Guests should be of drinking age.",
     "Name": "PonTiki Myrtle Beach",
+    "Price Level": "$$$",
     "Area": "Little River",
     "Website": "https://pontikimyrtlebeach.com/",
+    "Booking Link": "https://fareharbor.com/embeds/book/pontikimyrtlebeach/items/?language=en-us&full-items=yes",
     "Type": "Scenic cruise",
     "Phone": "(843) 491-9549",
     "Address": "4430 Kingsport Rd, Little River, SC 29566",
     "Details Source": "https://pontikimyrtlebeach.com/",
     "Hours Note": "Seasonal schedule; check the contact page",
+    "Price": "Public 2-hour cruise: adults from $60, ages 6-20 $25, under 5 free",
     "Details Checked": "2026-11-07",
     "Published": true
    }
@@ -182,11 +190,14 @@
      "Great for kids"
     ],
     "Website": "https://greatescapeskayak.com/",
+    "Booking Link": "https://fareharbor.com/embeds/book/greatescapeskayak/?full-items=yes",
     "Type": "Kayak / paddleboard",
     "Phone": "(843) 241-4588",
+    "Hours": "Mon-Sat 08:00-19:00\nSun Closed",
     "Address": "1603 Highway 17 S, North Myrtle Beach, SC 29582",
     "Details Source": "https://www.visitmyrtlebeach.com/listings/great-escapes-kayaking-expeditions",
-    "Details Checked": "2026-11-06",
+    "Price": "Tours $30-$45 per person",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },
@@ -196,10 +207,13 @@
    "fields": {
     "Short Description": "Narrated sightseeing and dolphin cruises from Little River on the Intracoastal Waterway, with marine life and local history along the way. Choose a dolphin tour of about 1.5 to 2 hours, or a longer trip with a stop at Waties Island for shelling and swimming (not offered on weekends or holidays).",
     "Name": "Getaway Adventures Dolphin Tour",
+    "Price Level": "$$",
     "Area": "Little River",
     "Website": "http://www.myrtlebeachboatcruises.com/cruises/",
     "Type": "Dolphin tour",
     "Address": "714 Hwy 17, Little River, SC 29566",
+    "Price": "Dolphin tour adults $25, ages 3-12 $15, ages 2 and under free",
+    "Details Checked": "2026-11-07",
     "Published": true
    }
   },
@@ -232,6 +246,7 @@
      "Tickets sold online"
     ],
     "Website": "https://crazysistermarina.com/",
+    "Booking Link": "https://fareharbor.com/embeds/book/crazysister/?full-items=yes&flow=192166",
     "Type": "Dolphin tour",
     "Phone": "(843) 651-3676",
     "Address": "4123 US-17 Business, Murrells Inlet, SC 29576",
@@ -373,11 +388,12 @@
     "Name": "Sea Racer Tours",
     "Area": "Little River",
     "Website": "https://searacermyrtlebeach.com/",
+    "Booking Link": "https://fareharbor.com/embeds/book/searacermyrtlebeach/items/calendar/",
     "Type": "Dolphin tour",
     "Phone": "(843) 273-5039",
     "Address": "4491 Waterfront Ave, Little River, SC 29566",
     "Details Source": "https://searacermyrtlebeach.com/",
-    "Hours Note": "Seasonal: reopens March 15, 2027; check the schedule online",
+    "Hours Note": "Closed for the season; reopens March 15, 2027",
     "Details Checked": "2026-11-07",
     "Published": true
    }
