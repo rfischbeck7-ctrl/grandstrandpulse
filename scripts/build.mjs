@@ -197,6 +197,7 @@ ${noindex ? '<meta name="robots" content="noindex,follow">\n' : ""}<link rel="ca
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="${fonts}">
 <link rel="stylesheet" href="/assets/styles.css?v=${cssV}">
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "705918fd09ec4c5ea62d8f0913d631a9"}'></script>
 ${adsensePub ? `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-${adsensePub}" crossorigin="anonymous"></script>` : ""}
 ${[].concat(jsonLd || []).map((j) => `<script type="application/ld+json">${JSON.stringify(j).replace(/</g, "\\u003c")}</script>`).join("\n")}
 </head>
@@ -542,6 +543,8 @@ ${mail ? `<p><a class="btn btn-go" href="mailto:${mail}?subject=${encodeURICompo
 <p>${esc(config.siteName)} is a free directory. It has no accounts, no sign-ups and no forms that collect personal information.</p>
 <h2>Advertising</h2>
 <p>We may show ads served by Google AdSense. Google and its partners may use cookies to show ads based on your visits to this and other sites. You can manage ad personalization at <a href="https://adssettings.google.com" rel="noopener">Google Ad Settings</a> or learn more at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from sites that use its services</a>.</p>
+<h2>Analytics</h2>
+<p>We use Cloudflare Web Analytics to count visits and see which pages are popular. It does not use cookies, does not track you across sites and does not build advertising profiles. Learn more at <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a>.</p>
 <h2>Fonts and third-party links</h2>
 <p>Pages load fonts from Google Fonts, which means your browser contacts Google when a page loads. Links to business websites, maps and phone numbers leave this site and follow those businesses' and services' own privacy practices.</p>
 <h2>Email</h2>
