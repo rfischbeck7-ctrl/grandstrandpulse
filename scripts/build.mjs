@@ -216,10 +216,10 @@ ${hero ? hero + "</div>" : ""}
 ${body}
 </main>
 <footer class="site-foot">
-  <p>Every listing is checked against the business or an official visitor guide, but hours and details change. Call ahead before you drive over.</p>
+  <p>Details come from each business's own website or an official visitor guide, and anything we couldn't confirm is left out. Hours and prices change, so call ahead before you drive over.</p>
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
   <nav class="foot-links" aria-label="More">
-    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/privacy/">Privacy</a>
+    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a>
   </nav>
   <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
@@ -561,7 +561,7 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
 <h2>Who runs this site</h2>
 <p>${esc(config.siteName)} is an independent project run by Ryan. It started as a way to keep Grand Strand things to do, from mini golf to museums and boat tours, in one easy place with directions, phone numbers and the practical details people look for before heading out. It isn't owned by or paid for by any of the businesses listed.</p>
 <h2>How listings get here</h2>
-<p>Each listing is checked against the business's own website or an official visitor guide before it goes up. If we can't confirm that a place is open or what it offers, it stays off the site. Hours, prices and offerings change, so call ahead before you drive over.</p>
+<p>Listing details are taken from the business's own website or an official visitor guide. If we can't confirm that a place is open or what it offers, it stays off the site. Hours, prices and offerings change, so call ahead before you drive over.</p>
 <h2>Corrections and updates</h2>
 <p>Businesses change hours, prices and phone numbers often. The site rebuilds every night from our listing database, so a correction usually appears the next day. Each listing page shows where its details came from when we have that information. If you find a mistake, email us and we will fix it.</p>
 <h2>No pay to play</h2>
@@ -615,10 +615,21 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
   );
   const tpl = encodeURIComponent("Business name:\nWebsite:\nAddress:\nPhone:\nType (mini golf, brewery, tour, show...):\nOne-sentence description:\nAre you the owner or a fan?\n(Photos welcome: attach one you took or have the right to share.)");
   await write(
+    "contact/index.html",
+    simplePage("Contact", `Contact ${config.siteName} to correct a listing, add a place or send a photo.`, "/contact/",
+      `<h1>Contact</h1>
+<p>${esc(config.siteName)} is an independent guide run by Ryan, a one-person project. The fastest way to reach us is email${mail ? `: <a href="mailto:${mail}">${mail}</a>` : ""}.</p>
+<h2>What to write about</h2>
+<ul><li><strong>A correction.</strong> A wrong phone number, address, hours or price. Tell us what's different and, if you can, link the page that shows it.</li><li><strong>Your business.</strong> If you run a Grand Strand attraction we're missing, send the name, address, phone and website. Listings are free. See <a href="/add-your-business/">Add or fix a listing</a>.</li><li><strong>A photo.</strong> Send one you took or have the right to share, and it replaces the placeholder tile on that listing.</li><li><strong>Anything else</strong> about the site, such as a broken page or an idea for a guide.</li></ul>
+<h2>What to expect</h2>
+<p>We read every message and fix confirmed errors as soon as we can. The site rebuilds every night from our listing database, so a correction usually shows up the next day. We don't sell placement or rankings, and we can't answer questions about a business's own bookings, tickets or refunds, so please contact the business directly for those.</p>
+<p>Read more about how the site works on the <a href="/about/">About page</a>, or see how we handle your information in the <a href="/privacy/">privacy policy</a>.</p>`)
+  );
+  await write(
     "add-your-business/index.html",
     simplePage("Add or fix a listing", `Suggest a Grand Strand business for ${config.siteName}, correct a phone number or address, or send a photo.`, "/add-your-business/",
       `<h1>Add or fix a listing</h1>
-<p>Know a place we're missing, or spot something out of date? Tell us. Listings are free and we check each one before it goes up.</p>
+<p>Know a place we're missing, or spot something out of date? Tell us. Listings are free. We add a place once we can confirm the details on its own website or an official guide.</p>
 ${mail ? `<p><a class="btn btn-go" href="mailto:${mail}?subject=${encodeURIComponent("Add a listing to " + config.siteName)}&body=${tpl}">Email a new listing</a> <a class="btn" href="mailto:${mail}?subject=${encodeURIComponent("Correction for " + config.siteName)}">Report a correction</a></p>` : ""}
 <h2>What helps</h2>
 <ul><li>The business name, address, phone and website</li><li>What makes it different, in a sentence or two</li><li>A photo you took or have the right to share, which replaces our placeholder artwork</li><li>Whether it's open year-round or seasonal</li></ul>`)
@@ -631,10 +642,13 @@ ${mail ? `<p><a class="btn btn-go" href="mailto:${mail}?subject=${encodeURICompo
 <p>${esc(config.siteName)} is a free directory. It has no accounts, no sign-ups and no forms that collect personal information.</p>
 <h2>Advertising</h2>
 <p>We may show ads served by Google AdSense. Google and its partners may use cookies to show ads based on your visits to this and other sites. You can manage ad personalization at <a href="https://adssettings.google.com" rel="noopener">Google Ad Settings</a> or learn more at <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from sites that use its services</a>.</p>
+<p>Google, as a third-party vendor, uses cookies to serve ads on this site. Google's use of advertising cookies lets it and its partners serve ads to you based on your visit to this site and other sites on the internet. You can opt out of personalized advertising at <a href="https://adssettings.google.com" rel="noopener">Google Ad Settings</a>, or opt out of some third-party vendors' use of cookies for personalized advertising at <a href="https://www.aboutads.info" rel="noopener">aboutads.info</a>. Visitors in the European Economic Area, the United Kingdom and Switzerland are asked for consent before personalized ads are shown. We don't control which ads appear and we don't receive your personal information from Google.</p>
 <h2>Analytics</h2>
 <p>We use Cloudflare Web Analytics to count visits and see which pages are popular. It does not use cookies, does not track you across sites and does not build advertising profiles. Learn more at <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a>.</p>
 <h2>Fonts and third-party links</h2>
 <p>Pages load fonts from Google Fonts, which means your browser contacts Google when a page loads. Links to business websites, maps and phone numbers leave this site and follow those businesses' and services' own privacy practices.</p>
+<h2>Saved places</h2>
+<p>The heart buttons store your saved places in your own browser (local storage on your device). That list is never sent to us.</p>
 <h2>Email</h2>
 <p>${mail ? `If you email <a href="mailto:${mail}">${mail}</a>, we use your message and address only to reply and to update listings.` : "If you email us, we use your message and address only to reply and to update listings."}</p>
 <h2>Children</h2>
@@ -840,6 +854,17 @@ async function buildDetail(cat, item) {
 </section>`
     : "";
 
+  const introFirst = ([].concat(areaIntros[item.area] || [""])[0]).split(/(?<=\.)\s/)[0] || "";
+  const hashN = [...item.name].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+  const others = allItems.filter((r) => r.c.slug !== cat.slug && r.i.area === item.area);
+  const around = others.length ? Array.from({ length: Math.min(4, others.length) }, (_, k) => others[(hashN + k * 7) % others.length]).filter((r, k, a) => a.findIndex((q) => q.i.id === r.i.id) === k) : [];
+  const aroundHtml = around.length
+    ? `<section class="nearby"><h2>Also in ${esc(areaLabel(item.area))}</h2><ul>${around.map((r) => `<li><a href="/${r.c.slug}/${r.i.slug}/">${esc(r.i.name)}</a><span>${esc(r.i.subtitle || r.c.title)}</span></li>`).join("")}</ul><p class="foot-small"><a href="/areas/${slugify(item.area)}/">All of ${esc(areaLabel(item.area))}</a></p></section>`
+    : "";
+  const visitHtml = item.area
+    ? `<section class="visit"><h2>Planning your visit</h2><p>${esc(item.name)} is in ${esc(areaLabel(item.area))}.${introFirst ? " " + esc(introFirst) : ""} Parking, traffic and season are worth a look before you go: see <a href="/plan/getting-around/">getting around the Grand Strand</a> and <a href="/plan/when-to-visit/">when to visit</a>.</p></section>`
+    : "";
+
   const hero = `
 <section class="detail-band">
   <p class="crumbs"><a href="/${cat.slug}/"><span aria-hidden="true">←</span> ${esc(cat.title)}</a></p>
@@ -866,6 +891,7 @@ async function buildDetail(cat, item) {
       ${facts}
     </dl>
     ${hoursBlock}
+    ${visitHtml}
     ${item.goodToKnow.length ? `<section class="gtk"><h2>Good to know</h2><ul class="gtk-list">${item.goodToKnow.map((g) => `<li>${esc(g)}</li>`).join("")}</ul></section>` : ""}
     ${item.detailsChecked || item.detailsSource ? `<p class="checked">Hours and prices${item.detailsChecked ? ` checked ${esc(fmtDate(item.detailsChecked))}` : ""}${item.detailsSource ? ` from <a href="${esc(item.detailsSource)}" target="_blank" rel="noopener">${esc(new URL(item.detailsSource).hostname.replace(/^www\./, ""))}</a>` : ""}. They can change, so check before you go.</p>` : ""}
   </div>
@@ -873,6 +899,7 @@ async function buildDetail(cat, item) {
     ${coastline({ highlight: item.area, id: "coast-detail" })}
   </aside>
   ${nearbyHtml}
+  ${aroundHtml}
 </article>`;
 
   const detailDescription = (cat, item) => {
@@ -930,7 +957,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", "/about/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", "/about/", "/contact/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
