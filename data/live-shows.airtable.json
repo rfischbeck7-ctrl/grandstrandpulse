@@ -23,7 +23,7 @@
     ],
     "Address": "4002 Deville St, Myrtle Beach, SC 29577",
     "Name": "Grand 14 Cinemas at Market Common",
-    "Short Description": "A 14-screen first-run theater in The Market Common with roomy club-style seats, a gourmet concession stand and beer and wine. It also shows older films now and then.",
+    "Short Description": "Grand 14 Cinema is a 14-screen movie theater at 4002 Deville St. in The Market Common, with more than 2,600 leather stadium rocker seats and digital Dolby and DTS sound. Concessions are sold, and the theater runs a Sensory-Friendly Series with adjusted lights and sound, Flashback Cinema classic films and a Discount Tuesday after 6 p.m.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Movie theater"
@@ -126,9 +126,10 @@
    "id": "recLMtlwHNmsoba0b",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
+    "Website": "https://www.milb.com/myrtle-beach",
     "Address": "1251 21st Ave N, Myrtle Beach, SC 29577",
     "Name": "Myrtle Beach Pelicans",
-    "Short Description": "Minor-league baseball at TicketReturn.com Field, home of the Pelicans since 1999.",
+    "Short Description": "The Myrtle Beach Pelicans are a Single-A affiliate in the Carolina League, playing at Pelicans Ballpark, which opened in 1999 with its first game on April 12 of that year. The seating bowl uses seats from Fulton County Stadium, the former home of the Atlanta Braves. The park holds 4,800 fixed seats, or up to 6,599 with standing room, and Stadium Journey ranked it the league's top ballpark from 2011 to 2015.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Sports"
@@ -164,9 +165,10 @@
    "id": "recXO2PIWBxoZUNJ9",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
+    "Website": "https://legendsinconcert.com/locations/myrtle-beach-sc/",
     "Address": "2925 Hollywood Dr, Myrtle Beach, SC 29577",
     "Name": "Legends in Concert",
-    "Short Description": "Tribute artists performing stars like Elvis, Adele and Michael Jackson. The lineup rotates.",
+    "Short Description": "Legends in Concert is a live tribute show at the Legends in Concert Theater at Broadway at the Beach, 2925 Hollywood Dr. It began in 1983 as a limited engagement in Las Vegas and bills itself as the original and longest-running live tribute concert. Performers sing live with a live band and dancers, with no lip-syncing, and lineups change four times a year. The show runs about two hours with a 15-minute intermission, is family-friendly, and the theater is wheelchair accessible. It is not a dinner theater, but snacks, drinks, beer and wine are sold.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Theater"

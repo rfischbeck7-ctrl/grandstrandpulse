@@ -314,7 +314,7 @@
    "id": "recOuiwZSw9ZZMsCb",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
-    "Short Description": "A waterfront boardwalk along the marsh, lined with live-music venues.",
+    "Short Description": "The Murrells Inlet MarshWalk is a half-mile wooden boardwalk beside a natural saltwater estuary in the historic fishing village of Murrells Inlet, at 4025 Hwy 17 Business. Seven waterfront restaurants and bars line it: Bovine's, The Claw House, Creek Ratz, Dead Dog Saloon, Drunken Jack's, Wahoo's and The Wicked Tuna. The MarshWalk lists events and live music, and says the view and the music are free.",
     "Name": "Murrells Inlet MarshWalk",
     "Price Level": "Free",
     "Area": "Murrells Inlet",
@@ -322,6 +322,7 @@
      "Great for kids",
      "Dog friendly"
     ],
+    "Website": "https://marshwalk.com/",
     "Type": "Boardwalk",
     "Address": "4025 Hwy 17 Business, Murrells Inlet, SC 29576",
     "Price": "Free to walk",
@@ -443,13 +444,14 @@
    "id": "recTrPtOiJR1ET3zn",
    "createdTime": "2026-11-06T15:11:20.000Z",
    "fields": {
-    "Short Description": "An oceanfront promenade with piers, rides and summer live music.",
+    "Short Description": "The Myrtle Beach Boardwalk runs along the oceanfront in downtown Myrtle Beach, with beach access points along the way. It passes the Myrtle Beach SkyWheel and piers, including Pier 14, and public restrooms are across Ocean Boulevard from the SkyWheel. The downtown area covers about 40 blocks patrolled by Gold Cap Ambassadors, on-street parking is nearby, and the boardwalk's own site lists seasonal events.",
     "Name": "Myrtle Beach Boardwalk",
     "Price Level": "Free",
     "Area": "Central Myrtle",
     "Good to Know": [
      "Great for kids"
     ],
+    "Website": "https://myrtlebeachboardwalk.com",
     "Type": "Boardwalk",
     "Address": "Ocean Blvd, Myrtle Beach, SC",
     "Price": "Free to walk",

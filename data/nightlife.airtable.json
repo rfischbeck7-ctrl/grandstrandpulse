@@ -40,8 +40,9 @@
    "fields": {
     "Published": true,
     "Name": "The Pier at Garden City Beach",
-    "Short Description": "A no-frills pier party with karaoke and dancing to classic rock and more.",
+    "Short Description": "The Pier at Garden City extends 668 feet into the Atlantic at 110 S. Waccamaw Dr. The current pier was built in 1991 after Hurricane Hugo destroyed its predecessor; earlier piers were lost to Hurricane Hazel in 1954 and Hugo in 1989. Fishing, a cafe and two bars share the deck, and a bandstand and dance floor in the rain shelter at the end host live music, line dancing and community events.",
     "Area": "Surfside",
+    "Website": "https://pieratgardencity.com",
     "Type": "Live music",
     "Address": "110 S Waccamaw Dr, Garden City Beach, SC 29576"
    }
@@ -62,7 +63,7 @@
    "fields": {
     "Published": true,
     "Name": "Apache Pier",
-    "Short Description": "An oceanfront pier with summer bands playing hits from every decade. Family friendly.",
+    "Short Description": "Apache Pier, at 9700 Kings Rd., is a fishing pier with ocean views and a walkway for strolling. It has an on-site cafe and restaurant, Groupers At The Pier, and live performances on a covered center stage. It sits next to the Kingston Resorts properties and Black Drum Brewing.",
     "Area": "Central Myrtle",
     "Type": "Live music",
     "Address": "9700 Kings Rd, Myrtle Beach, SC 29572"

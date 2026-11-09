@@ -120,12 +120,13 @@
    "id": "recKJX9dutL6qZCLl",
    "createdTime": "2026-11-06T15:11:21.000Z",
    "fields": {
-    "Short Description": "Local history museum in Conway, a short drive inland.",
+    "Short Description": "The Horry County Museum in Conway tells the history, prehistory and natural history of Horry County through local exhibits and a custom-built freshwater aquarium of area rivers and lakes that was featured on Animal Planet's Tanked. It is housed in the renovated 1905 Burroughs School, listed on the National Register of Historic Places, which the museum moved into in 2014. Admission is free. The museum was founded in 1979, opened to the public in 1981, and also runs the L.W. Paul Living History Farm.",
     "Published": true,
     "Area": "Conway",
     "Type": "Museum",
     "Address": "805 Main St, Conway, SC 29526",
-    "Name": "Horry County Museum"
+    "Name": "Horry County Museum",
+    "Website": "https://horrycountymuseum.org/"
    }
   },
   {
