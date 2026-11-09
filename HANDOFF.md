@@ -30,6 +30,11 @@ Read CLAUDE.md first (full project notes). This file is only the state of play a
 
 - (Nov 7 later) Pass completed for every page that states hours/prices; the rest stay blank on purpose. Added a **Booking Link** URL field to Family, Thrill, Nature, Live Shows, Historic and Mini Golf tables (not yet Fishing, Nightlife, Breweries, Golf); the listing page shows a "Tickets & booking" button when set (`bookingLink` in build.mjs). Links are the business's own booking pages. Photos are deferred until AdSense approves (Ryan, Nov 7).
 
+## Nov 9: descriptions + AdSense check
+- AdSense > Sites still shows "Getting ready" (last updated Nov 5), no reasons given. Nothing to fix on our side but content; wait.
+- Search Console (Nov 9): 36 indexed, 175 "Crawled - currently not indexed" (Google systems, normal for a new site with many similar pages), 1 noindex (/saved/, intended), 1 redirect (http://www, intended). Report last updated Nov 5.
+- Expanded 10 more descriptions from official sites and added their Website fields: Pelicans (milb.com), Legends in Concert, Horry County Museum, MarshWalk, Myrtle Beach Boardwalk, Pier at Garden City, Apache Pier, Hollywood Wax, Pier 14, Grand 14. Remaining ~45 short ones have no readable official source (web search finds only third-party sites): leave them. Set-aside unpublished ones (Club Vybe, Master's Club, Crocodile Rocks, Hot Fish, Carolina Improv, Go Ape, Zipline, Rover, Funplex) were ignored.
+
 ## Gotchas learned
 - Built-in browser: parallel navigate calls on one tab collide; do them one at a time. AdSense pages load slowly (wait ~3s, then screenshot).
 - places_search returns ~1,200 tokens of review text per place: never copy ratings or reviews.
