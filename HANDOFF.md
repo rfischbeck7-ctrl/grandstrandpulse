@@ -2,6 +2,15 @@
 
 Read CLAUDE.md first (full project notes). This file is only the state of play at the end of a long session.
 
+## Nov 12 (latest): work moved from the Chat tab to the Claude Code tab
+- **Work from the Code tab now.** The repo is cloned at `C:\Users\rfisc\Desktop\CLAUDE AI WORK\myrtle beach compass\grandstrandpulse` (start the session in that folder). Ryan wants everything Claude creates kept inside `C:\Users\rfisc\Desktop\CLAUDE AI WORK`: no new folders on the Desktop or elsewhere.
+- Installed on this PC (winget): Git 2.56, Node 26.13, GitHub CLI 2.103. They may not be on PATH in an old terminal; full paths are `C:\Program Files\Git\cmd`, `C:\Program Files\nodejs`, `C:\Program Files\GitHub CLI`. `gh` is signed in as rfischbeck7-ctrl and `gh auth setup-git` was run, so `git push` works. Repo-local git identity is the GitHub no-reply email. Still not installed: Playwright, `rsvg-convert`/ImageMagick (needed for the art duplicate check and screenshots).
+- Pushed commit `123203a`: build scripts used `new URL(import.meta.url).pathname`, which broke on Windows; now `fileURLToPath`. `node scripts/build.mjs` builds 213 listings locally. Deploy succeeded (about 40 s; the 6-8 minute figure in CLAUDE.md is out of date).
+- PowerShell notes: no `&&`; git writes progress to stderr, so PowerShell shows a harmless "NativeCommandError".
+- The old Chat-tab conversation cannot be reached from the Code tab; this file and CLAUDE.md carry the state. An older copy of CLAUDE.md/HANDOFF.md sits one folder up in `CLAUDE AI WORK`; the repo copies are the current ones.
+- Nothing is in progress. Next picks (all optional, see below): the Waiting-on-Ryan items (consent-message logo, AdSense decision, phone-number rule question), photo-request email drafts (drafts only), then Place IDs / descriptions only if a new readable source turns up.
+- Token-saving mods (Claude Code plugins) were installed Nov 12 from `CLAUDE AI WORK\token-saving-mods`, loaded via `CLAUDE_CODE_PLUGIN_DIRS` in `C:\Users\rfisc\.claude\settings.json`; /mods shows On/Off switches. Don't move that folder.
+
 ## Where things stand
 - Site is live and deploys on every push (and nightly). ~213 listings, 11 categories. Last deploy triggered ~12:49 ET after the final push.
 - Art: illustrated scenes are the default (Ryan rejected the plain tiles). Cleaned up, animated, golf courses individualized, WonderWorks fixed. Closest duplicate pair 0.0495. Add a CUSTOM scene when adding a listing, check it on a labeled montage.
