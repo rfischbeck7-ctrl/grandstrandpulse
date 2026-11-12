@@ -1,3 +1,4 @@
+import { fileURLToPath } from "node:url";
 // Builds the static site into dist/ from data/*.airtable.json + site.config.mjs.
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -16,7 +17,7 @@ const placeIds = (() => {
   }
 })();
 
-const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
 const origin = `https://${config.domain}`;
 const artStamp = Date.now().toString(36);

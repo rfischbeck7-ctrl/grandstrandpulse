@@ -1,3 +1,4 @@
+import { fileURLToPath } from "node:url";
 // Pulls every category table from Airtable into data/<slug>.airtable.json
 // and downloads photos into public/photos/ (Airtable photo links expire after a few hours).
 //
@@ -17,7 +18,7 @@ if (!token || !baseId) {
   process.exit(1);
 }
 
-const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const photoDir = path.join(root, "public", "photos");
 await fs.mkdir(photoDir, { recursive: true });
 await fs.mkdir(path.join(root, "data"), { recursive: true });

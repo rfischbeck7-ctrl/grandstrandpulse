@@ -1,8 +1,9 @@
+import { fileURLToPath } from "node:url";
 // Tiny local preview server: npm run preview, then open http://localhost:8080
 import http from "node:http";
 import fs from "node:fs/promises";
 import path from "node:path";
-const dist = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..", "dist");
+const dist = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "dist");
 const types = { ".html": "text/html; charset=utf-8", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".xml": "application/xml", ".jpg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".txt": "text/plain" };
 const port = Number(process.env.PORT || 8080);
 http.createServer(async (req, res) => {
