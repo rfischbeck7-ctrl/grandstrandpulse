@@ -195,3 +195,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 - Search Console (data last updated 11/12): 228 indexed, 28 not indexed (21 discovered-not-indexed, 2 crawled-not-indexed, 2 redirect, 2 alternate canonical, 1 noindex). The 2 crawled-not-indexed are Duplin Winery and Comedy Cabana listing pages; both have full descriptions, hours/price, so it's Google's backlog, not thinness.
 - Live spot checks OK: Second Avenue Pier shows Google rating, pin map, Close by. Duplin, Comedy Cabana, Horry County Museum show map + Close by + social. Atalaya Castle has no map/Close by (no coordinates in data/geo.json) and no rating; fails gracefully.
 - `DRAFT_OWNER_EMAIL.md` holds a draft owner email. Not sent.
+
+## REMINDER: early Feb 2027, Google Cloud trial ends (~Feb 14, 2027)
+- Tell Ryan at the start of the first session in Feb 2027. Decide: (a) let it lapse and clear `placesApiKey` in `site.config.mjs` (ratings vanish, $0), or (b) Ryan upgrades himself, then we immediately set a Places API quota (and check "Spend cap enforcement" in Billing > Budgets & caps) and check current Places pricing/free tier first. Never click Upgrade for him.
+- A "$1 alert" budget (emails at 50/90/100%) was created Nov 16, 2026. It alerts only; it does not stop spending.
