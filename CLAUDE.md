@@ -13,6 +13,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
   `gh api -X POST repos/rfischbeck7-ctrl/grandstrandpulse/actions/workflows/deploy.yml/dispatches -f ref=main`
   Check with `gh run list --repo rfischbeck7-ctrl/grandstrandpulse`. A deploy takes ~6-8 minutes. The bot commits snapshots, so always `git pull --rebase origin main` before pushing.
   **Saving Airtable API calls (Nov 16):** each build's fetch uses ~11 of the 1,000 monthly calls. Put `[skip-fetch]` in the commit message of a code-only push (CSS, scripts, content JSON) to build from the committed snapshots without calling Airtable. Normal pushes, the nightly run and manual dispatch still fetch, so after Airtable edits do NOT use `[skip-fetch]`.
+  **Keepalive (Nov 16):** GitHub disables scheduled workflows after 60 days of repo inactivity. The nightly run now ends with a "Keep nightly schedule alive" step (`gh workflow enable deploy.yml`, `actions: write` permission, `continue-on-error`). Untested whether it fully resets the clock: if the nightly deploy ever stops, re-enable with `gh workflow enable deploy.yml --repo rfischbeck7-ctrl/grandstrandpulse` and look at the last nightly run's keepalive step.
 - Directions links fall back to a Google Maps search from name + address when the Google Maps Link field is empty.
 
 ## Design (cleaned up Nov 6, 2026)
