@@ -6,7 +6,7 @@
 
 ## What the numbers say (from data/*.airtable.json and a fresh local build)
 - 213 published listings. About 47 Short Descriptions are under 30 words (19 under 15). Worst by category: nightlife 15 of 20, live shows 8 of 22.
-- These have no readable official source, so they cannot be expanded honestly (see HANDOFF.md list: most nightlife, theaters, Black Pearl, Kaminski House, etc.).
+- These have no readable official source, so they cannot be expanded honestly (see the archived handoff at the bottom of CLAUDE.md: most nightlife, theaters, Black Pearl, Kaminski House, etc.).
 - Original, written pages are the strong part: guides (rainy-day, with-kids ~4,900 words incl. cards; indoor-mini-golf only ~460), area hubs (Central Myrtle ~5,400, Surfside ~700, Conway ~800), plan pages (~500 words each), About only ~380.
 - Every listing page repeats the same blocks ("Planning your visit", "Also in <area>", review buttons), so the site reads as a template with small facts swapped in.
 
