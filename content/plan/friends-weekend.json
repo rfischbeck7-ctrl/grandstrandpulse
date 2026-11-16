@@ -1,0 +1,56 @@
+{
+  "title": "A weekend with friends",
+  "summary": "Breweries, live music, a marsh-side evening and a morning on the water for a group of adults",
+  "description": "A Myrtle Beach weekend itinerary for a group of adult friends: craft breweries, live music, the MarshWalk, shag dancing in North Myrtle Beach and water activities, with tips for planning ahead and getting around.",
+  "order": 18,
+  "updated": "November 2026",
+  "places": ["Grand Strand Brewing Company", "New South Brewing", "Black Drum Brewing", "Tidal Creek Brewhouse", "Southern Hops Brewing Company", "Crooked Hammock Brewery", "Murrells Inlet MarshWalk", "Dead Dog Saloon", "Fat Harold's Beach Club", "Duck's Beach Club", "Tin Roof", "Comedy Cabana", "Shark Wake Park"],
+  "intro": [
+    "A group of friends does not need a plan like a family does, but a loose one helps. Myrtle Beach has plenty for adults who want good food, craft beer, live music and some time outdoors, and a Friday-to-Sunday weekend is enough to cover it without rushing.",
+    "This itinerary assumes a group of adults of legal drinking age and a mix of low-key and lively time. It leaves room to skip or swap anything, and it keeps a few daytime activities in so the weekend is not only evenings. Always check each venue's own site for current hours and events, because live music schedules and brewery hours change."
+  ],
+  "sections": [
+    {
+      "h": "Friday night: settle in with live music or comedy",
+      "p": [
+        "After a drive and check-in, pick one easy evening out. Tin Roof is a live-music bar and restaurant near the Boardwalk with two floors and a rooftop bar with ocean views, which makes it a convenient first night if you are staying in central Myrtle Beach. If your group would rather laugh than dance, Comedy Cabana runs ticketed stand-up shows in a club-style room on North Kings Highway. Look up the lineup before you go, and book ahead for weekends."
+      ]
+    },
+    {
+      "h": "Saturday morning: something active",
+      "p": [
+        "Start the day outdoors so the afternoon feels earned. Shark Wake Park, a cable wakeboard and water-ski park in North Myrtle Beach, takes beginners and needs no gear or experience, which suits a group with mixed skill levels. If you would prefer something calmer, a kayak or paddleboard trip in the marsh near Murrells Inlet is a good morning plan, and several rental and tour companies in that area are in our nature and eco guide.",
+        "A round of golf also works well as a group morning. See our golf weekend itinerary for ideas on choosing courses and booking tee times."
+      ]
+    },
+    {
+      "h": "Saturday afternoon: a brewery loop",
+      "p": [
+        "The Grand Strand has a growing craft beer scene, and the breweries are close enough to each other that you can visit two or three in an afternoon if you plan the route. Grand Strand Brewing Company pours a rotating lineup of beers in a renovated downtown building. New South Brewing is one of South Carolina's longer-running breweries and is known for its White Ale. Black Drum Brewing has a large tap list that includes beers from other South and North Carolina producers, and its building has ocean views. Tidal Creek Brewhouse in Market Common has a large backyard for games and relaxing. Farther north, Crooked Hammock Brewery has a big backyard with hammocks and yard games near Barefoot Landing, and in Murrells Inlet, Southern Hops pairs its house beers with a full kitchen.",
+        "Pick a designated driver, or use a ride service between stops. It is also worth eating something substantial before you start."
+      ]
+    },
+    {
+      "h": "Saturday evening: the MarshWalk",
+      "p": [
+        "The Murrells Inlet MarshWalk is a half-mile boardwalk beside a saltwater estuary, lined with waterfront restaurants and bars. It is a relaxed place to have dinner outside as the sun sets. Dead Dog Saloon is the live-music anchor of the MarshWalk, with a covered patio over the inlet and a rotating roster of bands. It is under new management, so check the current lineup before you plan around it. The MarshWalk is also a short drive from Myrtle Beach, so decide ahead of time who is driving back."
+      ]
+    },
+    {
+      "h": "Sunday: shag on Ocean Drive",
+      "p": [
+        "North Myrtle Beach's Ocean Drive district is the home of the Carolina shag, a laid-back partner dance that goes with beach music. Fat Harold's Beach Club bills itself as the home of the shag and offers lessons, and Duck's Beach Club on Main Street is a longtime local favorite. Even if nobody in your group has danced before, an afternoon here is a good way to end the weekend. Check each venue's schedule, because hours and lesson times vary by season."
+      ]
+    },
+    {
+      "h": "Planning tips",
+      "list": [
+        "Book anything that takes reservations, such as tours, tee times and comedy shows, a week or more ahead for summer weekends.",
+        "Choose where to stay by the evening you care about most. Central Myrtle Beach is convenient for the Boardwalk, while North Myrtle Beach puts you close to Ocean Drive and the breweries at Barefoot Landing.",
+        "Traffic on Highway 17 and Kings Highway slows down on summer Fridays and Saturdays. Allow extra time between stops.",
+        "Everything here assumes guests of legal drinking age. Check age requirements and dress codes on each venue's site.",
+        "See our getting around and first-time visitor tips pages for parking and traffic notes."
+      ]
+    }
+  ]
+}

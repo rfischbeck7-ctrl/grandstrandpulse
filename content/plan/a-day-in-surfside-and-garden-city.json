@@ -1,0 +1,55 @@
+{
+  "title": "A day in Surfside Beach and Garden City",
+  "summary": "Two piers, two small-town beaches, mini golf and a state park between Myrtle Beach and Murrells Inlet",
+  "description": "A one-day itinerary for Surfside Beach and Garden City Beach, SC: both piers, quiet family beaches, Myrtle Beach State Park, mini golf and a sunset dinner, with practical tips.",
+  "order": 19,
+  "updated": "November 2026",
+  "places": ["Surfside Beach", "Surfside Beach Pier", "Myrtle Beach State Park", "Garden City Beach", "The Pier at Garden City Beach", "Gilligan's Island Funland", "Mulligan's Lagoon Golf and Arcade", "Prestwick Country Club"],
+  "intro": [
+    "Between the high-rises of central Myrtle Beach and the marsh villages of Murrells Inlet lie two smaller beach towns with a different personality. Surfside Beach calls itself the Family Beach, and Garden City is a laid-back spot where the inlet meets the ocean. Both are residential and relaxed, both have a pier, and both are easy to reach from the center of Myrtle Beach.",
+    "A day here suits families with children, anyone who prefers smaller crowds, and visitors who like to fish or watch the water more than they like attractions. It also works as a half-day if you are splitting your time with other places."
+  ],
+  "sections": [
+    {
+      "h": "Morning: Surfside Beach and its pier",
+      "p": [
+        "Surfside Beach has been known as the Family Beach since the town was incorporated in 1964, and it keeps a small-town feel. The beach is cleaned daily and supervised by lifeguards, and access points have showers, restrooms and accessible ramps. In 2016 the town was named the first autism-friendly travel destination, which tells you something about how it approaches visitors.",
+        "The town-owned Surfside Beach Pier reaches about 814 feet into the Atlantic and is known as the Family Pier. It is free to walk, has an elevator for accessibility and has places to eat. If you want to fish, bait, tackle and rod rentals are sold at the pier shop, and no separate state fishing license is needed on the pier. Nearby, the Pier Village adds shops and food within walking distance."
+      ]
+    },
+    {
+      "h": "Late morning: Myrtle Beach State Park",
+      "p": [
+        "Myrtle Beach State Park is a short drive north and gives you a very different beach: a mile of undeveloped sand, a fishing pier, a nature center and short trails through maritime forest. It has been a beach park since 1935. The park also holds a campground and a few cabins built by the Civilian Conservation Corps. Check the park's own website for current hours, trail notices and any seasonal closures, because parts of the nature trail are closed at certain times of year."
+      ]
+    },
+    {
+      "h": "Afternoon: mini golf",
+      "p": [
+        "Surfside has a concentration of good mini golf. Gilligan's Island Funland is a tribute to the classic TV show, with Gilligan's hut, the Skipper's helm and Mary Ann's coconut grove, plus a snack bar and easy parking. Mulligan's Lagoon Golf and Arcade is one of the newer spots, with 36 tropical, surf-themed holes with tiki torches and shell-studded obstacles, and an arcade and pizza pub inside. Either works as a break from the sun in the middle of the day."
+      ]
+    },
+    {
+      "h": "Late afternoon: Garden City Beach",
+      "p": [
+        "Garden City is a short drive south. It is a calm family beach where the inlet meets the ocean, good for fishing, crabbing, surfing and other watersports, and the pace is slower than in central Myrtle Beach. The center of the area is The Pier at Garden City, which extends about 668 feet into the ocean. The current pier was built in 1991 after Hurricane Hugo destroyed its predecessor, and earlier piers were lost to Hurricane Hazel in 1954 and to Hugo in 1989, so it is an interesting example of how these structures are rebuilt after storms. It has a cafe and bars, and a bandstand and dance floor at the end host live music and community events. Walking onto the pier is free.",
+        "Atlantic Avenue near the pier has arcades, beach shops and casual places to eat. Evenings get livelier near the pier, so it is a good place to be as the sun goes down."
+      ]
+    },
+    {
+      "h": "If you play golf",
+      "p": [
+        "Prestwick Country Club is a Pete and P.B. Dye design in Surfside with a private-club feel but public play. It plays over 7,000 yards from the back tees with six sets of tees, so it suits a range of players. See our golf weekend itinerary for other courses along the Strand."
+      ]
+    },
+    {
+      "h": "Practical notes",
+      "list": [
+        "Check beach rules, parking, and any seasonal restrictions with each town. Our beach rules and safety page covers the basics.",
+        "Lifeguard coverage is seasonal and the hours differ by beach. Do not assume a guard is on duty outside the main season.",
+        "Piers can close for repairs or after storms. Look up current status before you drive out.",
+        "For a longer plan nearby, see our Murrells Inlet itinerary, which picks up a few minutes south."
+      ]
+    }
+  ]
+}
