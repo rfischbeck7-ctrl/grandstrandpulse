@@ -629,10 +629,32 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
 <ul class="hub-list"><li><a href="/plan/when-to-visit/"><strong>When to visit</strong><span>Seasons, crowds and what's open</span></a></li><li><a href="/plan/getting-around/"><strong>Getting around and parking</strong><span>Roads, buses and beach parking</span></a></li>${planPages.map((p) => `<li><a href="/plan/${p.slug}/"><strong>${esc(p.title)}</strong><span>${esc(p.summary || "")}</span></a></li>`).join("")}</ul>`)
   );
   for (const p of planPages) {
+    const rows = (p.places || []).map((n) => allItems.find((r) => r.i.name === n)).filter(Boolean);
+    const art = rows.slice(0, 3).map(({ c, i }) => `<img src="${i.photo ? esc(i.photo.src) : `/art/${c.slug}/${i.slug}.svg?v=${artStamp}`}" alt="" width="400" height="240" loading="lazy">`).join("");
+    const hero = `<section class="cat-head plan-head">
+  <div class="cat-head-text">
+    <p class="crumbs"><a href="/plan/">Plan your trip</a></p>
+    <h1>${esc(p.title)}</h1>
+    <p>${esc(p.summary || "")}</p>
+  </div>
+  ${art ? `<div class="plan-art" aria-hidden="true">${art}</div>` : ""}
+</section>`;
+    const inner = `${(p.intro || []).map((t) => `<p>${txt(t, (p._used ||= new Set()))}</p>`).join("")}
+${sectionsHtml(p.sections, p._used)}${placesHtml(p.places)}${relatedPlanHtml(p)}${p.updated ? `<p class="result-count">Last reviewed ${esc(p.updated)}.</p>` : ""}`;
     await write(
       `plan/${p.slug}/index.html`,
-      simplePage(p.title, p.description || p.summary || p.title, `/plan/${p.slug}/`,
-        `<p class="crumbs"><a href="/plan/">Plan your trip</a></p><h1>${esc(p.title)}</h1>${(p.intro || []).map((t) => `<p>${txt(t, (p._used ||= new Set()))}</p>`).join("")}\n${sectionsHtml(p.sections, p._used)}${placesHtml(p.places)}${relatedPlanHtml(p)}${p.updated ? `<p class="result-count">Last reviewed ${esc(p.updated)}.</p>` : ""}`)
+      layout({
+        title: `${p.title} | ${config.siteName}`,
+        description: p.description || p.summary || p.title,
+        canonical: `/plan/${p.slug}/`,
+        active: "plan",
+        hero,
+        heroClass: "hero-cat",
+        theme: (rows[0] && rows[0].c.theme) || null,
+        body: `<section class="page-text">
+${inner}
+</section>`,
+      })
     );
   }
   await write(

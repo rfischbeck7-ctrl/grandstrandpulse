@@ -482,3 +482,13 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 
 .search-results li { padding-right: 3.6rem; }
 .search-results .fav { top: .7rem; }
+
+/* ---------- plan page banner ---------- */
+.plan-head .crumbs a { color: rgba(255, 255, 255, .85); }
+.plan-art { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; align-items: center; }
+.plan-art img { width: 100%; height: auto; aspect-ratio: 5 / 3; object-fit: cover; border-radius: 12px; border: 3px solid rgba(255, 255, 255, .85); box-shadow: 0 12px 28px rgba(0, 0, 0, .28); background: #fff; }
+.plan-art img:nth-child(1) { transform: rotate(-2.5deg); }
+.plan-art img:nth-child(2) { transform: translateY(.5rem) rotate(1.5deg); }
+.plan-art img:nth-child(3) { transform: rotate(-1deg); }
+@media (min-width: 880px) { .plan-head { grid-template-columns: 5fr 6fr; } }
+@media (max-width: 520px) { .plan-art { gap: .4rem; } .plan-art img { border-width: 2px; } }

@@ -34,6 +34,38 @@
         "Shoulder seasons, spring and fall, are the most comfortable for walking and the best value.",
         "Check each listing for hours. Many smaller places keep limited weekday and winter hours."
       ]
+    },
+    {
+      "h": "Where to stay for a couples trip",
+      "p": [
+        "Pick a base that matches the pace you want. Murrells Inlet and Pawleys Island are quieter and put you near the marsh, gardens and seafood. North Myrtle Beach is calmer than central Myrtle Beach and has a long beach and good access to Little River. Central Myrtle Beach has the most choice and the most crowds. If you are not sure, start with the quieter base and drive in for an evening."
+      ]
+    },
+    {
+      "h": "Make one evening special",
+      "p": [
+        "Choose a single evening to dress up a little. A sunset dolphin cruise, a dinner show or a table with a marsh view makes the weekend feel planned. Book it early, especially in summer and on weekends, and let the other evenings be simple."
+      ]
+    },
+    {
+      "h": "Rainy-day swaps",
+      "p": [
+        "If the weather turns, swap an outdoor plan for a museum, a tasting room or a theater show. Our rainy-weekend plan lists indoor options in order of the day, and our nightlife and breweries pages list places to relax in the evening."
+      ]
+    },
+    {
+      "h": "Season notes",
+      "p": [
+        "Spring and fall are the best seasons for this trip: comfortable temperatures, fewer crowds and open attractions. Summer is hot and busy, and winter is quiet but limited. Ask about hours before you plan a long drive on any off-season day."
+      ]
     }
+  ],
+  "places": [
+    "Murrells Inlet MarshWalk",
+    "Brookgreen Gardens",
+    "Carolina Vineyards Winery",
+    "Georgetown Harborwalk",
+    "Myrtle Beach SkyWheel",
+    "Crazy Sister Dolphin Cruises"
   ]
 }
