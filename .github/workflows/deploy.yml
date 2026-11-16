@@ -32,13 +32,17 @@ jobs:
         with:
           node-version: 20
 
+      # Airtable's free plan allows about 1,000 API calls a month and each fetch uses ~11.
+      # A code-only push can opt out by putting [skip-fetch] in its commit message; the site
+      # then builds from the data snapshots already saved in the repo. Everything else
+      # (normal pushes, the nightly run, the manual button) still pulls fresh Airtable data.
       - name: Pull latest listings from Airtable
-        if: ${{ env.AIRTABLE_TOKEN != '' && env.AIRTABLE_BASE_ID != '' }}
+        if: ${{ env.AIRTABLE_TOKEN != '' && env.AIRTABLE_BASE_ID != '' && !(github.event_name == 'push' && contains(github.event.head_commit.message, '[skip-fetch]')) }}
         run: npm run fetch
 
       # Keep a copy of the latest data in the repo, so the site can still build if Airtable is down.
       - name: Save data snapshot
-        if: ${{ env.AIRTABLE_TOKEN != '' && env.AIRTABLE_BASE_ID != '' }}
+        if: ${{ env.AIRTABLE_TOKEN != '' && env.AIRTABLE_BASE_ID != '' && !(github.event_name == 'push' && contains(github.event.head_commit.message, '[skip-fetch]')) }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
