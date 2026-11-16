@@ -52,6 +52,7 @@ const milesBetween = (a, b) => {
   const h = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(dLon / 2) ** 2;
   return 2 * R * Math.asin(Math.sqrt(h));
 };
+const LEAFLET_TAGS = `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script><script src="/assets/map.js" defer></script>`;
 const SOCIAL_LABELS = { facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", youtube: "YouTube" };
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -258,7 +259,7 @@ ${body}
   <p>Details come from each business's own website or an official visitor guide, and anything we couldn't confirm is left out. Hours and prices change, so call ahead before you drive over.</p>
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
   <nav class="foot-links" aria-label="More">
-    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/conditions/">Tides &amp; forecast</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/editorial-policy/">How we research</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a> <a href="/terms/">Terms</a>
+    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/map/">Map</a> <a href="/conditions/">Tides &amp; forecast</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/editorial-policy/">How we research</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a> <a href="/terms/">Terms</a>
   </nav>
   <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
@@ -813,6 +814,8 @@ ${mail ? `<p><a class="btn btn-go" href="mailto:${mail}?subject=${encodeURICompo
 <p>We use Cloudflare Web Analytics to count visits and see which pages are popular. It does not use cookies, does not track you across sites and does not build advertising profiles. Learn more at <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a>.</p>
 <h2>Fonts and third-party links</h2>
 <p>Pages load fonts from Google Fonts, which means your browser contacts Google when a page loads. Links to business websites, maps, phone numbers and the Facebook, Instagram, TikTok and YouTube pages some listings link to leave this site and follow those businesses' and services' own privacy practices. We do not embed social media widgets or tracking pixels.</p>
+<h2>Maps</h2>
+<p>Maps on listing pages and the <a href="/map/">map page</a> use the Leaflet library (loaded from cdnjs) and map tiles from OpenStreetMap. Loading a map sends your IP address and browser details to those services, as any image or script request does. Map pages are the only place this happens, and no map is loaded elsewhere. Tide, water and weather data on the <a href="/conditions/">conditions page</a> is requested from NOAA and the National Weather Service in the same way.</p>
 <h2>Saved places</h2>
 <p>The heart buttons store your saved places in your own browser (local storage on your device). That list is never sent to us.</p>
 <h2>Email</h2>
@@ -820,6 +823,23 @@ ${mail ? `<p><a class="btn btn-go" href="mailto:${mail}?subject=${encodeURICompo
 <h2>Children</h2>
 <p>This site is a guide for families and isn't directed at collecting information from children.</p>`)
   );
+  {
+    const pts = allItems
+      .filter(({ c, i }) => c.slug !== "beaches" && geo[i.name])
+      .map(({ c, i }) => ({ n: i.name, u: `/${c.slug}/${i.slug}/`, c: c.slug, col: c.theme.a, t: `${c.title}${i.area ? " · " + i.area : ""}`, lat: geo[i.name].lat, lon: geo[i.name].lon }));
+    await write("map-data.json", JSON.stringify(pts));
+    await write(
+      "map/index.html",
+      simplePage("Map of things to do on the Grand Strand", `Map of ${pts.length} things to do along the Grand Strand, filterable by category, with links to each listing.`, "/map/",
+        `<h1>Map of things to do</h1>
+<p>${pts.length} places between Little River and Georgetown. Pins are placed from each street address, so treat them as approximate and use the Get directions button on a listing for navigation. Tap a pin for the name and a link.</p>
+<p><label>Show: <select id="map-cat"><option value="">All categories</option>${categories.filter((c) => c.slug !== "beaches").map((c) => `<option value="${c.slug}">${esc(c.title)}</option>`).join("")}</select></label> <span id="map-count" class="result-count"></span></p>
+<div id="all-map" class="osm-map osm-map-big" role="img" aria-label="Map of all listed places"></div>
+<p class="foot-small">Map data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>. Not every place has a pin yet.</p>
+<noscript><p>The map needs JavaScript. Browse by <a href="/areas/">area</a> instead.</p></noscript>
+${LEAFLET_TAGS}`)
+    );
+  }
   await write(
     "conditions/index.html",
     simplePage("Beach conditions: tides and forecast", "Live tide times and the National Weather Service forecast for Myrtle Beach, SC, with links to rip current and surf zone forecasts.", "/conditions/",
@@ -1145,6 +1165,9 @@ async function buildDetail(cat, item) {
   </div>
   <aside class="detail-map" aria-label="Where it is on the Grand Strand">
     ${coastline({ highlight: item.area, linkBase: "/areas/", id: "coast-detail" }).replace(/href="\/areas\/\?area=([a-z0-9-]+)"/g, 'href="/areas/$1/"')}
+    ${geo[item.name] ? `<div class="osm-map" role="img" aria-label="Map showing the location of ${esc(item.name)}" data-lat="${geo[item.name].lat}" data-lon="${geo[item.name].lon}" data-name="${esc(item.name)}"></div>
+    <p class="foot-small">Approximate pin from the street address. <a href="/map/">See all places on one map</a>.</p>
+    ${LEAFLET_TAGS}` : ""}
   </aside>
   ${nearbyHtml}
   ${aroundHtml}
@@ -1209,7 +1232,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/editorial-policy/", "/contact/", "/add-your-business/", "/privacy/", "/terms/", "/conditions/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/editorial-policy/", "/contact/", "/add-your-business/", "/privacy/", "/terms/", "/conditions/", "/map/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
