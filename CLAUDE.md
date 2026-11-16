@@ -190,3 +190,8 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 ## Nov 16 (night): Google Places key live
 - Ryan's Google Cloud project "My First Project" (free trial, $300 credit, ~90 days from Nov 16, 2026; billing is NOT upgraded, so nothing can be charged; do NOT click Upgrade). Places API (New) enabled. Key "Maps Platform API Key" is restricted to website `https://myrtlebeachcompass.com/*` and Places API (New) only, and is in `site.config.mjs` (`placesApiKey`; a referrer-restricted browser key is meant to be public). 192 listings carry the rating slot.
 - Quota editing is greyed out on trial accounts, so there is no daily cap; the trial credit is the cap. When the trial ends the API stops and ratings quietly disappear unless Ryan upgrades; clear `placesApiKey` then to stop loading the script. Re-check at https://console.cloud.google.com/apis/credentials?project=project-bb890ed3-beec-4464-b34
+
+## Nov 16 check-in (Search Console + spot checks)
+- Search Console (data last updated 11/12): 228 indexed, 28 not indexed (21 discovered-not-indexed, 2 crawled-not-indexed, 2 redirect, 2 alternate canonical, 1 noindex). The 2 crawled-not-indexed are Duplin Winery and Comedy Cabana listing pages; both have full descriptions, hours/price, so it's Google's backlog, not thinness.
+- Live spot checks OK: Second Avenue Pier shows Google rating, pin map, Close by. Duplin, Comedy Cabana, Horry County Museum show map + Close by + social. Atalaya Castle has no map/Close by (no coordinates in data/geo.json) and no rating; fails gracefully.
+- `DRAFT_OWNER_EMAIL.md` holds a draft owner email. Not sent.
