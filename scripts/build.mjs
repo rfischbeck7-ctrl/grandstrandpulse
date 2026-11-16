@@ -38,6 +38,20 @@ const socialData = (() => {
   }
   return out;
 })();
+// Coordinates from OpenStreetMap's Nominatim geocoder (data/geo.json, made by scripts/geocode.mjs). Credit: OpenStreetMap contributors (ODbL).
+const geo = (() => {
+  try {
+    return JSON.parse(readFileSync(new URL("../data/geo.json", import.meta.url), "utf8"));
+  } catch {
+    return {};
+  }
+})();
+const milesBetween = (a, b) => {
+  const R = 3958.8, rad = (d) => (d * Math.PI) / 180;
+  const dLat = rad(b.lat - a.lat), dLon = rad(b.lon - a.lon);
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+};
 const SOCIAL_LABELS = { facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", youtube: "YouTube" };
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -244,7 +258,7 @@ ${body}
   <p>Details come from each business's own website or an official visitor guide, and anything we couldn't confirm is left out. Hours and prices change, so call ahead before you drive over.</p>
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
   <nav class="foot-links" aria-label="More">
-    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/editorial-policy/">How we research</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a> <a href="/terms/">Terms</a>
+    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/conditions/">Tides &amp; forecast</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/editorial-policy/">How we research</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a> <a href="/terms/">Terms</a>
   </nav>
   <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
@@ -674,7 +688,7 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
     simplePage("Plan your trip", "Planning pages for visiting the Grand Strand: when to go, how to get around and where to park.", "/plan/",
       `<h1>Plan your trip</h1>
 <p>Practical notes for visiting Myrtle Beach and the Grand Strand, drawn from official city and visitor-bureau pages.</p>
-<ul class="hub-list"><li><a href="/plan/when-to-visit/"><strong>When to visit</strong><span>Seasons, crowds and what's open</span></a></li><li><a href="/plan/getting-around/"><strong>Getting around and parking</strong><span>Roads, buses and beach parking</span></a></li>${planPages.map((p) => `<li><a href="/plan/${p.slug}/"><strong>${esc(p.title)}</strong><span>${esc(p.summary || "")}</span></a></li>`).join("")}</ul>`)
+<ul class="hub-list"><li><a href="/conditions/"><strong>Tides and forecast</strong><span>Live tide times, water temperature and the weather forecast</span></a></li><li><a href="/plan/when-to-visit/"><strong>When to visit</strong><span>Seasons, crowds and what's open</span></a></li><li><a href="/plan/getting-around/"><strong>Getting around and parking</strong><span>Roads, buses and beach parking</span></a></li>${planPages.map((p) => `<li><a href="/plan/${p.slug}/"><strong>${esc(p.title)}</strong><span>${esc(p.summary || "")}</span></a></li>`).join("")}</ul>`)
   );
   for (const p of planPages) {
     const rows = (p.places || []).map((n) => allItems.find((r) => r.i.name === n)).filter(Boolean);
@@ -760,6 +774,8 @@ ${inner}
 <p>The site rebuilds every night from our listing database. We recheck listings in batches, starting with places whose websites stop working, places that have been reported as closed or sold, and seasonal businesses. A status note is kept internally for each batch. Hours and prices change often, so treat what you read here as a starting point and confirm with the business.</p>
 <h2>Independence</h2>
 <p>Listing is free and nobody pays to be included or to be described more favorably. Ads, when shown, are served by Google and do not change what we list.</p>
+<h2>Open data we use</h2>
+<p>Distances between places and map coordinates come from address data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>, available under the Open Database License. Tide times, water temperature and weather on the <a href="/conditions/">tides and forecast page</a> come live from <a href="https://tidesandcurrents.noaa.gov/" rel="noopener">NOAA</a> and the <a href="https://www.weather.gov/" rel="noopener">National Weather Service</a>. We do not copy reviews, ratings or photos from review sites, and we do not scrape other directories.</p>
 <h2>Corrections</h2>
 <p>If you find a mistake or a place has closed, <a href="/contact/">tell us</a> and we will check and fix it. Owners can also use <a href="/add-your-business/">Add or fix a listing</a>.</p>`)
   );
@@ -803,6 +819,29 @@ ${mail ? `<p><a class="btn btn-go" href="mailto:${mail}?subject=${encodeURICompo
 <p>${mail ? `If you email <a href="mailto:${mail}">${mail}</a>, we use your message and address only to reply and to update listings.` : "If you email us, we use your message and address only to reply and to update listings."}</p>
 <h2>Children</h2>
 <p>This site is a guide for families and isn't directed at collecting information from children.</p>`)
+  );
+  await write(
+    "conditions/index.html",
+    simplePage("Beach conditions: tides and forecast", "Live tide times and the National Weather Service forecast for Myrtle Beach, SC, with links to rip current and surf zone forecasts.", "/conditions/",
+      `<h1>Beach conditions: tides and forecast</h1>
+<p>Live tide times and the weather forecast for Myrtle Beach, pulled from NOAA and the National Weather Service when you open this page. Tides matter on the Grand Strand: low tide leaves a wide, firm beach for walking and shelling, high tide pushes people up the sand, and the marsh and inlet trips around Murrells Inlet and Little River depend on the water level.</p>
+<section class="conditions" id="conditions" data-lat="33.689" data-lon="-78.887" data-station="8661070">
+  <div class="cond-grid">
+    <div class="cond-card"><h2>Tides today and tomorrow</h2><div id="cond-tides" class="cond-body">Loading tide times&hellip;</div><p class="cond-src">Predictions for NOAA station 8661070, Springmaid Pier. Times are local.</p></div>
+    <div class="cond-card"><h2>Water temperature</h2><div id="cond-water" class="cond-body">Loading&hellip;</div><p class="cond-src">Latest reading at Springmaid Pier, if the station is reporting.</p></div>
+    <div class="cond-card cond-wide"><h2>Forecast</h2><div id="cond-forecast" class="cond-body">Loading forecast&hellip;</div><p class="cond-src">National Weather Service, Wilmington NC forecast office.</p></div>
+  </div>
+  <noscript><p>This page needs JavaScript to load live data. You can see the same information at <a href="https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=8661070" rel="noopener">NOAA tide predictions</a> and <a href="https://forecast.weather.gov/MapClick.php?lat=33.689&amp;lon=-78.887" rel="noopener">the National Weather Service forecast</a>.</p></noscript>
+</section>
+<h2>Before you get in the water</h2>
+<ul>
+<li>Check the <a href="https://www.weather.gov/ilm/" rel="noopener">National Weather Service Wilmington office</a> for the surf zone forecast and rip current risk. Rip currents are the main danger for swimmers on this coast, even on sunny days.</li>
+<li>Look for the lifeguard flags where you swim, and ask a lifeguard about the day's conditions. Lifeguard coverage is seasonal and differs by beach.</li>
+<li>Leave the water at the first sound of thunder. Lightning risk is highest on summer afternoons.</li>
+<li>Our <a href="/plan/beach-rules-and-safety/">beach rules and safety</a> page covers flags, rip currents and local rules, and <a href="/plan/hurricane-season-basics/">hurricane season basics</a> covers storm planning.</li>
+</ul>
+<p class="foot-small">Data: <a href="https://tidesandcurrents.noaa.gov/" rel="noopener">NOAA Tides &amp; Currents</a> and <a href="https://www.weather.gov/" rel="noopener">National Weather Service</a>, both public-domain U.S. government sources. Predictions and forecasts can change and are not a substitute for posted warnings or lifeguard instructions.</p>
+<script src="/assets/conditions.js" defer></script>`)
   );
   await write(
     "terms/index.html",
@@ -1037,15 +1076,31 @@ async function buildDetail(cat, item) {
   const hashN = [...item.name].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
   const others = allItems.filter((r) => r.c.slug !== cat.slug && r.i.area === item.area);
   const around = others.length ? Array.from({ length: Math.min(4, others.length) }, (_, k) => others[(hashN + k * 7) % others.length]).filter((r, k, a) => a.findIndex((q) => q.i.id === r.i.id) === k) : [];
-  const aroundHtml = around.length
-    ? `<section class="nearby"><h2>Also in ${esc(areaLabel(item.area))}</h2><ul>${around.map((r) => `<li><a href="/${r.c.slug}/${r.i.slug}/">${esc(r.i.name)}</a><span>${esc(r.i.subtitle || r.c.title)}</span></li>`).join("")}</ul><p class="foot-small"><a href="/areas/${slugify(item.area)}/">All of ${esc(areaLabel(item.area))}</a></p></section>`
+  const here = geo[item.name];
+  const close = here
+    ? allItems
+        .filter((r) => r.i.id !== item.id && r.i.name !== item.name && geo[r.i.name])
+        .map((r) => ({ r, d: milesBetween(here, geo[r.i.name]) }))
+        .filter((x) => x.d > 0.02 && x.d <= 6)
+        .sort((a, b) => a.d - b.d)
+        .filter((x, k, arr) => arr.findIndex((y) => y.r.i.name === x.r.i.name) === k)
+        .slice(0, 5)
+    : [];
+  const closeHtml = close.length >= 3
+    ? `<section class="nearby"><h2>Close by</h2><ul>${close.map(({ r, d }) => `<li><a href="/${r.c.slug}/${r.i.slug}/">${esc(r.i.name)}</a><span>${d < 0.1 ? "steps away" : d.toFixed(1) + " mi"} &middot; ${esc(r.i.subtitle || r.c.title)}</span></li>`).join("")}</ul><p class="foot-small">Straight-line distances from address data &copy; <a href="https://www.openstreetmap.org/copyright" rel="noopener">OpenStreetMap contributors</a>. Driving time is longer; check directions.</p></section>`
     : "";
+  const aroundHtml = closeHtml || (around.length
+    ? `<section class="nearby"><h2>Also in ${esc(areaLabel(item.area))}</h2><ul>${around.map((r) => `<li><a href="/${r.c.slug}/${r.i.slug}/">${esc(r.i.name)}</a><span>${esc(r.i.subtitle || r.c.title)}</span></li>`).join("")}</ul><p class="foot-small"><a href="/areas/${slugify(item.area)}/">All of ${esc(areaLabel(item.area))}</a></p></section>`
+    : "");
   const social = cat.slug === "beaches" ? {} : socialData[item.name] || {};
   const socialHtml = Object.keys(social).length
     ? `<p class="follow"><span>Follow ${esc(item.name)}:</span> ${Object.entries(social)
         .filter(([net]) => SOCIAL_LABELS[net])
         .map(([net, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener nofollow">${SOCIAL_LABELS[net]}</a>`)
         .join("")}</p>`
+    : "";
+  const conditionsHtml = cat.slug === "beaches" || /pier|cruise|dolphin|kayak|fishing|watersports|paddle/i.test(`${item.name} ${item.subtitle}`)
+    ? `<p class="cond-link"><a href="/conditions/">Check today's tides and forecast</a> before you go.</p>`
     : "";
   const featuredIn = plansByPlace.get(item.name) || [];
   const featuredHtml = featuredIn.length
@@ -1081,6 +1136,7 @@ async function buildDetail(cat, item) {
       ${facts}
     </dl>
     ${socialHtml}
+    ${conditionsHtml}
     ${hoursBlock}
     ${featuredHtml}
     ${visitHtml}
@@ -1119,6 +1175,7 @@ async function buildDetail(cat, item) {
   if (item.priceLevel === "Free") ld.isAccessibleForFree = true;
   else ld.image = `${origin}/art/${cat.slug}/${item.slug}.svg`;
   if (item.maps) ld.hasMap = item.maps;
+  if (geo[item.name]) ld.geo = { "@type": "GeoCoordinates", latitude: geo[item.name].lat, longitude: geo[item.name].lon };
   ld.containedInPlace = { "@type": "Place", name: item.area ? `${item.area}, SC` : "Grand Strand, SC" };
   const crumbs = {
     "@context": "https://schema.org",
@@ -1152,7 +1209,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/editorial-policy/", "/contact/", "/add-your-business/", "/privacy/", "/terms/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/editorial-policy/", "/contact/", "/add-your-business/", "/privacy/", "/terms/", "/conditions/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls

@@ -1,0 +1,842 @@
+{
+ "Litchfield Beach": {
+  "lat": 33.47508,
+  "lon": -79.11614,
+  "precise": true
+ },
+ "Myrtle Beach": {
+  "lat": 33.68422,
+  "lon": -78.88733,
+  "precise": false
+ },
+ "Garden City Beach": {
+  "lat": 33.58639,
+  "lon": -79.01206,
+  "precise": false
+ },
+ "Surfside Beach": {
+  "lat": 33.606,
+  "lon": -78.97309,
+  "precise": false
+ },
+ "North Myrtle Beach & Cherry Grove": {
+  "lat": 33.80738,
+  "lon": -78.70096,
+  "precise": false
+ },
+ "Pawleys Island": {
+  "lat": 33.42935,
+  "lon": -79.12159,
+  "precise": false
+ },
+ "Duplin Winery": {
+  "lat": 33.79866,
+  "lon": -78.73969,
+  "precise": false
+ },
+ "New South Brewing": {
+  "lat": 33.69765,
+  "lon": -78.88775,
+  "precise": false
+ },
+ "Crooked Hammock Brewery": {
+  "lat": 33.79852,
+  "lon": -78.74017,
+  "precise": false
+ },
+ "Bin 2004": {
+  "lat": 33.81074,
+  "lon": -78.70865,
+  "precise": true
+ },
+ "Yee-Haw Brewing at Ole Smoky Distillery": {
+  "lat": 33.71402,
+  "lon": -78.87945,
+  "precise": false
+ },
+ "Winyah Bay Brewing Company": {
+  "lat": 33.36777,
+  "lon": -79.28513,
+  "precise": false
+ },
+ "Grand Strand Brewing Company": {
+  "lat": 33.69377,
+  "lon": -78.88321,
+  "precise": false
+ },
+ "The Tasting Room on 9th": {
+  "lat": 33.69393,
+  "lon": -78.88246,
+  "precise": false
+ },
+ "Black Drum Brewing": {
+  "lat": 33.76738,
+  "lon": -78.77782,
+  "precise": true
+ },
+ "Tidal Creek Brewhouse": {
+  "lat": 33.66909,
+  "lon": -78.93741,
+  "precise": true
+ },
+ "Carolina Vineyards Winery": {
+  "lat": 33.79862,
+  "lon": -78.73981,
+  "precise": false
+ },
+ "Hollywood Wax Museum": {
+  "lat": 33.71726,
+  "lon": -78.89127,
+  "precise": true
+ },
+ "Ripley's Mirror Maze": {
+  "lat": 33.69292,
+  "lon": -78.87905,
+  "precise": false
+ },
+ "Escapology Myrtle Beach": {
+  "lat": 33.68879,
+  "lon": -78.88919,
+  "precise": false
+ },
+ "Myrtle Beach Pinball Museum": {
+  "lat": 33.71067,
+  "lon": -78.86955,
+  "precise": true
+ },
+ "Conway Glass": {
+  "lat": 33.84713,
+  "lon": -79.05001,
+  "precise": false
+ },
+ "EdVenture Myrtle Beach": {
+  "lat": 33.66917,
+  "lon": -78.93951,
+  "precise": false
+ },
+ "Myrtle Beach Room Escape": {
+  "lat": 33.69287,
+  "lon": -78.8807,
+  "precise": false
+ },
+ "The Escape Game Myrtle Beach": {
+  "lat": 33.71553,
+  "lon": -78.88561,
+  "precise": false
+ },
+ "Ripley's Aquarium": {
+  "lat": 33.71706,
+  "lon": -78.87655,
+  "precise": false
+ },
+ "Ripley's Haunted Adventure": {
+  "lat": 33.69343,
+  "lon": -78.87861,
+  "precise": true
+ },
+ "Big Air Trampoline Park": {
+  "lat": 33.6548,
+  "lon": -78.93399,
+  "precise": true
+ },
+ "WonderWorks": {
+  "lat": 33.71417,
+  "lon": -78.88307,
+  "precise": false
+ },
+ "Riddles Escape Room": {
+  "lat": 33.77347,
+  "lon": -78.79929,
+  "precise": false
+ },
+ "Black Flag Forge": {
+  "lat": 33.71553,
+  "lon": -78.88561,
+  "precise": false
+ },
+ "Sky Zone Myrtle Beach": {
+  "lat": 33.7058,
+  "lon": -78.87277,
+  "precise": false
+ },
+ "Dave & Buster's": {
+  "lat": 33.7143,
+  "lon": -78.88331,
+  "precise": false
+ },
+ "Backstage Escape Games": {
+  "lat": 33.7178,
+  "lon": -78.88303,
+  "precise": false
+ },
+ "AlleyOops North Myrtle Beach": {
+  "lat": 33.80352,
+  "lon": -78.7247,
+  "precise": false
+ },
+ "Backstage Mirror Maze & The Vault Laser Maze": {
+  "lat": 33.71627,
+  "lon": -78.88076,
+  "precise": false
+ },
+ "Jack Axe Throwing": {
+  "lat": 33.80352,
+  "lon": -78.72469,
+  "precise": false
+ },
+ "Ripley's Believe It or Not!": {
+  "lat": 33.69274,
+  "lon": -78.87924,
+  "precise": false
+ },
+ "Break Out Myrtle Beach": {
+  "lat": 33.82128,
+  "lon": -78.67332,
+  "precise": true
+ },
+ "810 Billiards & Bowling North Myrtle Beach": {
+  "lat": 33.81667,
+  "lon": -78.6947,
+  "precise": false
+ },
+ "810 Billiards & Bowling Conway": {
+  "lat": 33.79981,
+  "lon": -79.00383,
+  "precise": true
+ },
+ "Captive Escape Rooms": {
+  "lat": 33.69577,
+  "lon": -78.88009,
+  "precise": false
+ },
+ "Interactive Experience Unleashed": {
+  "lat": 33.74712,
+  "lon": -78.81878,
+  "precise": false
+ },
+ "Pier 14": {
+  "lat": 33.6947,
+  "lon": -78.87518,
+  "precise": true
+ },
+ "Little River Fishing Fleet": {
+  "lat": 33.87123,
+  "lon": -78.61401,
+  "precise": false
+ },
+ "Surfside Beach Pier": {
+  "lat": 33.6049,
+  "lon": -78.97186,
+  "precise": true
+ },
+ "Second Avenue Pier": {
+  "lat": 33.68306,
+  "lon": -78.88846,
+  "precise": false
+ },
+ "Cherry Grove Pier": {
+  "lat": 33.83046,
+  "lon": -78.63373,
+  "precise": false
+ },
+ "Dunes Golf & Beach Club": {
+  "lat": 33.75284,
+  "lon": -78.80472,
+  "precise": false
+ },
+ "Myrtle Beach National – King's North": {
+  "lat": 33.82335,
+  "lon": -78.69469,
+  "precise": false
+ },
+ "Barefoot Resort – Dye Course": {
+  "lat": 33.81118,
+  "lon": -78.74776,
+  "precise": false
+ },
+ "True Blue Golf Club": {
+  "lat": 33.44246,
+  "lon": -79.14672,
+  "precise": true
+ },
+ "Grande Dunes Golf Club": {
+  "lat": 33.76786,
+  "lon": -78.81905,
+  "precise": true
+ },
+ "TPC Myrtle Beach": {
+  "lat": 33.54992,
+  "lon": -79.04303,
+  "precise": false
+ },
+ "Pine Lakes Country Club": {
+  "lat": 33.73254,
+  "lon": -78.84431,
+  "precise": false
+ },
+ "Barefoot Resort – Norman Course": {
+  "lat": 33.80458,
+  "lon": -78.7704,
+  "precise": true
+ },
+ "Wachesaw East Golf Club": {
+  "lat": 33.55961,
+  "lon": -79.06221,
+  "precise": true
+ },
+ "Barefoot Resort – Love Course": {
+  "lat": 33.80458,
+  "lon": -78.7704,
+  "precise": true
+ },
+ "Barefoot Resort – Fazio Course": {
+  "lat": 33.80458,
+  "lon": -78.7704,
+  "precise": true
+ },
+ "Cap'n Rod's Lowcountry Tours": {
+  "lat": 33.3657,
+  "lon": -79.28251,
+  "precise": false
+ },
+ "Hopsewee Plantation": {
+  "lat": 33.21074,
+  "lon": -79.38458,
+  "precise": true
+ },
+ "South Carolina Maritime Museum": {
+  "lat": 33.36631,
+  "lon": -79.28337,
+  "precise": false
+ },
+ "Myrtle Beach Art Museum": {
+  "lat": 33.65874,
+  "lon": -78.91977,
+  "precise": true
+ },
+ "Georgetown County Museum": {
+  "lat": 33.36698,
+  "lon": -79.28261,
+  "precise": true
+ },
+ "Horry County Museum": {
+  "lat": 33.84188,
+  "lon": -79.05151,
+  "precise": true
+ },
+ "Serial Killers: The Experience": {
+  "lat": 33.69164,
+  "lon": -78.89237,
+  "precise": false
+ },
+ "Historic Myrtle Beach Colored School Museum": {
+  "lat": 33.69883,
+  "lon": -78.88447,
+  "precise": true
+ },
+ "Kaminski House Museum": {
+  "lat": 33.36806,
+  "lon": -79.28692,
+  "precise": true
+ },
+ "Historic Downtown Conway Walking Tour": {
+  "lat": 33.83748,
+  "lon": -79.04718,
+  "precise": true
+ },
+ "Rice Museum": {
+  "lat": 33.36545,
+  "lon": -79.28237,
+  "precise": true
+ },
+ "Grand 14 Cinemas at Market Common": {
+  "lat": 33.67022,
+  "lon": -78.93899,
+  "precise": false
+ },
+ "Broadway Theatre: Le Grand Cirque Adrenaline": {
+  "lat": 33.71351,
+  "lon": -78.87858,
+  "precise": false
+ },
+ "Greg Rowles Legacy Theatre": {
+  "lat": 33.82585,
+  "lon": -78.678,
+  "precise": true
+ },
+ "Polynesian Fire Luau": {
+  "lat": 33.75284,
+  "lon": -78.80472,
+  "precise": false
+ },
+ "Murder in the Wild West": {
+  "lat": 33.72186,
+  "lon": -78.84859,
+  "precise": false
+ },
+ "Topgolf Myrtle Beach": {
+  "lat": 33.71378,
+  "lon": -78.87194,
+  "precise": true
+ },
+ "Alabama Theatre": {
+  "lat": 33.79861,
+  "lon": -78.73987,
+  "precise": false
+ },
+ "Myrtle Beach Pelicans": {
+  "lat": 33.71275,
+  "lon": -78.88476,
+  "precise": false
+ },
+ "Riga Tony's Murder Mystery Dinner": {
+  "lat": 33.69715,
+  "lon": -78.87846,
+  "precise": false
+ },
+ "Theatre of the Republic": {
+  "lat": 33.83589,
+  "lon": -79.04657,
+  "precise": false
+ },
+ "Legends in Concert": {
+  "lat": 33.71986,
+  "lon": -78.87915,
+  "precise": false
+ },
+ "AMC Classic Myrtle Beach 12": {
+  "lat": 33.79476,
+  "lon": -78.75192,
+  "precise": false
+ },
+ "GTS Theatre": {
+  "lat": 33.8358,
+  "lon": -78.67578,
+  "precise": false
+ },
+ "House of Blues Myrtle Beach": {
+  "lat": 33.79866,
+  "lon": -78.73968,
+  "precise": false
+ },
+ "Pirates Voyage": {
+  "lat": 33.72186,
+  "lon": -78.84859,
+  "precise": false
+ },
+ "Medieval Times": {
+  "lat": 33.71137,
+  "lon": -78.93246,
+  "precise": true
+ },
+ "B&B Theatres Conway 12": {
+  "lat": 33.85645,
+  "lon": -79.08865,
+  "precise": false
+ },
+ "Carolina Opry": {
+  "lat": 33.7728,
+  "lon": -78.8,
+  "precise": false
+ },
+ "Cinemark Myrtle Beach": {
+  "lat": 33.70039,
+  "lon": -78.92271,
+  "precise": false
+ },
+ "Strand Theater": {
+  "lat": 33.36589,
+  "lon": -79.28248,
+  "precise": false
+ },
+ "PopStroke Myrtle Beach": {
+  "lat": 33.71372,
+  "lon": -78.879,
+  "precise": false
+ },
+ "Jurassic Golf": {
+  "lat": 33.6769,
+  "lon": -78.90245,
+  "precise": false
+ },
+ "Black Pearl Mini Golf": {
+  "lat": 33.83428,
+  "lon": -78.64422,
+  "precise": true
+ },
+ "Professor Hacker's Dinosaur Adventure Golf": {
+  "lat": 33.83455,
+  "lon": -78.67324,
+  "precise": true
+ },
+ "Molten Mountain Miniature Golf": {
+  "lat": 33.83818,
+  "lon": -78.66863,
+  "precise": true
+ },
+ "Red Dragon Cove Adventure Golf": {
+  "lat": 33.67228,
+  "lon": -78.90852,
+  "precise": false
+ },
+ "Cancun Lagoon Adventure Golf": {
+  "lat": 33.67177,
+  "lon": -78.90986,
+  "precise": false
+ },
+ "Broadway Grand Prix Challenge Mini Golf": {
+  "lat": 33.71678,
+  "lon": -78.89164,
+  "precise": false
+ },
+ "Professor Hacker's Lost Treasure Golf": {
+  "lat": 33.81214,
+  "lon": -78.70392,
+  "precise": false
+ },
+ "Ripley's Crazy Golf": {
+  "lat": 33.69343,
+  "lon": -78.87861,
+  "precise": true
+ },
+ "Lost Mine Miniature Golf": {
+  "lat": 33.70512,
+  "lon": -78.86504,
+  "precise": false
+ },
+ "Pirate's Watch Adventure Golf": {
+  "lat": 33.67605,
+  "lon": -78.9037,
+  "precise": false
+ },
+ "Aloha Falls Mini Golf": {
+  "lat": 33.77287,
+  "lon": -78.80005,
+  "precise": false
+ },
+ "Aloha Village Mini Golf": {
+  "lat": 33.80162,
+  "lon": -78.73055,
+  "precise": false
+ },
+ "Tribal Island Tiki Adventure Golf": {
+  "lat": 33.85314,
+  "lon": -78.6542,
+  "precise": false
+ },
+ "Mutiny Bay Miniature Golf": {
+  "lat": 33.83148,
+  "lon": -78.67575,
+  "precise": false
+ },
+ "Jungle Safari Mini Golf": {
+  "lat": 33.74326,
+  "lon": -78.82338,
+  "precise": false
+ },
+ "Captain Hook's Adventure Golf": {
+  "lat": 33.70319,
+  "lon": -78.87123,
+  "precise": false
+ },
+ "Mayday Miniature Golf": {
+  "lat": 33.83506,
+  "lon": -78.67264,
+  "precise": true
+ },
+ "Spy Glass Adventure Golf": {
+  "lat": 33.7156,
+  "lon": -78.85643,
+  "precise": false
+ },
+ "Hawaiian Rumble Golf": {
+  "lat": 33.80487,
+  "lon": -78.72139,
+  "precise": false
+ },
+ "Captain Myrtle Mini Golf": {
+  "lat": 33.68142,
+  "lon": -78.89739,
+  "precise": true
+ },
+ "Jungle Lagoon Miniature Golf": {
+  "lat": 33.68192,
+  "lon": -78.89379,
+  "precise": false
+ },
+ "Mt. Atlanticus Minotaur Goff": {
+  "lat": 33.69264,
+  "lon": -78.88438,
+  "precise": true
+ },
+ "Mulligan's Lagoon Golf and Arcade": {
+  "lat": 33.62803,
+  "lon": -78.99876,
+  "precise": false
+ },
+ "Treasure Island Golf": {
+  "lat": 33.72294,
+  "lon": -78.84766,
+  "precise": false
+ },
+ "Shipwreck Island Adventure Golf": {
+  "lat": 33.67739,
+  "lon": -78.89693,
+  "precise": false
+ },
+ "Myrtle Beach State Park": {
+  "lat": 33.64758,
+  "lon": -78.94049,
+  "precise": false
+ },
+ "Sea Thunder and Sea Screamer": {
+  "lat": 33.87123,
+  "lon": -78.61401,
+  "precise": false
+ },
+ "Visit Murrells Inlet Cruises & Tours": {
+  "lat": 33.55733,
+  "lon": -79.03335,
+  "precise": false
+ },
+ "Georgetown Harborwalk": {
+  "lat": 33.37544,
+  "lon": -79.29835,
+  "precise": false
+ },
+ "PonTiki Myrtle Beach": {
+  "lat": 33.86046,
+  "lon": -78.6454,
+  "precise": false
+ },
+ "Huntington Beach State Park": {
+  "lat": 33.51828,
+  "lon": -79.0702,
+  "precise": false
+ },
+ "Great Escapes Kayaking Expeditions": {
+  "lat": 33.84709,
+  "lon": -78.65659,
+  "precise": false
+ },
+ "Getaway Adventures Dolphin Tour": {
+  "lat": 33.86631,
+  "lon": -78.64022,
+  "precise": false
+ },
+ "Waites Island": {
+  "lat": 33.82739,
+  "lon": -78.64279,
+  "precise": false
+ },
+ "Crazy Sister Dolphin Cruises": {
+  "lat": 33.5566,
+  "lon": -79.0343,
+  "precise": false
+ },
+ "Hobcaw Barony": {
+  "lat": 33.3636,
+  "lon": -79.227,
+  "precise": false
+ },
+ "Alligator Adventure": {
+  "lat": 33.80014,
+  "lon": -78.73957,
+  "precise": true
+ },
+ "Brookgreen Gardens": {
+  "lat": 33.50914,
+  "lon": -79.077,
+  "precise": false
+ },
+ "Myrtle Beach Boardwalk": {
+  "lat": 33.72161,
+  "lon": -78.84513,
+  "precise": false
+ },
+ "Voyager Dolphin Cruises": {
+  "lat": 33.84231,
+  "lon": -78.66731,
+  "precise": false
+ },
+ "Plantation River Tours": {
+  "lat": 33.56254,
+  "lon": -79.08586,
+  "precise": true
+ },
+ "Splinter City Disc Golf Course": {
+  "lat": 33.65854,
+  "lon": -78.9304,
+  "precise": false
+ },
+ "Comedy Cabana": {
+  "lat": 33.774,
+  "lon": -78.7986,
+  "precise": false
+ },
+ "Tin Roof": {
+  "lat": 33.69632,
+  "lon": -78.87495,
+  "precise": true
+ },
+ "The Pier at Garden City Beach": {
+  "lat": 33.57662,
+  "lon": -78.9987,
+  "precise": false
+ },
+ "Apache Pier": {
+  "lat": 33.75962,
+  "lon": -78.8036,
+  "precise": false
+ },
+ "Pirate's Cove Lounge": {
+  "lat": 33.81899,
+  "lon": -78.67272,
+  "precise": true
+ },
+ "Duck's Beach Club": {
+  "lat": 33.81935,
+  "lon": -78.67277,
+  "precise": false
+ },
+ "OD Arcade & Lounge": {
+  "lat": 33.81852,
+  "lon": -78.6738,
+  "precise": true
+ },
+ "Ocean Annie's Beach Bar": {
+  "lat": 33.75964,
+  "lon": -78.78939,
+  "precise": true
+ },
+ "Spanish Galleon Night Club": {
+  "lat": 33.81919,
+  "lon": -78.67107,
+  "precise": false
+ },
+ "Señor Frog's": {
+  "lat": 33.71698,
+  "lon": -78.88183,
+  "precise": true
+ },
+ "The Bowery": {
+  "lat": 33.69213,
+  "lon": -78.87959,
+  "precise": false
+ },
+ "Dead Dog Saloon": {
+  "lat": 33.55733,
+  "lon": -79.03335,
+  "precise": false
+ },
+ "Fat Harold's Beach Club": {
+  "lat": 33.81979,
+  "lon": -78.67211,
+  "precise": true
+ },
+ "Family Kingdom Amusement Park": {
+  "lat": 33.68174,
+  "lon": -78.89033,
+  "precise": false
+ },
+ "Downwind Sails Parasailing": {
+  "lat": 33.68152,
+  "lon": -78.89025,
+  "precise": false
+ },
+ "Seakart Adventure SC": {
+  "lat": 33.5566,
+  "lon": -79.0343,
+  "precise": false
+ },
+ "Inlet Point Plantation": {
+  "lat": 33.80076,
+  "lon": -78.73259,
+  "precise": false
+ },
+ "Broadway Grand Prix": {
+  "lat": 33.71678,
+  "lon": -78.89164,
+  "precise": false
+ },
+ "Pavilion Nostalgia Park": {
+  "lat": 33.71553,
+  "lon": -78.88561,
+  "precise": false
+ },
+ "Aloha Watersports": {
+  "lat": 33.82744,
+  "lon": -78.64371,
+  "precise": true
+ },
+ "Pedal Pub Conway": {
+  "lat": 33.82991,
+  "lon": -79.04529,
+  "precise": false
+ },
+ "Coastal Scuba": {
+  "lat": 33.81104,
+  "lon": -78.70716,
+  "precise": false
+ },
+ "Soar & Explore (WonderWorks)": {
+  "lat": 33.71627,
+  "lon": -78.88076,
+  "precise": false
+ },
+ "Southern Shores Cruises": {
+  "lat": 33.85337,
+  "lon": -78.65241,
+  "precise": true
+ },
+ "Myrtle Beach Jet Ski Rental": {
+  "lat": 33.8671,
+  "lon": -78.62399,
+  "precise": false
+ },
+ "Oceanfront Helicopters": {
+  "lat": 33.67892,
+  "lon": -78.89961,
+  "precise": false
+ },
+ "Myrtle Beach SkyWheel": {
+  "lat": 33.69381,
+  "lon": -78.87781,
+  "precise": false
+ },
+ "Crazy Sister Marina": {
+  "lat": 33.5566,
+  "lon": -79.0343,
+  "precise": false
+ },
+ "Action Water Sportz": {
+  "lat": 33.84231,
+  "lon": -78.66731,
+  "precise": false
+ },
+ "New Wave Watersports": {
+  "lat": 33.80722,
+  "lon": -78.70082,
+  "precise": true
+ },
+ "The Track Family Fun Park": {
+  "lat": 33.774,
+  "lon": -78.79861,
+  "precise": false
+ },
+ "Myrtle Beach Watersports": {
+  "lat": 33.85064,
+  "lon": -78.65415,
+  "precise": true
+ },
+ "Myrtle Beach Shark Tooth Adventures": {
+  "lat": 33.81104,
+  "lon": -78.70716,
+  "precise": false
+ },
+ "K1 Speed": {
+  "lat": 33.82716,
+  "lon": -78.67721,
+  "precise": true
+ }
+}

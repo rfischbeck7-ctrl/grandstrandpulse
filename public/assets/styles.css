@@ -500,3 +500,15 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 .home-plan { max-width: var(--max); margin: 0 auto; padding: 1.5rem var(--gutter) 0; display: grid; gap: .75rem; }
 .home-plan > p { color: var(--ink-soft); max-width: 60ch; }
 .featured-in .hub-list { margin-top: .5rem; }
+.cond-grid { display: grid; gap: 1rem; grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 760px) { .cond-grid { grid-template-columns: 1fr 1fr; } .cond-wide { grid-column: 1 / -1; } }
+.cond-card { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 1rem 1.2rem; box-shadow: var(--shadow); }
+.cond-card h2 { margin-top: 0; font-size: 1.2rem; }
+.cond-card h3 { margin: .6rem 0 .2rem; font-size: 1rem; }
+.cond-list, .cond-fc { list-style: none; padding: 0; margin: 0; display: grid; gap: .3rem; }
+.cond-list li span { color: var(--ink-soft); margin-left: .4rem; }
+.cond-fc { grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr)); gap: .75rem; }
+.cond-temp { font-weight: 700; margin-left: .3rem; }
+.cond-big { font-size: 2.2rem; font-weight: 700; margin: 0; }
+.cond-src { color: var(--ink-soft); font-size: .85rem; margin: .6rem 0 0; }
+.cond-link { font-size: .95rem; }
