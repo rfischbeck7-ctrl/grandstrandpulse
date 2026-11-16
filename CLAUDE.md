@@ -202,3 +202,7 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 
 ## REMINDER: ~Nov 30, 2026, Ryan checks back (indexing + AdSense)
 - Ryan said (Nov 16) he'll return in ~2 weeks. Then: (1) Search Console page indexing: is the indexed count above 228? Are the new plan pages, /map/, /conditions/, /terms/ indexed? Look at the 21 "Discovered - currently not indexed"; resubmit sitemap if needed. (2) AdSense > Sites status; tell Ryan if it looks like time to consider "Request review". NEVER click it. (3) Re-check ratings, maps and guide pages on the live site.
+
+## Nov 16: Places status check + unpublished two
+- Google Places `businessStatus` (read live from the site origin, nothing stored): Apache Pier, Backstage Mirror Maze, Lost Mine, Riddles, Spanish Galleon, Wheels of Yesteryear all OPERATIONAL. Pirate's Cove (Google: "Pirate's Cove Rooftop") and Soar + Explore: CLOSED_TEMPORARILY. No Google entry for Radical Ropes.
+- Ryan approved: **unpublished Pirate's Cove Lounge and Radical Ropes Adventure Park** in Airtable (unchecked Published, nothing deleted). Soar & Explore stays published; its Hours Note already says closed for fall 2026. Thrill & Action essay no longer names Radical Ropes. Re-publish either if a current source shows it open.
