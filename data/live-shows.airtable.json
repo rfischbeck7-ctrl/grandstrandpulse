@@ -6,7 +6,7 @@
    "fields": {
     "Address": "1320 Celebrity Cir #191, Myrtle Beach, SC 29577",
     "Name": "Charles Bach Wonders Theatre",
-    "Short Description": "An intimate magic and comedy theater of about 200 seats.",
+    "Short Description": "A 200-seat magic theater at Broadway at the Beach where every seat is close to the stage. The flagship show mixes large-scale illusions, comedy, dance and audience participation in about 90 minutes, and the lineup changes with the season. Balcony and VIP box seats are reached by stairs.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Theater"
@@ -35,7 +35,7 @@
    "fields": {
     "Address": "1195 Celebrity Cir, Myrtle Beach, SC 29577",
     "Name": "Broadway Theatre: Le Grand Cirque Adrenaline",
-    "Short Description": "An acrobatic spectacle at Broadway at the Beach, about two hours with intermission.",
+    "Short Description": "An acrobatic variety show at the Broadway Theatre in Broadway at the Beach, with aerial stunts and an international cast, running about two hours with an intermission. It suits all ages, and beer and wine are sold to guests 21 and over. The show title changes by season, so check current listings.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Theater"
@@ -62,7 +62,7 @@
    "fields": {
     "Address": "6803 N Ocean Blvd, Myrtle Beach, SC 29572",
     "Name": "Polynesian Fire Luau",
-    "Short Description": "Hula, fire dancing, live music and an island buffet.",
+    "Short Description": "A family-friendly dinner show with a lei greeting, an island-style buffet and a performance of dances inspired by Hawaii, Tahiti, Tonga, New Zealand and Samoa, ending with Samoan fire knife dancing. Plan on two to three hours, and reserve ahead because shows often sell out.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Dinner show"
@@ -94,7 +94,7 @@
     "Website": "https://topgolf.com/us/myrtle-beach/",
     "Address": "2850 Robert M Grissom Pkwy, Myrtle Beach, SC 29577",
     "Name": "Topgolf Myrtle Beach",
-    "Short Description": "Climate-controlled hitting bays with targets, food and drinks. Open daily, late on weekends.",
+    "Short Description": "A high-tech driving range and sports bar in one, across from Broadway at the Beach. About 72 climate-controlled hitting bays on three levels score microchipped balls in target games, so no golf skill is needed. There is a full restaurant and bar with a rooftop terrace and fire pit, plus leagues, lessons and private events.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Sports"
@@ -141,7 +141,7 @@
    "fields": {
     "Address": "1329 N Kings Hwy, Myrtle Beach, SC 29577",
     "Name": "Riga Tony's Murder Mystery Dinner",
-    "Short Description": "An interactive comedy murder mystery with an Italian dinner.",
+    "Short Description": "A 1930s mobster-themed dinner show where the cast stages a few comic crimes and the audience plays detective between courses of an Italian dinner. It runs about two hours and leans on audience participation, so come ready to play along. Reserve ahead.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Dinner show"
@@ -187,7 +187,7 @@
     "Website": "https://www.amctheatres.com/movie-theatres/myrtle-beach-sc/amc-classic-myrtle-beach-12",
     "Address": "10177 N Kings Hwy, North Myrtle Beach, SC 29572",
     "Name": "AMC Classic Myrtle Beach 12",
-    "Short Description": "A 12-screen first-run theater near Barefoot Landing with recliners and reserved seating. Crowds tend to be smaller than at the bigger venues.",
+    "Short Description": "A 12-screen first-run movie theater on North Kings Highway in North Myrtle Beach, with digital projection, large-format screens, RealD 3D, open captions and assisted-listening devices. A handy option for a rainy afternoon or a late show; check showtimes on AMC's site before you go.",
     "Area": "North Myrtle Beach",
     "Published": true,
     "Type": "Movie theater"
@@ -199,7 +199,7 @@
    "fields": {
     "Address": "1220 Port Dr, Myrtle Beach, SC 29577",
     "Name": "GTS Theatre",
-    "Short Description": "An intimate theater with Motown, Rock N' Soul, Elvis and Kenny Rogers tribute shows.",
+    "Short Description": "A small cabaret-style theater on Port Drive with a 1920s Gatsby feel and family-friendly tribute shows, including a Motown revue, Rock N' Soul, Elvis and Kenny Rogers. The room is intimate, so most seats are close to the stage. Show days and times vary by title, so check the schedule before planning.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Theater"
@@ -354,7 +354,7 @@
    "fields": {
     "Address": "3237 Waccamaw Blvd, Myrtle Beach, SC 29579",
     "Name": "The Asher Theatre",
-    "Short Description": "Family-friendly magic, comedy and impressions.",
+    "Short Description": "A family-friendly theater on Waccamaw Boulevard with general-admission seating and a rotating lineup of comedy acts, including comedy magic by Michael Bairefoot, James Stephens III's impressions show and a Motown tribute. Shows run roughly 90 minutes, so check the current lineup before you go.",
     "Area": "Central Myrtle",
     "Published": true,
     "Type": "Theater"

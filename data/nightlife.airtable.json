@@ -75,7 +75,7 @@
    "fields": {
     "Published": true,
     "Name": "Pirate's Cove Lounge",
-    "Short Description": "A seasonal oceanfront rooftop club above a country dance hall. Open late spring and summer.",
+    "Short Description": "A Main Street spot in North Myrtle Beach known for its rooftop deck, reached by stairs from the back, with ocean views, live music and a full food menu. Hours and seasons change, so confirm it is open before you head over.",
     "Area": "North Myrtle Beach",
     "Type": "Dance club",
     "Address": "205 Main St, North Myrtle Beach, SC 29582"
@@ -87,7 +87,7 @@
    "fields": {
     "Published": true,
     "Name": "Duck's Beach Club",
-    "Short Description": "A historic beach club built around shag dancing and beach music.",
+    "Short Description": "A longtime shag club on Main Street in North Myrtle Beach's Ocean Drive district, the birthplace of the Carolina shag, South Carolina's official state dance. Duck's offers weekly shag lessons and a lead-and-follow dance night, and it welcomes beginners as well as seasoned dancers.",
     "Area": "North Myrtle Beach",
     "Type": "Beach club",
     "Address": "229 Main St, North Myrtle Beach, SC 29582"
@@ -99,7 +99,7 @@
    "fields": {
     "Published": true,
     "Name": "OD Arcade & Lounge",
-    "Short Description": "A low-key lounge with live music, karaoke, dancing, pool tables and an arcade.",
+    "Short Description": "A casual Ocean Drive lounge a short walk from the beach, with a bar and outdoor patio, a big hardwood dance floor, and a game room with pool tables, darts and arcade games. Live bands and karaoke show up some nights, and the music leans toward shag and beach favorites.",
     "Area": "North Myrtle Beach",
     "Type": "Live music",
     "Address": "100 S Ocean Blvd, North Myrtle Beach, SC 29582"
@@ -111,7 +111,7 @@
    "fields": {
     "Published": true,
     "Name": "Ocean Annie's Beach Bar",
-    "Short Description": "An oceanfront beach bar with live music on the pool deck most nights, plus dancing.",
+    "Short Description": "An oceanfront pool-deck beach bar on Shore Drive at the Sands Ocean Club Resort, a Myrtle Beach party spot for decades with an outdoor stage and poolside dancing after sundown. Live music is a regular feature, so check the schedule for current bands.",
     "Area": "Central Myrtle",
     "Type": "Live music",
     "Address": "9550 Shore Dr, Myrtle Beach, SC 29572"
@@ -123,7 +123,7 @@
    "fields": {
     "Published": true,
     "Name": "Spanish Galleon Night Club",
-    "Short Description": "A dance club of more than 50 years with a big dance floor and live local bands playing classic and modern hits.",
+    "Short Description": "A classic dance hall at the Horseshoe, where Main Street meets Ocean Drive, inside the Ocean Drive Beach & Golf Resort. A retro neon sign marks the door, and inside are a large dance floor, plenty of tables, a beachfront tiki bar and a mix of beach music, classic hits and today's pop and hip-hop.",
     "Area": "North Myrtle Beach",
     "Type": "Dance club",
     "Address": "100 N Ocean Blvd, North Myrtle Beach, SC 29582"
@@ -145,7 +145,7 @@
    "fields": {
     "Published": true,
     "Name": "3001 Nightlife",
-    "Short Description": "Three clubs under one roof: Club Rewind for shag and beach music, Bourbon Cowboy for country and line dancing, and Club Envy for hip-hop and house DJs.",
+    "Short Description": "Three clubs under one roof off Lake Arrowhead Road: Club Rewind for older hits and beach music, Bourbon Cowboy for country, line dancing, live bands and karaoke, and Club Envy for today's top hits and DJs. Pick one room or hop between all three in a night.",
     "Area": "Central Myrtle",
     "Type": "Dance club",
     "Address": "920 Lake Arrowhead Rd, Myrtle Beach, SC 29572"
@@ -167,7 +167,7 @@
    "fields": {
     "Published": true,
     "Name": "Señor Frog's",
-    "Short Description": "A themed party club at Broadway at the Beach with DJs, plus a quieter back patio with a live band and waterfront views.",
+    "Short Description": "A party restaurant and club at Broadway at the Beach serving Mexican and Caribbean-style food and frozen drinks, with DJs and live bands late into the evening and a quieter patio out back. The Myrtle Beach location is part of a franchise found in Mexican and Caribbean resort towns.",
     "Area": "Central Myrtle",
     "Type": "Dance club",
     "Address": "1304 Celebrity Cir, Myrtle Beach, SC 29577"
@@ -179,7 +179,7 @@
    "fields": {
     "Published": true,
     "Name": "The Bowery",
-    "Short Description": "A country honky tonk with live music every night and room to dance.",
+    "Short Description": "A Myrtle Beach honky-tonk that has been entertaining visitors since 1944, about 50 yards from the ocean. It is known as an early home of the band Alabama, who played here as the house band in the 1970s, and today offers live country and Southern rock most nights with a dance floor.",
     "Area": "Central Myrtle",
     "Type": "Live music",
     "Address": "110 9th Ave N, Myrtle Beach, SC 29577"
@@ -214,7 +214,7 @@
    "fields": {
     "Published": true,
     "Name": "Dead Dog Saloon",
-    "Short Description": "A MarshWalk landmark with live country, classic rock and blues at night, overlooking the marsh.",
+    "Short Description": "The live-music anchor of the MarshWalk in Murrells Inlet, with a covered outdoor patio overlooking the inlet and bands ranging from country to rock, soul and R&B. A longtime local landmark, now under new management, so check the lineup before you go.",
     "Area": "Murrells Inlet",
     "Type": "Live music",
     "Address": "4079 US-17 Business, Murrells Inlet, SC 29576"
