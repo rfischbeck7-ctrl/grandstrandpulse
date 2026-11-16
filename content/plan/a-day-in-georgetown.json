@@ -1,0 +1,52 @@
+{
+  "title": "A day in Georgetown",
+  "summary": "A walkable day of museums, a river boardwalk and lowcountry history",
+  "description": "How to spend a day in Georgetown, SC: the Rice Museum, the Harborwalk, Kaminski House, boat tours and nearby Hobcaw Barony and Hopsewee Plantation.",
+  "order": 2,
+  "updated": "November 2026",
+  "intro": [
+    "Georgetown sits at the southern end of the Grand Strand, about an hour's drive from Myrtle Beach depending on traffic. It is a small port town with a historic district, a river boardwalk and a long rice-growing history. It makes a good counterweight to a beach week, and it is easy to cover on foot."
+  ],
+  "sections": [
+    {
+      "h": "Why it's worth the drive",
+      "p": [
+        "Georgetown was founded in 1729 and is the third oldest town in South Carolina. Rice built its fortunes: by the mid-1800s, about 91 plantations around town grew almost half of the rice produced in the country. The Rice Museum, in the Old Market Building with the Town Clock, tells that story with dioramas, maps and artifacts. It is a good first stop to understand what you are seeing on the rest of the walk."
+      ]
+    },
+    {
+      "h": "Morning: museums and the river",
+      "p": [
+        "Start at the Rice Museum and the Harborwalk. The Harborwalk is a boardwalk along the Sampit River behind Front Street that runs from the Kaminski House toward the Town Clock, with restaurants, shops and galleries opening onto it. Kaminski House Museum, a house museum on a bluff above the river, has guided tours. The Georgetown County Museum and the South Carolina Maritime Museum are also nearby, and both are free to enter."
+      ]
+    },
+    {
+      "h": "Lunch and a walk",
+      "p": [
+        "Front Street has the most options for lunch, many of them looking out over the water. Walk a block or two off Front Street afterward to see the historic homes in the old town. Many Front Street shops close on Sundays, so Friday and Saturday are the best days for browsing."
+      ]
+    },
+    {
+      "h": "Afternoon: choose one",
+      "list": [
+        "Cap'n Rod's Lowcountry Tours for a boat trip on the water that made the town.",
+        "Hopsewee Plantation for a look at a rice-era house and the grounds. Check its seasonal schedule.",
+        "Hobcaw Barony, a 16,000-acre preserve once owned by Bernard Baruch. It is open only by guided tour, and the main tours need reservations."
+      ]
+    },
+    {
+      "h": "Evening option",
+      "p": [
+        "If you stay late, Ghosts of Georgetown Lantern Tours walk the same streets after dark, and the Strand Theater sometimes has a show. Check schedules, since both change by season."
+      ]
+    },
+    {
+      "h": "Good to know",
+      "list": [
+        "Parking downtown is easy compared to the oceanfront.",
+        "Smaller museums keep limited days and hours. Check before you go.",
+        "In October, the Georgetown Wooden Boat Show draws the biggest crowd to the waterfront."
+      ]
+    }
+  ]
+}

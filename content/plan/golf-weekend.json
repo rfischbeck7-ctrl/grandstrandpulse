@@ -1,0 +1,46 @@
+{
+  "title": "Planning a golf weekend",
+  "summary": "How to choose courses, stay near them and avoid the usual traps",
+  "description": "A practical plan for a Myrtle Beach golf weekend: how to pick courses by area, when to go, and what to ask before booking.",
+  "order": 3,
+  "updated": "November 2026",
+  "intro": [
+    "With roughly 90 courses on the Grand Strand by the visitor bureau's count, the hardest part of a golf trip is deciding where to play. A few simple rules narrow it down quickly."
+  ],
+  "sections": [
+    {
+      "h": "Pick a base, then play nearby",
+      "p": [
+        "Traffic on Highway 17 and Kings Highway can eat a lot of your day. Instead of picking the best courses across the Strand, choose two or three courses in one area and stay near them.",
+        "Around North Myrtle Beach, Barefoot Resort has four courses designed by Dye, Norman, Love and Fazio, and Long Bay is nearby. Around central Myrtle Beach, Myrtle Beach National's King's North, Grande Dunes, Pine Lakes and Arcadian Shores are all in range. Further south, TPC Myrtle Beach, True Blue, Pawleys Plantation and Wachesaw East are close to Murrells Inlet and Pawleys Island."
+      ]
+    },
+    {
+      "h": "Match the course to the group",
+      "p": [
+        "If everyone is a strong player, book at least one name-brand layout. If the group includes beginners, look for courses with several sets of tees and avoid back-to-back difficult rounds. Playing 36 holes in a day sounds fun and is usually exhausting, so most groups are happier with 18 and a long lunch."
+      ]
+    },
+    {
+      "h": "When to go",
+      "p": [
+        "Spring and fall have the best weather. Winter is the least crowded and often the cheapest. Summer is hot, so book early tee times and plan to be off the course by midday."
+      ]
+    },
+    {
+      "h": "Questions to ask when you book",
+      "list": [
+        "Is the course in good shape right now, or has it been recently renovated or aerated?",
+        "What does the rate include: cart, range balls, taxes?",
+        "Is there a cancellation or weather policy?",
+        "What is the pace of play on your dates?"
+      ]
+    },
+    {
+      "h": "Something for non-golfers",
+      "p": [
+        "If your group has a mix of golfers and non-golfers, the beach, a brewery stop or a dinner show fills out the day. Mini golf is a fair bet for everyone, and Topgolf offers a way to play without a full round."
+      ]
+    }
+  ]
+}

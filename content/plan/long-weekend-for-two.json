@@ -1,0 +1,39 @@
+{
+  "title": "A long weekend for two",
+  "summary": "A slower plan for couples: marsh sunsets, wine, a show and a day trip",
+  "description": "A long-weekend itinerary for couples in Myrtle Beach: marsh sunsets in Murrells Inlet, wineries and breweries, a show, a dolphin cruise and a day in Georgetown.",
+  "order": 5,
+  "updated": "November 2026",
+  "intro": [
+    "This plan is for two adults who want a mix of good food, easy outdoors and one or two memorable evenings, without being rushed. It leans away from the busiest oceanfront stretch and toward the quieter parts of the Strand."
+  ],
+  "sections": [
+    {
+      "h": "Friday: arrive and walk",
+      "p": [
+        "Check in and take an evening walk on the beach, or on the Myrtle Beach Boardwalk if you want the lights and music. If you would like a live-music night to start, try The Bowery in Myrtle Beach, which has been open since 1944."
+      ]
+    },
+    {
+      "h": "Saturday: marsh, wine and a show",
+      "p": [
+        "Spend the morning in Murrells Inlet. Walk the MarshWalk, then book a dolphin or sunset cruise, or rent kayaks or paddleboards from Surf the Earth or Black River Outdoors for a calmer view of the marsh. In the afternoon, take a tasting at a winery or brewery. La Belle Amie in Little River, Duplin Winery and Carolina Vineyards in North Myrtle Beach are options for muscadine wine, and Bin 2004 is a wine bar if you want something more traditional.",
+        "For the evening, choose a show that fits: a magic show at Charles Bach Wonders Theatre, a tribute concert, or a dinner show if you want the full spectacle. The MarshWalk is also a good place to watch a sunset over the marsh with live music nearby."
+      ]
+    },
+    {
+      "h": "Sunday: a day trip",
+      "p": [
+        "Drive south to Georgetown for a slower day. Walk the Harborwalk, visit the Rice Museum and the Kaminski House, and have lunch on Front Street. Brookgreen Gardens, just south of Murrells Inlet, is also an easy stop on the way back, especially in cooler months when the garden paths are comfortable."
+      ]
+    },
+    {
+      "h": "Tips",
+      "list": [
+        "Book dinner shows, cruises and popular tables ahead on summer weekends.",
+        "Shoulder seasons, spring and fall, are the most comfortable for walking and the best value.",
+        "Check each listing for hours. Many smaller places keep limited weekday and winter hours."
+      ]
+    }
+  ]
+}

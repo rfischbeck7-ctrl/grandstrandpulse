@@ -2,7 +2,7 @@ import { fileURLToPath } from "node:url";
 // Builds the static site into dist/ from data/*.airtable.json + site.config.mjs.
 import fs from "node:fs/promises";
 import path from "node:path";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import config from "../site.config.mjs";
 import { artSvg } from "./art.mjs";
 import { tileSvg } from "./tile.mjs";
@@ -444,6 +444,25 @@ const itemCards = (rows) =>
 const simplePage = (title, description, canonical, inner, extra = {}) =>
   layout({ title: `${title} | ${config.siteName}`, description, canonical, active: extra.active, jsonLd: extra.jsonLd, body: `<section class="page-text">\n${inner}\n</section>` });
 
+// Hand-written pages live in content/: categories/<slug>.json (an essay under each category list)
+// and plan/<slug>.json (extra Plan pages). Shape: { sections: [{ h, p: [paragraphs], list: [bullets] }] }
+const readContent = (dir) => {
+  const base = path.join(root, "content", dir);
+  try {
+    return readdirSync(base).filter((f) => f.endsWith(".json")).map((f) => ({ slug: f.replace(/\.json$/, ""), ...JSON.parse(readFileSync(path.join(base, f), "utf8")) }));
+  } catch {
+    return [];
+  }
+};
+const sectionsHtml = (sections = []) =>
+  sections.map((s) => `${s.h ? `<h2>${esc(s.h)}</h2>` : ""}${(s.p || []).map((t) => `<p>${esc(t)}</p>`).join("")}${s.list ? `<ul>${s.list.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}`).join("\n");
+const planPages = readContent("plan").sort((a, b) => (a.order || 99) - (b.order || 99));
+const categoryEssays = Object.fromEntries(readContent("categories").map((e) => [e.slug, e]));
+const categoryEssayHtml = (slug) => {
+  const e = categoryEssays[slug];
+  return e ? `\n<section class="page-text wide cat-essay">${e.title ? `<h2>${esc(e.title)}</h2>` : ""}${sectionsHtml(e.sections)}</section>` : "";
+};
+
 async function buildExtraPages() {
   // site-wide search index + page
   await write(
@@ -579,8 +598,15 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
     simplePage("Plan your trip", "Planning pages for visiting the Grand Strand: when to go, how to get around and where to park.", "/plan/",
       `<h1>Plan your trip</h1>
 <p>Practical notes for visiting Myrtle Beach and the Grand Strand, drawn from official city and visitor-bureau pages.</p>
-<ul class="hub-list"><li><a href="/plan/when-to-visit/"><strong>When to visit</strong><span>Seasons, crowds and what's open</span></a></li><li><a href="/plan/getting-around/"><strong>Getting around and parking</strong><span>Roads, buses and beach parking</span></a></li></ul>`)
+<ul class="hub-list"><li><a href="/plan/when-to-visit/"><strong>When to visit</strong><span>Seasons, crowds and what's open</span></a></li><li><a href="/plan/getting-around/"><strong>Getting around and parking</strong><span>Roads, buses and beach parking</span></a></li>${planPages.map((p) => `<li><a href="/plan/${p.slug}/"><strong>${esc(p.title)}</strong><span>${esc(p.summary || "")}</span></a></li>`).join("")}</ul>`)
   );
+  for (const p of planPages) {
+    await write(
+      `plan/${p.slug}/index.html`,
+      simplePage(p.title, p.description || p.summary || p.title, `/plan/${p.slug}/`,
+        `<p class="crumbs"><a href="/plan/">Plan your trip</a></p><h1>${esc(p.title)}</h1>${(p.intro || []).map((t) => `<p>${esc(t)}</p>`).join("")}\n${sectionsHtml(p.sections)}${p.updated ? `<p class="result-count">Last reviewed ${esc(p.updated)}.</p>` : ""}`)
+    );
+  }
   await write(
     "plan/when-to-visit/index.html",
     simplePage("When to visit the Grand Strand", "The best time to visit Myrtle Beach and the Grand Strand: how summer, shoulder season and winter differ for crowds, weather and what's open.", "/plan/when-to-visit/",
@@ -811,7 +837,7 @@ ${list}
       title: fit(`${cat.title} in Myrtle Beach, SC${brandSuffix}`, `${cat.title} in Myrtle Beach, SC`, cat.title),
       description: trimDesc(`${plural(cat.items.length, cat.noun)} along the Grand Strand: ${(cat.blurb || "").replace(/\.$/, "").replace(/^./, (ch) => ch.toLowerCase())}. Directions, phone numbers and details.`, 158),
       canonical: `/${cat.slug}/`,
-      body,
+      body: body + categoryEssayHtml(cat.slug),
       hero,
       heroClass: "hero-cat",
       theme: cat.theme,
@@ -961,7 +987,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", "/about/", "/contact/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/contact/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
