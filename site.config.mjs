@@ -11,6 +11,8 @@
 export default {
   siteName: "Myrtle Beach Compass",
   domain: "myrtlebeachcompass.com",
+  // Google Places API (New) browser key, restricted to this domain and the Places API in Google Cloud. Empty = no live Google rating is shown.
+  placesApiKey: "",
   tagline: "Things to do, from Little River to Georgetown",
   description:
     "Things to do in Myrtle Beach and along the Grand Strand, from Little River to Georgetown. Directions, phone numbers and what makes each place different.",

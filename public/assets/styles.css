@@ -515,3 +515,4 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 .osm-map { height: 260px; border-radius: 16px; border: 1px solid var(--line); margin-top: 1rem; z-index: 0; }
 .osm-map-big { height: min(70vh, 34rem); margin-top: .5rem; }
 .leaflet-popup-content a { color: var(--ink); }
+.g-rating { font-size: .95rem; margin: 0; }

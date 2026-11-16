@@ -816,7 +816,9 @@ ${mail ? `<p><a class="btn btn-go" href="mailto:${mail}?subject=${encodeURICompo
 <p>Pages load fonts from Google Fonts, which means your browser contacts Google when a page loads. Links to business websites, maps, phone numbers and the Facebook, Instagram, TikTok and YouTube pages some listings link to leave this site and follow those businesses' and services' own privacy practices. We do not embed social media widgets or tracking pixels.</p>
 <h2>Maps</h2>
 <p>Maps on listing pages and the <a href="/map/">map page</a> use the Leaflet library (loaded from cdnjs) and map tiles from OpenStreetMap. Loading a map sends your IP address and browser details to those services, as any image or script request does. Map pages are the only place this happens, and no map is loaded elsewhere. Tide, water and weather data on the <a href="/conditions/">conditions page</a> is requested from NOAA and the National Weather Service in the same way.</p>
-<h2>Saved places</h2>
+${config.placesApiKey ? `<h2>Google ratings</h2>
+<p>Some listing pages show a star rating loaded live from Google when you open the page. That request goes from your browser to Google, which receives your IP address and browser details under its own privacy policy. We do not store or copy Google ratings or reviews.</p>
+` : ""}<h2>Saved places</h2>
 <p>The heart buttons store your saved places in your own browser (local storage on your device). That list is never sent to us.</p>
 <h2>Email</h2>
 <p>${mail ? `If you email <a href="mailto:${mail}">${mail}</a>, we use your message and address only to reply and to update listings.` : "If you email us, we use your message and address only to reply and to update listings."}</p>
@@ -1155,6 +1157,7 @@ async function buildDetail(cat, item) {
       ${item.price || item.priceLevel ? `<div><dt>Price</dt><dd>${esc(item.price || priceWords[item.priceLevel] || "")}${item.price && item.priceLevel ? ` <span class="price-level">${esc(item.priceLevel)}</span>` : ""}</dd></div>` : ""}
       ${facts}
     </dl>
+    ${config.placesApiKey && placeIds[item.name] ? `<p class="g-rating" hidden data-pid="${esc(placeIds[item.name])}" data-key="${esc(config.placesApiKey)}"></p><script src="/assets/ratings.js" defer></script>` : ""}
     ${socialHtml}
     ${conditionsHtml}
     ${hoursBlock}
