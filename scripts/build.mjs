@@ -17,6 +17,29 @@ const placeIds = (() => {
   }
 })();
 
+// Social profile links: data/social-auto.json (read from each business's own site) overlaid by data/social.json (hand-checked; null removes a link).
+const socialData = (() => {
+  const load = (f) => {
+    try {
+      return JSON.parse(readFileSync(new URL(`../data/${f}`, import.meta.url), "utf8"));
+    } catch {
+      return {};
+    }
+  };
+  const auto = load("social-auto.json");
+  const hand = load("social.json");
+  const out = {};
+  for (const name of new Set([...Object.keys(auto), ...Object.keys(hand)])) {
+    if (name.startsWith("_")) continue;
+    const merged = { ...(auto[name] || {}), ...(hand[name] || {}) };
+    const clean = {};
+    for (const [net, url] of Object.entries(merged)) if (url) clean[net] = String(url).replace(/^http:\/\//, "https://");
+    if (Object.keys(clean).length) out[name] = clean;
+  }
+  return out;
+})();
+const SOCIAL_LABELS = { facebook: "Facebook", instagram: "Instagram", tiktok: "TikTok", youtube: "YouTube" };
+
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
 const origin = `https://${config.domain}`;
@@ -221,7 +244,7 @@ ${body}
   <p>Details come from each business's own website or an official visitor guide, and anything we couldn't confirm is left out. Hours and prices change, so call ahead before you drive over.</p>
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
   <nav class="foot-links" aria-label="More">
-    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/editorial-policy/">How we research</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a>
+    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/editorial-policy/">How we research</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a> <a href="/terms/">Terms</a>
   </nav>
   <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
@@ -481,8 +504,13 @@ const placesHtml = (names = []) => {
   return rows.length ? `<h2>Places mentioned</h2>\n${itemCards(rows)}` : "";
 };
 const planPages = readContent("plan").sort((a, b) => (a.order || 99) - (b.order || 99));
+// Plan pages that mention each listing by name (from their `places` arrays), for "Featured in" links on listing pages.
+const plansByPlace = new Map();
+for (const p of planPages) for (const n of p.places || []) plansByPlace.set(n, [...(plansByPlace.get(n) || []), p]);
 const relatedPlanHtml = (p) => {
-  const others = planPages.filter((o) => o.slug !== p.slug).slice(0, 6);
+  // rotate through the other pages, starting after this one, so every page gets linked from somewhere
+  const at = planPages.findIndex((o) => o.slug === p.slug);
+  const others = [...planPages.slice(at + 1), ...planPages.slice(0, Math.max(at, 0))].filter((o) => o.slug !== p.slug).slice(0, 6);
   return others.length ? `<h2>More planning pages</h2><ul class="hub-list">${others.map((o) => `<li><a href="/plan/${o.slug}/"><strong>${esc(o.title)}</strong><span>${esc(o.summary || "")}</span></a></li>`).join("")}</ul>` : "";
 };
 const categoryEssays = Object.fromEntries(readContent("categories").map((e) => [e.slug, e]));
@@ -768,13 +796,30 @@ ${mail ? `<p><a class="btn btn-go" href="mailto:${mail}?subject=${encodeURICompo
 <h2>Analytics</h2>
 <p>We use Cloudflare Web Analytics to count visits and see which pages are popular. It does not use cookies, does not track you across sites and does not build advertising profiles. Learn more at <a href="https://www.cloudflare.com/web-analytics/" rel="noopener">Cloudflare Web Analytics</a>.</p>
 <h2>Fonts and third-party links</h2>
-<p>Pages load fonts from Google Fonts, which means your browser contacts Google when a page loads. Links to business websites, maps and phone numbers leave this site and follow those businesses' and services' own privacy practices.</p>
+<p>Pages load fonts from Google Fonts, which means your browser contacts Google when a page loads. Links to business websites, maps, phone numbers and the Facebook, Instagram, TikTok and YouTube pages some listings link to leave this site and follow those businesses' and services' own privacy practices. We do not embed social media widgets or tracking pixels.</p>
 <h2>Saved places</h2>
 <p>The heart buttons store your saved places in your own browser (local storage on your device). That list is never sent to us.</p>
 <h2>Email</h2>
 <p>${mail ? `If you email <a href="mailto:${mail}">${mail}</a>, we use your message and address only to reply and to update listings.` : "If you email us, we use your message and address only to reply and to update listings."}</p>
 <h2>Children</h2>
 <p>This site is a guide for families and isn't directed at collecting information from children.</p>`)
+  );
+  await write(
+    "terms/index.html",
+    simplePage("Terms of use and disclaimer", `Terms of use and disclaimer for ${config.siteName}: accuracy of listings, links to other sites and trademarks.`, "/terms/",
+      `<h1>Terms of use and disclaimer</h1>
+<p>Last updated ${buildDate}.</p>
+<p>${esc(config.siteName)} is an independent, free guide to things to do on the Grand Strand. By using the site you agree to the points below.</p>
+<h2>Information may change</h2>
+<p>Hours, prices, phone numbers, tour schedules and even whether a business is open can change without notice, and many places in this area keep seasonal schedules. We take details from each business's own website or an official source and note when we last checked, but we cannot guarantee that anything is current or complete. Please confirm with the business before you travel or buy tickets. <a href="/editorial-policy/">How we research and update this guide</a>.</p>
+<h2>No endorsement</h2>
+<p>A listing is not an endorsement, recommendation or guarantee of quality, safety or availability. We are not owned by, paid by or affiliated with the businesses listed, and we do not sell placement. Activities such as boating, swimming, zip-lining and driving carry risks. Follow each operator's safety rules, posted beach flags and local guidance.</p>
+<h2>Links to other sites</h2>
+<p>Listings link to business websites, maps and social media pages that we do not control. We are not responsible for their content, availability or privacy practices. Social media links point to profiles the business publishes for itself or to an official page for it.</p>
+<h2>Names, logos and trademarks</h2>
+<p>Business names are used only to identify the places we describe. They belong to their owners. Descriptions, guides and artwork on this site are original unless noted. Please do not copy them without permission. The illustrations are drawn for this site and are not photographs of the businesses.</p>
+<h2>Corrections and removal</h2>
+<p>If you own or manage a listed business and something is wrong, or you would like it changed or removed, <a href="/contact/">contact us</a> and we will review it promptly. See also the <a href="/privacy/">privacy policy</a>.</p>`)
   );
 }
 
@@ -837,6 +882,17 @@ async function buildHome() {
 <section class="cat-grid-wrap" id="categories" aria-labelledby="cat-grid-title">
   <h2 id="cat-grid-title">Pick your kind of fun</h2>
   <ul class="cat-grid">${cards}</ul>
+</section>
+<section class="home-plan home-intro">
+  <h2>A local guide to the Grand Strand</h2>
+  <p>The Grand Strand is about sixty miles of beach in South Carolina, from Little River in the north to Georgetown in the south, with Myrtle Beach in the middle. This guide gathers ${total} things to do in ${categories.length} categories, from mini golf, golf and boat tours to museums, state parks, live shows and craft breweries. Each page gives directions, hours and prices when the business publishes them, and a short description written for this site.</p>
+  <p>It is an independent project, not owned by or paid for by any of the businesses listed. <a href="/editorial-policy/">Read how we research and update it</a>, or send a correction from the <a href="/contact/">contact page</a>.</p>
+</section>
+<section class="home-plan">
+  <h2>Plan your trip</h2>
+  <p>Itineraries and planning notes for families, couples, groups and rainy days, with the places mentioned linked to their listings.</p>
+  <ul class="hub-list">${planPages.filter((p) => ["three-days-with-kids", "long-weekend-for-two", "rainy-weekend", "friends-weekend", "golf-weekend", "month-by-month"].includes(p.slug)).map((p) => `<li><a href="/plan/${p.slug}/"><strong>${esc(p.title)}</strong><span>${esc(p.summary || "")}</span></a></li>`).join("")}</ul>
+  <p class="foot-small"><a href="/plan/">All ${planPages.length + 2} planning pages</a></p>
 </section>
 <section class="home-hubs">
   <div><h2>Guides</h2><ul class="hub-list">${guideLinks}</ul></div>
@@ -984,8 +1040,19 @@ async function buildDetail(cat, item) {
   const aroundHtml = around.length
     ? `<section class="nearby"><h2>Also in ${esc(areaLabel(item.area))}</h2><ul>${around.map((r) => `<li><a href="/${r.c.slug}/${r.i.slug}/">${esc(r.i.name)}</a><span>${esc(r.i.subtitle || r.c.title)}</span></li>`).join("")}</ul><p class="foot-small"><a href="/areas/${slugify(item.area)}/">All of ${esc(areaLabel(item.area))}</a></p></section>`
     : "";
+  const social = cat.slug === "beaches" ? {} : socialData[item.name] || {};
+  const socialHtml = Object.keys(social).length
+    ? `<p class="follow"><span>Follow ${esc(item.name)}:</span> ${Object.entries(social)
+        .filter(([net]) => SOCIAL_LABELS[net])
+        .map(([net, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener nofollow">${SOCIAL_LABELS[net]}</a>`)
+        .join("")}</p>`
+    : "";
+  const featuredIn = plansByPlace.get(item.name) || [];
+  const featuredHtml = featuredIn.length
+    ? `<section class="featured-in"><h2>Featured in our guides</h2><ul class="hub-list">${featuredIn.slice(0, 3).map((p) => `<li><a href="/plan/${p.slug}/"><strong>${esc(p.title)}</strong><span>${esc(p.summary || "")}</span></a></li>`).join("")}</ul></section>`
+    : "";
   const visitHtml = item.area
-    ? `<section class="visit"><h2>Planning your visit</h2><p>${esc(item.name)} is in ${esc(areaLabel(item.area))}.${introFirst ? " " + esc(introFirst) : ""} Parking, traffic and season are worth a look before you go: see <a href="/plan/getting-around/">getting around the Grand Strand</a> and <a href="/plan/when-to-visit/">when to visit</a>.</p></section>`
+    ? `<section class="visit"><h2>Planning your visit</h2><p>${esc(item.name)} is in ${esc(areaLabel(item.area))}; our <a href="/areas/${slugify(item.area)}/">${esc(areaLabel(item.area))} guide</a> shows what else is nearby. Parking, traffic and season are worth a look before you go: see <a href="/plan/getting-around/">getting around the Grand Strand</a> and <a href="/plan/when-to-visit/">when to visit</a>.</p></section>`
     : "";
 
   const hero = `
@@ -1013,7 +1080,9 @@ async function buildDetail(cat, item) {
       ${item.price || item.priceLevel ? `<div><dt>Price</dt><dd>${esc(item.price || priceWords[item.priceLevel] || "")}${item.price && item.priceLevel ? ` <span class="price-level">${esc(item.priceLevel)}</span>` : ""}</dd></div>` : ""}
       ${facts}
     </dl>
+    ${socialHtml}
     ${hoursBlock}
+    ${featuredHtml}
     ${visitHtml}
     ${item.goodToKnow.length ? `<section class="gtk"><h2>Good to know</h2><ul class="gtk-list">${item.goodToKnow.map((g) => `<li>${esc(g)}</li>`).join("")}</ul></section>` : ""}
     ${item.detailsChecked || item.detailsSource ? `<p class="checked">Hours and prices${item.detailsChecked ? ` checked ${esc(fmtDate(item.detailsChecked))}` : ""}${item.detailsSource ? ` from <a href="${esc(item.detailsSource)}" target="_blank" rel="noopener">${esc(new URL(item.detailsSource).hostname.replace(/^www\./, ""))}</a>` : ""}. They can change, so check before you go.</p>` : ""}
@@ -1040,7 +1109,10 @@ async function buildDetail(cat, item) {
   };
   if (item.address) ld.address = postalAddress(item.address);
   if (item.phone) ld.telephone = item.phone;
-  if (item.website) ld.sameAs = item.website;
+  {
+    const same = [item.website, ...Object.values(social)].filter(Boolean);
+    if (same.length) ld.sameAs = same.length === 1 ? same[0] : same;
+  }
   if (item.photo) ld.image = `${origin}${item.photo.src}`;
   if (item.week) ld.openingHoursSpecification = openingSpec(item.week);
   if (item.priceLevel && item.priceLevel !== "Free") ld.priceRange = item.priceLevel;
@@ -1080,7 +1152,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/editorial-policy/", "/contact/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/editorial-policy/", "/contact/", "/add-your-business/", "/privacy/", "/terms/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls

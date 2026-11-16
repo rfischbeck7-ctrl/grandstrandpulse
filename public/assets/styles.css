@@ -493,3 +493,10 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 @media (min-width: 880px) { .plan-head { grid-template-columns: 5fr 6fr; } }
 @media (max-width: 520px) { .plan-art { gap: .4rem; } .plan-art img { border-width: 2px; } }
 @media (max-width: 520px) { .hub-list a { flex-direction: column; align-items: flex-start; gap: .15rem; } }
+.follow { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; font-size: .95rem; }
+.follow span { color: var(--ink-soft); margin-right: .15rem; }
+.follow a { padding: .25rem .75rem; border: 1px solid var(--line); border-radius: 999px; background: var(--white); text-decoration: none; font-weight: 600; }
+.follow a:hover { border-color: var(--neon-pink); }
+.home-plan { max-width: var(--max); margin: 0 auto; padding: 1.5rem var(--gutter) 0; display: grid; gap: .75rem; }
+.home-plan > p { color: var(--ink-soft); max-width: 60ch; }
+.featured-in .hub-list { margin-top: .5rem; }

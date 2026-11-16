@@ -1,0 +1,116 @@
+{
+ "_note": "Hand-checked social links. Merged over data/social-auto.json (made by scripts/find-social.mjs from each business's own site). A null value removes a link. Only profiles the business itself publishes or an official page for it.",
+ "Wheels of Yesteryear": {
+  "facebook": "https://www.facebook.com/WheelsofYesteryear",
+  "instagram": "https://www.instagram.com/wheelsofyesteryear_mb"
+ },
+ "Radical Ropes Adventure Park": {
+  "facebook": "https://www.facebook.com/RadicalRopesMyrtleBeach"
+ },
+ "Riddles Escape Room": {
+  "facebook": "https://www.facebook.com/RiddlesEscapeRoom"
+ },
+ "Historic Myrtle Beach Colored School Museum": {
+  "facebook": null,
+  "instagram": null
+ },
+ "Stars and Strikes": {
+  "facebook": null,
+  "instagram": null
+ },
+ "Serial Killers: The Experience": {
+  "instagram": null
+ },
+ "Mulligan's Lagoon Golf and Arcade": {
+  "instagram": null
+ },
+ "Mayday Miniature Golf": {
+  "instagram": null
+ },
+ "Rice Museum": {
+  "facebook": "https://www.facebook.com/thericemuseum"
+ },
+ "Ripley's Aquarium": {
+  "facebook": "https://www.facebook.com/RipleysAquariumMyrtleBeach",
+  "instagram": "https://www.instagram.com/ripleysmyrtlebeach"
+ },
+ "Hollywood Wax Museum": {
+  "facebook": "https://www.facebook.com/hollywoodwaxmuseummyrtlebeach",
+  "instagram": "https://www.instagram.com/hollywoodwaxmyrtlebeach"
+ },
+ "Family Kingdom Amusement Park": {
+  "facebook": "https://www.facebook.com/Familykingdomfunmb",
+  "instagram": "https://www.instagram.com/familykingdomfunmb"
+ },
+ "Myrtle Beach Pelicans": {
+  "facebook": "https://www.facebook.com/myrtlebeachpelicans"
+ },
+ "Medieval Times": {
+  "facebook": "https://www.facebook.com/medievaltimesmyrtlebeach",
+  "instagram": "https://www.instagram.com/medievaltimessc"
+ },
+ "Polynesian Fire Luau": {
+  "facebook": "https://www.facebook.com/polynesianfire",
+  "instagram": "https://www.instagram.com/polynesianfiremyrtlebeach"
+ },
+ "Duplin Winery": {
+  "facebook": "https://www.facebook.com/DuplinWineryNMB",
+  "instagram": "https://www.instagram.com/duplinwinery"
+ },
+ "La Belle Amie Vineyard": {
+  "facebook": "https://www.facebook.com/labelleamievineyard",
+  "instagram": "https://www.instagram.com/labelleamievineyard"
+ },
+ "Crooked Hammock Brewery": {
+  "instagram": "https://www.instagram.com/crookedhammockbrewery"
+ },
+ "Horry County Museum": {
+  "facebook": "https://www.facebook.com/Horry-County-Museum-102987470282"
+ },
+ "Winyah Bay Brewing Company": {
+  "facebook": "https://www.facebook.com/100057205189769",
+  "instagram": "https://www.instagram.com/winyahbaybrewing"
+ },
+ "Dead Dog Saloon": {
+  "facebook": "https://www.facebook.com/DeadDogSaloon",
+  "instagram": "https://www.instagram.com/deaddogsaloon"
+ },
+ "Fat Harold's Beach Club": {
+  "facebook": "https://www.facebook.com/fatharolds"
+ },
+ "The Bowery": {
+  "instagram": "https://www.instagram.com/thebowerymb"
+ },
+ "Señor Frog's": {
+  "facebook": "https://www.facebook.com/frogsmyrtlebeach"
+ },
+ "TPC Myrtle Beach": {
+  "facebook": "https://www.facebook.com/TPCMyrtleBeach",
+  "instagram": "https://www.instagram.com/playtpcmyrtlebeach"
+ },
+ "Dunes Golf & Beach Club": {
+  "instagram": "https://www.instagram.com/thedunesclub"
+ },
+ "The Pier at Garden City Beach": {
+  "facebook": "https://www.facebook.com/PieratGardenCity"
+ },
+ "Apache Pier": {
+  "facebook": "https://www.facebook.com/ApacheFamilyCampgroundPier",
+  "instagram": "https://www.instagram.com/apachefamilycampgroundpier"
+ },
+ "Ripley's Believe It or Not!": {
+  "facebook": "https://www.facebook.com/RipleysMyrtleBeach"
+ },
+ "Ripley's Mirror Maze": {
+  "facebook": "https://www.facebook.com/RipleysMyrtleBeach"
+ },
+ "Ripley's Haunted Adventure": {
+  "facebook": "https://www.facebook.com/RipleysMyrtleBeach"
+ },
+ "Ripley's Crazy Golf": {
+  "facebook": "https://www.facebook.com/ripleyscrazygolf"
+ },
+ "Great Escapes Kayaking Expeditions": {
+  "facebook": "https://www.facebook.com/GreatEscapeKayakExpeditions"
+ }
+}

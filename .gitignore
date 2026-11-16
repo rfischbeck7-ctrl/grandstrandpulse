@@ -2,3 +2,5 @@ dist/
 node_modules/
 .DS_Store
 link-check.json
+social-unreadable.txt
+social-candidates.json
