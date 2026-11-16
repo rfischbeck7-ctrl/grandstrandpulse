@@ -1,0 +1,62 @@
+{
+  "title": "A low-cost weekend in Myrtle Beach",
+  "summary": "Beach days, free walks, state parks and a few well-chosen splurges",
+  "description": "How to do a Myrtle Beach weekend on a modest budget: free beaches and boardwalks, state parks, low-cost mini golf and a plan for where to spend and where to save.",
+  "order": 13,
+  "updated": "November 2026",
+  "places": ["Myrtle Beach Boardwalk", "Myrtle Beach State Park", "Huntington Beach State Park", "Georgetown Harborwalk", "Murrells Inlet MarshWalk", "Conway Riverwalk", "Splinter City Disc Golf Course"],
+  "intro": [
+    "Myrtle Beach has a reputation as an affordable beach destination, and it can be, but costs add up fast with a family. The good news is that the best thing here, the beach, is free. This plan keeps the spending to a few chosen items and fills the rest of the weekend with free or low-cost things. Prices change, so check each place's own page for current admission and rates."
+  ],
+  "sections": [
+    {
+      "h": "Where you stay matters more than what you do",
+      "p": [
+        "Lodging is usually the biggest cost. Off-peak weekends in spring and fall are much cheaper than summer, and weekdays are cheaper than weekends. Rooms and rentals a few blocks from the oceanfront often cost much less than those directly on it, and the walk is short. Look for a place with a kitchen if you are traveling with a group, because breakfast and some dinners at home save a lot."
+      ]
+    },
+    {
+      "h": "Friday evening: the Boardwalk",
+      "p": [
+        "Arrive, drop your bags and walk the Myrtle Beach Boardwalk. It is free, it stretches more than a mile along the oceanfront and it is a good introduction to the area. Watch the sunset from the sand, and stop for something simple like ice cream or a snack. You do not need to ride anything or buy anything to enjoy the walk."
+      ]
+    },
+    {
+      "h": "Saturday: beach morning and a state park afternoon",
+      "p": [
+        "Spend the morning on the beach. Bring your own chairs, umbrella and cooler if you can, because rentals on the oceanfront can be expensive. In the afternoon, take a short drive to Myrtle Beach State Park, which has a quieter beach, a pier, nature trails and a small entry fee. If you want a more remote feel, Huntington Beach State Park in Murrells Inlet has marsh boardwalks, a lagoon and a long beach, also for a modest fee.",
+        "Both parks are good places to bring a picnic. Check the state park system's own page for rates and for any seasonal changes to hours."
+      ]
+    },
+    {
+      "h": "Saturday evening: the MarshWalk",
+      "p": [
+        "The Murrells Inlet MarshWalk is free to stroll, and it is a lively place to be at sunset, with live music at several of the venues. You do not need to eat a big dinner there. Walk the boardwalk, watch the boats and enjoy the atmosphere. If you do eat, look for early specials and shared plates."
+      ]
+    },
+    {
+      "h": "Sunday: a small town and a river",
+      "p": [
+        "Drive inland to Conway or south to Georgetown for a change of scene. The Conway Riverwalk is a free waterfront walk in a pretty downtown with shops and cafes. In Georgetown, the Harborwalk follows the waterfront and is free to walk, with historic buildings a short distance away. Both are good for a slower morning before you head home."
+      ]
+    },
+    {
+      "h": "Where to splurge a little",
+      "list": [
+        "One round of mini golf. It is a classic, and some courses are cheaper at certain times of day. Check each course's own page.",
+        "One special meal, rather than three. Pick something local, such as seafood in Murrells Inlet.",
+        "One paid experience, such as a dolphin cruise or an attraction your group will remember.",
+        "Disc golf, if you play. Splinter City Disc Golf Course is a county-run option, and it is a cheap way to spend a few hours outside."
+      ]
+    },
+    {
+      "h": "Where to save",
+      "list": [
+        "Pack your own cooler for the beach: water, sandwiches and snacks.",
+        "Park a few blocks from the busiest areas to avoid premium lot rates, and check for free parking at beach access points.",
+        "Skip the souvenir shops until the end, and decide on one thing you really want.",
+        "Look for combination tickets or discounts on the attractions' own sites, rather than third-party sellers."
+      ]
+    }
+  ]
+}

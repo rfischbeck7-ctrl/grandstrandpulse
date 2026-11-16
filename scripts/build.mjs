@@ -221,7 +221,7 @@ ${body}
   <p>Details come from each business's own website or an official visitor guide, and anything we couldn't confirm is left out. Hours and prices change, so call ahead before you drive over.</p>
   ${config.contactEmail ? `<p>Run one of these places, or spotted something wrong? <a href="mailto:${esc(config.contactEmail)}">Email ${esc(config.contactEmail)}</a>.</p>` : ""}
   <nav class="foot-links" aria-label="More">
-    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a>
+    <a href="/saved/">Saved places</a> <a href="/search/">Search everything</a> <a href="/areas/">Browse by area</a> <a href="/guides/">Guides</a> <a href="/plan/">Plan your trip</a> <a href="/add-your-business/">Add or fix a listing</a> <a href="/about/">About</a> <a href="/editorial-policy/">How we research</a> <a href="/contact/">Contact</a> <a href="/privacy/">Privacy</a>
   </nav>
   <p class="foot-small">© ${new Date().getFullYear()} ${esc(config.siteName)}. ${esc(config.tagline || "")}. Listings last refreshed ${buildDate}.</p>
 </footer>
@@ -454,9 +454,37 @@ const readContent = (dir) => {
     return [];
   }
 };
-const sectionsHtml = (sections = []) =>
-  sections.map((s) => `${s.h ? `<h2>${esc(s.h)}</h2>` : ""}${(s.p || []).map((t) => `<p>${esc(t)}</p>`).join("")}${s.list ? `<ul>${s.list.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}`).join("\n");
+// Link the first mention of each listing name in hand-written text to its page.
+const linkTargets = (() => {
+  const m = new Map();
+  for (const { c, i } of allItems) {
+    if (c.slug === "beaches" || i.name.length < 8 || areaNames.includes(i.name)) continue;
+    if (!m.has(esc(i.name))) m.set(esc(i.name), `/${c.slug}/${i.slug}/`);
+  }
+  const keys = [...m.keys()].sort((a, b) => b.length - a.length);
+  const re = keys.length ? new RegExp(keys.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|"), "g") : null;
+  return { m, re };
+})();
+const txt = (t, used) => {
+  const h = esc(t);
+  if (!used || !linkTargets.re) return h;
+  return h.replace(linkTargets.re, (name) => {
+    if (used.has(name)) return name;
+    used.add(name);
+    return `<a href="${linkTargets.m.get(name)}">${name}</a>`;
+  });
+};
+const sectionsHtml = (sections = [], used = new Set()) =>
+  sections.map((s) => `${s.h ? `<h2>${esc(s.h)}</h2>` : ""}${(s.p || []).map((t) => `<p>${txt(t, used)}</p>`).join("")}${s.list ? `<ul>${s.list.map((t) => `<li>${txt(t, used)}</li>`).join("")}</ul>` : ""}`).join("\n");
+const placesHtml = (names = []) => {
+  const rows = names.map((n) => allItems.find((r) => r.i.name === n)).filter(Boolean);
+  return rows.length ? `<h2>Places mentioned</h2>\n${itemCards(rows)}` : "";
+};
 const planPages = readContent("plan").sort((a, b) => (a.order || 99) - (b.order || 99));
+const relatedPlanHtml = (p) => {
+  const others = planPages.filter((o) => o.slug !== p.slug).slice(0, 6);
+  return others.length ? `<h2>More planning pages</h2><ul class="hub-list">${others.map((o) => `<li><a href="/plan/${o.slug}/"><strong>${esc(o.title)}</strong><span>${esc(o.summary || "")}</span></a></li>`).join("")}</ul>` : "";
+};
 const categoryEssays = Object.fromEntries(readContent("categories").map((e) => [e.slug, e]));
 const categoryEssayHtml = (slug) => {
   const e = categoryEssays[slug];
@@ -581,7 +609,7 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
       `<h1>About ${esc(config.siteName)}</h1>
 <p>${esc(config.siteName)} is a free guide to things to do along the Grand Strand, from North Myrtle Beach down through Murrells Inlet to Georgetown. It covers mini golf, breweries and wineries, nightlife, thrill rides, family and indoor fun, nature, live shows and history.</p>
 <h2>Who runs this site</h2>
-<p>${esc(config.siteName)} is an independent project run by Ryan. It started as a way to keep Grand Strand things to do, from mini golf to museums and boat tours, in one easy place with directions, phone numbers and the practical details people look for before heading out. It isn't owned by or paid for by any of the businesses listed.</p>
+<p>${esc(config.siteName)} is an independent project run by Ryan. See <a href="/editorial-policy/">how we research and update this guide</a>. It started as a way to keep Grand Strand things to do, from mini golf to museums and boat tours, in one easy place with directions, phone numbers and the practical details people look for before heading out. It isn't owned by or paid for by any of the businesses listed.</p>
 <h2>How listings get here</h2>
 <p>Listing details are taken from the business's own website or an official visitor guide. If we can't confirm that a place is open or what it offers, it stays off the site. Hours, prices and offerings change, so call ahead before you drive over.</p>
 <h2>Corrections and updates</h2>
@@ -604,7 +632,7 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
     await write(
       `plan/${p.slug}/index.html`,
       simplePage(p.title, p.description || p.summary || p.title, `/plan/${p.slug}/`,
-        `<p class="crumbs"><a href="/plan/">Plan your trip</a></p><h1>${esc(p.title)}</h1>${(p.intro || []).map((t) => `<p>${esc(t)}</p>`).join("")}\n${sectionsHtml(p.sections)}${p.updated ? `<p class="result-count">Last reviewed ${esc(p.updated)}.</p>` : ""}`)
+        `<p class="crumbs"><a href="/plan/">Plan your trip</a></p><h1>${esc(p.title)}</h1>${(p.intro || []).map((t) => `<p>${txt(t, (p._used ||= new Set()))}</p>`).join("")}\n${sectionsHtml(p.sections, p._used)}${placesHtml(p.places)}${relatedPlanHtml(p)}${p.updated ? `<p class="result-count">Last reviewed ${esc(p.updated)}.</p>` : ""}`)
     );
   }
   await write(
@@ -641,6 +669,29 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
 <h2>Other areas</h2>
 <p>Surfside Beach, Garden City, Murrells Inlet and Georgetown each set their own parking rules, and some attractions have their own lots. Check each town's website or the listing before you go.</p>
 <p class="foot-small">Sources: City of Myrtle Beach, City of North Myrtle Beach and Visit Myrtle Beach. Details as of November 2026.</p>`)
+  );
+  await write(
+    "editorial-policy/index.html",
+    simplePage("How we research and update this guide", `How ${config.siteName} chooses listings, where details come from, how pages are written and how corrections are handled.`, "/editorial-policy/",
+      `<h1>How we research and update this guide</h1>
+<p>${esc(config.siteName)} is a free directory of things to do on the Grand Strand. This page explains what we include, where facts come from and how we handle mistakes, so you can decide how much to rely on what you read.</p>
+<h2>What we include</h2>
+<p>We list things to do: attractions, tours, parks, shows, museums, mini golf, golf courses, piers, breweries and nightlife. We do not run restaurant, hotel or shopping directories. A place is added only when we can find a business or official source that confirms it exists and is operating. If we cannot confirm a place, we leave it off, and if a business closes we unpublish it rather than leave a dead page.</p>
+<h2>Where details come from</h2>
+<ul>
+<li><strong>Addresses, phone numbers, hours and prices</strong> come from the business's own website or, for state parks, the park system. If a business does not publish hours or prices, we leave them blank and say to call ahead.</li>
+<li><strong>Descriptions</strong> are written in our own words from the business's site where one is readable, and otherwise from several reputable sources such as tourism boards, local news and municipal pages. We do not copy text from other sites.</li>
+<li><strong>Reviews and ratings</strong> are never copied. Our Google and Yelp buttons are links only, because ratings change and belong to those services.</li>
+<li><strong>Planning pages</strong> such as itineraries, seasonal notes and safety pages draw on official city, county, state-park and weather-service sources and general visitor-bureau information. Where sources disagree, we hedge or leave the detail out.</li>
+</ul>
+<h2>How the pages are written</h2>
+<p>Research and drafting of descriptions and guides are assisted by AI tools, and the site is edited and published by Ryan. We do not claim to have personally visited every place listed, and we do not write reviews. Our pictures for listings without a photo are illustrations, not photographs of the business.</p>
+<h2>How we keep it current</h2>
+<p>The site rebuilds every night from our listing database. We recheck listings in batches, starting with places whose websites stop working, places that have been reported as closed or sold, and seasonal businesses. A status note is kept internally for each batch. Hours and prices change often, so treat what you read here as a starting point and confirm with the business.</p>
+<h2>Independence</h2>
+<p>Listing is free and nobody pays to be included or to be described more favorably. Ads, when shown, are served by Google and do not change what we list.</p>
+<h2>Corrections</h2>
+<p>If you find a mistake or a place has closed, <a href="/contact/">tell us</a> and we will check and fix it. Owners can also use <a href="/add-your-business/">Add or fix a listing</a>.</p>`)
   );
   const tpl = encodeURIComponent("Business name:\nWebsite:\nAddress:\nPhone:\nType (mini golf, brewery, tour, show...):\nOne-sentence description:\nAre you the owner or a fan?\n(Photos welcome: attach one you took or have the right to share.)");
   await write(
@@ -987,7 +1038,7 @@ async function buildDetail(cat, item) {
 }
 
 async function buildExtras() {
-  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/contact/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
+  const urls = ["/", "/areas/", "/guides/", "/plan/", "/plan/when-to-visit/", "/plan/getting-around/", ...planPages.map((p) => `/plan/${p.slug}/`), "/about/", "/editorial-policy/", "/contact/", "/add-your-business/", "/privacy/", ...areaNames.filter((a) => allItems.some((r) => r.i.area === a)).map((a) => `/areas/${slugify(a)}/`), ...guides.filter((g) => allItems.some((r) => g.test(r.c, r.i))).map((g) => `/guides/${g.slug}/`), ...categories.flatMap((c) => [`/${c.slug}/`, ...c.items.map((i) => `/${c.slug}/${i.slug}/`)])];
   await write(
     "sitemap.xml",
     `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls

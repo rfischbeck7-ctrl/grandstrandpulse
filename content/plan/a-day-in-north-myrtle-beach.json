@@ -1,0 +1,57 @@
+{
+  "title": "A day in North Myrtle Beach and Little River",
+  "summary": "Ocean Drive, Barefoot Landing and the Little River waterfront",
+  "description": "A one-day North Myrtle Beach itinerary covering Ocean Drive and the shag dance tradition, Barefoot Landing, Cherry Grove Pier and the Little River waterfront.",
+  "order": 8,
+  "updated": "November 2026",
+  "places": ["Alligator Adventure", "Alabama Theatre", "Cherry Grove Pier", "Little River Fishing Fleet", "Sea Thunder and Sea Screamer", "Duplin Winery", "Crooked Hammock Brewery", "Waites Island"],
+  "intro": [
+    "North Myrtle Beach is its own city, separate from Myrtle Beach, and it has a different feel. It is quieter and more residential, with a long beach, a few small neighborhoods and a pronounced beach-music tradition. Further north, Little River is a working waterfront village that sits right at the North Carolina border.",
+    "This plan covers a full day, starting on the sand and ending on the water. You can do it in either direction depending on where you are staying."
+  ],
+  "sections": [
+    {
+      "h": "Morning: the beach and Ocean Drive",
+      "p": [
+        "Start at the oceanfront. North Myrtle Beach is made up of several neighborhoods that were once separate towns, including Ocean Drive, Crescent Beach, Windy Hill and Cherry Grove. Ocean Drive is the best known. It is the traditional home of the shag, the partner dance that is South Carolina's official state dance, and the area still celebrates its beach-music roots with festivals and live music venues.",
+        "Walk the beach in the morning while it is calm. If you are interested in fishing or just in a long walk over the water, Cherry Grove Pier is a good place to spend a while. Fishing from the pier is a local habit, and spectators are common on busy days."
+      ]
+    },
+    {
+      "h": "Late morning: Barefoot Landing",
+      "p": [
+        "Barefoot Landing sits on the Intracoastal Waterway and mixes shops, restaurants and entertainment. The most distinctive attraction nearby is Alligator Adventure, which is a zoo and reptile park with a large collection of crocodilians, snakes and other animals. It is a reliable stop for families and one of the few attractions in the area that works well in both sun and drizzle.",
+        "The Alabama Theatre, which is part of the Barefoot Landing complex, is one of the best-known live shows in the region. It runs variety productions and seasonal events, so check the schedule if you want to end the day with a show."
+      ]
+    },
+    {
+      "h": "Afternoon: tasting rooms and mini golf",
+      "p": [
+        "North Myrtle Beach has a good concentration of drink-focused stops that are not bars. Crooked Hammock Brewery is a craft brewery with food, and Duplin Winery is a branch of a North Carolina winery known for Muscadine wines. Both are easy to reach from the main roads and make a good break if you need to get out of the sun.",
+        "If you have kids with you, North Myrtle Beach has several mini golf courses, including the Professor Hacker's courses and Mutiny Bay. Browse our mini golf category for the full list and pick the theme you like best."
+      ]
+    },
+    {
+      "h": "Late afternoon: Little River waterfront",
+      "p": [
+        "Drive north to Little River, about ten minutes from the center of North Myrtle Beach. The waterfront here has a fishing fleet, a small marina and a cluster of restaurants with views of the water. The Little River Fishing Fleet runs deep-sea and nearshore trips, and several dolphin and sightseeing cruises leave from the area. Sea Thunder and Sea Screamer offer boat rides, including a fast boat for people who like speed.",
+        "Even if you do not go out on the water, it is worth a walk along the docks near sunset. Boats come in, pelicans gather and the light is good. Parking is available near the marina, though busy summer evenings can make it tight."
+      ]
+    },
+    {
+      "h": "For nature lovers",
+      "p": [
+        "Waites Island, a barrier island near Cherry Grove, is accessible by boat or kayak and is managed for conservation. It is a good option if you want a quiet beach away from the crowds, but it requires planning. Check the Coastal Carolina University and tour operator pages for access options before you go."
+      ]
+    },
+    {
+      "h": "Practical notes",
+      "list": [
+        "Highway 17 is the main road and it can be slow in summer. Leave time between stops.",
+        "Parking near the beach is a mix of public lots and street parking. Check the city's current rules.",
+        "Some businesses in the area are seasonal. Call or check their sites before you plan around them.",
+        "Combine this itinerary with our Murrells Inlet day for a long weekend."
+      ]
+    }
+  ]
+}

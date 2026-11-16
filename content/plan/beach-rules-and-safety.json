@@ -1,0 +1,67 @@
+{
+  "title": "Beach rules and safety on the Grand Strand",
+  "summary": "Rip currents, lightning, sea turtles, sun and the rules that vary by town",
+  "description": "A practical guide to beach safety and etiquette on the Grand Strand: rip currents, lightning, sun, sea turtle nesting, and why rules on alcohol, dogs and tents differ by town.",
+  "order": 10,
+  "updated": "November 2026",
+  "places": ["Myrtle Beach State Park", "Huntington Beach State Park", "Surfside Beach Pier", "Second Avenue Pier"],
+  "intro": [
+    "The beaches on the Grand Strand are some of the most visited in the country, and most days are uneventful. A few predictable hazards cause most of the problems, and almost all of them can be avoided with a little preparation. This page is general guidance. For rules and warnings that apply to the day you are there, rely on the town, county and park authorities and on the posted signs."
+  ],
+  "sections": [
+    {
+      "h": "Rip currents",
+      "p": [
+        "Rip currents are narrow channels of water that pull away from shore. They can form on any beach with breaking waves and are the main danger to swimmers on the Atlantic coast. Signs include a gap in the breaking waves, a line of foam or debris moving seaward, or water that looks darker and calmer than the surrounding surf.",
+        "If you are caught in one, stay calm and do not try to swim straight back against it. Swim parallel to the shore until you are out of the current, then angle back in. If you cannot get out, float or tread water and signal for help. Choose a beach with lifeguards when you can, and ask them about conditions. Lifeguard coverage is typically seasonal, so assume a beach is unguarded unless you see a stand and a flag."
+      ]
+    },
+    {
+      "h": "Lightning",
+      "p": [
+        "Summer afternoons on the coast can produce fast thunderstorms. If you hear thunder, leave the beach, the water and any pier. The standard advice from the National Weather Service is that when thunder roars, go indoors, and wait about half an hour after the last thunder before returning. Check the radar before you head out, and keep an eye on the sky."
+      ]
+    },
+    {
+      "h": "Sun and heat",
+      "p": [
+        "Sunburn is the most common beach injury. Apply sunscreen before you go out, reapply after swimming and take breaks in shade. Drink more water than you think you need, especially if you are walking on the sand. Heat exhaustion can show up as headache, dizziness and nausea, and it is worth taking seriously with children and older adults."
+      ]
+    },
+    {
+      "h": "Sea turtles and wildlife",
+      "p": [
+        "Loggerhead sea turtles nest on Grand Strand beaches, generally from May through October. Volunteers mark nests, and the rules are simple: keep lights off or shielded at night near the beach, fill in holes you dig, flatten sand castles and take your gear, tents and chairs off the beach when you leave. Do not approach or touch a nesting turtle or hatchlings. If you see one in trouble, call the local wildlife hotline or the town rather than handling it yourself.",
+        "You may also see jellyfish, crabs and shorebirds. Give birds room, especially nesting colonies, and avoid feeding wildlife. Stingrays rest in shallow water, so shuffle your feet when you wade."
+      ]
+    },
+    {
+      "h": "Rules vary by town",
+      "p": [
+        "Myrtle Beach, North Myrtle Beach, Surfside Beach, Garden City and Pawleys Island each set their own beach rules, and the state parks have theirs. Topics that differ include alcohol, glass containers, dogs and leash hours, tents and canopies, fires, bicycles and drones. Rules change, so check the town website or posted signs rather than rely on a summary. When in doubt, assume that glass is not allowed, that fires are not allowed, and that dogs have restrictions in summer."
+      ]
+    },
+    {
+      "h": "Good beach manners",
+      "list": [
+        "Leave a clear path to the water for lifeguards and emergency crews.",
+        "Take your trash with you, including cigarette butts.",
+        "Keep music at a volume that does not carry down the beach.",
+        "Do not leave equipment overnight. It can block turtles and is removed by crews.",
+        "Respect dune fences and protected vegetation. The dunes protect the coast."
+      ]
+    },
+    {
+      "h": "Fishing piers and the surf",
+      "p": [
+        "Fishing piers charge a fee for anglers and a smaller one for walkers at many locations, and they are popular for sunrise and sunset. Stay behind rails, watch for hooks and lines and keep children close. If you want to fish from the beach, check South Carolina's saltwater fishing license requirements and local rules before you cast."
+      ]
+    },
+    {
+      "h": "Know what to do in an emergency",
+      "p": [
+        "Call 911 for any water emergency. Note the nearest street or lifeguard stand number so you can describe where you are. If you are visiting with children, agree on a meeting point before you go in the water, and keep a close eye on them at all times. Many beach incidents involve young children who wander away while adults look at their phones."
+      ]
+    }
+  ]
+}

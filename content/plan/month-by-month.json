@@ -1,0 +1,79 @@
+{
+  "title": "Myrtle Beach month by month",
+  "summary": "What to expect from the weather, crowds and events in each month",
+  "description": "A month-by-month guide to Myrtle Beach: typical weather, crowd levels, what is open and the kinds of events that tend to fall in each month of the year.",
+  "order": 12,
+  "updated": "November 2026",
+  "places": ["Myrtle Beach Pelicans", "Myrtle Waves Water Park", "Family Kingdom Amusement Park", "Brookgreen Gardens", "Myrtle Beach SkyWheel"],
+  "intro": [
+    "Weather and crowds on the Grand Strand follow a clear seasonal pattern, but each month has its own character. The figures below are rough, drawn from long-term patterns, and not forecasts. Events move around from year to year, so treat the event notes as kinds of things that tend to happen rather than a calendar, and check the organizer's own page for dates."
+  ],
+  "sections": [
+    {
+      "h": "January and February",
+      "p": [
+        "Cool and quiet. Daytime highs are usually in the 50s Fahrenheit, with colder nights and the occasional freeze. Many seasonal attractions are closed or on short hours. Golf courses stay open at their lowest prices of the year, and indoor attractions, theaters and museums are the main draw. Winter is also a good time to see wintering birds at the state parks. February sometimes brings road races and runs along the oceanfront."
+      ]
+    },
+    {
+      "h": "March and April",
+      "p": [
+        "Spring arrives gradually. Highs climb from the 60s into the 70s, though ocean water is still cold. March is popular with golfers, and it can bring spring break crowds from colleges and schools, so book ahead. By April most attractions are open again, the Boardwalk fills in and the baseball season starts for the Myrtle Beach Pelicans. Azaleas and other spring blooms make the gardens a good option."
+      ]
+    },
+    {
+      "h": "May",
+      "p": [
+        "May is the opening act of summer. Water is still cool, but days are warm and the beaches start to fill. Motorcycle rallies traditionally arrive in the middle of the month, which affects traffic and hotel availability, so look at dates before you book. Memorial Day weekend marks the unofficial start of the summer season, with lifeguards and seasonal attractions starting up around that time."
+      ]
+    },
+    {
+      "h": "June",
+      "p": [
+        "Summer proper begins as schools let out. Expect warm water, hot days with highs in the upper 80s, long evenings and rising crowds. Water parks, amusement rides, boat tours and outdoor concerts are running. Afternoon thunderstorms are common, so keep an indoor backup. The Atlantic hurricane season begins June 1, though the risk is low early in the season."
+      ]
+    },
+    {
+      "h": "July",
+      "p": [
+        "July is the busiest and hottest month, with highs around 90 degrees and humid air. Fourth of July weekends can be especially crowded, and fireworks displays take place in several towns. If you travel in July, book accommodations and shows early, start outdoor activities in the morning and plan to spend the hottest part of the day in the water or in air-conditioning."
+      ]
+    },
+    {
+      "h": "August",
+      "p": [
+        "August is still hot and humid, but crowds thin toward the end of the month as schools resume. Ocean water is at its warmest. Hurricane season activity begins to build, so keep an eye on the forecast and consider flexible bookings. Late August can be a good time for travelers without school-age children."
+      ]
+    },
+    {
+      "h": "September",
+      "p": [
+        "Many locals consider September one of the best months. Crowds fall sharply after Labor Day, rates drop and the water is still warm. This is also the peak of hurricane season, so book flexibly. Some summer-only attractions begin closing or cutting hours, and baseball season wraps up. Beach-music and shag dance gatherings in North Myrtle Beach often take place in the early fall."
+      ]
+    },
+    {
+      "h": "October",
+      "p": [
+        "Highs settle into the 70s, humidity drops and the beaches are quiet. The ocean is cooling, but many people still swim early in the month. Fall festivals, harvest events and Halloween attractions pick up, and some venues run haunted experiences. The hurricane risk falls by late in the month. Check hours, as water parks and some outdoor businesses close for the season."
+      ]
+    },
+    {
+      "h": "November",
+      "p": [
+        "Cooler and calmer. Highs are typically in the 60s and nights are chilly. Holiday shows begin in early November, and many theaters run Christmas productions through the end of the year. Some attractions close for the season, while indoor options and live shows remain strong. Thanksgiving week can bring a small bump in visitors."
+      ]
+    },
+    {
+      "h": "December",
+      "p": [
+        "Holiday lights, shows and events take over. Highs are usually in the 50s. Brookgreen Gardens and several other venues hold evening light displays and seasonal programs. Prices rise a little for the holiday weeks and are lowest in early December. Some businesses close for a few days around the holidays, so confirm hours."
+      ]
+    },
+    {
+      "h": "How to use this",
+      "p": [
+        "If you want guaranteed beach weather, aim for late June through August. If you want a quiet trip with good weather, try late April, May or late September to October. If you want the lowest prices, go in winter and plan around indoor activities. Our when-to-visit page has a shorter version, and our winter guide goes deeper on the cold months."
+      ]
+    }
+  ]
+}

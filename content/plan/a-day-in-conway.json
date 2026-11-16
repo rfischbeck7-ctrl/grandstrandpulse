@@ -1,0 +1,54 @@
+{
+  "title": "A day in Conway",
+  "summary": "A river town, a museum, a living-history farm and a walk through downtown",
+  "description": "A one-day Conway, SC itinerary: the Riverwalk, historic downtown, the Horry County Museum and the L.W. Paul Living History Farm, with notes on getting there from the coast.",
+  "order": 15,
+  "updated": "November 2026",
+  "places": ["Conway Riverwalk", "Historic Downtown Conway Walking Tour", "Horry County Museum", "L.W. Paul Living History Farm", "Theatre of the Republic", "Conway Glass", "Pedal Pub Conway"],
+  "intro": [
+    "Conway is the county seat of Horry County and one of the oldest towns in the area. It sits on the Waccamaw River, about a half hour inland from the oceanfront in Myrtle Beach, and it is home to Coastal Carolina University. It is a good day trip for anyone who wants to see a quieter, more historical side of the region.",
+    "Plan on a half day to a full day. It pairs well with a morning or afternoon at the beach on the same day."
+  ],
+  "sections": [
+    {
+      "h": "Start at the Riverwalk",
+      "p": [
+        "The Conway Riverwalk is a waterfront boardwalk along the Waccamaw River in the center of downtown. It is a gentle walk with views of the river, cypress trees and the downtown buildings. Early morning is the quietest time, and you may see herons and turtles on the water. It is easy to combine with a coffee from one of the cafes nearby."
+      ]
+    },
+    {
+      "h": "Walk through historic downtown",
+      "p": [
+        "Downtown Conway has a compact grid of brick buildings, small shops, restaurants and old oak trees. The Historic Downtown Conway Walking Tour gives a sense of the buildings and stories, and it begins at the visitor center on Main Street. You can also walk it on your own. The streets near the river hold many of the oldest buildings.",
+        "Theatre of the Republic, in the downtown area, is a small local theater that stages community productions. Check its calendar if you are planning an evening in town."
+      ]
+    },
+    {
+      "h": "Visit the Horry County Museum",
+      "p": [
+        "The Horry County Museum is the best place to understand the history of the area. Exhibits cover the people, industries and natural history of the county, from the days of the lumber and turpentine trade to the growth of tourism. It is a straightforward stop that takes an hour or so. Check its page for current hours before you go."
+      ]
+    },
+    {
+      "h": "The L.W. Paul Living History Farm",
+      "p": [
+        "The L.W. Paul Living History Farm, which is run by the Horry County Museum, shows what rural life looked like in the early twentieth century. The site has historic farm buildings, animals and demonstrations. It is a good option for families, because kids can see animals and tools in use. Opening days are limited, so check ahead."
+      ]
+    },
+    {
+      "h": "Something creative or active",
+      "p": [
+        "Conway Glass is a working studio, and studio visits are limited, so call ahead. Pedal Pub Conway is a pedal-powered group ride around downtown, which suits birthdays and group outings. These are small-business stops, and their schedules vary by season."
+      ]
+    },
+    {
+      "h": "Getting there and practical notes",
+      "list": [
+        "Conway is reached from the coast by Highway 501 or Highway 378. Traffic on 501 can be heavy on summer weekends, so leave early.",
+        "Downtown parking is generally easier than on the oceanfront. Check posted signs.",
+        "Some shops and the museum close on certain days, so plan your route around the days that are open.",
+        "Bring bug spray for the Riverwalk in warm months."
+      ]
+    }
+  ]
+}

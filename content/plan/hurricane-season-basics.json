@@ -1,0 +1,54 @@
+{
+  "title": "Hurricane season basics for Myrtle Beach visitors",
+  "summary": "When the risk is highest, how to book, and what to do if a storm is forecast",
+  "description": "How hurricane season affects a Myrtle Beach trip: the dates, when the risk peaks, how to book flexibly, how to follow forecasts and what to do if an evacuation is ordered.",
+  "order": 11,
+  "updated": "November 2026",
+  "places": ["Myrtle Beach Boardwalk", "Brookgreen Gardens"],
+  "intro": [
+    "The Atlantic hurricane season runs from June 1 to November 30. Most Grand Strand trips are never affected, but a trip in late summer or early fall deserves a little more planning. This page explains the basics in plain terms. It is not a substitute for official forecasts and evacuation orders, which always take priority."
+  ],
+  "sections": [
+    {
+      "h": "When the risk is highest",
+      "p": [
+        "Activity in the Atlantic usually picks up in August, peaks around the middle of September and tapers off by late October, with an occasional late storm after that. The Carolinas have been hit by several notable storms over the years, including Hurricane Matthew in 2016, Hurricane Florence in 2018 and Hurricane Ian in 2022. The point is not to scare visitors, but to explain why many travelers choose flexible bookings in this window."
+      ]
+    },
+    {
+      "h": "Book with flexibility",
+      "list": [
+        "Read the cancellation policy of your hotel or rental before you book, not after a storm appears.",
+        "Consider travel insurance that covers named storms, and read what triggers coverage, since many policies only apply after a storm is named or a watch is issued.",
+        "Ask whether a rental company offers credits or refunds if an evacuation is ordered.",
+        "Keep receipts for prepaid activities and ask about weather policies. Tour operators and show venues often set their own."
+      ]
+    },
+    {
+      "h": "Follow the right sources",
+      "p": [
+        "The National Hurricane Center publishes forecasts, track cones and advisories. The National Weather Service office in Wilmington covers the Grand Strand and issues local watches and warnings. Horry County and Georgetown County emergency management offices publish evacuation information, and the cities of Myrtle Beach and North Myrtle Beach post local updates. Treat social media rumors with caution and follow official accounts.",
+        "Understand the terms. A watch means conditions are possible within the area, and a warning means they are expected. A track cone shows where the center of a storm may go, not where the damage will be. Wind, rain and storm surge can reach well outside the cone."
+      ]
+    },
+    {
+      "h": "If an evacuation is ordered",
+      "p": [
+        "Coastal counties may issue evacuation orders for certain zones, and visitors are expected to follow them like residents. The orders usually specify which zones leave first, and routes are marked on state and county maps. Leave early rather than late. Traffic on the main inland routes can build quickly once an order is issued, and gas stations and hotels fill up.",
+        "Before you leave, bring your documents, medicine and a charger. Fill your gas tank, and let a friend or family member know your route and where you are headed. If you are staying in a rental, check the owner's instructions. Many properties have storm procedures."
+      ]
+    },
+    {
+      "h": "What attractions do",
+      "p": [
+        "Outdoor attractions, boat tours, piers, water parks and amusement rides close first when a storm approaches, often a day or more before landfall. Indoor attractions may stay open until the last moment or close for the safety of staff. After a storm, reopening dates depend on damage and power. Call or check the venue's own page for updates."
+      ]
+    },
+    {
+      "h": "Most trips are fine",
+      "p": [
+        "For most visitors, hurricane season just means a few extra days of watching the forecast and possibly a rainy day or two. Tropical storms that stay offshore can still bring rip currents and high surf, so keep an eye on beach flags and lifeguard warnings. The shoulder months of September and October can be some of the best on the coast, with warm water, fewer people and lower prices, so a flexible plan is often enough."
+      ]
+    }
+  ]
+}

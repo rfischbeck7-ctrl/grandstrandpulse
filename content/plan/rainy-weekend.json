@@ -1,0 +1,63 @@
+{
+  "title": "A rainy weekend on the Grand Strand",
+  "summary": "Two days of indoor plans that still feel like a vacation",
+  "description": "A two-day rainy weekend plan for Myrtle Beach: aquariums, museums, escape rooms, indoor mini golf, theaters and tasting rooms, organized by time of day.",
+  "order": 6,
+  "updated": "November 2026",
+  "places": ["Ripley's Aquarium", "WonderWorks", "Myrtle Beach Pinball Museum", "Escapology Myrtle Beach", "Broadway Grand Prix Challenge Mini Golf", "Carolina Opry", "Black Drum Brewing", "Myrtle Beach Art Museum"],
+  "intro": [
+    "Rain on the coast usually comes in bands. A morning can be gray and soaking, and the afternoon can clear enough for a walk on the sand. The trick is to plan the weekend so that nothing important depends on the weather, and to keep one or two indoor plans in your pocket that you can swap in without a long drive.",
+    "This plan assumes you are staying somewhere central, around Myrtle Beach or North Myrtle Beach, and that you would rather see a few things well than race through a long list. Check each place's own page for hours before you go. Many attractions change their schedules in the cooler months, and rainy days can bring crowds to the best-known indoor stops."
+  ],
+  "sections": [
+    {
+      "h": "Saturday morning: start with the big indoor attractions",
+      "p": [
+        "The first thing to know is that the most popular indoor attractions fill up early on wet days, because every other visitor has the same idea. Go early. Ripley's Aquarium is the obvious choice for families and is easy to pair with a walk around Broadway at the Beach, where much of the area is covered or close to a place to duck inside. WonderWorks, the upside-down science building, is a good alternative for older kids and teenagers, since most of its exhibits are hands-on and take a couple of hours to get through.",
+        "If you are traveling without kids, the Myrtle Beach Art Museum is a quieter pick. It is small enough to see in an hour or so, which makes it easy to pair with a long lunch."
+      ]
+    },
+    {
+      "h": "Saturday afternoon: something that makes you think",
+      "p": [
+        "After lunch, move to something that rewards attention. Escape rooms are the best rainy-day activity on the Grand Strand for groups of friends or a family with older children. Escapology and The Escape Game both run themed rooms where you work against a clock, and a group of four to six is usually the sweet spot. Book ahead, because rooms are sold by time slot rather than by walk-up.",
+        "If your group is smaller or younger, the Myrtle Beach Pinball Museum lets you play machines from several decades and tends to be a relaxed way to spend an hour or two. It is also one of the few attractions where waiting out a shower feels like part of the fun."
+      ]
+    },
+    {
+      "h": "Saturday night: a show",
+      "p": [
+        "Evening is when the theaters earn their reputation. The Grand Strand has a long tradition of live variety shows, dinner shows and concert-style productions, and they all run rain or shine. The Carolina Opry has been an anchor of the area for decades and mixes music, comedy and a large cast. Our Live Shows & Sports page lists the other major theaters, along with dinner shows if you would like your meal and your entertainment in one place.",
+        "Book tickets before you travel for weekend dates, particularly during holidays."
+      ]
+    },
+    {
+      "h": "Sunday morning: lazy start and a tasting room",
+      "p": [
+        "Give yourself a slower morning on day two. If the weather is still unsettled, a brewery or winery is a comfortable place for an early afternoon. Black Drum Brewing and the other breweries and wineries on our list each have their own feel, from industrial taprooms to vineyards in the country. Check whether a given place serves food or allows kids before you go, because policies vary."
+      ]
+    },
+    {
+      "h": "Sunday afternoon: indoor mini golf as a finale",
+      "p": [
+        "Mini golf is the area's signature activity, and a good number of courses are indoors or partly covered. Broadway Grand Prix Challenge Mini Golf is one of several options that keeps working in poor weather. Our indoor mini golf guide lists more, so you can pick the closest to your hotel. Finish the weekend with the competitive part: loser buys ice cream."
+      ]
+    },
+    {
+      "h": "If the rain clears for an hour",
+      "p": [
+        "Beaches look their best right after a storm. The sand is firm, the crowds are thin and the sky is dramatic. If you get a break, take it. Keep an eye on the radar, and if you see lightning, stay off the beach and pier until it has passed for a while. Lightning is the real hazard on the coast, more than the rain itself."
+      ]
+    },
+    {
+      "h": "Packing and small details",
+      "list": [
+        "Bring a light rain jacket rather than relying on an umbrella, which struggles in coastal wind.",
+        "Pack a second pair of shoes. Wet sandals do not dry overnight.",
+        "Keep a phone charger or battery pack in your bag. You will use your phone more on a rainy day for tickets and directions.",
+        "Check parking before you leave. Some popular areas have paid lots, and the covered ones fill up first.",
+        "Ask about cancellation policies when booking anything outdoors that you might need to swap."
+      ]
+    }
+  ]
+}

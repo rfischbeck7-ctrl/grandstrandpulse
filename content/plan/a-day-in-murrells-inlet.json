@@ -1,0 +1,56 @@
+{
+  "title": "A day in Murrells Inlet",
+  "summary": "Marsh, gardens, state park and a sunset on the MarshWalk",
+  "description": "A one-day Murrells Inlet itinerary: Huntington Beach State Park, Brookgreen Gardens, a dolphin cruise and an evening walk on the MarshWalk, with notes on timing and parking.",
+  "order": 7,
+  "updated": "November 2026",
+  "places": ["Huntington Beach State Park", "Atalaya Castle", "Brookgreen Gardens", "Murrells Inlet MarshWalk", "Crazy Sister Dolphin Cruises", "Visit Murrells Inlet Cruises & Tours", "Dead Dog Saloon", "Inlet Adventure Mini Golf"],
+  "intro": [
+    "Murrells Inlet sits about 15 miles south of downtown Myrtle Beach, and it feels like a different place. The oceanfront strip gives way to salt marsh, shrimp boats and old live oaks. People here call it the seafood capital of South Carolina, and it is also the gateway to two of the best outdoor attractions in the region.",
+    "You can see most of what matters in one long day. This plan goes from the quiet morning light at the state park to the evening crowd on the MarshWalk. The distances are short, so you won't spend much of the day in the car."
+  ],
+  "sections": [
+    {
+      "h": "Morning: Huntington Beach State Park",
+      "p": [
+        "Start early at Huntington Beach State Park, which sits across Highway 17 from Brookgreen Gardens. The park has several miles of undeveloped beach, a freshwater lagoon, a boardwalk through the salt marsh and a reputation among birdwatchers. It is a good place to see herons, egrets, ospreys and, with a bit of luck, an alligator sunning on the lagoon bank. The park is also a nesting area for loggerhead sea turtles in summer, so you may see roped-off areas on the beach.",
+        "Inside the park is Atalaya Castle, a Moorish-style winter home built in the 1930s by Archer and Anna Hyatt Huntington. It is unusual, a bit mysterious and worth wandering through. Hours and access to the building can vary, so check the park's page before you plan around it. Parking and entry are handled by the state park system and may change by season."
+      ]
+    },
+    {
+      "h": "Late morning to mid-afternoon: Brookgreen Gardens",
+      "p": [
+        "Brookgreen Gardens is the other half of the Huntington legacy. It combines one of the largest collections of American figurative sculpture in the country with gardens, live oak alleys, a small zoo of native wildlife and the remains of former rice plantations. Plan on at least three hours and wear comfortable shoes. Much of the site is outdoors, and the paths are long enough that you will notice if your shoes are wrong.",
+        "If you are traveling with kids, they tend to remember the animals and the creek more than the sculpture, and that is fine. Pick a few areas rather than trying to see everything. The gardens also host seasonal events, including evening programs in winter, so check what is going on during your dates."
+      ]
+    },
+    {
+      "h": "Late afternoon: get on the water",
+      "p": [
+        "From Brookgreen, the marina area in Murrells Inlet is a short drive. A dolphin cruise is the classic way to see the inlet from the water. Crazy Sister Dolphin Cruises and Visit Murrells Inlet Cruises & Tours are two operators on our site, and each has its own boat size, schedule and route. Dolphins live in the inlet and along the coast, and sightings are common, though no company can promise them. Ask about the weather policy when you book, and arrive a little early."
+      ]
+    },
+    {
+      "h": "Evening: the MarshWalk at sunset",
+      "p": [
+        "The Murrells Inlet MarshWalk is a boardwalk of roughly a mile along the marsh, lined with restaurants and bars, many with outdoor decks. It is the heart of the town's social life. Walk it before you decide where to eat. The scene changes by season: summer evenings are busy with live music, while a weekday in winter is much quieter.",
+        "The Dead Dog Saloon is one of the best-known stops, and the surrounding restaurants specialize in local seafood. Waits can be long on summer weekends, so arrive before the dinner rush or put your name down and walk. Parking is limited near the boardwalk, so expect to park a few blocks away at peak times."
+      ]
+    },
+    {
+      "h": "If you have extra time",
+      "list": [
+        "Rent a kayak or paddleboard from a local outfitter for a morning on the marsh creeks.",
+        "Take the kids to Inlet Adventure Mini Golf for a late round.",
+        "Add a stop in Pawleys Island, about ten minutes south, for the beach and the small-town shops.",
+        "Drive down to Georgetown on another day. Our Georgetown itinerary picks up from here."
+      ]
+    },
+    {
+      "h": "Practical notes",
+      "p": [
+        "Bring bug spray in warm months. The marsh is beautiful, and it is also home to mosquitoes and biting flies at dusk. Sunscreen and water matter at the park and gardens, where shade is patchy on the beach and open trails. Check each place's current hours before you go, because the state park, Brookgreen and the cruise operators all adjust their schedules through the year."
+      ]
+    }
+  ]
+}
