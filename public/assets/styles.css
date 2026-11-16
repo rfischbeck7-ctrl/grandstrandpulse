@@ -452,8 +452,8 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 .hub-list { list-style: none; padding: 0; margin: .75rem 0 0; display: grid; gap: .6rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr)); }
 .hub-list a { display: flex; justify-content: space-between; gap: 1rem; align-items: baseline; padding: .8rem 1rem; background: var(--white); border: 1px solid var(--line); border-radius: 14px; text-decoration: none; box-shadow: var(--shadow); }
 .hub-list a:hover { border-color: var(--neon-pink); }
-.hub-list span { color: var(--ink-soft); font-size: .9rem; white-space: nowrap; }
-.page-text { display: grid; gap: 1rem; max-width: 46rem; padding-top: 2rem; padding-bottom: 2rem; }
+.hub-list span { color: var(--ink-soft); font-size: .9rem; min-width: 0; }
+.page-text { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1rem; max-width: 46rem; padding-top: 2rem; padding-bottom: 2rem; }
 .page-text.wide { max-width: var(--max); }
 .page-text.wide .listings { margin-bottom: 1.5rem; }
 .page-text h2 small { color: var(--ink-soft); font-size: .6em; font-weight: 400; }
@@ -492,3 +492,4 @@ body.themed .hero-wrap { --band-mid: color-mix(in srgb, var(--band-a) 45%, var(-
 .plan-art img:nth-child(3) { transform: rotate(-1deg); }
 @media (min-width: 880px) { .plan-head { grid-template-columns: 5fr 6fr; } }
 @media (max-width: 520px) { .plan-art { gap: .4rem; } .plan-art img { border-width: 2px; } }
+@media (max-width: 520px) { .hub-list a { flex-direction: column; align-items: flex-start; gap: .15rem; } }
