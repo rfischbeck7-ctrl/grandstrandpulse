@@ -585,13 +585,33 @@ ${coastline({ linkBase: "/areas/", id: "coast-areas" }).replace(/href="\/areas\/
 <ul class="hub-list">${guideRows.map((g) => `<li><a href="/guides/${g.slug}/"><strong>${esc(g.title)}</strong><span>${g.rows.length} places</span></a></li>`).join("")}</ul>`)
   );
   for (const g of guideRows) {
+    const counts = {};
+    g.rows.forEach((r) => (counts[r.c.slug] = (counts[r.c.slug] || 0) + 1));
+    const topCat = g.rows.find((r) => r.c.slug === Object.keys(counts).sort((a, b) => counts[b] - counts[a])[0]).c;
+    const pick = [];
+    const seenCat = new Set();
+    for (const r of g.rows) if (!seenCat.has(r.c.slug) && pick.length < 3) { seenCat.add(r.c.slug); pick.push(r); }
+    for (const r of g.rows) if (pick.length < 3 && !pick.includes(r)) pick.push(r);
+    const art = pick.map(({ c, i }) => `<img src="${i.photo ? esc(i.photo.src) : `/art/${c.slug}/${i.slug}.svg?v=${artStamp}`}" alt="" width="400" height="240" loading="lazy">`).join("");
+    const guideHero = `<section class="cat-head plan-head">
+  <div class="cat-head-text">
+    <p class="crumbs"><a href="/guides/">All guides</a></p>
+    <h1>${esc(g.title)}</h1>
+    <p>${esc(g.intro)}</p>
+  </div>
+  <div class="plan-art" aria-hidden="true">${art}</div>
+</section>`;
     await write(
       `guides/${g.slug}/index.html`,
       layout({
+        hero: guideHero,
+        heroClass: "hero-cat",
+        theme: topCat.theme,
+        active: "guides",
         title: fit(`${g.title} in Myrtle Beach, SC${brandSuffix}`, `${g.title} in Myrtle Beach, SC`),
         description: g.intro.slice(0, 155),
         canonical: `/guides/${g.slug}/`,
-        body: `<section class="page-text wide"><p class="crumbs"><a href="/guides/">All guides</a></p><h1>${esc(g.title)}</h1><p>${esc(g.intro)}</p>${guideMore[g.slug] ? `<p>${esc(guideMore[g.slug])}</p>` : ""}<p class="result-count">${g.rows.length} places</p>\n${itemCards(g.rows)}</section>`,
+        body: `<section class="page-text wide">${guideMore[g.slug] ? `<p>${esc(guideMore[g.slug])}</p>` : ""}<p class="result-count">${g.rows.length} places</p>\n${itemCards(g.rows)}</section>`,
         jsonLd: {
           "@context": "https://schema.org",
           "@type": "ItemList",
