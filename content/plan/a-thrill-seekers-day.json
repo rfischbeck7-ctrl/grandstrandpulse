@@ -1,0 +1,50 @@
+{
+  "title": "A thrill-seeker's day",
+  "summary": "Water slides, go-karts, trampolines, a zipline and a coaster for people who like speed",
+  "description": "A one-day plan for thrill-seekers in Myrtle Beach: Myrtle Waves, K1 Speed, Sky Zone, Broadway Grand Prix, Family Kingdom and Shark Wake Park, with tips on pacing, safety and weather.",
+  "order": 23,
+  "updated": "November 2026",
+  "places": ["Myrtle Waves Water Park", "K1 Speed", "Sky Zone Myrtle Beach", "Broadway Grand Prix", "Soar & Explore (WonderWorks)", "Family Kingdom Amusement Park", "Shark Wake Park", "Downwind Sails Parasailing"],
+  "intro": [
+    "Myrtle Beach has plenty to offer visitors who want more adrenaline than a beach chair provides. Water parks, go-karts, trampolines, ziplines, cable wakeboarding and a historic wooden coaster are all within a short drive of each other. The challenge is choosing, since most thrill attractions are priced individually and take a couple of hours.",
+    "This plan sketches two ways to spend a day: a summer day built around water, and a cooler-season day built around indoor and track-based activities. Both are meant for teenagers and adults, and for kids who meet the height and age requirements, which differ by attraction. Check each site's own rules before you go."
+  ],
+  "sections": [
+    {
+      "h": "Option one: a summer water day",
+      "p": [
+        "Start at Myrtle Waves Water Park, one of the area's largest, open since 1985. It has tube slides, a mat slide and a FlowRider surf wave, along with family areas for smaller children. Arrive near opening to avoid the longest lines, and plan to spend several hours.",
+        "For the afternoon, try Shark Wake Park, a cable wakeboard and water-ski park on the lake at the North Myrtle Beach Park and Sports Complex, where you do not need your own gear or experience. If your group would rather go up, Downwind Sails offers parasailing from the oceanfront in good weather. Whichever you choose, apply sunscreen often, drink water and take shade breaks."
+      ]
+    },
+    {
+      "h": "Option two: a track-and-indoor day",
+      "p": [
+        "K1 Speed is a fully enclosed indoor track with fast electric karts, plus an arcade and pool tables, so it works year-round. Adult and junior karts are offered, and there may be age and height requirements, so check ahead. Sky Zone is an indoor trampoline park with open jump sessions, a Warped Wall, a Ninja Warrior course and dodgeball, and it is a good way to burn energy in cool or rainy weather.",
+        "Broadway Grand Prix has several outdoor kart tracks, including a pro track and a high-bank oval, along with bumper cars and mini golf. At Broadway at the Beach, Soar & Explore offers a 1,000-foot zipline over the lake and a ropes obstacle course."
+      ]
+    },
+    {
+      "h": "Evening: the oldest coaster",
+      "p": [
+        "Family Kingdom Amusement Park has been on the oceanfront since 1966. Its Swamp Fox is a wooden coaster that has been running for decades and gives good views of the ocean. The park also has a water park on the same grounds. Evenings are usually cooler and a good time for rides; confirm the schedule, since the park may close or limit days in the off-season."
+      ]
+    },
+    {
+      "h": "Safety and pacing",
+      "list": [
+        "Read the rules for height, weight, age and health restrictions before you buy tickets. They differ and are strictly applied.",
+        "Eat and drink regularly, especially in summer. Do not stack three high-energy activities back to back without a meal in between.",
+        "Weather can close outdoor attractions, including water parks, wake parks and parasailing. Keep a backup plan and ask about refund or rescheduling policies.",
+        "Closed-toe shoes are often required at karts, trampolines and ropes courses. Pack accordingly.",
+        "Follow the staff's instructions. Most injuries at attractions come from ignoring posted rules."
+      ]
+    },
+    {
+      "h": "Combine with the rest of the trip",
+      "p": [
+        "A thrill day works best sandwiched between calmer days. Our teens and tweens itinerary and the three-days-with-kids plan mix these attractions with beach and low-key time, and the rainy weekend plan is a good fallback if a storm cancels the outdoor options."
+      ]
+    }
+  ]
+}

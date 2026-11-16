@@ -1,0 +1,49 @@
+{
+  "title": "A day at Broadway at the Beach",
+  "summary": "An aquarium, hands-on science, go-karts, a show and dinner in one large entertainment complex",
+  "description": "A one-day plan for Broadway at the Beach in Myrtle Beach, SC: Ripley's Aquarium, WonderWorks, mini golf and go-karts, escape games, a live show and where to eat, with tips for families and groups.",
+  "order": 20,
+  "updated": "November 2026",
+  "places": ["Ripley's Aquarium", "WonderWorks", "Soar & Explore (WonderWorks)", "Broadway Grand Prix", "Broadway Grand Prix Challenge Mini Golf", "The Escape Game Myrtle Beach", "Backstage Escape Games", "Hollywood Wax Museum", "Pavilion Nostalgia Park", "Dave & Buster's", "Legends in Concert", "Broadway Theatre: Le Grand Cirque Adrenaline", "Yee-Haw Brewing at Ole Smoky Distillery"],
+  "intro": [
+    "Broadway at the Beach is a large, walkable entertainment complex arranged around a lake, a few minutes from the oceanfront in central Myrtle Beach. Because so many attractions, shops, restaurants and theaters sit in one place, it is one of the easiest places on the Strand to plan a day without driving between stops, and it works in any weather since several of the big attractions are indoors.",
+    "This plan is a sample, not a rulebook. Opening times and ticket options change by season, and most attractions sell tickets on their own websites, so look up current details for each stop before you go. Parking at the complex is typically the easiest part of the day, but arrive earlier in summer."
+  ],
+  "sections": [
+    {
+      "h": "Morning: pick one big indoor attraction",
+      "p": [
+        "Start with the stop that needs the most time while everyone has energy. Ripley's Aquarium has a walk-through tunnel and touch tanks, with sharks, sawfish, reef fish and rays among thousands of animals. Plan on a couple of hours, and note that timed or online tickets can save time in busy periods.",
+        "WonderWorks is the other major indoor option. It is a building packed with hands-on science exhibits across several themed zones, and it suits kids and adults who like to touch and try things. Next to it, Soar & Explore adds a long zipline over the lake and a ropes obstacle course if anyone wants something outdoors."
+      ]
+    },
+    {
+      "h": "Midday: lunch by the lake",
+      "p": [
+        "The complex has a range of restaurants, from quick counters to sit-down places, many with views of the lake. Eat at an unhurried pace and take a short walk around the water to reset before the afternoon. If the weather is hot, look for shade and indoor seating, and consider putting the outdoor activities in the late afternoon."
+      ]
+    },
+    {
+      "h": "Afternoon: games, karts and mystery",
+      "p": [
+        "Broadway Grand Prix is a go-kart and family fun park a short walk from the complex, with several kart tracks and two mini golf courses, as well as bumper cars and kiddie rides. If your group would rather solve than race, The Escape Game and Backstage Escape Games both run themed escape rooms at Broadway at the Beach; check ages and group size rules before booking.",
+        "Dave & Buster's is a big arcade with racing games, shooters and air hockey, and it also serves food and shows sports on its screens. Pavilion Nostalgia Park is a small amusement park that carries on the spirit of the old Myrtle Beach Pavilion, with a handful of rides. The Hollywood Wax Museum is nearby for a rainy-day option."
+      ]
+    },
+    {
+      "h": "Evening: a show",
+      "p": [
+        "Two live shows play on the property. Legends in Concert is a tribute show at its own theater and has been running since the 1980s. Le Grand Cirque Adrenaline is an acrobatic variety show at the Broadway Theatre, with aerial stunts and an international cast; the show title changes by season. For a different kind of night, Yee-Haw Brewing at Ole Smoky Distillery offers craft beer and moonshine tastings for adults. Whatever you choose, book shows ahead on busy weekends."
+      ]
+    },
+    {
+      "h": "Practical notes",
+      "list": [
+        "Tickets are sold by each attraction, not by the complex. Compare single tickets and any bundles on each attraction's own website.",
+        "Check the lake-area fireworks and seasonal event schedules before you plan your evening, since they vary by year.",
+        "Wear comfortable shoes. The complex is large and you will do a lot of walking.",
+        "If it rains, nearly the whole itinerary still works. See our rainy weekend itinerary for more ideas."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "title": "A day on the Myrtle Beach Boardwalk",
+  "summary": "A beach morning, the SkyWheel, odd museums and neon mini golf along the oceanfront",
+  "description": "A one-day plan for the Myrtle Beach Boardwalk and oceanfront: the beach, SkyWheel, Ripley's attractions, Family Kingdom, parasailing and an evening walk, with tips on parking and timing.",
+  "order": 21,
+  "updated": "November 2026",
+  "places": ["Myrtle Beach Boardwalk", "Myrtle Beach SkyWheel", "Ripley's Believe It or Not!", "Ripley's Mirror Maze", "Ripley's Haunted Adventure", "Ripley's Crazy Golf", "Family Kingdom Amusement Park", "Downwind Sails Parasailing", "Myrtle Beach Art Museum", "Tin Roof"],
+  "intro": [
+    "The Myrtle Beach Boardwalk runs along the oceanfront in downtown Myrtle Beach and is the most recognizable stretch of the Grand Strand. It has beach access points along the way, and a lot of the area's best-known attractions sit within a short walk of it. If you only have one day in the middle of the Strand, this is the place to spend it.",
+    "The plan below follows the day from morning at the beach to an evening stroll. It works for families, couples and groups of friends, and almost every stop is within walking distance of the next. Because the oceanfront is busiest in summer, mornings and weekdays are much calmer."
+  ],
+  "sections": [
+    {
+      "h": "Morning: the beach and a walk",
+      "p": [
+        "The beach is the reason most people are here, and the early hours are the best time for it, with cooler air and fewer crowds. Walk the Boardwalk and Promenade first to get your bearings, then spend a couple of hours on the sand. Lifeguards are seasonal and beach rules apply, including limits on glass and certain items; see our beach rules and safety page and the city's own notices before you set up."
+      ]
+    },
+    {
+      "h": "Late morning: the SkyWheel",
+      "p": [
+        "The Myrtle Beach SkyWheel is a 42-gondola Ferris wheel that rises nearly 200 feet above the oceanfront. Each enclosed, climate-controlled gondola seats up to six, so it is comfortable in any weather, and it gives the best view of the coastline. It is a short ride and an easy one for mixed ages, and the line is usually shortest earlier in the day."
+      ]
+    },
+    {
+      "h": "Midday: odd museums and mini golf",
+      "p": [
+        "Several of the oceanfront attractions are run by Ripley's. Ripley's Believe It or Not! is an odditorium with hundreds of strange artifacts and interactive games. Ripley's Mirror Maze is a quick puzzle of mirrors near the SkyWheel. Ripley's Haunted Adventure is a walk-through haunted attraction that may not suit young children and may close seasonally, so check dates. Ripley's Crazy Golf puts three stories of glow-in-the-dark mini golf right on the Boardwalk, fully air-conditioned, which is a good option in the hottest part of the day.",
+        "For something quieter, the Myrtle Beach Art Museum, the Franklin G. Burroughs-Simeon B. Chapin Art Museum, is across from the beach on South Ocean Boulevard and has a number of galleries; check its page for current hours and exhibitions."
+      ]
+    },
+    {
+      "h": "Afternoon: rides and the water",
+      "p": [
+        "Family Kingdom Amusement Park, on the oceanfront since 1966, has rides and a wooden coaster, with the Splashes Oceanfront Water Park on the same grounds. It is a solid choice for kids and teens. If you want to see the beach from above, Downwind Sails offers parasailing from the Myrtle Beach oceanfront, with riders going up to 400 feet; it depends on weather and wind, so book flexibly."
+      ]
+    },
+    {
+      "h": "Evening: dinner and live music",
+      "p": [
+        "As the sun sets, the Boardwalk lights up and fills with walkers. Many restaurants and shops along it stay open into the evening. Tin Roof, a live-music bar and restaurant near the Boardwalk with a rooftop bar and ocean views, is a convenient end to the day for adults. Families can end with a stroll and ice cream instead."
+      ]
+    },
+    {
+      "h": "Practical notes",
+      "list": [
+        "Parking downtown is the main challenge. Look up current lots and meters in our getting around page before you drive in.",
+        "Summer afternoons are hot and busy. Do the beach early, the indoor stops at midday and the outdoor stops late.",
+        "Check opening days for each attraction, especially from November through March, when some have shorter schedules.",
+        "See the rainy weekend itinerary for more indoor ideas, and our first-time visitor tips for general planning."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "A history and museum day",
+  "summary": "Plantations, rice and maritime history, a school museum and vintage cars across the south and central Strand",
+  "description": "A history-focused itinerary for the Myrtle Beach area: Georgetown museums, Hopsewee Plantation, Hobcaw Barony, the Colored School Museum, the Art Museum and Wheels of Yesteryear, with notes on planning.",
+  "order": 22,
+  "updated": "November 2026",
+  "places": ["Georgetown County Museum", "Rice Museum", "Kaminski House Museum", "South Carolina Maritime Museum", "Georgetown Harborwalk", "Hopsewee Plantation", "Hobcaw Barony", "Historic Myrtle Beach Colored School Museum", "Myrtle Beach Art Museum", "Wheels of Yesteryear"],
+  "intro": [
+    "The Grand Strand is best known for its beaches, but the region has a long and complicated history that runs through rice plantations, waterways, lumber, tourism and the story of the Black communities that built much of it. A good history day pairs two or three places, not six, so you have time to read and talk about what you see.",
+    "This itinerary groups the best-documented stops by location. Georgetown, about an hour south of Myrtle Beach, has the densest cluster. Closer to the beach, two smaller museums fill out the story. Confirm hours and tour times on each site, since several of these places keep limited days."
+  ],
+  "sections": [
+    {
+      "h": "Georgetown: start downtown",
+      "p": [
+        "Georgetown is the third-oldest city in South Carolina, and its historic district is compact and walkable. Start at the Rice Museum in the old Market Building, which tells the story of the rice culture that made the area wealthy, and which also has an art gallery for local work. The Georgetown County Museum covers nearly 300 years of local history, from colonial beginnings through the indigo, rice, lumber and paper industries.",
+        "A short walk away, the Kaminski House Museum is a historic house on a bluff above the Sampit River, built in the 1700s and later the home of a Georgetown mayor. The South Carolina Maritime Museum on the waterfront has free admission and exhibits on the state's maritime past, and the Georgetown Harborwalk runs along the river behind Front Street between several of these stops, making it an easy way to link them."
+      ]
+    },
+    {
+      "h": "Hopsewee Plantation",
+      "p": [
+        "North of Georgetown, Hopsewee Plantation is a lowcountry rice plantation house open for guided tours. The circa-1740 house is seen on a tour of about 50 minutes that covers the lives of the people who lived and worked there, including the enslaved. It is a good complement to the museums downtown because it puts the rice story in an actual place."
+      ]
+    },
+    {
+      "h": "Hobcaw Barony",
+      "p": [
+        "Hobcaw Barony is a 16,000-acre coastal research reserve near Georgetown that you can only visit on a guided tour or program. Tours cover the Baruch family homes, cemeteries and the cabins of formerly enslaved people, among more than 70 cultural sites, and other programs include birding and hikes. Tours are booked in advance through the website and have limited seats."
+      ]
+    },
+    {
+      "h": "Back toward Myrtle Beach",
+      "p": [
+        "The Historic Myrtle Beach Colored School Museum is a museum and education center in the 1932 school that served the area's Black students for more than two decades, rebuilt in 2006. It is small and personal, and its schedule can be limited to a few days a week, so call ahead.",
+        "The Myrtle Beach Art Museum is the city's only art museum, across from the beach on South Ocean Boulevard, and offers a change of pace from the outdoors. Wheels of Yesteryear is a vintage auto museum for anyone who enjoys classic cars and trucks; its hours can be irregular, so confirm before you drive over."
+      ]
+    },
+    {
+      "h": "How to sequence the day",
+      "list": [
+        "A full day in Georgetown: Rice Museum, Georgetown County Museum, a Harborwalk lunch, then Kaminski House or the Maritime Museum.",
+        "A full day with a tour: book Hobcaw Barony or Hopsewee Plantation in the morning, then spend the afternoon in downtown Georgetown.",
+        "A shorter day near Myrtle Beach: Colored School Museum, the Art Museum, and either Wheels of Yesteryear or the beach.",
+        "Check closures. Small museums often close on Sundays or Mondays and for holidays."
+      ]
+    },
+    {
+      "h": "Practical notes",
+      "p": [
+        "Georgetown is about an hour from central Myrtle Beach, so give the day a clear start and finish. Our Georgetown itinerary has more detail on the town. Several of these sites discuss slavery and its legacy. They are appropriate for older children and teenagers with some preparation, and many offer tours that work for younger visitors as well; ask when you book."
+      ]
+    }
+  ]
+}

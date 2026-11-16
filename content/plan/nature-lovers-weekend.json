@@ -1,0 +1,55 @@
+{
+  "title": "A nature lover's weekend",
+  "summary": "State parks, marsh kayaking, dolphin cruises and wildlife from Little River to Georgetown",
+  "description": "A two-day nature itinerary for the Grand Strand: Huntington Beach State Park, Myrtle Beach State Park, kayaking, dolphin cruises, Hobcaw Barony and wildlife stops, with tips on seasons, bugs and booking.",
+  "order": 24,
+  "updated": "November 2026",
+  "places": ["Huntington Beach State Park", "Myrtle Beach State Park", "Black River Outdoors Center", "Great Escapes Kayaking Expeditions", "Hobcaw Barony", "Crazy Sister Dolphin Cruises", "Express Watersports Dolphin Watch", "Sea Thunder and Sea Screamer", "Alligator Adventure", "Vereen Memorial Gardens", "Waites Island"],
+  "intro": [
+    "Away from the oceanfront, the Grand Strand has a lot of quiet nature: maritime forest, salt marsh, blackwater cypress swamps, barrier beaches and a coast full of birds. Dolphins are common in the inlets, alligators live in freshwater lakes, and the state parks protect long stretches of undeveloped shoreline. A weekend is enough to see a good cross-section.",
+    "This plan runs from south to north across two days. You can swap the order or choose just one day. Wildlife varies by season and weather, so treat any mention of what you might see as a possibility and not a promise."
+  ],
+  "sections": [
+    {
+      "h": "Day one, morning: Huntington Beach State Park",
+      "p": [
+        "Huntington Beach State Park has about three miles of beach, a freshwater lake, a salt marsh and a reputation as an excellent birding location, with a long species list across the year. The lake edge is a common place to see alligators, and the beach is a fine place to look for shorebirds and shells. The park also contains Atalaya Castle. Check the park's own site for any closures, since the nature center's marsh boardwalk was closed for construction when we last looked."
+      ]
+    },
+    {
+      "h": "Day one, afternoon: paddle the marsh or a blackwater river",
+      "p": [
+        "Kayaking gives a quieter view of the same wildlife. Black River Outdoors Center runs guided tours of a blackwater cypress forest on the Waccamaw River, as well as tours of the Murrells Inlet salt marsh, with naturalist-led and birding options. Species that may be seen include osprey, bald eagles, swallow-tailed kites and alligators. Book ahead for guided trips, and wear long sleeves and bug spray in the warm season."
+      ]
+    },
+    {
+      "h": "Day one, evening: dolphin cruise",
+      "p": [
+        "Crazy Sister Dolphin Cruises and Express Watersports Dolphin Watch both leave from the MarshWalk in Murrells Inlet and look for wild bottlenose dolphins in the inlet and nearby waters. Sunset departures are popular. Dolphins are wild animals and sightings are not guaranteed, though many operators do well in the warmer months. Follow the crew's guidance about not feeding or approaching dolphins."
+      ]
+    },
+    {
+      "h": "Day two, morning: Georgetown area",
+      "p": [
+        "Hobcaw Barony is a 16,000-acre coastal research reserve near Georgetown that you can only visit on a guided tour or program, including birding and a hike to the North Inlet salt marsh. Tours are limited and booked through the website, so reserve early. It is one of the best-protected places on the coast and also has cultural history sites."
+      ]
+    },
+    {
+      "h": "Day two, afternoon: the north end",
+      "p": [
+        "Head north to Little River, where Vereen Memorial Gardens is a free county waterfront park with about three miles of trails and boardwalks. Great Escapes Kayaking Expeditions, a North Myrtle Beach outfitter, offers guided paddles on the Waccamaw River and undeveloped Waties Island. Sea Thunder and Sea Screamer run dolphin cruises from Little River if you want a second chance at dolphins.",
+        "Alligator Adventure at Barefoot Landing is a reptile park that gives a close look at alligators and other reptiles in one stop, which can be a nice contrast to seeing them from a distance in the wild. Waites Island is a protected barrier island, and access is typically limited to guided or boat visits, so check current options."
+      ]
+    },
+    {
+      "h": "Practical notes",
+      "list": [
+        "Best seasons are spring and fall for comfort and birding, though winter can be quiet and rewarding. Summer is hot, humid and buggy.",
+        "Bring insect repellent, sun protection, water and binoculars if you have them.",
+        "Respect wildlife. Keep your distance from alligators, do not feed any animal, and stay on marked trails.",
+        "Check tides and weather for kayak and boat trips, and ask about cancellation policies.",
+        "See the on-the-water guide and the Murrells Inlet itinerary for more ideas."
+      ]
+    }
+  ]
+}
