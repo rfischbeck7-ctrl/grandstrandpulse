@@ -36,3 +36,14 @@ Funplex (Oct 2024), Waccatee Zoo (closing per PETA suit), Myrtle Beach Zipline A
 ## Still to do
 - Phone check or social-page check for the unconfirmed list above (only Ryan or a phone call can settle these).
 - Remaining categories not individually searched: most nature/parks, golf courses, thrill rides, nightlife bars (Ocean Annie's, Duck's, OD Arcade, 3001, The Bowery, Apache Pier). The link check found nothing wrong with their sites.
+
+## Batch 2 (Nov 16): nature, historic, mini golf (web search only; search was partly rate-limited)
+- **No confirmed closures.** Snake River Golf and Gem Mining: independent sources say closed since 2019 (stays unpublished).
+- **Open per official or recent sources:** Brookgreen Gardens, Alligator Adventure (new 2026 exhibit), Myrtle Beach Art Museum, Horry County Museum, Georgetown Harborwalk, Jurassic Golf, Hobcaw Barony (scheduled tours), Waites Island (tours via CCU/operators).
+- **Huntington Beach State Park:** open, but the Nature Center marsh boardwalk was still listed closed for construction on the SC Parks site (undated).
+- **T.I.G.E.R.S. / Myrtle Beach Safari:** PETA asked USDA to shut it down (about Mar 2026) after the owner's conviction; no report of any closure. Watch this one.
+- **Possibly closed, unconfirmed:** Spy Glass Adventure Golf (MapQuest says closed, no date), Aloha Mini Golf (latest evidence 2023), Aloha Falls (no 2026 info).
+- **No 2026 evidence either way (small mini golf):** Captain Hook's, Pirate's Watch, Mutiny Bay, Jungle Lagoon, Tribal Island Tiki, Aloha Village, Molten Mountain, PopStroke, Gilligan's Island Funland, Professor Hacker's (both), Hawaiian Rumble, Mulligan's Lagoon, Mayday.
+- **Check the address:** Sea Thunder / Sea Screamer boards at 4473 or 4499 Mineola Ave depending on source (our notes say 4499).
+- **Cap'n Rod's:** same address (701 Front St) as "Lowcountry Boat Tours"; may be an alias.
+- **Colored School Museum:** Mon/Wed/Fri only, sources disagree on hours; call ahead.
