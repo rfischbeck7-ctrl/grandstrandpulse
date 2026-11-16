@@ -199,3 +199,6 @@ Free Grand Strand things-to-do directory at myrtlebeachcompass.com. Airtable is 
 ## REMINDER: early Feb 2027, Google Cloud trial ends (~Feb 14, 2027)
 - Tell Ryan at the start of the first session in Feb 2027. Decide: (a) let it lapse and clear `placesApiKey` in `site.config.mjs` (ratings vanish, $0), or (b) Ryan upgrades himself, then we immediately set a Places API quota (and check "Spend cap enforcement" in Billing > Budgets & caps) and check current Places pricing/free tier first. Never click Upgrade for him.
 - A "$1 alert" budget (emails at 50/90/100%) was created Nov 16, 2026. It alerts only; it does not stop spending.
+
+## REMINDER: ~Nov 30, 2026, Ryan checks back (indexing + AdSense)
+- Ryan said (Nov 16) he'll return in ~2 weeks. Then: (1) Search Console page indexing: is the indexed count above 228? Are the new plan pages, /map/, /conditions/, /terms/ indexed? Look at the 21 "Discovered - currently not indexed"; resubmit sitemap if needed. (2) AdSense > Sites status; tell Ryan if it looks like time to consider "Request review". NEVER click it. (3) Re-check ratings, maps and guide pages on the live site.
