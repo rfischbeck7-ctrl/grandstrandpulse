@@ -47,3 +47,11 @@ Funplex (Oct 2024), Waccatee Zoo (closing per PETA suit), Myrtle Beach Zipline A
 - **Check the address:** Sea Thunder / Sea Screamer boards at 4473 or 4499 Mineola Ave depending on source (our notes say 4499).
 - **Cap'n Rod's:** same address (701 Front St) as "Lowcountry Boat Tours"; may be an alias.
 - **Colored School Museum:** Mon/Wed/Fri only, sources disagree on hours; call ahead.
+
+## Batch 3 (Nov 16): nightlife, shows, family, breweries (web search only, mostly indirect evidence)
+- **No confirmed closures.** Open with 2026 evidence: Comedy Cabana, House of Blues, Fat Harold's, Greg Rowles Legacy Theatre, Alabama Theatre, Pelicans (season over, 2027 opener April 2), Legends in Concert, Pirates Voyage, GTS Theatre, AMC Classic 12, Strand Theater, Asher Theatre, B&B Conway 12, EdVenture, The Escape Game, Ripley's Aquarium, WonderWorks, Sky Zone, Dave & Buster's, Duplin Winery, Crooked Hammock, South Coast Beer Project (opened May 2026, Carolina Forest), Yee-Haw Brewing (opened May 2026).
+- **Seasonal or schedule notes:** Ripley's Haunted Adventure (one reseller says closed Nov 2026 to Mar 2027, unconfirmed), The Bowery (about March to October), Interactive Experience Unleashed (Wed-Sun only), Legends in Concert (Christmas show Nov 3 to Jan 1).
+- **Show name change:** Le Grand Cirque Adrenaline venue now lists "Maximum Velocity" (May 25 to Oct 25) then "Winter in the Air". Check our listing wording.
+- **Unconfirmed (no 2026 evidence; some MapQuest "Closed" flags that are undated):** Break Out Myrtle Beach, Black Flag Forge, Backstage Escape Games, Captive Escape Rooms, Myrtle Beach Room Escape, Tin Roof, Big Air Trampoline Park (Feb 2026 event exists, so probably open).
+- **Watch:** Senor Frog's (parent reportedly selling US branches), The Pier at Garden City (rumored for sale), 3001 Nightlife.
+- **Address/category checks:** Cinemark Myrtle Beach is at Coastal Grand Mall (2100 Coastal Grand Cir). Pin Point is in Little River (304 SC-90). The Tasting Room on 9th is a wine and cocktail bar (505 9th Ave N); confirm it fits "Breweries & Wineries". South Coast Beer Project is at 5020 Carolina Forest Blvd.
